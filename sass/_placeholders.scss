@@ -1,0 +1,30 @@
+// ======================================
+// Placeholders and extensions by criscom
+// ======================================
+
+%clearfix { //From SACFW _placeholder.scss line 1ff
+	@include clearfix;
+}
+
+// From SASS and Compass for Webdesigners _placeholder.scss line 4ff
+%single-transition {
+	@include single-transition(all, .3s, ease, 0s);
+}
+
+//From SACFW _placeholder.scss line 17ff
+%sb-menu-text-shadow {
+	@include single-text-shadow();
+}
+
+%menu { // Extension for the main menu
+  color: $mainlink;
+  display: block;
+  font-size: 1.2em;
+  font-family: $georgia;
+  padding: 1em .5em;
+  text-decoration: none;
+  border: none;
+  letter-spacing: .075em;
+  border: none;
+  background:none;
+}

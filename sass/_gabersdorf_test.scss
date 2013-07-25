@@ -1,0 +1,102 @@
+/**
+ * @file
+ *
+ * gemeinde-gabersdorf subtheme
+ * base theme: ZEN 5
+ * development server @localhost; 
+ * drupal7zenmaster5
+ *
+ * author: criscom
+ * date: 20130722 / 22. Juli 2013
+ *
+**/ 
+
+// ======================================
+// Body and general styles
+// ======================================
+
+* {
+	@include bs;
+}
+
+body {
+	background-color: $color0;
+	font-family: $font-body;
+	color: $font;
+	@include establish-baseline;
+	@include adjust-font-size-to(12px);
+}
+
+::-moz-selection {
+	background-color: $color0;
+	text-shadow: none;
+}
+
+::selection {
+	background-color: $color0;
+	text-shadow: none;
+}
+
+#page {
+	background-color: white;
+}
+
+#header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+// ======================================
+// Header section with Gemeinde Logo and Sublogos
+// ======================================
+
+[role="banner"] { // A scaleable vector graphic for the header section
+	background: image-url("svg/header-ohne-wappen.svg") left top no-repeat;
+	//background: transparent image-url('header/header-ohne_bg.jpg') 15px 0px no-repeat;
+	// @include background-size(cover);
+	// background-image: url('../images/svg/test-header.svg');
+	// background-repeat: no-repeat;
+	// background-position: top left;
+	//background-size: 930px 125px;
+	
+	.no-svg & { // For browsers that don't support SVAs we load a png for the header thanks to modernizr
+		// background: transparent image-url('header/header-mit-text-mit-wappen.png') 15px 0px no-repeat;
+	}
+}
+
+.header--logo { // the logo is a blank transparent png in order to make the text section in the header clickable
+	margin: 1em 0 0 2em;
+	// display: none;
+}
+
+[role="search"] {
+	float: right;
+	padding-top: 7.4em;
+	@media only screen and (max-width: 721px)
+	{
+		padding-top: 4.5em;
+	}
+}
+
+.header--site-name {
+	@include hide-text;
+}
+
+.header--region {
+	margin-top: 8em; // positions the sublogos under the  banner
+	height: 10em;
+	.block {
+		display: inline-block;
+		display: -moz-inline-stack; // For Mozilla Firefox 2
+		vertical-align: top;
+		zoom:1; // For IE7 and below
+		*display: inline; // For IE7 and below
+	}
+	.first {
+		margin-right: 2.5em;
+	}
+	.last {
+		float: right;
+
+	}
+}

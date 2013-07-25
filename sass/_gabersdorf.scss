@@ -1,0 +1,192 @@
+/**
+ * @file
+ *
+ * gemeinde-gabersdorf subtheme
+ * base theme: ZEN 5
+ * development server @localhost; 
+ * drupal7zenmaster5
+ *
+ * author: criscom
+ * date: 20130722 / 22. Juli 2013
+ *
+**/ 
+
+// ======================================
+// Body and general styles
+// ======================================
+
+* {
+	@include bs;
+}
+
+body {
+	@include establish-baseline;
+	@include adjust-font-size-to(12px);
+	background-color: $color0;
+	background-image: image-url('body_bg.png');
+	background-size: 1400px 125px;
+	background-repeat: repeat-x;
+	color: $font;
+	font-family: $font-body;
+	//background-image: image-url('svg/body_bg.svg');
+	background-position: 0 0;
+}
+
+::-moz-selection {
+	background-color: $color0;
+	text-shadow: none;
+}
+
+::selection {
+	background-color: $color0;
+	text-shadow: none;
+}
+
+#page {
+	background-color: white;
+}
+
+#main {
+	padding-top: 5em;
+}
+
+#header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+input, select, img, iframe {
+	max-width: 100%;
+}
+
+// ======================================
+// Header section with Gemeinde Logo and Sublogos
+// ======================================
+
+.header
+ {
+	height: 205px; // A scaleable vector graphic for the header section
+	background: transparent image-url('header/header-ohne_bg.jpg') 15px 0px no-repeat;
+	// 24.07.2013
+	// SVGs do not work in Safari and Chrome browsers at the momente (on localhost); various
+	// workarounds have misfired and I am continuing with a jpg version.
+
+	//background-image: image-url("svg/amazon-us.svg");
+	// background-size: 100% 100%;
+	// background-position: 0 0;
+	// background-repeat: no-repeat;
+	// height: 100px;
+	// width: 100px;
+	//background: transparent image-url('bg-sprites-s18f9313191.png') 15px 0px no-repeat;
+	// @include background-size(cover);
+	
+	.no-svg & { // For browsers that don't support SVAs we load a png for the header thanks to modernizr
+		// background: transparent image-url('header/header-mit-text-mit-wappen.png') 15px 0px no-repeat;
+	}
+}
+
+.header--logo { // the logo is a blank transparent png in order to make the text section in the header clickable
+	margin: 1em 0 0 2em;
+	//display: none;
+}
+
+[role="search"] {
+	float: right;
+	padding-top: 7.4em;
+	@media only screen and (max-width: 721px)
+	{
+		padding-top: 4.5em;
+	}
+}
+
+.header--site-name {
+	@include hide-text;
+}
+
+.header--region {
+	.block {
+		display: inline-block;
+		display: -moz-inline-stack; // For Mozilla Firefox 2
+		vertical-align: top;
+		line-height: 1.5em;
+		zoom:1; // For IE7 and below
+		*display: inline; // For IE7 and below
+		p {// removing margin on top of the adress text in order to move it further twd the header
+			margin-top: 0;
+		}
+	}
+	.first {
+		margin-right: 2.5em;
+	}
+	.last {
+		float: right;
+
+	}
+}
+
+// ======================================
+// Main menu
+// ======================================
+
+
+#navigation // No padding for the main navigation so that the background can bleed
+{
+
+	.lt-ie8 .sidebar-second & { // in IE7 the navigation needs to be aligned to the left
+		margin-left: -40px;
+	}
+}
+
+// Soft green background for the main menu
+.region-navigation {
+	border-bottom: 1px solid $color8;
+	background-color: $color2;
+	//width: 100%;
+	height: 3.9em;
+	//padding: 2px 0 0 10px;
+	border-top: 1px solid $color8;
+	
+}
+
+// styling the links in the main menu
+.menu a,
+.menu a.active,
+.menu a.active-trail
+{
+	// @include transition-property(height)//	// @include transition-duration(.2s);
+	// @include transition-timing-function(/se-out)
+}
+
+.menu,
+ul.nice-menu {
+		background:none;
+		>li {
+		border: none;
+		background: none !important;
+		a
+		{
+		@extend %menu;
+		@extend %single-transition;
+	
+			&:hover, &:focus {
+				background-color: lighten($color1, 3%); // on hover the menu item will be given a violet bg color
+				color: white;
+				// height: 2em;
+			}
+		}
+		a.active, a.active-trail { 
+			@extend %menu;
+			background-color: $color1; // if main menu item is active menu item give it a violet bg color
+			color: white;
+			}
+		// Styling of 2nd menu level
+		ul {
+			border:none; // 2nd menu level
+			padding-top: 2em;
+			li { // menu item of 2nd menu level
+				width: 20em;
+			}
+		}
+	}
+}
+
