@@ -121,7 +121,7 @@ p li a:link, p li a:visited, p li a:hover, p li a:active {
 }
 
 .header--region { // Block under header with FB icon, address and partner logos
-	padding-left: 1em; // Aligning the FB icon with first main menu item 'Home' and node heading
+	@extend %left-border; // Aligning the FB icon with first main menu item 'Home' and node heading
 		.block {
 			display: inline-block;
 			display: -moz-inline-stack; // For Mozilla Firefox 2
@@ -190,6 +190,7 @@ ul.nice-menu {
 			@extend %menu;
 			background-color: $color1; // if main menu item is active menu item give it a violet bg color
 			color: white;
+
 			}
 		// Styling of 2nd menu level
 		ul {
@@ -203,11 +204,12 @@ ul.nice-menu {
 }
 
 .region-footer {
-	background: transparent image-url('footer_bg.jpg') 15px 11px no-repeat;
+	background: transparent image-url('footer_bg.jpg') 15px 9px no-repeat;
 	p {
-		padding-left: 15px;
+		@extend %left-border; // Aligning the first footer item with node header, first menu item and FB icon
 		color: white;
 		text-transform: uppercase;
+		font-size: .9em;
 		a {
 			color: white;
 		}
@@ -222,5 +224,9 @@ ul.nice-menu {
 	background-color: $color1;
 	color: white;
 	font-size: 1.7em; // 20px
-	padding: .2em 0 .2em .7em;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 1px;
+	// padding left is set in the line below: 227
+	@extend %left-border; // Aligning the first footer item with node header, first menu item and FB icon
 }

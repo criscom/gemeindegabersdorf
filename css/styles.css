@@ -40,12 +40,17 @@ ul.nice-menu > li a.active-trail {
   display: block;
   font-size: 1.2em;
   font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
-  padding: 1em;
+  padding: 14px 11px 13px 11px;
   text-decoration: none;
   border: none;
   letter-spacing: .075em;
   border: none;
   background: none;
+}
+
+/* line 33, ../sass/_placeholders.scss */
+.header--region, .region-footer p, .page--title {
+  padding-left: 11px;
 }
 
 /* Import Fonts */
@@ -2001,10 +2006,6 @@ p li a:link, p li a:visited, p li a:hover, p li a:active {
   background-color: transparent;
 }
 
-/* line 123, ../sass/_gabersdorf.scss */
-.header--region {
-  padding-left: 1em;
-}
 /* line 125, ../sass/_gabersdorf.scss */
 .header--region .block {
   display: inline-block;
@@ -2065,39 +2066,41 @@ ul.nice-menu > li a.active-trail {
   background-color: #888820;
   color: white;
 }
-/* line 195, ../sass/_gabersdorf.scss */
+/* line 196, ../sass/_gabersdorf.scss */
 .menu > li ul,
 ul.nice-menu > li ul {
   padding-top: 2em;
   border: none;
 }
-/* line 198, ../sass/_gabersdorf.scss */
+/* line 199, ../sass/_gabersdorf.scss */
 .menu > li ul li,
 ul.nice-menu > li ul li {
   width: 20em;
 }
 
-/* line 205, ../sass/_gabersdorf.scss */
+/* line 206, ../sass/_gabersdorf.scss */
 .region-footer {
-  background: transparent url('../images/footer_bg.jpg?1374733489') 15px 11px no-repeat;
+  background: transparent url('../images/footer_bg.jpg?1374733957') 15px 9px no-repeat;
 }
-/* line 207, ../sass/_gabersdorf.scss */
+/* line 208, ../sass/_gabersdorf.scss */
 .region-footer p {
-  padding-left: 15px;
   color: white;
   text-transform: uppercase;
+  font-size: .9em;
 }
-/* line 211, ../sass/_gabersdorf.scss */
+/* line 213, ../sass/_gabersdorf.scss */
 .region-footer p a {
   color: white;
 }
 
-/* line 221, ../sass/_gabersdorf.scss */
+/* line 223, ../sass/_gabersdorf.scss */
 .page--title {
   background-color: #888820;
   color: white;
   font-size: 1.7em;
-  padding: .2em 0 .2em .7em;
+  padding-top: 3px;
+  padding-right: 0px;
+  padding-bottom: 1px;
 }
 
 /* @import "theme-B"; */
