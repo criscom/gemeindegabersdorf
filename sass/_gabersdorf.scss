@@ -70,7 +70,10 @@ p li a:link, p li a:visited, p li a:hover, p li a:active {
 	color: $color5;
 }
 
-.messages-error {
+.messages,
+.messages-error,
+.messages-warning,
+.messages-status {
 	background-repeat: no-repeat;
 }
 
@@ -107,18 +110,12 @@ p li a:link, p li a:visited, p li a:hover, p li a:active {
 	//display: none;
 }
 
-[role="search"] { // positioning of search form
-	float: right;
-	padding-top: 7.4em;
-	@media only screen and (max-width: 721px)
-	{
-		padding-top: 4.5em;
-	}
-}
-
 .header--site-name { // hiding the website name and slogan
 	@include hide-text;
 }
+
+// Facebook, Address and Partner Logo block in Header
+// ======================================
 
 .header--region { // Block under header with FB icon, address and partner logos
 	@extend %left-border; // Aligning the FB icon with first main menu item 'Home' and node heading
@@ -138,8 +135,35 @@ p li a:link, p li a:visited, p li a:hover, p li a:active {
 		}
 		.last { // pushing the partner logos to the right
 			float: right;
-	
+			@extend %right-border;
 		}
+}
+
+// Search form in Header block/region
+// ======================================
+[role="search"] { // positioning of search form
+	float: right;
+	padding-top: 7.3em;
+	@extend %right-border;
+	@media only screen and (max-width: 721px)
+	{
+		padding-top: 4.5em;
+	}
+}
+
+.block-search input[type="text"] {
+	// height: 2em;
+	padding: 5px 5px !important;
+	border: 1px solid $color8;
+	@include box-shadow(0px 0px 10px $color1 inset);
+	color: lighten($font, 30%);
+}
+
+.form-actions {
+	
+	input[type="image"] {
+		vertical-align: middle;
+	}
 }
 
 // ======================================

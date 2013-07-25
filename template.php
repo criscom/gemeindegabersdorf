@@ -7,6 +7,34 @@
  * @see http://drupal.org/node/1728096
  */
 
+/* Customize Search Block Drupal 7 */
+/* http://dropbucket.org/node/188 */
+/* added: 25.07.2013 */
+// "Suche" is displayed in the input form
+// "Suche" is blurred when cursor is positioned in input form
+// Popup message is shown when no search term was inserted and search was fired
+
+function gemeinde_gabersdorf_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'search_block_form') {
+    $form['search_block_form']['#title'] = t('Search'); // Change the text on the label element
+    $form['search_block_form']['#title_display'] = 'invisible'; // Toggle label visibilty
+    $form['search_block_form']['#size'] = 20;  // define size of the textfield
+    $form['search_block_form']['#default_value'] = t('Search'); // Set a default value for the textfield
+    $form['actions']['submit']['#value'] = t('GO!'); // Change the text on the submit button
+    $form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . path_to_theme() . '/images/search-button.png');
+ 
+    // Add extra attributes to the text box
+    $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Suche';}";
+    $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Suche') {this.value = '';}";
+    // Prevent user from searching the default text
+    $form['#attributes']['onsubmit'] = "if(this.search_block_form.value=='Suche'){ alert('Bitte geben Sie einen Suchbegriff ein.'); return false; }";
+ 
+    // Alternative (HTML5) placeholder attribute instead of using the javascript
+    $form['search_block_form']['#attributes']['placeholder'] = t('Search');
+  }
+} 
+
+
 
 /**
  * Override or insert variables into the maintenance page template.
