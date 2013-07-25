@@ -42,17 +42,13 @@ body {
 	text-shadow: none;
 }
 
-p a:link, p a:visited, p a:hover, p a:active,
-li a:link, li a:visited, li a:hover, li a:active {
-	color: $color5;
-}
-
 #page {
 	background-color: white;
 }
 
 #main {
-	padding-top: 5em;
+	padding-top: 3.95em; // Positions the content area under the main menu
+						// Node header should be positioned 1px below the main menu
 }
 
 #header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer {
@@ -60,8 +56,18 @@ li a:link, li a:visited, li a:hover, li a:active {
 	padding-left: 15px;
 }
 
+#content p {
+	@extend %single-transition;
+}
+
 input, select, img, iframe {
 	max-width: 100%;
+}
+
+// Links in paragraphs and lists
+p a:link, p a:visited, p a:hover, p a:active,
+li a:link, li a:visited, li a:hover, li a:active {
+	color: $color5;
 }
 
 // ======================================
@@ -97,7 +103,7 @@ input, select, img, iframe {
 	//display: none;
 }
 
-[role="search"] {
+[role="search"] { // positioning of search form
 	float: right;
 	padding-top: 7.4em;
 	@media only screen and (max-width: 721px)
@@ -106,29 +112,30 @@ input, select, img, iframe {
 	}
 }
 
-.header--site-name {
+.header--site-name { // hiding the website name and slogan
 	@include hide-text;
 }
 
-.header--region {
-	.block {
-		display: inline-block;
-		display: -moz-inline-stack; // For Mozilla Firefox 2
-		vertical-align: top;
-		line-height: 1.5em;
-		zoom:1; // For IE7 and below
-		*display: inline; // For IE7 and below
-		p {// removing margin on top of the adress text in order to move it further twd the header
-			margin-top: 0;
+.header--region { // Block under header with FB icon, address and partner logos
+	padding-left: 1em; // Aligning the FB icon with first main menu item 'Home' and node heading
+		.block {
+			display: inline-block;
+			display: -moz-inline-stack; // For Mozilla Firefox 2
+			vertical-align: top;
+			line-height: 1.5em;
+			zoom:1; // For IE7 and below
+			*display: inline; // For IE7 and below
+			p {// removing margin on top of the adress text in order to move it further twd the header
+				margin-top: 0;
+			}
 		}
-	}
-	.first {
-		margin-right: 2.5em;
-	}
-	.last {
-		float: right;
-
-	}
+		.first { // Aligning the address block
+			margin-right: 2.6em;
+		}
+		.last { // pushing the partner logos to the right
+			float: right;
+	
+		}
 }
 
 // ======================================
@@ -146,23 +153,17 @@ input, select, img, iframe {
 
 // Soft green background for the main menu
 .region-navigation {
+	border-top: 1px solid $color8;
 	border-bottom: 1px solid $color8;
 	background-color: $color2;
 	height: 3.9em;
-	border-top: 1px solid $color8;
-	//padding: 2px 0 0 10px;
+	padding-left: .5em; // Aligning the first menu item 'Home' with node headings and FB icon
 	//width: 100%;
 	
 }
 
-// styling the links in the main menu
-.menu a,
-.menu a.active,
-.menu a.active-trail
-{
-	// @include transition-property(height)//	// @include transition-duration(.2s);
-	// @include transition-timing-function(/se-out)
-}
+// Nice menu stylings
+// ======================================
 
 .menu,
 ul.nice-menu {
@@ -197,3 +198,13 @@ ul.nice-menu {
 	}
 }
 
+// ======================================
+// Basic page
+// ======================================
+
+.page--title {
+	background-color: $color1;
+	color: white;
+	font-size: 1.7em; // 20px
+	padding: .2em 0 .2em .7em;
+}
