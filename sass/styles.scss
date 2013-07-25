@@ -9,6 +9,9 @@
 /* Import Sass mixins, variables, Compass modules, etc. */
 @import "init";
 
+/* Import Fonts */
+@import "fonts";
+
 /* HTML element (SMACSS base) rules */
 @import "normalize";
 
@@ -17,6 +20,7 @@
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
+
 // Optionally, add your own components here.
 @import "print";
 

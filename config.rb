@@ -22,7 +22,7 @@ sass_dir        = "sass"
 extensions_dir  = "sass-extensions"
 images_dir      = "images"
 javascripts_dir = "js"
-fonts_dir       = "fonts"
+fonts_dir       = "css/fonts"
 svg_dir         = "images/svg"
 
 

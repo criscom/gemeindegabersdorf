@@ -47,7 +47,7 @@ body {
 }
 
 #main {
-	padding-top: 3.95em; // Positions the content area under the main menu
+	padding-top: 4em; // Positions the content area under the main menu
 						// Node header should be positioned 1px below the main menu
 }
 
@@ -66,8 +66,12 @@ input, select, img, iframe {
 
 // Links in paragraphs and lists
 p a:link, p a:visited, p a:hover, p a:active,
-li a:link, li a:visited, li a:hover, li a:active {
+p li a:link, p li a:visited, p li a:hover, p li a:active {
 	color: $color5;
+}
+
+.messages-error {
+	background-repeat: no-repeat;
 }
 
 // ======================================
@@ -157,7 +161,7 @@ li a:link, li a:visited, li a:hover, li a:active {
 	border-bottom: 1px solid $color8;
 	background-color: $color2;
 	height: 3.9em;
-	padding-left: .5em; // Aligning the first menu item 'Home' with node headings and FB icon
+	// padding-left: .5em; // Aligning the first menu item 'Home' with node headings and FB icon
 	//width: 100%;
 	
 }
@@ -194,6 +198,18 @@ ul.nice-menu {
 			li { // menu item of 2nd menu level
 				width: 20em;
 			}
+		}
+	}
+}
+
+.region-footer {
+	background: transparent image-url('footer_bg.jpg') 15px 11px no-repeat;
+	p {
+		padding-left: 15px;
+		color: white;
+		text-transform: uppercase;
+		a {
+			color: white;
 		}
 	}
 }
