@@ -42,6 +42,11 @@ body {
 	text-shadow: none;
 }
 
+p a:link, p a:visited, p a:hover, p a:active,
+li a:link, li a:visited, li a:hover, li a:active {
+	color: $color5;
+}
+
 #page {
 	background-color: white;
 }
@@ -63,8 +68,10 @@ input, select, img, iframe {
 // Header section with Gemeinde Logo and Sublogos
 // ======================================
 
-.header
+//.header
+[role="banner"]
  {
+	//overflow: hidden;
 	height: 205px; // A scaleable vector graphic for the header section
 	background: transparent image-url('header/header-ohne_bg.jpg') 15px 0px no-repeat;
 	// 24.07.2013
@@ -141,10 +148,10 @@ input, select, img, iframe {
 .region-navigation {
 	border-bottom: 1px solid $color8;
 	background-color: $color2;
-	//width: 100%;
 	height: 3.9em;
-	//padding: 2px 0 0 10px;
 	border-top: 1px solid $color8;
+	//padding: 2px 0 0 10px;
+	//width: 100%;
 	
 }
 
@@ -181,8 +188,8 @@ ul.nice-menu {
 			}
 		// Styling of 2nd menu level
 		ul {
-			border:none; // 2nd menu level
 			padding-top: 2em;
+			border:none; // 2nd menu level
 			li { // menu item of 2nd menu level
 				width: 20em;
 			}

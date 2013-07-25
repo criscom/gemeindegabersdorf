@@ -1862,51 +1862,57 @@ body html {
   text-shadow: none;
 }
 
-/* line 45, ../sass/_gabersdorf.scss */
+/* line 46, ../sass/_gabersdorf.scss */
+p a:link, p a:visited, p a:hover, p a:active,
+li a:link, li a:visited, li a:hover, li a:active {
+  color: #c4c487;
+}
+
+/* line 50, ../sass/_gabersdorf.scss */
 #page {
   background-color: white;
 }
 
-/* line 49, ../sass/_gabersdorf.scss */
+/* line 54, ../sass/_gabersdorf.scss */
 #main {
   padding-top: 5em;
 }
 
-/* line 53, ../sass/_gabersdorf.scss */
+/* line 58, ../sass/_gabersdorf.scss */
 #header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer {
   padding-right: 15px;
   padding-left: 15px;
 }
 
-/* line 58, ../sass/_gabersdorf.scss */
+/* line 63, ../sass/_gabersdorf.scss */
 input, select, img, iframe {
   max-width: 100%;
 }
 
-/* line 67, ../sass/_gabersdorf.scss */
-.header {
+/* line 73, ../sass/_gabersdorf.scss */
+[role="banner"] {
   height: 205px;
   background: transparent url('../images/header/header-ohne_bg.jpg?1374655969') 15px 0px no-repeat;
 }
 
-/* line 88, ../sass/_gabersdorf.scss */
+/* line 95, ../sass/_gabersdorf.scss */
 .header--logo {
   margin: 1em 0 0 2em;
 }
 
-/* line 93, ../sass/_gabersdorf.scss */
+/* line 100, ../sass/_gabersdorf.scss */
 [role="search"] {
   float: right;
   padding-top: 7.4em;
 }
 @media only screen and (max-width: 721px) {
-  /* line 93, ../sass/_gabersdorf.scss */
+  /* line 100, ../sass/_gabersdorf.scss */
   [role="search"] {
     padding-top: 4.5em;
   }
 }
 
-/* line 102, ../sass/_gabersdorf.scss */
+/* line 109, ../sass/_gabersdorf.scss */
 .header--site-name {
   border: 0;
   font: 0/0 a;
@@ -1915,7 +1921,7 @@ input, select, img, iframe {
   background-color: transparent;
 }
 
-/* line 107, ../sass/_gabersdorf.scss */
+/* line 114, ../sass/_gabersdorf.scss */
 .header--region .block {
   display: inline-block;
   display: -moz-inline-stack;
@@ -1924,25 +1930,25 @@ input, select, img, iframe {
   zoom: 1;
   *display: inline;
 }
-/* line 114, ../sass/_gabersdorf.scss */
+/* line 121, ../sass/_gabersdorf.scss */
 .header--region .block p {
   margin-top: 0;
 }
-/* line 118, ../sass/_gabersdorf.scss */
+/* line 125, ../sass/_gabersdorf.scss */
 .header--region .first {
   margin-right: 2.5em;
 }
-/* line 121, ../sass/_gabersdorf.scss */
+/* line 128, ../sass/_gabersdorf.scss */
 .header--region .last {
   float: right;
 }
 
-/* line 135, ../sass/_gabersdorf.scss */
+/* line 142, ../sass/_gabersdorf.scss */
 .lt-ie8 .sidebar-second #navigation {
   margin-left: -40px;
 }
 
-/* line 141, ../sass/_gabersdorf.scss */
+/* line 148, ../sass/_gabersdorf.scss */
 .region-navigation {
   border-bottom: 1px solid #a2a4a5;
   background-color: #e7e7d2;
@@ -1950,38 +1956,38 @@ input, select, img, iframe {
   border-top: 1px solid #a2a4a5;
 }
 
-/* line 161, ../sass/_gabersdorf.scss */
+/* line 168, ../sass/_gabersdorf.scss */
 .menu,
 ul.nice-menu {
   background: none;
 }
-/* line 163, ../sass/_gabersdorf.scss */
+/* line 170, ../sass/_gabersdorf.scss */
 .menu > li,
 ul.nice-menu > li {
   border: none;
   background: none !important;
 }
-/* line 171, ../sass/_gabersdorf.scss */
+/* line 178, ../sass/_gabersdorf.scss */
 .menu > li a:hover, .menu > li a:focus,
 ul.nice-menu > li a:hover,
 ul.nice-menu > li a:focus {
   background-color: #949423;
   color: white;
 }
-/* line 177, ../sass/_gabersdorf.scss */
+/* line 184, ../sass/_gabersdorf.scss */
 .menu > li a.active, .menu > li a.active-trail,
 ul.nice-menu > li a.active,
 ul.nice-menu > li a.active-trail {
   background-color: #888820;
   color: white;
 }
-/* line 183, ../sass/_gabersdorf.scss */
+/* line 190, ../sass/_gabersdorf.scss */
 .menu > li ul,
 ul.nice-menu > li ul {
-  border: none;
   padding-top: 2em;
+  border: none;
 }
-/* line 186, ../sass/_gabersdorf.scss */
+/* line 193, ../sass/_gabersdorf.scss */
 .menu > li ul li,
 ul.nice-menu > li ul li {
   width: 20em;
