@@ -1,0 +1,39 @@
+<?php
+
+// Unterhalb bitte die korrekte Werte einsetzen:
+
+$pageid = "10007.54609";
+
+
+// Page-ID verifizieren
+
+if (preg_match("/^[0-9]*.[0-9]*$/", $pageid) != 1) {
+
+    $pageid = "uebersicht";
+
+}
+
+
+
+
+    if (isset($_GET['contentid'])) {
+
+        $interfaceURL = "http://www.help.gv.at/applications/cs/interface/page.php?contentid=".$_GET['contentid']."&type=php";
+
+    } else {
+
+        $interfaceURL = "http://www.help.gv.at/applications/cs/interface/page.php?pageid=".$pageid."&format=php";
+
+    }
+
+
+
+// Methode mittels file_get_contents
+
+$opts = array( 'http' => array( 'method' => "GET", 'header' => "Content-Type: text/html; charset=utf-8" ) );
+
+$context = stream_context_create($opts);
+if (isset($pageid)) {
+echo file_get_contents($interfaceURL, false, $context);
+}
+?>

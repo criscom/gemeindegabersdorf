@@ -64,10 +64,19 @@ input, select, img, iframe {
 	max-width: 100%;
 }
 
+a:link {
+	@extend %single-transition;
+}
+
 // Links in paragraphs and lists
-p a:link, p a:visited, p a:hover, p a:active,
-p li a:link, p li a:visited, p li a:hover, p li a:active {
-	color: $color5;
+// p a:link, p a:visited, p a:hover, p a:active,
+// p li a:link, p li a:visited, p li a:hover, p li a:active,
+.column a:link, .column a:visited, .column a:active {
+	color: $color1;
+	&:hover {
+		color: $color5;
+		text-decoration: none;
+	}
 }
 
 .messages,
@@ -148,6 +157,8 @@ p li a:link, p li a:visited, p li a:hover, p li a:active {
 	@media only screen and (max-width: 721px)
 	{
 		padding-top: 4.5em;
+		float: left;
+		// @extend %left-border;
 	}
 }
 
@@ -243,8 +254,8 @@ ul.nice-menu {
 // ======================================
 // Basic page
 // ======================================
-
-.page--title {
+.field-name-body h1, // help.gv content type headers
+.page--title { // node headers h1 and h2
 	background-color: $color1;
 	color: white;
 	font-size: 1.7em; // 20px
@@ -253,4 +264,21 @@ ul.nice-menu {
 	padding-bottom: 1px;
 	// padding left is set in the line below: 227
 	@extend %left-border; // Aligning the first footer item with node header, first menu item and FB icon
+}
+
+.column li {
+	list-style-type: bullet;
+	color: $color1;
+}
+
+.egovernment.left {
+	float: left;
+	width: 49%;
+	padding-right: 2%;
+}
+
+.egovernment.right {
+	margin-top: 5px;
+	width: 49%;
+	float: right;
 }
