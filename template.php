@@ -34,6 +34,11 @@ function gemeinde_gabersdorf_form_alter(&$form, &$form_state, $form_id) {
   }
 } 
 
+// remove "ganztägig" from Termine 02.08.2013
+
+function gemeinde_gabersdorf_date_all_day_label() {
+  return t('');
+}
 
 
 /**
