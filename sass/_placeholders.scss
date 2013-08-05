@@ -38,3 +38,10 @@
 %right-border { // Takes care of the right border for search and partner logos
   padding-right: 11px;
 }
+
+%view-grouping { // For responsive grid layouts in Views with 3 columns!
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2%;
+  width: 31.3333%; 
+}

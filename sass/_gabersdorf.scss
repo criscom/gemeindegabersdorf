@@ -290,7 +290,7 @@ ul.nice-menu {
 	margin-bottom: 10px;
 }
 
-// ======================================
+
 // Termine views
 // ======================================
 
@@ -302,17 +302,40 @@ ul.nice-menu {
 
 body.termine .view-grouping
 {
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 2%;
-	width: 31.3333%; 
+	@extend %view-grouping;
 }
 
-// ======================================
+
 // Aktuelles views /inhalt/aktuelles
 // ======================================
 
 body.aktuelles .block-views {
 	width: 50%;
 	float: left;
+}
+
+
+// Bürgerservice views
+// ======================================
+
+.views-responsive-grid .views-row {
+	@extend %view-grouping;
+	margin-right: 1.9% !important;
+}
+
+// Lokale Agenda 21 // Content Type Bildergalerie
+// ======================================
+
+// Bildergalerie
+
+.field-name-field-agenda-bild-laden div div, // Lokale Agenda 21 Bildergalerie
+.field-name-field-bildergalerie-bilder-laden div div
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.field-name-field-agenda-bild-laden div .field-item,
+.field-name-field-bildergalerie-bilder-laden div .field-item {
+	padding-right: 8px;
 }
