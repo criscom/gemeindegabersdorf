@@ -2205,34 +2205,41 @@ body.page-inhalt-fotos-veranstaltungen .field-name-title h2 {
 
 /* line 363, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen .views-row {
+  position: relative;
   margin-bottom: 20px;
-  -webkit-box-shadow: #a2a4a5 0px 12px 12px -12px;
-  -moz-box-shadow: #a2a4a5 0px 12px 12px -12px;
-  box-shadow: #a2a4a5 0px 12px 12px -12px;
+  border: 1px solid #c3c38f;
+  -webkit-box-shadow: 0px 12px 12px -12px #a2a4a5;
+  -moz-box-shadow: 0px 12px 12px -12px #a2a4a5;
+  box-shadow: 0px 12px 12px -12px #a2a4a5;
   behavior: url("/sites/all/themes/shiatsugraz/PIE/PIE.php");
 }
-/* line 368, ../sass/_gabersdorf.scss */
+/* line 372, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen .views-row:before, body.page-inhalt-fotos-veranstaltungen .views-row:after {
   content: '';
   position: absolute;
-  z-index: 99;
-  left: 5px;
-  bottom: 5px;
-  width: 10%;
+  z-index: 10;
+  left: 0px;
+  bottom: 0px;
+  width: 15%;
   max-width: 350px;
-  max-height: 100px;
+  max-height: 300px;
   height: 55%;
-  -webkit-box-shadow: #c3c38f 0px 8px 8px -8px;
-  -moz-box-shadow: #c3c38f 0px 8px 8px -8px;
-  box-shadow: #c3c38f 0px 8px 8px -8px;
+  -webkit-box-shadow: #a2a4a5 0px 12px 12px -12px;
+  -moz-box-shadow: #a2a4a5 0px 12px 12px -12px;
+  box-shadow: #a2a4a5 0px 12px 12px -12px;
+}
+/* line 384, ../sass/_gabersdorf.scss */
+body.page-inhalt-fotos-veranstaltungen .views-row:after {
+  right: 0px;
+  left: auto;
 }
 
-/* line 383, ../sass/_gabersdorf.scss */
+/* line 391, ../sass/_gabersdorf.scss */
 .field-name-field-bildergalerie-bilder-laden div div {
   margin-top: 10px;
 }
 
-/* line 389, ../sass/_gabersdorf.scss */
+/* line 397, ../sass/_gabersdorf.scss */
 .view-bildergalerie-landing-page .group-right {
   width: 49%;
   margin-left: 1%;

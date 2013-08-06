@@ -361,21 +361,29 @@ body.page-inhalt-fotos-veranstaltungen .field-name-title h2
 
 body.page-inhalt-fotos-veranstaltungen .views-row // box shadow
 {
+	position: relative;
 	margin-bottom: 20px;
-	@include box-shadow($color8 0px 12px 12px -12px);
+	border: 1px solid $color3;
+	@include box-shadow(0px 12px 12px -12px $color8);
+	// @include box-shadow(0px 12px 12px -12px (lighten($color8, 20%)));
+	//@include transform(rotate(3deg));
 	behavior: url('/sites/all/themes/shiatsugraz/PIE/PIE.php'); // polyfill
 	//border: $color3 solid 1px;
 	&:before, &:after {
 		content: '';
 		position: absolute;
-		z-index: 99;
-		left: 5px;
-		bottom: 5px;
-		width: 10%;
+		z-index: 10;
+		left: 0px;
+		bottom: 0px;
+		width: 15%;
 		max-width: 350px;
-		max-height: 100px;
+		max-height: 300px;
 		height: 55%;
-		@include box-shadow ($color3 0px 8px 8px -8px);
+		@include box-shadow ($color8 0px 12px 12px -12px);
+	}
+	&:after {
+		right: 0px;
+		left: auto;
 	}
 }
 
