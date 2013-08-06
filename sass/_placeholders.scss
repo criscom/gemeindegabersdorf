@@ -30,6 +30,11 @@
   background:none;
 }
 
+%menu-border { // border for menus
+  border-top: 1px solid $color8;
+  border-bottom: 1px solid $color8;
+}
+
 %left-border { // Aligns FB Icon, first menu item, and first footer item; if you change this also change
   // padding-left: 11px; in %menu
   padding-left: 11px;

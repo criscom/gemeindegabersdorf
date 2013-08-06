@@ -195,8 +195,7 @@ a:link {
 
 // Soft green background for the main menu
 .region-navigation {
-	border-top: 1px solid $color8;
-	border-bottom: 1px solid $color8;
+	@extend %menu-border;
 	background-color: $color2;
 	height: 3.9em;
 	// padding-left: .5em; // Aligning the first menu item 'Home' with node headings and FB icon
@@ -245,6 +244,50 @@ ul.nice-menu {
 		}
 	}
 }
+
+// ======================================
+// Submenu Sidebar
+// ======================================
+
+.region-sidebar-second {
+	padding-left: 0;
+	.block-menu-block {
+		background-color: $color2;
+		h2 {
+			padding-left: 8px;
+			background-color: $color3;
+			color: $color6;
+		}
+	}
+}
+
+.region-sidebar-second .block-menu-block ul {
+	padding-left: 0px;
+	margin-top: 0px;
+	li
+	{
+		list-style: none;
+		list-style-type: none;
+		list-style-image: none;
+		border-bottom: 1px solid $color8;
+		a {
+			color: $color6;
+			&:hover
+			{color: white !important;}
+		}
+	}
+}
+
+.region-sidebar-second .block-menu-block ul li a.active
+{
+	color: white;
+}
+
+
+
+// ======================================
+// FOOTER
+// ======================================
 
 .region-footer {
 	background: transparent image-url('footer_bg.jpg') 15px 9px no-repeat;
@@ -296,6 +339,12 @@ ul.nice-menu {
 
 .image-caption { // Image Caption, Bilduntertitel
 	margin-bottom: 10px;
+}
+
+p>a>img 
+{
+	@extend %box-shadow-teaser;
+	border: none;
 }
 
 
