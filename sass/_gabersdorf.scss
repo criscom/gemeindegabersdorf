@@ -373,7 +373,7 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row // box shadow
 	margin-bottom: 30px;
 	border: 1px solid $color3;
 	background: #FFF;
-	@include box-shadow(40px 1px 4px rgba(0, 0, 0, 0.27));
+	@include box-shadow(0px 1px 10px rgba(0, 0, 0, 0.27));
 	// @include box-shadow(40px 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.04) inset);
 	//@include box-shadow(0px 12px 12px -12px $color8);
 	// @include box-shadow(0px 12px 12px -12px (lighten($color8, 20%)));
@@ -390,7 +390,7 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row // box shadow
 		max-width: 300px;
 		max-height: 100px;
 		height: 55%;
-		@include box-shadow (0px 8px 16px rgba(0, 0, 0, 0.35));
+		@include box-shadow (0px 14px 16px rgba(0, 0, 0, 0.35));
 		@include transform(skew(-15deg) rotate(-6deg));
 	}
 	&:after {

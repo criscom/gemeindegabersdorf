@@ -2216,9 +2216,9 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row {
   margin-bottom: 30px;
   border: 1px solid #c3c38f;
   background: #FFF;
-  -webkit-box-shadow: 40px 1px 4px rgba(0, 0, 0, 0.27);
-  -moz-box-shadow: 40px 1px 4px rgba(0, 0, 0, 0.27);
-  box-shadow: 40px 1px 4px rgba(0, 0, 0, 0.27);
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.27);
   behavior: url("/sites/all/themes/shiatsugraz/PIE/PIE.php");
 }
 /* line 383, ../sass/_gabersdorf.scss */
@@ -2232,9 +2232,9 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row:before, body.pag
   max-width: 300px;
   max-height: 100px;
   height: 55%;
-  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 14px 16px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 14px 16px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 14px 16px rgba(0, 0, 0, 0.35);
   -webkit-transform: skew(-15deg) rotate(-6deg);
   -moz-transform: skew(-15deg) rotate(-6deg);
   -ms-transform: skew(-15deg) rotate(-6deg);
