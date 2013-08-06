@@ -359,12 +359,21 @@ body.page-inhalt-fotos-veranstaltungen .field-name-title h2
 	margin-top: 0px;
 }
 
-body.page-inhalt-fotos-veranstaltungen .views-row // box shadow
+body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content
 {
 	position: relative;
-	margin-bottom: 20px;
+	z-index: 99;
+	overflow: hidden;
+}
+
+body.page-inhalt-fotos-veranstaltungen .view-content .views-row // box shadow
+{
+	position: relative;
+	margin-bottom: 30px;
 	border: 1px solid $color3;
-	@include box-shadow(0px 12px 12px -12px $color8);
+	background: #FFF;
+	@include box-shadow(40px 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.04) inset);
+	//@include box-shadow(0px 12px 12px -12px $color8);
 	// @include box-shadow(0px 12px 12px -12px (lighten($color8, 20%)));
 	//@include transform(rotate(3deg));
 	behavior: url('/sites/all/themes/shiatsugraz/PIE/PIE.php'); // polyfill
@@ -372,18 +381,20 @@ body.page-inhalt-fotos-veranstaltungen .views-row // box shadow
 	&:before, &:after {
 		content: '';
 		position: absolute;
-		z-index: 10;
-		left: 0px;
-		bottom: 0px;
-		width: 15%;
-		max-width: 350px;
-		max-height: 300px;
+		z-index: -1;
+		left: 40px;
+		bottom: 10px;
+		width: 80%;
+		max-width: 300px;
+		max-height: 100px;
 		height: 55%;
-		@include box-shadow ($color8 0px 12px 12px -12px);
+		@include box-shadow (0px 8px 16px rgba(0, 0, 0, 0.3));
+		@include transform(skew(-15deg) rotate(-6deg));
 	}
 	&:after {
-		right: 0px;
+		right: 10px;
 		left: auto;
+		@include transform(skew(15deg) rotate(6deg));
 	}
 }
 

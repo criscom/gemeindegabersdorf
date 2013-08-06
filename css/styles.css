@@ -2204,42 +2204,60 @@ body.page-inhalt-fotos-veranstaltungen .field-name-title h2 {
 }
 
 /* line 363, ../sass/_gabersdorf.scss */
-body.page-inhalt-fotos-veranstaltungen .views-row {
+body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content {
   position: relative;
-  margin-bottom: 20px;
-  border: 1px solid #c3c38f;
-  -webkit-box-shadow: 0px 12px 12px -12px #a2a4a5;
-  -moz-box-shadow: 0px 12px 12px -12px #a2a4a5;
-  box-shadow: 0px 12px 12px -12px #a2a4a5;
-  behavior: url("/sites/all/themes/shiatsugraz/PIE/PIE.php");
-}
-/* line 372, ../sass/_gabersdorf.scss */
-body.page-inhalt-fotos-veranstaltungen .views-row:before, body.page-inhalt-fotos-veranstaltungen .views-row:after {
-  content: '';
-  position: absolute;
-  z-index: 10;
-  left: 0px;
-  bottom: 0px;
-  width: 15%;
-  max-width: 350px;
-  max-height: 300px;
-  height: 55%;
-  -webkit-box-shadow: #a2a4a5 0px 12px 12px -12px;
-  -moz-box-shadow: #a2a4a5 0px 12px 12px -12px;
-  box-shadow: #a2a4a5 0px 12px 12px -12px;
-}
-/* line 384, ../sass/_gabersdorf.scss */
-body.page-inhalt-fotos-veranstaltungen .views-row:after {
-  right: 0px;
-  left: auto;
+  z-index: 99;
+  overflow: hidden;
 }
 
-/* line 391, ../sass/_gabersdorf.scss */
+/* line 370, ../sass/_gabersdorf.scss */
+body.page-inhalt-fotos-veranstaltungen .view-content .views-row {
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid #c3c38f;
+  background: #FFF;
+  -webkit-box-shadow: 40px 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.04) inset;
+  -moz-box-shadow: 40px 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.04) inset;
+  box-shadow: 40px 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.04) inset;
+  behavior: url("/sites/all/themes/shiatsugraz/PIE/PIE.php");
+}
+/* line 381, ../sass/_gabersdorf.scss */
+body.page-inhalt-fotos-veranstaltungen .view-content .views-row:before, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 40px;
+  bottom: 10px;
+  width: 80%;
+  max-width: 300px;
+  max-height: 100px;
+  height: 55%;
+  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(-15deg) rotate(-6deg);
+  -moz-transform: skew(-15deg) rotate(-6deg);
+  -ms-transform: skew(-15deg) rotate(-6deg);
+  -o-transform: skew(-15deg) rotate(-6deg);
+  transform: skew(-15deg) rotate(-6deg);
+}
+/* line 394, ../sass/_gabersdorf.scss */
+body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(15deg) rotate(6deg);
+  -moz-transform: skew(15deg) rotate(6deg);
+  -ms-transform: skew(15deg) rotate(6deg);
+  -o-transform: skew(15deg) rotate(6deg);
+  transform: skew(15deg) rotate(6deg);
+}
+
+/* line 402, ../sass/_gabersdorf.scss */
 .field-name-field-bildergalerie-bilder-laden div div {
   margin-top: 10px;
 }
 
-/* line 397, ../sass/_gabersdorf.scss */
+/* line 408, ../sass/_gabersdorf.scss */
 .view-bildergalerie-landing-page .group-right {
   width: 49%;
   margin-left: 1%;
