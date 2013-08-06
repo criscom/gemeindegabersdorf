@@ -2139,89 +2139,94 @@ ul.nice-menu > li ul li {
   background-color: #888820;
   color: white;
   font-size: 1.7em;
+  line-height: 2em;
   padding-top: 3px;
   padding-right: 0px;
   padding-bottom: 1px;
 }
 
-/* line 273, ../sass/_gabersdorf.scss */
+/* line 274, ../sass/_gabersdorf.scss */
 .column li {
   list-style-type: bullet;
   color: #888820;
 }
 
-/* line 278, ../sass/_gabersdorf.scss */
+/* line 279, ../sass/_gabersdorf.scss */
 .egovernment.left {
   float: left;
   width: 49%;
   padding-right: 2%;
 }
 
-/* line 284, ../sass/_gabersdorf.scss */
+/* line 285, ../sass/_gabersdorf.scss */
 .egovernment.right {
   margin-top: 5px;
   width: 49%;
   float: right;
 }
 
-/* line 291, ../sass/_gabersdorf.scss */
+/* line 292, ../sass/_gabersdorf.scss */
 .image-caption {
   margin-bottom: 10px;
 }
 
-/* line 315, ../sass/_gabersdorf.scss */
+/* line 316, ../sass/_gabersdorf.scss */
 body.aktuelles .block-views {
   width: 50%;
   float: left;
 }
 
-/* line 325, ../sass/_gabersdorf.scss */
+/* line 326, ../sass/_gabersdorf.scss */
 .views-responsive-grid .views-row {
   margin-right: 1.9% !important;
 }
 
-/* line 337, ../sass/_gabersdorf.scss */
+/* line 338, ../sass/_gabersdorf.scss */
 .field-name-field-agenda-bild-laden div div,
 .field-name-field-bildergalerie-bilder-laden div div {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 343, ../sass/_gabersdorf.scss */
+/* line 344, ../sass/_gabersdorf.scss */
 .field-name-field-agenda-bild-laden div .field-item,
 .field-name-field-bildergalerie-bilder-laden div .field-item {
   padding-right: 8px;
 }
 
-/* line 353, ../sass/_gabersdorf.scss */
+/* line 354, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen h1.title {
   margin-bottom: 20px;
 }
 
-/* line 358, ../sass/_gabersdorf.scss */
+/* line 359, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen .field-name-title h2 {
   margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #c3c38f;
+  color: #463830;
+  font-size: 1.5em;
 }
 
-/* line 364, ../sass/_gabersdorf.scss */
+/* line 370, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content {
   position: relative;
   z-index: 99;
   overflow: hidden;
 }
 
-/* line 371, ../sass/_gabersdorf.scss */
+/* line 377, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen .view-content .views-row {
   position: relative;
   margin-bottom: 40px;
   border: 1px solid #c3c38f;
   background: #FFF;
-  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.27);
-  -moz-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.27);
-  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.27);
+  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.27), 0 0 40px rgba(136, 136, 32, 0.1) inset;
+  -moz-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.27), 0 0 40px rgba(136, 136, 32, 0.1) inset;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.27), 0 0 40px rgba(136, 136, 32, 0.1) inset;
   behavior: url("/sites/all/themes/shiatsugraz/PIE/PIE.php");
 }
-/* line 383, ../sass/_gabersdorf.scss */
+/* line 389, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen .view-content .views-row:before, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {
   content: '';
   position: absolute;
@@ -2241,7 +2246,7 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row:before, body.pag
   -o-transform: skew(-15deg) rotate(-6deg);
   transform: skew(-15deg) rotate(-6deg);
 }
-/* line 396, ../sass/_gabersdorf.scss */
+/* line 402, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {
   right: 40px;
   left: auto;
@@ -2252,12 +2257,12 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {
   transform: skew(15deg) rotate(6deg);
 }
 
-/* line 404, ../sass/_gabersdorf.scss */
+/* line 410, ../sass/_gabersdorf.scss */
 .field-name-field-bildergalerie-bilder-laden div div {
   margin-top: 10px;
 }
 
-/* line 410, ../sass/_gabersdorf.scss */
+/* line 416, ../sass/_gabersdorf.scss */
 .view-bildergalerie-landing-page .group-right {
   width: 49%;
   margin-left: 1%;

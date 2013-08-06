@@ -263,6 +263,7 @@ ul.nice-menu {
 	background-color: $color1;
 	color: white;
 	font-size: 1.7em; // 20px
+	line-height: 2em; // added 06.08.2013
 	padding-top: 3px;
 	padding-right: 0px;
 	padding-bottom: 1px;
@@ -354,9 +355,14 @@ body.page-inhalt-fotos-veranstaltungen h1.title
 	margin-bottom: 20px;
 }
 
-body.page-inhalt-fotos-veranstaltungen .field-name-title h2
+body.page-inhalt-fotos-veranstaltungen .field-name-title h2 // Name of the photo gallery ==> Name der Veranstaltung
 {
 	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: $color3;
+	color: $color6;
+	font-size: 1.5em;
+	//text-shadow: 0 1px 0 #CFCFCF;
 }
 
 body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content
@@ -373,7 +379,7 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row // box shadow
 	margin-bottom: 40px;
 	border: 1px solid $color3;
 	background: #FFF;
-	@include box-shadow(0px 10px 10px -10px rgba(0, 0, 0, 0.27));
+	@include box-shadow(0px 10px 10px -10px rgba(0, 0, 0, 0.27), 0 0 40px rgba($color1, 0.1) inset);
 	// @include box-shadow(40px 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.04) inset);
 	//@include box-shadow(0px 12px 12px -12px $color8);
 	// @include box-shadow(0px 12px 12px -12px (lighten($color8, 20%)));
