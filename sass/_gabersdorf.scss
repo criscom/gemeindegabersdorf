@@ -15,11 +15,13 @@
 // Body and general styles
 // ======================================
 
-* {
+* 
+{
 	@include bs;
 }
 
-body {
+body 
+{
 	@include establish-baseline;
 	@include adjust-font-size-to(12px);
 	background-color: $color0;
@@ -309,7 +311,8 @@ body.termine .view-grouping
 // Aktuelles views /inhalt/aktuelles
 // ======================================
 
-body.aktuelles .block-views {
+body.aktuelles .block-views 
+{
 	width: 50%;
 	float: left;
 }
@@ -318,7 +321,8 @@ body.aktuelles .block-views {
 // Bürgerservice views
 // ======================================
 
-.views-responsive-grid .views-row {
+.views-responsive-grid .views-row 
+{
 	@extend %view-grouping;
 	margin-right: 1.9% !important;
 }
@@ -338,4 +342,51 @@ body.aktuelles .block-views {
 .field-name-field-agenda-bild-laden div .field-item,
 .field-name-field-bildergalerie-bilder-laden div .field-item {
 	padding-right: 8px;
+}
+
+
+// Bildergalerie Landing page
+// ======================================
+//  http://gemeindegabersdorf.local/inhalt/fotos-veranstaltungen
+
+body.page-inhalt-fotos-veranstaltungen h1.title 
+{
+	margin-bottom: 20px;
+}
+
+body.page-inhalt-fotos-veranstaltungen .field-name-title h2
+{
+	margin-top: 0px;
+}
+
+body.page-inhalt-fotos-veranstaltungen .views-row // box shadow
+{
+	margin-bottom: 20px;
+	@include box-shadow($color8 0px 12px 12px -12px);
+	behavior: url('/sites/all/themes/shiatsugraz/PIE/PIE.php'); // polyfill
+	//border: $color3 solid 1px;
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		z-index: 99;
+		left: 5px;
+		bottom: 5px;
+		width: 10%;
+		max-width: 350px;
+		max-height: 100px;
+		height: 55%;
+		@include box-shadow ($color3 0px 8px 8px -8px);
+	}
+}
+
+.field-name-field-bildergalerie-bilder-laden div div // Big teaser image
+{
+	margin-top: 10px;
+	@extend %left-border;
+}
+
+.view-bildergalerie-landing-page .group-right
+{
+	width: 49%;
+	margin-left: 1%;
 }
