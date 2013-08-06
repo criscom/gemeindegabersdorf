@@ -228,7 +228,7 @@ ul.nice-menu {
 				// height: 2em;
 			}
 		}
-		a.active, a.active-trail { 
+		a.active { 
 			@extend %menu;
 			background-color: $color1; // if main menu item is active menu item give it a violet bg color
 			color: white;
@@ -245,13 +245,20 @@ ul.nice-menu {
 	}
 }
 
+ul.nice-menu li.active-trail>a {
+	@extend %menu;
+	background: $color1 !important;
+	color: white;
+}
 // ======================================
 // Submenu Sidebar
 // ======================================
 
 .region-sidebar-second {
 	padding-left: 0;
-	.block-menu-block {
+	.block-menu-block,
+	.block-views // Submenu Termine Archiv
+		{
 		background-color: $color2;
 		h2 {
 			padding-left: 8px;
@@ -262,8 +269,8 @@ ul.nice-menu {
 }
 
 .region-sidebar-second .block-menu-block ul {
-	padding-left: 0px;
-	margin-top: 0px;
+	padding-left: 0;
+	margin-top: 0;
 	li
 	{
 		list-style: none;
@@ -273,7 +280,7 @@ ul.nice-menu {
 		a {
 			color: $color6;
 			&:hover
-			{color: white !important;}
+			{color: white}
 		}
 	}
 }
@@ -283,7 +290,30 @@ ul.nice-menu {
 	color: white;
 }
 
+// Submenu Termine Archiv
+// ======================================
 
+.region-sidebar-second .block-views .view-termine {
+	padding-left: 0;
+	.views-summary
+	{
+		border-bottom: 1px solid $color8;
+		a {
+			@extend %menu;
+			color: $color6;
+			&:hover
+			{
+				background: $color1;
+				color: white;
+			}
+		}
+	}
+}
+.views-summary a.active
+{
+	background: $color1 !important;
+	color: white !important;
+}
 
 // ======================================
 // FOOTER
@@ -303,7 +333,7 @@ ul.nice-menu {
 }
 
 // ======================================
-// Basic page
+// Titles and Headings: H1, H2 etc
 // ======================================
 .field-name-body h1, // help.gv content type headers
 .page--title, // h1 and h2 page titles
@@ -318,6 +348,32 @@ ul.nice-menu {
 	// padding left is set in the line below: 227
 	@extend %left-border; // Aligning the first footer item with node header, first menu item and FB icon
 }
+
+.field-name-title h2.page-title, // Name of the photo gallery ==> Name der Veranstaltung
+.block>h2.block-title // Aktuelles übersichtsseite inhalt/aktuelles
+
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: $color3;
+	color: $color6;
+	font-size: 1.5em;
+	//text-shadow: 0 1px 0 #CFCFCF;
+}
+
+.view-grouping-header, // All views with responsive grid layout: Termine
+h2.view-title
+{
+	color: $color6;
+	font-size: 1.3em;
+}
+
+// ======================================
+// Basic page
+// ======================================
+
 
 .column li {
 	list-style-type: bullet;
@@ -357,26 +413,80 @@ p>a>img
 	@extend %left-border;
 }
 
-body.termine .view-grouping
+.view-display-id-page_1 > .view-content > .view-grouping, // Termine Archiv für ..
+.view-display-id-page_2 > .view-content > .view-grouping // Aktuelle Termine
 {
 	@extend %view-grouping;
+}
+
+.view-grouping .view-grouping-content h3 // day, date. month 
+{
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+.views-responsive-grid
+{
+	padding-bottom: 5px;
+	border-bottom: 1px solid $color3;
+}
+
+span.field-content {
+	font-weight: bold;
 }
 
 
 // Aktuelles views /inhalt/aktuelles
 // ======================================
 
+.column // in order for the box shadow to work
+{ 
+	position: relative;
+	z-index: 99;
+}
+
 body.aktuelles .block-views 
 {
-	width: 50%;
+	width: 49%;
 	float: left;
+	@extend %box-shadow-teaser;
+}
+
+.block>h2.block-title,
+.view-stellenausschreibungen, // /inhalt/aktuelles
+.view-aktuelles-inhaltstyp-aktuelles- // inhalt/aktuelles
+{
+	@extend %left-border;
+}
+
+.view-stellenausschreibungen, // /inhalt/aktuelles
+.view-aktuelles-inhaltstyp-aktuelles- // inhalt/aktuelles
+{
+	margin-bottom: 1.5em;
+}
+
+#block-views-termine-block-2
+{
+	margin-right: 1%;
+}
+
+body.aktuelles .view-termine>.view-content>.view-grouping
+{
+	@extend %view-grouping;
+	width: 48%;
+}
+
+.view-grouping-header
+{
+	margin-top: 1.15em;
+	font-weight: bold;
 }
 
 
 // Bürgerservice views
 // ======================================
 
-.views-responsive-grid .views-row 
+.view-buergerservice .views-row 
 {
 	@extend %view-grouping;
 	margin-right: 1.9% !important;
@@ -407,16 +517,6 @@ body.aktuelles .block-views
 body.page-inhalt-fotos-veranstaltungen h1.title 
 {
 	margin-bottom: 20px;
-}
-
-body.page-inhalt-fotos-veranstaltungen .field-name-title h2 // Name of the photo gallery ==> Name der Veranstaltung
-{
-	margin-top: 0px;
-	margin-bottom: 0px;
-	background-color: $color3;
-	color: $color6;
-	font-size: 1.5em;
-	//text-shadow: 0 1px 0 #CFCFCF;
 }
 
 body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content

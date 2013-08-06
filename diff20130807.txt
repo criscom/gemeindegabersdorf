@@ -1,0 +1,1278 @@
+diff --git a/css/styles.css b/css/styles.css
+index e2c4218..7fcea77 100644
+--- a/css/styles.css
++++ b/css/styles.css
+@@ -33,14 +33,13 @@ ul.nice-menu > li a {
+ 
+ /* line 19, ../sass/_placeholders.scss */
+ .menu > li a,
+-ul.nice-menu > li a, .menu > li a.active, .menu > li a.active-trail,
+-ul.nice-menu > li a.active,
+-ul.nice-menu > li a.active-trail {
++ul.nice-menu > li a, .menu > li a.active,
++ul.nice-menu > li a.active, ul.nice-menu li.active-trail > a, .region-sidebar-second .block-views .view-termine .views-summary a {
+   color: #463830;
+   display: block;
+   font-size: 1.2em;
+   font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+-  padding: 14px 11px 13px 11px;
++  padding: 14px 11px 14px 11px;
+   text-decoration: none;
+   border: none;
+   letter-spacing: .075em;
+@@ -57,7 +56,9 @@ ul.nice-menu > li a.active-trail {
+ /* line 38, ../sass/_placeholders.scss */
+ .header--region, .region-footer p, .field-name-body h1,
+ .page--title,
+-.page-title, .view-termine, .field-name-field-bildergalerie-bilder-laden div div {
++.page-title, .view-termine, .block > h2.block-title,
++.view-stellenausschreibungen,
++.view-aktuelles-inhaltstyp-aktuelles-, .field-name-field-bildergalerie-bilder-laden div div {
+   padding-left: 11px;
+ }
+ 
+@@ -67,7 +68,8 @@ ul.nice-menu > li a.active-trail {
+ }
+ 
+ /* line 47, ../sass/_placeholders.scss */
+-body.termine .view-grouping, .views-responsive-grid .views-row {
++.view-display-id-page_1 > .view-content > .view-grouping,
++.view-display-id-page_2 > .view-content > .view-grouping, body.aktuelles .view-termine > .view-content > .view-grouping, .view-buergerservice .views-row {
+   display: inline-block;
+   vertical-align: top;
+   margin-right: 2%;
+@@ -75,7 +77,7 @@ body.termine .view-grouping, .views-responsive-grid .views-row {
+ }
+ 
+ /* line 55, ../sass/_placeholders.scss */
+-p > a > img, body.page-inhalt-fotos-veranstaltungen .view-content .views-row {
++p > a > img, body.aktuelles .block-views, body.page-inhalt-fotos-veranstaltungen .view-content .views-row {
+   position: relative;
+   border: 1px solid #c3c38f;
+   background: #FFF;
+@@ -85,7 +87,7 @@ p > a > img, body.page-inhalt-fotos-veranstaltungen .view-content .views-row {
+   behavior: url("/sites/all/themes/shiatsugraz/PIE/PIE.php");
+ }
+ /* line 61, ../sass/_placeholders.scss */
+-p > a > img:before, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:before, p > a > img:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {
++p > a > img:before, body.aktuelles .block-views:before, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:before, p > a > img:after, body.aktuelles .block-views:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {
+   content: '';
+   position: absolute;
+   z-index: -1;
+@@ -105,7 +107,7 @@ p > a > img:before, body.page-inhalt-fotos-veranstaltungen .view-content .views-
+   transform: skew(-15deg) rotate(-6deg);
+ }
+ /* line 74, ../sass/_placeholders.scss */
+-p > a > img:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {
++p > a > img:after, body.aktuelles .block-views:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {
+   right: 40px;
+   left: auto;
+   -webkit-transform: skew(15deg) rotate(6deg);
+@@ -2149,9 +2151,8 @@ ul.nice-menu > li a:focus {
+   color: white;
+ }
+ /* line 231, ../sass/_gabersdorf.scss */
+-.menu > li a.active, .menu > li a.active-trail,
+-ul.nice-menu > li a.active,
+-ul.nice-menu > li a.active-trail {
++.menu > li a.active,
++ul.nice-menu > li a.active {
+   background-color: #888820;
+   color: white;
+ }
+@@ -2167,63 +2168,95 @@ ul.nice-menu > li ul li {
+   width: 20em;
+ }
+ 
+-/* line 252, ../sass/_gabersdorf.scss */
++/* line 248, ../sass/_gabersdorf.scss */
++ul.nice-menu li.active-trail > a {
++  background: #888820 !important;
++  color: white;
++}
++
++/* line 257, ../sass/_gabersdorf.scss */
+ .region-sidebar-second {
+   padding-left: 0;
+ }
+-/* line 254, ../sass/_gabersdorf.scss */
+-.region-sidebar-second .block-menu-block {
++/* line 261, ../sass/_gabersdorf.scss */
++.region-sidebar-second .block-menu-block,
++.region-sidebar-second .block-views {
+   background-color: #e7e7d2;
+ }
+-/* line 256, ../sass/_gabersdorf.scss */
+-.region-sidebar-second .block-menu-block h2 {
++/* line 263, ../sass/_gabersdorf.scss */
++.region-sidebar-second .block-menu-block h2,
++.region-sidebar-second .block-views h2 {
+   padding-left: 8px;
+   background-color: #c3c38f;
+   color: #463830;
+ }
+ 
+-/* line 264, ../sass/_gabersdorf.scss */
++/* line 271, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block ul {
+-  padding-left: 0px;
+-  margin-top: 0px;
++  padding-left: 0;
++  margin-top: 0;
+ }
+-/* line 268, ../sass/_gabersdorf.scss */
++/* line 275, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block ul li {
+   list-style: none;
+   list-style-type: none;
+   list-style-image: none;
+   border-bottom: 1px solid #a2a4a5;
+ }
+-/* line 273, ../sass/_gabersdorf.scss */
++/* line 280, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block ul li a {
+   color: #463830;
+ }
+-/* line 276, ../sass/_gabersdorf.scss */
++/* line 283, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block ul li a:hover {
+-  color: white !important;
++  color: white;
+ }
+ 
+-/* line 282, ../sass/_gabersdorf.scss */
++/* line 289, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block ul li a.active {
+   color: white;
+ }
+ 
+-/* line 292, ../sass/_gabersdorf.scss */
++/* line 296, ../sass/_gabersdorf.scss */
++.region-sidebar-second .block-views .view-termine {
++  padding-left: 0;
++}
++/* line 299, ../sass/_gabersdorf.scss */
++.region-sidebar-second .block-views .view-termine .views-summary {
++  border-bottom: 1px solid #a2a4a5;
++}
++/* line 301, ../sass/_gabersdorf.scss */
++.region-sidebar-second .block-views .view-termine .views-summary a {
++  color: #463830;
++}
++/* line 305, ../sass/_gabersdorf.scss */
++.region-sidebar-second .block-views .view-termine .views-summary a:hover {
++  background: #888820;
++  color: white;
++}
++
++/* line 313, ../sass/_gabersdorf.scss */
++.views-summary a.active {
++  background: #888820 !important;
++  color: white !important;
++}
++
++/* line 322, ../sass/_gabersdorf.scss */
+ .region-footer {
+   background: transparent url('../images/footer_bg.jpg?1374733957') 15px 9px no-repeat;
+ }
+-/* line 294, ../sass/_gabersdorf.scss */
++/* line 324, ../sass/_gabersdorf.scss */
+ .region-footer p {
+   color: white;
+   text-transform: uppercase;
+   font-size: .9em;
+ }
+-/* line 299, ../sass/_gabersdorf.scss */
++/* line 329, ../sass/_gabersdorf.scss */
+ .region-footer p a {
+   color: white;
+ }
+ 
+-/* line 310, ../sass/_gabersdorf.scss */
++/* line 340, ../sass/_gabersdorf.scss */
+ .field-name-body h1,
+ .page--title,
+ .page-title {
+@@ -2236,92 +2269,147 @@ ul.nice-menu > li ul li {
+   padding-bottom: 1px;
+ }
+ 
+-/* line 322, ../sass/_gabersdorf.scss */
++/* line 355, ../sass/_gabersdorf.scss */
++.field-name-title h2.page-title,
++.block > h2.block-title {
++  margin-top: 0px;
++  margin-bottom: 0px;
++  padding-top: 5px;
++  padding-bottom: 5px;
++  background-color: #c3c38f;
++  color: #463830;
++  font-size: 1.5em;
++}
++
++/* line 368, ../sass/_gabersdorf.scss */
++.view-grouping-header,
++h2.view-title {
++  color: #463830;
++  font-size: 1.3em;
++}
++
++/* line 378, ../sass/_gabersdorf.scss */
+ .column li {
+   list-style-type: bullet;
+   color: #888820;
+ }
+ 
+-/* line 327, ../sass/_gabersdorf.scss */
++/* line 383, ../sass/_gabersdorf.scss */
+ .egovernment.left {
+   float: left;
+   width: 49%;
+   padding-right: 2%;
+ }
+ 
+-/* line 333, ../sass/_gabersdorf.scss */
++/* line 389, ../sass/_gabersdorf.scss */
+ .egovernment.right {
+   margin-top: 5px;
+   width: 49%;
+   float: right;
+ }
+ 
+-/* line 340, ../sass/_gabersdorf.scss */
++/* line 396, ../sass/_gabersdorf.scss */
+ .image-caption {
+   margin-bottom: 10px;
+ }
+ 
+-/* line 345, ../sass/_gabersdorf.scss */
++/* line 401, ../sass/_gabersdorf.scss */
+ p > a > img {
+   border: none;
+ }
+ 
+-/* line 370, ../sass/_gabersdorf.scss */
++/* line 423, ../sass/_gabersdorf.scss */
++.view-grouping .view-grouping-content h3 {
++  font-weight: normal;
++  margin-bottom: 0;
++}
++
++/* line 429, ../sass/_gabersdorf.scss */
++.views-responsive-grid {
++  padding-bottom: 5px;
++  border-bottom: 1px solid #c3c38f;
++}
++
++/* line 434, ../sass/_gabersdorf.scss */
++span.field-content {
++  font-weight: bold;
++}
++
++/* line 443, ../sass/_gabersdorf.scss */
++.column {
++  position: relative;
++  z-index: 99;
++}
++
++/* line 449, ../sass/_gabersdorf.scss */
+ body.aktuelles .block-views {
+-  width: 50%;
++  width: 49%;
+   float: left;
+ }
+ 
+-/* line 380, ../sass/_gabersdorf.scss */
+-.views-responsive-grid .views-row {
++/* line 464, ../sass/_gabersdorf.scss */
++.view-stellenausschreibungen,
++.view-aktuelles-inhaltstyp-aktuelles- {
++  margin-bottom: 1.5em;
++}
++
++/* line 469, ../sass/_gabersdorf.scss */
++#block-views-termine-block-2 {
++  margin-right: 1%;
++}
++
++/* line 474, ../sass/_gabersdorf.scss */
++body.aktuelles .view-termine > .view-content > .view-grouping {
++  width: 48%;
++}
++
++/* line 480, ../sass/_gabersdorf.scss */
++.view-grouping-header {
++  margin-top: 1.15em;
++  font-weight: bold;
++}
++
++/* line 490, ../sass/_gabersdorf.scss */
++.view-buergerservice .views-row {
+   margin-right: 1.9% !important;
+ }
+ 
+-/* line 392, ../sass/_gabersdorf.scss */
++/* line 502, ../sass/_gabersdorf.scss */
+ .field-name-field-agenda-bild-laden div div,
+ .field-name-field-bildergalerie-bilder-laden div div {
+   display: inline-block;
+   vertical-align: middle;
+ }
+ 
+-/* line 398, ../sass/_gabersdorf.scss */
++/* line 508, ../sass/_gabersdorf.scss */
+ .field-name-field-agenda-bild-laden div .field-item,
+ .field-name-field-bildergalerie-bilder-laden div .field-item {
+   padding-right: 5px;
+ }
+ 
+-/* line 408, ../sass/_gabersdorf.scss */
++/* line 518, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen h1.title {
+   margin-bottom: 20px;
+ }
+ 
+-/* line 413, ../sass/_gabersdorf.scss */
+-body.page-inhalt-fotos-veranstaltungen .field-name-title h2 {
+-  margin-top: 0px;
+-  margin-bottom: 0px;
+-  background-color: #c3c38f;
+-  color: #463830;
+-  font-size: 1.5em;
+-}
+-
+-/* line 424, ../sass/_gabersdorf.scss */
++/* line 524, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content {
+   position: relative;
+   z-index: 99;
+   overflow: hidden;
+ }
+ 
+-/* line 431, ../sass/_gabersdorf.scss */
++/* line 531, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen .view-content .views-row {
+   margin-bottom: 40px;
+ }
+ 
+-/* line 444, ../sass/_gabersdorf.scss */
++/* line 544, ../sass/_gabersdorf.scss */
+ .field-name-field-bildergalerie-bilder-laden div div {
+   margin-top: 10px;
+ }
+ 
+-/* line 450, ../sass/_gabersdorf.scss */
++/* line 550, ../sass/_gabersdorf.scss */
+ .view-bildergalerie-landing-page .group-right {
+   width: 49%;
+   margin-left: 1%;
+diff --git a/sass/_gabersdorf.scss b/sass/_gabersdorf.scss
+index cc8c28e..4c9e328 100644
+--- a/sass/_gabersdorf.scss
++++ b/sass/_gabersdorf.scss
+@@ -228,7 +228,7 @@ ul.nice-menu {
+ 				// height: 2em;
+ 			}
+ 		}
+-		a.active, a.active-trail { 
++		a.active { 
+ 			@extend %menu;
+ 			background-color: $color1; // if main menu item is active menu item give it a violet bg color
+ 			color: white;
+@@ -245,13 +245,20 @@ ul.nice-menu {
+ 	}
+ }
+ 
++ul.nice-menu li.active-trail>a {
++	@extend %menu;
++	background: $color1 !important;
++	color: white;
++}
+ // ======================================
+ // Submenu Sidebar
+ // ======================================
+ 
+ .region-sidebar-second {
+ 	padding-left: 0;
+-	.block-menu-block {
++	.block-menu-block,
++	.block-views // Submenu Termine Archiv
++		{
+ 		background-color: $color2;
+ 		h2 {
+ 			padding-left: 8px;
+@@ -262,8 +269,8 @@ ul.nice-menu {
+ }
+ 
+ .region-sidebar-second .block-menu-block ul {
+-	padding-left: 0px;
+-	margin-top: 0px;
++	padding-left: 0;
++	margin-top: 0;
+ 	li
+ 	{
+ 		list-style: none;
+@@ -273,7 +280,7 @@ ul.nice-menu {
+ 		a {
+ 			color: $color6;
+ 			&:hover
+-			{color: white !important;}
++			{color: white}
+ 		}
+ 	}
+ }
+@@ -283,7 +290,30 @@ ul.nice-menu {
+ 	color: white;
+ }
+ 
++// Submenu Termine Archiv
++// ======================================
+ 
++.region-sidebar-second .block-views .view-termine {
++	padding-left: 0;
++	.views-summary
++	{
++		border-bottom: 1px solid $color8;
++		a {
++			@extend %menu;
++			color: $color6;
++			&:hover
++			{
++				background: $color1;
++				color: white;
++			}
++		}
++	}
++}
++.views-summary a.active
++{
++	background: $color1 !important;
++	color: white !important;
++}
+ 
+ // ======================================
+ // FOOTER
+@@ -303,7 +333,7 @@ ul.nice-menu {
+ }
+ 
+ // ======================================
+-// Basic page
++// Titles and Headings: H1, H2 etc
+ // ======================================
+ .field-name-body h1, // help.gv content type headers
+ .page--title, // h1 and h2 page titles
+@@ -319,6 +349,32 @@ ul.nice-menu {
+ 	@extend %left-border; // Aligning the first footer item with node header, first menu item and FB icon
+ }
+ 
++.field-name-title h2.page-title, // Name of the photo gallery ==> Name der Veranstaltung
++.block>h2.block-title // Aktuelles übersichtsseite inhalt/aktuelles
++
++{
++	margin-top: 0px;
++	margin-bottom: 0px;
++	padding-top: 5px;
++	padding-bottom: 5px;
++	background-color: $color3;
++	color: $color6;
++	font-size: 1.5em;
++	//text-shadow: 0 1px 0 #CFCFCF;
++}
++
++.view-grouping-header, // All views with responsive grid layout: Termine
++h2.view-title
++{
++	color: $color6;
++	font-size: 1.3em;
++}
++
++// ======================================
++// Basic page
++// ======================================
++
++
+ .column li {
+ 	list-style-type: bullet;
+ 	color: $color1;
+@@ -357,26 +413,80 @@ p>a>img
+ 	@extend %left-border;
+ }
+ 
+-body.termine .view-grouping
++.view-display-id-page_1 > .view-content > .view-grouping, // Termine Archiv für ..
++.view-display-id-page_2 > .view-content > .view-grouping // Aktuelle Termine
+ {
+ 	@extend %view-grouping;
+ }
+ 
++.view-grouping .view-grouping-content h3 // day, date. month 
++{
++	font-weight: normal;
++	margin-bottom: 0;
++}
++
++.views-responsive-grid
++{
++	padding-bottom: 5px;
++	border-bottom: 1px solid $color3;
++}
++
++span.field-content {
++	font-weight: bold;
++}
++
+ 
+ // Aktuelles views /inhalt/aktuelles
+ // ======================================
+ 
++.column // in order for the box shadow to work
++{ 
++	position: relative;
++	z-index: 99;
++}
++
+ body.aktuelles .block-views 
+ {
+-	width: 50%;
++	width: 49%;
+ 	float: left;
++	@extend %box-shadow-teaser;
++}
++
++.block>h2.block-title,
++.view-stellenausschreibungen, // /inhalt/aktuelles
++.view-aktuelles-inhaltstyp-aktuelles- // inhalt/aktuelles
++{
++	@extend %left-border;
++}
++
++.view-stellenausschreibungen, // /inhalt/aktuelles
++.view-aktuelles-inhaltstyp-aktuelles- // inhalt/aktuelles
++{
++	margin-bottom: 1.5em;
++}
++
++#block-views-termine-block-2
++{
++	margin-right: 1%;
++}
++
++body.aktuelles .view-termine>.view-content>.view-grouping
++{
++	@extend %view-grouping;
++	width: 48%;
++}
++
++.view-grouping-header
++{
++	margin-top: 1.15em;
++	font-weight: bold;
+ }
+ 
+ 
+ // Bürgerservice views
+ // ======================================
+ 
+-.views-responsive-grid .views-row 
++.view-buergerservice .views-row 
+ {
+ 	@extend %view-grouping;
+ 	margin-right: 1.9% !important;
+@@ -409,16 +519,6 @@ body.page-inhalt-fotos-veranstaltungen h1.title
+ 	margin-bottom: 20px;
+ }
+ 
+-body.page-inhalt-fotos-veranstaltungen .field-name-title h2 // Name of the photo gallery ==> Name der Veranstaltung
+-{
+-	margin-top: 0px;
+-	margin-bottom: 0px;
+-	background-color: $color3;
+-	color: $color6;
+-	font-size: 1.5em;
+-	//text-shadow: 0 1px 0 #CFCFCF;
+-}
+-
+ body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content
+ // code taken from: http://matthamm.com/box-shadow-curl.html
+ {
+diff --git a/sass/_init.scss b/sass/_init.scss
+index cff7819..dd0b0a4 100644
+--- a/sass/_init.scss
++++ b/sass/_init.scss
+@@ -102,18 +102,19 @@ $font-monospace:   $courier;
+ //
+ // added by criscom 22.07.2013
+ 
+-$font: #000000; // Text color
++$font: #000000; // BLACK - Text color
+ 
+ $mainlink: #463830; // Main link color
+ 
+-$color0: #d2c5ac; // Body background color
++$color0: #d2c5ac; // OCRE/LIGHT BROWN Body background color
+ 
+-$color1: #888820; // - Active Menu link green: Green as used for the active menu link; 
++$color1: #888820; // - DARK GREEN hover and active state for main menu
++				  // - Active Menu link green: Green as used for the active menu link; 
+ 				  // - bg for header in overviews
+ 
+-$color2: #e7e7d2; // Navbar link green: Light green as used for the navbar background
++$color2: #e7e7d2; // LIGHT GREEN Navbar link green: Light green as used for the navbar background
+ 
+-$color3: #c3c38f; // Also light green: Teaser box header green
++$color3: #c3c38f; // SOMEWHAT DARKER LIGHT GREEN: Teaser box header green
+ 
+ $color4: #898a0f; // Homepage Slider navigation not active
+ 
+diff --git a/sass/_placeholders.scss b/sass/_placeholders.scss
+index e6eebec..51aaaa1 100644
+--- a/sass/_placeholders.scss
++++ b/sass/_placeholders.scss
+@@ -22,7 +22,7 @@
+   font-size: 1.2em;
+   font-family: $georgia;
+   //padding: .1em .8em;
+-  padding: 14px 11px 13px 11px;
++  padding: 14px 11px 14px 11px;
+   text-decoration: none;
+   border: none;
+   letter-spacing: .075em;
+[1mdiff --git a/css/styles.css b/css/styles.css[m
+[1mindex e2c4218..7fcea77 100644[m
+[1m--- a/css/styles.css[m
+[1m+++ b/css/styles.css[m
+[36m@@ -33,14 +33,13 @@[m [mul.nice-menu > li a {[m
+ [m
+ /* line 19, ../sass/_placeholders.scss */[m
+ .menu > li a,[m
+[31m-ul.nice-menu > li a, .menu > li a.active, .menu > li a.active-trail,[m
+[31m-ul.nice-menu > li a.active,[m
+[31m-ul.nice-menu > li a.active-trail {[m
+[32m+[m[32mul.nice-menu > li a, .menu > li a.active,[m
+[32m+[m[32mul.nice-menu > li a.active, ul.nice-menu li.active-trail > a, .region-sidebar-second .block-views .view-termine .views-summary a {[m
+   color: #463830;[m
+   display: block;[m
+   font-size: 1.2em;[m
+   font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;[m
+[31m-  padding: 14px 11px 13px 11px;[m
+[32m+[m[32m  padding: 14px 11px 14px 11px;[m
+   text-decoration: none;[m
+   border: none;[m
+   letter-spacing: .075em;[m
+[36m@@ -57,7 +56,9 @@[m [mul.nice-menu > li a.active-trail {[m
+ /* line 38, ../sass/_placeholders.scss */[m
+ .header--region, .region-footer p, .field-name-body h1,[m
+ .page--title,[m
+[31m-.page-title, .view-termine, .field-name-field-bildergalerie-bilder-laden div div {[m
+[32m+[m[32m.page-title, .view-termine, .block > h2.block-title,[m
+[32m+[m[32m.view-stellenausschreibungen,[m
+[32m+[m[32m.view-aktuelles-inhaltstyp-aktuelles-, .field-name-field-bildergalerie-bilder-laden div div {[m
+   padding-left: 11px;[m
+ }[m
+ [m
+[36m@@ -67,7 +68,8 @@[m [mul.nice-menu > li a.active-trail {[m
+ }[m
+ [m
+ /* line 47, ../sass/_placeholders.scss */[m
+[31m-body.termine .view-grouping, .views-responsive-grid .views-row {[m
+[32m+[m[32m.view-display-id-page_1 > .view-content > .view-grouping,[m
+[32m+[m[32m.view-display-id-page_2 > .view-content > .view-grouping, body.aktuelles .view-termine > .view-content > .view-grouping, .view-buergerservice .views-row {[m
+   display: inline-block;[m
+   vertical-align: top;[m
+   margin-right: 2%;[m
+[36m@@ -75,7 +77,7 @@[m [mbody.termine .view-grouping, .views-responsive-grid .views-row {[m
+ }[m
+ [m
+ /* line 55, ../sass/_placeholders.scss */[m
+[31m-p > a > img, body.page-inhalt-fotos-veranstaltungen .view-content .views-row {[m
+[32m+[m[32mp > a > img, body.aktuelles .block-views, body.page-inhalt-fotos-veranstaltungen .view-content .views-row {[m
+   position: relative;[m
+   border: 1px solid #c3c38f;[m
+   background: #FFF;[m
+[36m@@ -85,7 +87,7 @@[m [mp > a > img, body.page-inhalt-fotos-veranstaltungen .view-content .views-row {[m
+   behavior: url("/sites/all/themes/shiatsugraz/PIE/PIE.php");[m
+ }[m
+ /* line 61, ../sass/_placeholders.scss */[m
+[31m-p > a > img:before, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:before, p > a > img:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {[m
+[32m+[m[32mp > a > img:before, body.aktuelles .block-views:before, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:before, p > a > img:after, body.aktuelles .block-views:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {[m
+   content: '';[m
+   position: absolute;[m
+   z-index: -1;[m
+[36m@@ -105,7 +107,7 @@[m [mp > a > img:before, body.page-inhalt-fotos-veranstaltungen .view-content .views-[m
+   transform: skew(-15deg) rotate(-6deg);[m
+ }[m
+ /* line 74, ../sass/_placeholders.scss */[m
+[31m-p > a > img:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {[m
+[32m+[m[32mp > a > img:after, body.aktuelles .block-views:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after {[m
+   right: 40px;[m
+   left: auto;[m
+   -webkit-transform: skew(15deg) rotate(6deg);[m
+[36m@@ -2149,9 +2151,8 @@[m [mul.nice-menu > li a:focus {[m
+   color: white;[m
+ }[m
+ /* line 231, ../sass/_gabersdorf.scss */[m
+[31m-.menu > li a.active, .menu > li a.active-trail,[m
+[31m-ul.nice-menu > li a.active,[m
+[31m-ul.nice-menu > li a.active-trail {[m
+[32m+[m[32m.menu > li a.active,[m
+[32m+[m[32mul.nice-menu > li a.active {[m
+   background-color: #888820;[m
+   color: white;[m
+ }[m
+[36m@@ -2167,63 +2168,95 @@[m [mul.nice-menu > li ul li {[m
+   width: 20em;[m
+ }[m
+ [m
+[31m-/* line 252, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 248, ../sass/_gabersdorf.scss */[m
+[32m+[m[32mul.nice-menu li.active-trail > a {[m
+[32m+[m[32m  background: #888820 !important;[m
+[32m+[m[32m  color: white;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 257, ../sass/_gabersdorf.scss */[m
+ .region-sidebar-second {[m
+   padding-left: 0;[m
+ }[m
+[31m-/* line 254, ../sass/_gabersdorf.scss */[m
+[31m-.region-sidebar-second .block-menu-block {[m
+[32m+[m[32m/* line 261, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.region-sidebar-second .block-menu-block,[m
+[32m+[m[32m.region-sidebar-second .block-views {[m
+   background-color: #e7e7d2;[m
+ }[m
+[31m-/* line 256, ../sass/_gabersdorf.scss */[m
+[31m-.region-sidebar-second .block-menu-block h2 {[m
+[32m+[m[32m/* line 263, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.region-sidebar-second .block-menu-block h2,[m
+[32m+[m[32m.region-sidebar-second .block-views h2 {[m
+   padding-left: 8px;[m
+   background-color: #c3c38f;[m
+   color: #463830;[m
+ }[m
+ [m
+[31m-/* line 264, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 271, ../sass/_gabersdorf.scss */[m
+ .region-sidebar-second .block-menu-block ul {[m
+[31m-  padding-left: 0px;[m
+[31m-  margin-top: 0px;[m
+[32m+[m[32m  padding-left: 0;[m
+[32m+[m[32m  margin-top: 0;[m
+ }[m
+[31m-/* line 268, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 275, ../sass/_gabersdorf.scss */[m
+ .region-sidebar-second .block-menu-block ul li {[m
+   list-style: none;[m
+   list-style-type: none;[m
+   list-style-image: none;[m
+   border-bottom: 1px solid #a2a4a5;[m
+ }[m
+[31m-/* line 273, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 280, ../sass/_gabersdorf.scss */[m
+ .region-sidebar-second .block-menu-block ul li a {[m
+   color: #463830;[m
+ }[m
+[31m-/* line 276, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 283, ../sass/_gabersdorf.scss */[m
+ .region-sidebar-second .block-menu-block ul li a:hover {[m
+[31m-  color: white !important;[m
+[32m+[m[32m  color: white;[m
+ }[m
+ [m
+[31m-/* line 282, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 289, ../sass/_gabersdorf.scss */[m
+ .region-sidebar-second .block-menu-block ul li a.active {[m
+   color: white;[m
+ }[m
+ [m
+[31m-/* line 292, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 296, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.region-sidebar-second .block-views .view-termine {[m
+[32m+[m[32m  padding-left: 0;[m
+[32m+[m[32m}[m
+[32m+[m[32m/* line 299, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.region-sidebar-second .block-views .view-termine .views-summary {[m
+[32m+[m[32m  border-bottom: 1px solid #a2a4a5;[m
+[32m+[m[32m}[m
+[32m+[m[32m/* line 301, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.region-sidebar-second .block-views .view-termine .views-summary a {[m
+[32m+[m[32m  color: #463830;[m
+[32m+[m[32m}[m
+[32m+[m[32m/* line 305, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.region-sidebar-second .block-views .view-termine .views-summary a:hover {[m
+[32m+[m[32m  background: #888820;[m
+[32m+[m[32m  color: white;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 313, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.views-summary a.active {[m
+[32m+[m[32m  background: #888820 !important;[m
+[32m+[m[32m  color: white !important;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 322, ../sass/_gabersdorf.scss */[m
+ .region-footer {[m
+   background: transparent url('../images/footer_bg.jpg?1374733957') 15px 9px no-repeat;[m
+ }[m
+[31m-/* line 294, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 324, ../sass/_gabersdorf.scss */[m
+ .region-footer p {[m
+   color: white;[m
+   text-transform: uppercase;[m
+   font-size: .9em;[m
+ }[m
+[31m-/* line 299, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 329, ../sass/_gabersdorf.scss */[m
+ .region-footer p a {[m
+   color: white;[m
+ }[m
+ [m
+[31m-/* line 310, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 340, ../sass/_gabersdorf.scss */[m
+ .field-name-body h1,[m
+ .page--title,[m
+ .page-title {[m
+[36m@@ -2236,92 +2269,147 @@[m [mul.nice-menu > li ul li {[m
+   padding-bottom: 1px;[m
+ }[m
+ [m
+[31m-/* line 322, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 355, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.field-name-title h2.page-title,[m
+[32m+[m[32m.block > h2.block-title {[m
+[32m+[m[32m  margin-top: 0px;[m
+[32m+[m[32m  margin-bottom: 0px;[m
+[32m+[m[32m  padding-top: 5px;[m
+[32m+[m[32m  padding-bottom: 5px;[m
+[32m+[m[32m  background-color: #c3c38f;[m
+[32m+[m[32m  color: #463830;[m
+[32m+[m[32m  font-size: 1.5em;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 368, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.view-grouping-header,[m
+[32m+[m[32mh2.view-title {[m
+[32m+[m[32m  color: #463830;[m
+[32m+[m[32m  font-size: 1.3em;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 378, ../sass/_gabersdorf.scss */[m
+ .column li {[m
+   list-style-type: bullet;[m
+   color: #888820;[m
+ }[m
+ [m
+[31m-/* line 327, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 383, ../sass/_gabersdorf.scss */[m
+ .egovernment.left {[m
+   float: left;[m
+   width: 49%;[m
+   padding-right: 2%;[m
+ }[m
+ [m
+[31m-/* line 333, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 389, ../sass/_gabersdorf.scss */[m
+ .egovernment.right {[m
+   margin-top: 5px;[m
+   width: 49%;[m
+   float: right;[m
+ }[m
+ [m
+[31m-/* line 340, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 396, ../sass/_gabersdorf.scss */[m
+ .image-caption {[m
+   margin-bottom: 10px;[m
+ }[m
+ [m
+[31m-/* line 345, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 401, ../sass/_gabersdorf.scss */[m
+ p > a > img {[m
+   border: none;[m
+ }[m
+ [m
+[31m-/* line 370, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 423, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.view-grouping .view-grouping-content h3 {[m
+[32m+[m[32m  font-weight: normal;[m
+[32m+[m[32m  margin-bottom: 0;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 429, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.views-responsive-grid {[m
+[32m+[m[32m  padding-bottom: 5px;[m
+[32m+[m[32m  border-bottom: 1px solid #c3c38f;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 434, ../sass/_gabersdorf.scss */[m
+[32m+[m[32mspan.field-content {[m
+[32m+[m[32m  font-weight: bold;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 443, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.column {[m
+[32m+[m[32m  position: relative;[m
+[32m+[m[32m  z-index: 99;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 449, ../sass/_gabersdorf.scss */[m
+ body.aktuelles .block-views {[m
+[31m-  width: 50%;[m
+[32m+[m[32m  width: 49%;[m
+   float: left;[m
+ }[m
+ [m
+[31m-/* line 380, ../sass/_gabersdorf.scss */[m
+[31m-.views-responsive-grid .views-row {[m
+[32m+[m[32m/* line 464, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.view-stellenausschreibungen,[m
+[32m+[m[32m.view-aktuelles-inhaltstyp-aktuelles- {[m
+[32m+[m[32m  margin-bottom: 1.5em;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 469, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m#block-views-termine-block-2 {[m
+[32m+[m[32m  margin-right: 1%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 474, ../sass/_gabersdorf.scss */[m
+[32m+[m[32mbody.aktuelles .view-termine > .view-content > .view-grouping {[m
+[32m+[m[32m  width: 48%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 480, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.view-grouping-header {[m
+[32m+[m[32m  margin-top: 1.15em;[m
+[32m+[m[32m  font-weight: bold;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/* line 490, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m.view-buergerservice .views-row {[m
+   margin-right: 1.9% !important;[m
+ }[m
+ [m
+[31m-/* line 392, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 502, ../sass/_gabersdorf.scss */[m
+ .field-name-field-agenda-bild-laden div div,[m
+ .field-name-field-bildergalerie-bilder-laden div div {[m
+   display: inline-block;[m
+   vertical-align: middle;[m
+ }[m
+ [m
+[31m-/* line 398, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 508, ../sass/_gabersdorf.scss */[m
+ .field-name-field-agenda-bild-laden div .field-item,[m
+ .field-name-field-bildergalerie-bilder-laden div .field-item {[m
+   padding-right: 5px;[m
+ }[m
+ [m
+[31m-/* line 408, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 518, ../sass/_gabersdorf.scss */[m
+ body.page-inhalt-fotos-veranstaltungen h1.title {[m
+   margin-bottom: 20px;[m
+ }[m
+ [m
+[31m-/* line 413, ../sass/_gabersdorf.scss */[m
+[31m-body.page-inhalt-fotos-veranstaltungen .field-name-title h2 {[m
+[31m-  margin-top: 0px;[m
+[31m-  margin-bottom: 0px;[m
+[31m-  background-color: #c3c38f;[m
+[31m-  color: #463830;[m
+[31m-  font-size: 1.5em;[m
+[31m-}[m
+[31m-[m
+[31m-/* line 424, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 524, ../sass/_gabersdorf.scss */[m
+ body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content {[m
+   position: relative;[m
+   z-index: 99;[m
+   overflow: hidden;[m
+ }[m
+ [m
+[31m-/* line 431, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 531, ../sass/_gabersdorf.scss */[m
+ body.page-inhalt-fotos-veranstaltungen .view-content .views-row {[m
+   margin-bottom: 40px;[m
+ }[m
+ [m
+[31m-/* line 444, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 544, ../sass/_gabersdorf.scss */[m
+ .field-name-field-bildergalerie-bilder-laden div div {[m
+   margin-top: 10px;[m
+ }[m
+ [m
+[31m-/* line 450, ../sass/_gabersdorf.scss */[m
+[32m+[m[32m/* line 550, ../sass/_gabersdorf.scss */[m
+ .view-bildergalerie-landing-page .group-right {[m
+   width: 49%;[m
+   margin-left: 1%;[m
+[1mdiff --git a/sass/_gabersdorf.scss b/sass/_gabersdorf.scss[m
+[1mindex cc8c28e..4c9e328 100644[m
+[1m--- a/sass/_gabersdorf.scss[m
+[1m+++ b/sass/_gabersdorf.scss[m
+[36m@@ -228,7 +228,7 @@[m [mul.nice-menu {[m
+ 				// height: 2em;[m
+ 			}[m
+ 		}[m
+[31m-		a.active, a.active-trail { [m
+[32m+[m		[32ma.active {[m[41m [m
+ 			@extend %menu;[m
+ 			background-color: $color1; // if main menu item is active menu item give it a violet bg color[m
+ 			color: white;[m
+[36m@@ -245,13 +245,20 @@[m [mul.nice-menu {[m
+ 	}[m
+ }[m
+ [m
+[32m+[m[32mul.nice-menu li.active-trail>a {[m
+[32m+[m	[32m@extend %menu;[m
+[32m+[m	[32mbackground: $color1 !important;[m
+[32m+[m	[32mcolor: white;[m
+[32m+[m[32m}[m
+ // ======================================[m
+ // Submenu Sidebar[m
+ // ======================================[m
+ [m
+ .region-sidebar-second {[m
+ 	padding-left: 0;[m
+[31m-	.block-menu-block {[m
+[32m+[m	[32m.block-menu-block,[m
+[32m+[m	[32m.block-views // Submenu Termine Archiv[m
+[32m+[m		[32m{[m
+ 		background-color: $color2;[m
+ 		h2 {[m
+ 			padding-left: 8px;[m
+[36m@@ -262,8 +269,8 @@[m [mul.nice-menu {[m
+ }[m
+ [m
+ .region-sidebar-second .block-menu-block ul {[m
+[31m-	padding-left: 0px;[m
+[31m-	margin-top: 0px;[m
+[32m+[m	[32mpadding-left: 0;[m
+[32m+[m	[32mmargin-top: 0;[m
+ 	li[m
+ 	{[m
+ 		list-style: none;[m
+[36m@@ -273,7 +280,7 @@[m [mul.nice-menu {[m
+ 		a {[m
+ 			color: $color6;[m
+ 			&:hover[m
+[31m-			{color: white !important;}[m
+[32m+[m			[32m{color: white}[m
+ 		}[m
+ 	}[m
+ }[m
+[36m@@ -283,7 +290,30 @@[m [mul.nice-menu {[m
+ 	color: white;[m
+ }[m
+ [m
+[32m+[m[32m// Submenu Termine Archiv[m
+[32m+[m[32m// ======================================[m
+ [m
+[32m+[m[32m.region-sidebar-second .block-views .view-termine {[m
+[32m+[m	[32mpadding-left: 0;[m
+[32m+[m	[32m.views-summary[m
+[32m+[m	[32m{[m
+[32m+[m		[32mborder-bottom: 1px solid $color8;[m
+[32m+[m		[32ma {[m
+[32m+[m			[32m@extend %menu;[m
+[32m+[m			[32mcolor: $color6;[m
+[32m+[m			[32m&:hover[m
+[32m+[m			[32m{[m
+[32m+[m				[32mbackground: $color1;[m
+[32m+[m				[32mcolor: white;[m
+[32m+[m			[32m}[m
+[32m+[m		[32m}[m
+[32m+[m	[32m}[m
+[32m+[m[32m}[m
+[32m+[m[32m.views-summary a.active[m
+[32m+[m[32m{[m
+[32m+[m	[32mbackground: $color1 !important;[m
+[32m+[m	[32mcolor: white !important;[m
+[32m+[m[32m}[m
+ [m
+ // ======================================[m
+ // FOOTER[m
+[36m@@ -303,7 +333,7 @@[m [mul.nice-menu {[m
+ }[m
+ [m
+ // ======================================[m
+[31m-// Basic page[m
+[32m+[m[32m// Titles and Headings: H1, H2 etc[m
+ // ======================================[m
+ .field-name-body h1, // help.gv content type headers[m
+ .page--title, // h1 and h2 page titles[m
+[36m@@ -319,6 +349,32 @@[m [mul.nice-menu {[m
+ 	@extend %left-border; // Aligning the first footer item with node header, first menu item and FB icon[m
+ }[m
+ [m
+[32m+[m[32m.field-name-title h2.page-title, // Name of the photo gallery ==> Name der Veranstaltung[m
+[32m+[m[32m.block>h2.block-title // Aktuelles übersichtsseite inhalt/aktuelles[m
+[32m+[m
+[32m+[m[32m{[m
+[32m+[m	[32mmargin-top: 0px;[m
+[32m+[m	[32mmargin-bottom: 0px;[m
+[32m+[m	[32mpadding-top: 5px;[m
+[32m+[m	[32mpadding-bottom: 5px;[m
+[32m+[m	[32mbackground-color: $color3;[m
+[32m+[m	[32mcolor: $color6;[m
+[32m+[m	[32mfont-size: 1.5em;[m
+[32m+[m	[32m//text-shadow: 0 1px 0 #CFCFCF;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.view-grouping-header, // All views with responsive grid layout: Termine[m
+[32m+[m[32mh2.view-title[m
+[32m+[m[32m{[m
+[32m+[m	[32mcolor: $color6;[m
+[32m+[m	[32mfont-size: 1.3em;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m// ======================================[m
+[32m+[m[32m// Basic page[m
+[32m+[m[32m// ======================================[m
+[32m+[m
+[32m+[m
+ .column li {[m
+ 	list-style-type: bullet;[m
+ 	color: $color1;[m
+[36m@@ -357,26 +413,80 @@[m [mp>a>img[m
+ 	@extend %left-border;[m
+ }[m
+ [m
+[31m-body.termine .view-grouping[m
+[32m+[m[32m.view-display-id-page_1 > .view-content > .view-grouping, // Termine Archiv für ..[m
+[32m+[m[32m.view-display-id-page_2 > .view-content > .view-grouping // Aktuelle Termine[m
+ {[m
+ 	@extend %view-grouping;[m
+ }[m
+ [m
+[32m+[m[32m.view-grouping .view-grouping-content h3 // day, date. month[m[41m [m
+[32m+[m[32m{[m
+[32m+[m	[32mfont-weight: normal;[m
+[32m+[m	[32mmargin-bottom: 0;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.views-responsive-grid[m
+[32m+[m[32m{[m
+[32m+[m	[32mpadding-bottom: 5px;[m
+[32m+[m	[32mborder-bottom: 1px solid $color3;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mspan.field-content {[m
+[32m+[m	[32mfont-weight: bold;[m
+[32m+[m[32m}[m
+[32m+[m
+ [m
+ // Aktuelles views /inhalt/aktuelles[m
+ // ======================================[m
+ [m
+[32m+[m[32m.column // in order for the box shadow to work[m
+[32m+[m[32m{[m[41m [m
+[32m+[m	[32mposition: relative;[m
+[32m+[m	[32mz-index: 99;[m
+[32m+[m[32m}[m
+[32m+[m
+ body.aktuelles .block-views [m
+ {[m
+[31m-	width: 50%;[m
+[32m+[m	[32mwidth: 49%;[m
+ 	float: left;[m
+[32m+[m	[32m@extend %box-shadow-teaser;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.block>h2.block-title,[m
+[32m+[m[32m.view-stellenausschreibungen, // /inhalt/aktuelles[m
+[32m+[m[32m.view-aktuelles-inhaltstyp-aktuelles- // inhalt/aktuelles[m
+[32m+[m[32m{[m
+[32m+[m	[32m@extend %left-border;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.view-stellenausschreibungen, // /inhalt/aktuelles[m
+[32m+[m[32m.view-aktuelles-inhaltstyp-aktuelles- // inhalt/aktuelles[m
+[32m+[m[32m{[m
+[32m+[m	[32mmargin-bottom: 1.5em;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#block-views-termine-block-2[m
+[32m+[m[32m{[m
+[32m+[m	[32mmargin-right: 1%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mbody.aktuelles .view-termine>.view-content>.view-grouping[m
+[32m+[m[32m{[m
+[32m+[m	[32m@extend %view-grouping;[m
+[32m+[m	[32mwidth: 48%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.view-grouping-header[m
+[32m+[m[32m{[m
+[32m+[m	[32mmargin-top: 1.15em;[m
+[32m+[m	[32mfont-weight: bold;[m
+ }[m
+ [m
+ [m
+ // Bürgerservice views[m
+ // ======================================[m
+ [m
+[31m-.views-responsive-grid .views-row [m
+[32m+[m[32m.view-buergerservice .views-row[m[41m [m
+ {[m
+ 	@extend %view-grouping;[m
+ 	margin-right: 1.9% !important;[m
+[36m@@ -409,16 +519,6 @@[m [mbody.page-inhalt-fotos-veranstaltungen h1.title[m
+ 	margin-bottom: 20px;[m
+ }[m
+ [m
+[31m-body.page-inhalt-fotos-veranstaltungen .field-name-title h2 // Name of the photo gallery ==> Name der Veranstaltung[m
+[31m-{[m
+[31m-	margin-top: 0px;[m
+[31m-	margin-bottom: 0px;[m
+[31m-	background-color: $color3;[m
+[31m-	color: $color6;[m
+[31m-	font-size: 1.5em;[m
+[31m-	//text-shadow: 0 1px 0 #CFCFCF;[m
+[31m-}[m
+[31m-[m
+ body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content[m
+ // code taken from: http://matthamm.com/box-shadow-curl.html[m
+ {[m
+[1mdiff --git a/sass/_init.scss b/sass/_init.scss[m
+[1mindex cff7819..dd0b0a4 100644[m
+[1m--- a/sass/_init.scss[m
+[1m+++ b/sass/_init.scss[m
+[36m@@ -102,18 +102,19 @@[m [m$font-monospace:   $courier;[m
+ //[m
+ // added by criscom 22.07.2013[m
+ [m
+[31m-$font: #000000; // Text color[m
+[32m+[m[32m$font: #000000; // BLACK - Text color[m
+ [m
+ $mainlink: #463830; // Main link color[m
+ [m
+[31m-$color0: #d2c5ac; // Body background color[m
+[32m+[m[32m$color0: #d2c5ac; // OCRE/LIGHT BROWN Body background color[m
+ [m
+[31m-$color1: #888820; // - Active Menu link green: Green as used for the active menu link; [m
+[32m+[m[32m$color1: #888820; // - DARK GREEN hover and active state for main menu[m
+[32m+[m				[32m  // - Active Menu link green: Green as used for the active menu link;[m[41m [m
+ 				  // - bg for header in overviews[m
+ [m
+[31m-$color2: #e7e7d2; // Navbar link green: Light green as used for the navbar background[m
+[32m+[m[32m$color2: #e7e7d2; // LIGHT GREEN Navbar link green: Light green as used for the navbar background[m
+ [m
+[31m-$color3: #c3c38f; // Also light green: Teaser box header green[m
+[32m+[m[32m$color3: #c3c38f; // SOMEWHAT DARKER LIGHT GREEN: Teaser box header green[m
+ [m
+ $color4: #898a0f; // Homepage Slider navigation not active[m
+ [m
+[1mdiff --git a/sass/_placeholders.scss b/sass/_placeholders.scss[m
+[1mindex e6eebec..51aaaa1 100644[m
+[1m--- a/sass/_placeholders.scss[m
+[1m+++ b/sass/_placeholders.scss[m
+[36m@@ -22,7 +22,7 @@[m
+   font-size: 1.2em;[m
+   font-family: $georgia;[m
+   //padding: .1em .8em;[m
+[31m-  padding: 14px 11px 13px 11px;[m
+[32m+[m[32m  padding: 14px 11px 14px 11px;[m
+   text-decoration: none;[m
+   border: none;[m
+   letter-spacing: .075em;[m

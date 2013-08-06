@@ -102,18 +102,19 @@ $font-monospace:   $courier;
 //
 // added by criscom 22.07.2013
 
-$font: #000000; // Text color
+$font: #000000; // BLACK - Text color
 
 $mainlink: #463830; // Main link color
 
-$color0: #d2c5ac; // Body background color
+$color0: #d2c5ac; // OCRE/LIGHT BROWN Body background color
 
-$color1: #888820; // - Active Menu link green: Green as used for the active menu link; 
+$color1: #888820; // - DARK GREEN hover and active state for main menu
+				  // - Active Menu link green: Green as used for the active menu link; 
 				  // - bg for header in overviews
 
-$color2: #e7e7d2; // Navbar link green: Light green as used for the navbar background
+$color2: #e7e7d2; // LIGHT GREEN Navbar link green: Light green as used for the navbar background
 
-$color3: #c3c38f; // Also light green: Teaser box header green
+$color3: #c3c38f; // SOMEWHAT DARKER LIGHT GREEN: Teaser box header green
 
 $color4: #898a0f; // Homepage Slider navigation not active
 
