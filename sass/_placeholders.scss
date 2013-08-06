@@ -48,5 +48,28 @@
 
 %box-shadow-teaser // box shadow for teaser boxes "home", "bildergalerie"
 {
+  position: relative;
+  border: 1px solid $color3;
+  background: #FFF;
+  @include box-shadow(0px 10px 10px -10px rgba(0, 0, 0, 0.27), 0 0 40px rgba($color1, 0.1) inset);
+  behavior: url('/sites/all/themes/shiatsugraz/PIE/PIE.php'); // polyfill
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 40px;
+    bottom: 15px;
+    width: 80%;
+    max-width: 300px;
+    max-height: 100px;
+    height: 35%;
+    @include box-shadow (0px 10px 12px rgba(0, 0, 0, 0.35));
+    @include transform(skew(-15deg) rotate(-6deg));
+  }
+  &:after {
+    right: 40px;
+    left: auto;
+    @include transform(skew(15deg) rotate(6deg));
+  }
 
 }
