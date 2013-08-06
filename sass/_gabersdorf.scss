@@ -207,6 +207,11 @@ a:link {
 // Nice menu stylings
 // ======================================
 
+#navigation {
+	z-index: 100; // because we set z-index: 99; to the gallery container we need to adjust
+				  // a higher z-index to #navigation so that the drop down is visible;
+}
+
 .menu,
 ul.nice-menu {
 		background:none;
@@ -235,7 +240,7 @@ ul.nice-menu {
 			padding-top: 2em;
 			border:none; // 2nd menu level
 			li { // menu item of 2nd menu level
-				width: 20em;
+				width: 20em; 
 			}
 		}
 	}
@@ -342,7 +347,7 @@ body.aktuelles .block-views
 
 .field-name-field-agenda-bild-laden div .field-item,
 .field-name-field-bildergalerie-bilder-laden div .field-item {
-	padding-right: 8px;
+	padding-right: 5px;
 }
 
 
@@ -377,8 +382,8 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row // box shadow
 {
 	
 	margin-bottom: 40px;
-	@extend %box-shadow-teaser
-	// @include box-shadow(40px 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.04) inset);
+	@extend %box-shadow-teaser;
+	//@include box-shadow(40px 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.04) inset);
 	//@include box-shadow(0px 12px 12px -12px $color8);
 	// @include box-shadow(0px 12px 12px -12px (lighten($color8, 20%)));
 	//@include transform(rotate(3deg));
