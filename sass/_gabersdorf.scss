@@ -117,29 +117,25 @@ a:link {
 	}
 }
 
-.header--logo { // the logo is a blank transparent png in order to make the text section in the header clickable
+.header__logo { // the logo is a blank transparent png in order to make the text section in the header clickable
 	margin: 1em 0 0 2em;
 	//display: none;
 }
 
-.header--site-name { // hiding the website name and slogan
+.header__site-name { // hiding the website name and slogan
 	@include hide-text;
 }
 
 // Facebook, Address and Partner Logo block in Header
 // ======================================
 
-.header--region { // Block under header with FB icon, address and partner logos
+.header__region { // Block under header with FB icon, address and partner logos
+	clear: both;
 	@extend %left-border; // Aligning the FB icon with first main menu item 'Home' and node heading
 		.block {
-			display: inline-block;
-			display: -moz-inline-stack; // For Mozilla Firefox 2
-			vertical-align: top;
-			line-height: 1.5em;
-			zoom:1; // For IE7 and below
-			*display: inline; // For IE7 and below
+			@extend %inline-block;
 			p {// removing margin on top of the adress text in order to move it further twd the header
-				margin-top: 0;
+				margin-top: 22px; // Added after Zen update 07.08.2013 before: margin-top: 0px;
 			}
 		}
 		.first { // Aligning the address block
@@ -336,7 +332,7 @@ ul.nice-menu li.active-trail>a {
 // Titles and Headings: H1, H2 etc
 // ======================================
 .field-name-body h1, // help.gv content type headers
-.page--title, // h1 and h2 page titles
+.page__title, // h1 and h2 page titles
 .page-title  { // Page title Stellenausschreibung 
 	background-color: $color1;
 	color: white;
@@ -500,7 +496,8 @@ body.aktuelles .view-termine>.view-content>.view-grouping
 .field-name-field-agenda-bild-laden div div, // Lokale Agenda 21 Bildergalerie
 .field-name-field-bildergalerie-bilder-laden div div
 {
-	display: inline-block;
+	//display: inline-block;
+	@extend %inline-block;
 	vertical-align: middle;
 }
 

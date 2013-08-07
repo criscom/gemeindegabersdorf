@@ -5,7 +5,7 @@
  * Adds modular sets of styles.
  *
  * Additional useful selectors can be found in Zen's online documentation.
- * https://drupal.org/node/1707736
+ * http://drupal.org/node/1707736
  */
 
 /**
@@ -78,30 +78,30 @@
  */
 
 /* Wrapping link for logo. */
-.header__logo {
-  float: left; /* LTR */
+.header--logo {
+  float: left;
   margin: 0;
   padding: 0;
 }
 
 /* Logo image. */
-.header__logo-image {
+.header--logo-image {
   vertical-align: bottom;
 }
 
 /* Wrapper for website name and slogan. */
-.header__name-and-slogan {
+.header--name-and-slogan {
   float: left;
 }
 
 /* The name of the website. */
-.header__site-name {
+.header--site-name {
   margin: 0;
   @include adjust-font-size-to( $h1-font-size );
 }
 
 /* The link around the name of the website. */
-.header__site-link {
+.header--site-link {
   &:link,
   &:visited {
     color: #000;
@@ -115,17 +115,17 @@
 }
 
 /* The slogan (or tagline) of a website. */
-.header__site-slogan {
+.header--site-slogan {
   margin: 0;
 }
 
 /* The secondary menu (login, etc.) */
-.header__secondary-menu {
-  float: right; /* LTR */
+.header--secondary-menu {
+  float: right;
 }
 
 /* Wrapper for any blocks placed in the header region. */
-.header__region {
+.header--region {
   /* Clear the logo. */
   clear: both;
 }
@@ -141,8 +141,8 @@
     margin-bottom: 0;
   }
 
-  .block-menu .block__title,
-  .block-menu-block .block__title {
+  .block-menu .block--title,
+  .block-menu-block .block--title {
     @extend %element-invisible;
   }
 
@@ -151,12 +151,12 @@
   .menu {
     margin: 0;
     padding: 0;
-    text-align: left; /* LTR */
+    text-align: left;
 
     li {
       /* A simple method to get navigation links to appear in one line. */
-      float: left; /* LTR */
-      padding: 0 10px 0 0; /* LTR */
+      float: left;
+      padding: 0 10px 0 0;
       list-style-type: none;
       list-style-image: none;
     }
@@ -182,12 +182,12 @@
 /**
  * Titles.
  */
-.page__title,          /* The title of the page. */
-.node__title,          /* Title of a piece of content when it is given in a list of content. */
-.block__title,         /* Block title. */
-.comments__title,      /* Comment section heading. */
-.comments__form-title, /* Comment form heading. */
-.comment__title {      /* Comment title. */
+.page--title,          /* The title of the page. */
+.node--title,          /* Title of a piece of content when it is given in a list of content. */
+.block--title,         /* Block title. */
+.comments--title,      /* Comment section heading. */
+.comments--form-title, /* Comment form heading. */
+.comment--title {      /* Comment title. */
   margin: 0;
 }
 
@@ -196,47 +196,47 @@
  */
 .messages {
   margin: rhythm(1) 0;
-  padding: 10px 10px 10px 50px; /* LTR */
-  background-image: inline-image("message-24-ok.png");
+  padding: 10px 10px 10px 50px;
+  background: inline-image("message-24-ok.png");
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *background-image: image-url("message-24-ok.png");
+    *background: image-url("message-24-ok.png");
   }
-  background-position: 8px 8px; /* LTR */
+  background-position: 8px 8px;
   background-repeat: no-repeat;
   border: 1px solid #be7;
 }
-.messages--status {
+.messages-status {
   @extend .messages;
   @extend %ok;
 }
-.messages--warning {
+.messages-warning {
   @extend .messages;
   @extend %warning;
-  background-image: inline-image("message-24-warning.png");
+  background: inline-image("message-24-warning.png");
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *background-image: image-url("message-24-warning.png");
+    *background: image-url("message-24-warning.png");
   }
   border-color: #ed5;
 }
-.messages--error {
+.messages-error {
   @extend .messages;
   @extend %error;
-  background-image: inline-image("message-24-error.png");
+  background: inline-image("message-24-error.png");
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *background-image: image-url("message-24-error.png");
+    *background: image-url("message-24-error.png");
   }
   border-color: #ed541d;
 
 }
-.messages__list {
+.messages--list {
   margin: 0;
 }
-.messages__item {
+.messages--item {
   list-style-image: none;
 }
 
 /* Core/module installation error messages. */
-.messages--error  p.error {
+.messages-error  p.error {
   color: #333;
 }
 
@@ -264,7 +264,7 @@
 /* Basic positioning styles shared by primary and secondary tabs. */
 %tabs {
   @include clearfix;
-  @include background-image(linear-gradient(bottom, $tabs-border 1px, transparent 1px));
+  @include background(linear-gradient(bottom, $tabs-border 1px, transparent 1px));
   /* IE 9 and earlier don't understand gradients. */
   list-style: none;
   border-bottom: 1px solid $tabs-border \0/ie;
@@ -272,11 +272,11 @@
   padding: 0 2px;
   white-space: nowrap;
 }
-%tabs__tab {
-  float: left; /* LTR */
+%tabs--tab {
+  float: left;
   margin: 0 3px;
 }
-%tabs__tab-link {
+%tabs--tab-link {
   border: 1px solid #e9e9e9;
   border-right: 0;
   border-bottom: 0;
@@ -289,8 +289,8 @@
 .tabs-primary {
   @extend %tabs;
 }
-.tabs-primary__tab {
-  @extend %tabs__tab;
+.tabs-primary--tab {
+  @extend %tabs--tab;
   @include border-top-radius(4px);
   @include single-text-shadow(#fff, 1px, 1px, 0);
   border: 1px solid $tabs-border;
@@ -298,14 +298,14 @@
   /* IE 9 and earlier don't understand gradients. */
   border-bottom: 0 \0/ie;
 }
-.tabs-primary__tab.is-active {
-  @extend .tabs-primary__tab;
+.tabs-primary--tab-active {
+  @extend .tabs-primary--tab;
   border-bottom-color: $tabs-container-bg;
 }
 
 // We use 3 placeholder styles to prevent @extend from going selector crazy.
-%tabs-primary__tab-link {
-  @extend %tabs__tab-link;
+%tabs-primary--tab-link {
+  @extend %tabs--tab-link;
   @include border-top-radius(4px);
   @include transition(background-color 0.3s);
   color: #333;
@@ -314,31 +314,31 @@
   padding: 0 1em;
   text-align: center;
 }
-%tabs-primary__tab-link-is-hover {
+%tabs-primary--tab-link-hover {
   background-color: #e9e9e9;
   border-color: #f2f2f2;
 }
-%tabs-primary__tab-link-is-active {
+%tabs-primary--tab-link-active {
   background-color: transparent;
   @include filter-gradient(rgba(#e9e9e9, 1), rgba(#e9e9e9, 0));
-  @include background-image(linear-gradient(rgba(#e9e9e9, 1), rgba(#e9e9e9, 0)));
+  @include background(linear-gradient(rgba(#e9e9e9, 1), rgba(#e9e9e9, 0)));
   border-color: #fff;
 }
 
-a.tabs-primary__tab-link {
-  @extend %tabs-primary__tab-link;
+a.tabs-primary--tab-link {
+  @extend %tabs-primary--tab-link;
 
   &:hover,
   &:focus {
-    @extend %tabs-primary__tab-link-is-hover;
+    @extend %tabs-primary--tab-link-hover;
   }
   &:active {
-    @extend %tabs-primary__tab-link-is-active;
+    @extend %tabs-primary--tab-link-active;
   }
 }
-a.tabs-primary__tab-link.is-active {
-  @extend %tabs-primary__tab-link;
-  @extend %tabs-primary__tab-link-is-active;
+a.tabs-primary--tab-link-active {
+  @extend %tabs-primary--tab-link;
+  @extend %tabs-primary--tab-link-active;
 }
 
 /* Secondary tabs. */
@@ -348,15 +348,15 @@ a.tabs-primary__tab-link.is-active {
   /* Collapse bottom margin of ul.primary. */
   margin-top: -(rhythm(1));
 }
-.tabs-secondary__tab,
-.tabs-secondary__tab.is-active {
-  @extend %tabs__tab;
+.tabs-secondary--tab,
+.tabs-secondary--tab-active {
+  @extend %tabs--tab;
   margin: rhythm(1)/2 3px;
 }
 
 // We use 3 placeholder styles to prevent @extend from going selector crazy.
-%tabs-secondary__tab-link {
-  @extend %tabs__tab-link;
+%tabs-secondary--tab-link {
+  @extend %tabs--tab-link;
   @include border-radius(.75em);
   @include transition(background-color 0.3s);
   @include single-text-shadow(#fff, 1px, 1px, 0);
@@ -364,32 +364,32 @@ a.tabs-primary__tab-link.is-active {
   color: #666;
   padding: 0 .5em;
 }
-%tabs-secondary__tab-link-is-focus {
+%tabs-secondary--tab-link-focus {
   background-color: #dedede;
   border-color: #999;
   color: #333;
 }
-%tabs-secondary__tab-link-is-active {
+%tabs-secondary--tab-link-active {
   @include single-text-shadow(#333, 1px, 1px, 0);
   background-color: #666;
   border-color: #000;
   color: #fff;
 }
 
-a.tabs-secondary__tab-link {
-  @extend %tabs-secondary__tab-link;
+a.tabs-secondary--tab-link {
+  @extend %tabs-secondary--tab-link;
 
   &:hover,
   &:focus {
-    @extend %tabs-secondary__tab-link-is-focus;
+    @extend %tabs-secondary--tab-link-focus;
   }
   &:active {
-    @extend %tabs-secondary__tab-link-is-active;
+    @extend %tabs-secondary--tab-link-active;
   }
 }
-a.tabs-secondary__tab-link.is-active {
-  @extend %tabs-secondary__tab-link;
-  @extend %tabs-secondary__tab-link-is-active;
+a.tabs-secondary--tab-link-active {
+  @extend %tabs-secondary--tab-link;
+  @extend %tabs-secondary--tab-link-active;
 }
 
 /**
@@ -404,32 +404,32 @@ a.tabs-secondary__tab-link.is-active {
   li {
     display: inline;
     list-style-type: none;
-    padding: 0 1em 0 0; /* LTR */
+    padding: 0 1em 0 0;
   }
 }
 
 /* The inline field label used by the Fences module. */
 span.field-label {
-  padding: 0 1em 0 0; /* LTR */
+  padding: 0 1em 0 0;
 }
 
 /**
  * "More" links.
  */
 .more-link {
-  text-align: right; /* LTR */
+  text-align: right;
 }
 .more-help-link {
-  text-align: right; /* LTR */
+  text-align: right;
 }
 .more-help-link a {
   background-image: inline-image("help.png");
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *background-image: image-url("help.png");
   }
-  background-position: 0 50%; /* LTR */
+  background-position: 0 50%;
   background-repeat: no-repeat;
-  padding: 1px 0 1px 20px; /* LTR */
+  padding: 1px 0 1px 20px;
 }
 
 /**
@@ -442,7 +442,8 @@ span.field-label {
   padding: 0;
   text-align: center;
 }
-%pager__item {
+
+%pager-item {
   display: inline;
   padding: 0 0.5em;
   list-style-type: none;
@@ -455,12 +456,12 @@ span.field-label {
 .pager-next,      /* The next page's list item. */
 .pager-last,      /* The last page's list item. */
 .pager-ellipsis { /* A concatenation of several list items using an ellipsis. */
-  @extend %pager__item;
+  @extend %pager-item;
 }
 
 /* The current page's list item. */
 .pager-current {
-  @extend %pager__item;
+  @extend %pager-item;
   font-weight: bold;
 }
 
@@ -476,26 +477,26 @@ span.field-label {
 /**
  * Menus.
  */
-.menu__item.is-leaf {
-  list-style-image: inline-image("menu-leaf.png");
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *list-style-image: image-url("menu-leaf.png");
-  }
-  list-style-type: square;
-}
-.menu__item.is-expanded {
+.menu--expanded {
   list-style-image: inline-image("menu-expanded.png");
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *list-style-image: image-url("menu-expanded.png");
   }
   list-style-type: circle;
 }
-.menu__item.is-collapsed {
-  list-style-image: inline-image("menu-collapsed.png"); /* LTR */
+.menu--collapsed {
+  list-style-image: inline-image("menu-collapsed.png");
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *list-style-image: image-url("menu-collapsed.png"); /* LTR */
+    *list-style-image: image-url("menu-collapsed.png");
   }
   list-style-type: disc;
+}
+.menu--leaf {
+  list-style-image: inline-image("menu-leaf.png");
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    *list-style-image: image-url("menu-leaf.png");
+  }
+  list-style-type: square;
 }
 
 /* The active item in a Drupal menu. */
@@ -639,7 +640,7 @@ a.button {
 
 /* Drupal's default login form block. */
 #user-login-form {
-  text-align: left; /* LTR */
+  text-align: left;
 }
 
 /**
@@ -663,7 +664,7 @@ a.button {
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* Un-do some of the padding on the ul list. */
-  margin-left: -20px; /* LTR */
+  margin-left: -20px;
 }
 #user-login ul {
   margin: rhythm(1) 0;
@@ -674,8 +675,8 @@ html.js #user-login-form li.openid-link,
  */
 form {
   th {
-    text-align: left; /* LTR */
-    padding-right: 1em; /* LTR */
+    text-align: left;
+    padding-right: 1em;
     border-bottom: 3px solid #ccc;
   }
   tbody {
@@ -744,16 +745,16 @@ td.menu-disabled {
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
       *background-image: image-url("menu-expanded.png");
     }
-    background-position: 5px 65%; /* LTR */
+    background-position: 5px 65%;
     background-repeat: no-repeat;
-    padding-left: 15px; /* LTR */
+    padding-left: 15px;
   }
   html.js .collapsed & {
-    background-image: inline-image("menu-collapsed.png"); /* LTR */
+    background-image: inline-image("menu-collapsed.png");
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-      *background-image: image-url("menu-collapsed.png"); /* LTR */
+      *background-image: image-url("menu-collapsed.png");
     }
-    background-position: 5px 50%; /* LTR */
+    background-position: 5px 50%;
   }
   .summary {
     color: #999;
@@ -802,6 +803,9 @@ tr.selected td {
   }
   .filled {
     background-color: #0072b9;
-    background-image: image-url("progress.gif");
+    background-image: inline-image("progress.gif");
+    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+      *background-image: image-url("progress.gif");
+    }
   }
 }

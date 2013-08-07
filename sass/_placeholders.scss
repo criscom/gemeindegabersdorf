@@ -78,3 +78,13 @@
   }
 
 }
+
+%inline-block
+{
+      display: inline-block;
+      display: -moz-inline-stack; // For Mozilla Firefox 2
+      vertical-align: top;
+      line-height: 1.5em;
+      zoom:1; // For IE7 and below
+      *display: inline; // For IE7 and below
+}
