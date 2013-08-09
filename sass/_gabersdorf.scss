@@ -62,9 +62,13 @@ body
 	@extend %single-transition;
 }
 
-input, select, img, iframe {
+input, select, img {
 	max-width: 100%;
 	height: auto;
+}
+
+iframe {
+	max-width: 100%;
 }
 
 a:link {
@@ -520,6 +524,7 @@ body.aktuelles .view-termine>.view-content>.view-grouping
 {
 	@extend %view-grouping;
 	margin-right: 1.9% !important;
+	width: 25%;
 }
 
 // Lokale Agenda 21 // Content Type Bildergalerie
