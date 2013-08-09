@@ -77,9 +77,16 @@ a:link {
 .column a:link, .column a:visited, .column a:active {
 	color: $color1;
 	&:hover {
-		color: $color5;
+		color: $color3;
 		text-decoration: none;
+
 	}
+}
+p a:hover, p li a:hover, p li a:hover, .download-file a:hover {
+		color: white!important;
+		background: $color1;
+		text-decoration: none;
+		padding: 2px 0;
 }
 
 .messages,
@@ -346,8 +353,9 @@ ul.nice-menu li.active-trail>a {
 }
 
 .field-name-title h2.page-title, // Name of the photo gallery ==> Name der Veranstaltung
-.block>h2.block-title // Aktuelles übersichtsseite inhalt/aktuelles
-
+.block>h2.block-title, // Aktuelles übersichtsseite inhalt/aktuelles
+.view-gemeindenachrichten h3, // Jahreszahl nach denen die Gemeindenachrichten sortiert werden 
+.collection-title // Gemeinde Gabersdorf im Überblick
 {
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -360,10 +368,19 @@ ul.nice-menu li.active-trail>a {
 }
 
 .view-grouping-header, // All views with responsive grid layout: Termine
-h2.view-title
+h2.view-title,
+.gemeindenachrichten h2, // Gemeindenachrichten Sommer 2013
+.node-lokale-agenda-21 h3.page-subtitle
 {
 	color: $color6;
 	font-size: 1.3em;
+}
+
+// Lokale Agenda 21
+.field-name-field-protokolle-titel,
+.field-name-field-titel-der-veranstaltung
+{
+	font-weight: bold;
 }
 
 // ======================================
@@ -390,7 +407,8 @@ h2.view-title
 .caption {} // Needed for Image Caption module so that it appears in Styles in den Editor
 
 .image-caption { // Image Caption, Bilduntertitel
-	margin-bottom: 10px;
+	line-height: 1.4em;
+	font-style: italic;
 }
 
 p>a>img 
@@ -399,6 +417,34 @@ p>a>img
 	border: none;
 }
 
+// left border ==> padding-left only
+.left-border,
+.field-name-field-files,
+.view-buergerservice, //http://gemeindegabersdorf.local/buergerservice
+.block>h2.block-title{
+	@extend %left-border;
+}
+
+// bottom border 
+.border-bottom,
+.field-collection-container,
+.view-gemeinderat .views-row,
+.view-gemeindeamt-team .views-row
+
+{
+	border-bottom: 1px solid $color3;
+	margin-bottom: 10px;
+}
+
+.link-border-bottom
+{
+	margin-bottom: 10px;
+}
+
+.view // Adds a margin to any view
+{
+	margin-bottom: 1.5em;
+}
 
 // Termine views
 // ======================================
@@ -448,18 +494,6 @@ body.aktuelles .block-views
 	@extend %box-shadow-teaser;
 }
 
-.block>h2.block-title,
-.view-stellenausschreibungen, // /inhalt/aktuelles
-.view-aktuelles-inhaltstyp-aktuelles- // inhalt/aktuelles
-{
-	@extend %left-border;
-}
-
-.view-stellenausschreibungen, // /inhalt/aktuelles
-.view-aktuelles-inhaltstyp-aktuelles- // inhalt/aktuelles
-{
-	margin-bottom: 1.5em;
-}
 
 #block-views-termine-block-2
 {
@@ -506,12 +540,20 @@ body.aktuelles .view-termine>.view-content>.view-grouping
 	padding-right: 5px;
 }
 
+.agenda-gallery .field-collection-view // moving the agenda 21 gallery to the right so that
+									  // we have three images in a row again
+{
+	margin-left: 0;
+}
 
-// Bildergalerie Landing page
+
+// Bildergalerie Landing page // Gemeindenachrichten Landing page
 // ======================================
 //  http://gemeindegabersdorf.local/inhalt/fotos-veranstaltungen
+//  http://gemeindegabersdorf.local/verwaltung/gemeindenachrichten
 
-body.page-inhalt-fotos-veranstaltungen h1.title 
+body.page-inhalt-fotos-veranstaltungen h1.title,
+body.page-verwaltung-gemeindenachrichten h1.title 
 {
 	margin-bottom: 20px;
 }
@@ -524,7 +566,10 @@ body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-co
 	overflow: hidden;
 }
 
-body.page-inhalt-fotos-veranstaltungen .view-content .views-row // box shadow
+body.page-inhalt-fotos-veranstaltungen .view-content .views-row, // box shadow
+.view-gemeindenachrichten .views-row, // Box Shadow for Gemeindenachrichten Years box
+#block-views-gemeinderat-block-1, // Block Gemeindevorstand
+#block-views-gemeinderat-block // Block Die Gemeinderäte
 {
 	
 	margin-bottom: 40px;
@@ -537,9 +582,11 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row // box shadow
 	
 }
 
-.field-name-field-bildergalerie-bilder-laden div div // Big teaser image
+.field-name-field-bildergalerie-bilder-laden div div, // Big teaser image
+.field-name-field-gemeindenachrichten-bild // Gemeindenachrichtenimage
 {
 	margin-top: 10px;
+	margin-bottom: 6px;
 	@extend %left-border;
 }
 
@@ -547,4 +594,64 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row // box shadow
 {
 	width: 49%;
 	margin-left: 1%;
+}
+
+// View Gemeindenachrichten specific styles
+// ======================================
+.view-gemeindenachrichten h3 // Jahreszahl nach denen die Gemeindenachrichten sortiert werden 
+{
+	@extend %left-border;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.gemeindenachrichten .views-column,
+.view-stellenausschreibungen .views-row,
+.view-aktuelles-inhaltstyp-aktuelles- .views-row
+{
+	border-top: 1px solid $color3;
+}
+
+.view-stellenausschreibungen .views-row,
+.view-aktuelles-inhaltstyp-aktuelles- .views-row
+{
+	padding-bottom: 10px;
+}
+
+.view-stellenausschreibungen .views-row-last,
+.view-aktuelles-inhaltstyp-aktuelles- .views-row-last
+{
+	padding-bottom: 0;
+}
+
+.gemeindenachrichten .views-column-first,
+.view-stellenausschreibungen .views-row-first,
+.view-aktuelles-inhaltstyp-aktuelles- .views-row-first,
+.view-gemeinderat .views-row-last,
+// .view-gemeindeamt-team .views-row-last
+{
+	border: none;
+}
+
+// View Verwaltung Landing page
+// ======================================
+
+.field-name-field-verwaltung .field-collection-view
+{
+	margin-right: 0;
+	margin-left: 0;
+}
+
+// View Der Gemeinderat Landing page
+// ======================================
+
+.view-gemeinderat .views-row,
+.view-gemeindeamt-team .views-row
+
+{
+	margin: 10px 0;
+	@extend %left-border;
+	.node-team {
+		margin-bottom: 3px;
+	}
 }
