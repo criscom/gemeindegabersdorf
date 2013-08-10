@@ -394,7 +394,7 @@ h2.view-title,
 
 .column li {
 	list-style-type: bullet;
-	color: $color1;
+	//color: $color1;
 }
 
 .egovernment.left {
@@ -415,10 +415,15 @@ h2.view-title,
 	font-style: italic;
 }
 
-p>a>img 
+p>img, // Inline images,
+p>span>img, // Inline images with caption
+p>a>img, // Colorbox inline images
+div.field-item img, // Image in Field Collection item
+span>img, // Kindergarten Gabersdorf 1. Bild
+div.photo>img // Amtsführer durch das Gabersdorfer Gemeindeamt
 {
-	@extend %box-shadow-teaser;
-	border: none;
+	//border: 1px solid $color3;
+	@include single-box-shadow;
 }
 
 // left border ==> padding-left only
@@ -433,7 +438,8 @@ p>a>img
 .border-bottom,
 .field-collection-container,
 .view-gemeinderat .views-row,
-.view-gemeindeamt-team .views-row
+.view-gemeindeamt-team .views-row,
+.view-vereine .views-row
 
 {
 	border-bottom: 1px solid $color3;
@@ -659,4 +665,47 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row, // box shadow
 	.node-team {
 		margin-bottom: 3px;
 	}
+}
+
+// View Vereine Landing page
+// ======================================
+
+.view-vereine .views-row-1 .group-left img // Some margin for first image on Vereine overview
+{
+	margin-top: 5px;
+}
+
+.node-vereine.view-mode-full {
+	.group-right
+	{
+		width: 35%;
+		.left-border {
+			margin-top: 30px;
+			text-align: right;
+		}
+	}
+	.group-left
+	{
+		width: 65%;
+	}
+}
+
+a.more-link
+{
+	display: block!important;
+	text-align: left!important;
+	&:hover {
+		background: none;
+		text-decoration: none;
+		color: $color3!important;
+		padding: 0;
+	}
+}
+
+// SITEMAP
+// ======================================
+
+// hide title "Main Menu"
+.site-map-box-menu h2 {
+	display: none;
 }
