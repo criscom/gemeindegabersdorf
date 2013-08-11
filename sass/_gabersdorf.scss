@@ -454,7 +454,8 @@ div.photo>img // Amtsführer durch das Gabersdorfer Gemeindeamt
 .field-collection-container,
 .view-gemeinderat .views-row,
 .view-gemeindeamt-team .views-row,
-.view-vereine .views-row
+.view-vereine .views-row,
+.view-gewerbebetriebe .views-row
 
 {
 	border-bottom: 1px solid $color3;
@@ -685,9 +686,10 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row, // box shadow
 // View Vereine Landing page
 // ======================================
 
-.view-vereine .views-row-1 .group-left img // Some margin for first image on Vereine overview
+.views-row .group-left img // Some margin for first image on Vereine overview
 {
-	margin-top: 5px;
+	margin-top: 15px;
+	margin-bottom: 20px;
 }
 
 // .node-vereine.view-mode-full {
@@ -719,6 +721,23 @@ a.more-link
 		color: $color3!important;
 		padding: 0;
 	}
+}
+
+// View Gewerbebetriebe
+// ======================================
+
+.view-gewerbebetriebe {
+	.views-row {
+		clear: both;
+	}
+		.group-left {
+			float: left;
+			width: 50%;
+		}
+		.group-right {
+			float: right;
+			width: 50%;
+		}
 }
 
 // SITEMAP
