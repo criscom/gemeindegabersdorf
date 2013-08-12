@@ -2426,12 +2426,20 @@ div.photo > img {
   behavior: url("/sites/all/themes/gemeinde-gabersdorf/PIE/PIE.php");
 }
 
-/* line 449, ../sass/_gabersdorf.scss */
+/* line 450, ../sass/_gabersdorf.scss */
 .region-header img {
   box-shadow: none;
 }
+/* line 454, ../sass/_gabersdorf.scss */
+.region-header a {
+  text-decoration: none;
+}
+/* line 457, ../sass/_gabersdorf.scss */
+.region-header a:hover {
+  background: none;
+}
 
-/* line 475, ../sass/_gabersdorf.scss */
+/* line 487, ../sass/_gabersdorf.scss */
 .border-bottom,
 .field-collection-container,
 .view-gemeinderat .views-row,
@@ -2443,98 +2451,98 @@ div.photo > img {
   margin-bottom: 10px;
 }
 
-/* line 481, ../sass/_gabersdorf.scss */
+/* line 493, ../sass/_gabersdorf.scss */
 .link-border-bottom {
   margin-bottom: 10px;
 }
 
-/* line 486, ../sass/_gabersdorf.scss */
+/* line 498, ../sass/_gabersdorf.scss */
 .view {
   margin-bottom: 1.5em;
 }
 
-/* line 506, ../sass/_gabersdorf.scss */
+/* line 518, ../sass/_gabersdorf.scss */
 .view-grouping .view-grouping-content h3 {
   font-weight: normal;
   margin-bottom: 0;
 }
 
-/* line 512, ../sass/_gabersdorf.scss */
+/* line 524, ../sass/_gabersdorf.scss */
 .views-responsive-grid {
   padding-bottom: 5px;
   border-bottom: 1px solid #c3c38f;
 }
 
-/* line 517, ../sass/_gabersdorf.scss */
+/* line 529, ../sass/_gabersdorf.scss */
 span.field-content {
   font-weight: bold;
 }
 
-/* line 526, ../sass/_gabersdorf.scss */
+/* line 538, ../sass/_gabersdorf.scss */
 .column {
   position: relative;
   z-index: 99;
 }
 
-/* line 532, ../sass/_gabersdorf.scss */
+/* line 544, ../sass/_gabersdorf.scss */
 body.aktuelles .block-views {
   width: 49%;
   float: left;
 }
 
-/* line 540, ../sass/_gabersdorf.scss */
+/* line 552, ../sass/_gabersdorf.scss */
 #block-views-termine-block-2 {
   margin-right: 1%;
 }
 
-/* line 545, ../sass/_gabersdorf.scss */
+/* line 557, ../sass/_gabersdorf.scss */
 body.aktuelles .view-termine > .view-content > .view-grouping {
   width: 48%;
 }
 
-/* line 551, ../sass/_gabersdorf.scss */
+/* line 563, ../sass/_gabersdorf.scss */
 .view-grouping-header {
   margin-top: 1.15em;
   font-weight: bold;
 }
 
-/* line 561, ../sass/_gabersdorf.scss */
+/* line 573, ../sass/_gabersdorf.scss */
 .view-buergerservice .views-row {
   margin-right: 1.9% !important;
   width: 25%;
 }
 
-/* line 574, ../sass/_gabersdorf.scss */
+/* line 586, ../sass/_gabersdorf.scss */
 .field-name-field-agenda-bild-laden div div,
 .field-name-field-bildergalerie-bilder-laden div div {
   vertical-align: middle;
 }
 
-/* line 581, ../sass/_gabersdorf.scss */
+/* line 593, ../sass/_gabersdorf.scss */
 .field-name-field-agenda-bild-laden div .field-item,
 .field-name-field-bildergalerie-bilder-laden div .field-item {
   padding-right: 5px;
 }
 
-/* line 587, ../sass/_gabersdorf.scss */
+/* line 599, ../sass/_gabersdorf.scss */
 .agenda-gallery .field-collection-view {
   margin-left: 0;
 }
 
-/* line 599, ../sass/_gabersdorf.scss */
+/* line 611, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen h1.title,
 body.page-verwaltung-gemeindenachrichten h1.title {
   margin-bottom: 20px;
 }
 
-/* line 605, ../sass/_gabersdorf.scss */
+/* line 617, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content {
   position: relative;
   z-index: 99;
   overflow: hidden;
 }
 
-/* line 618, ../sass/_gabersdorf.scss */
+/* line 630, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen .view-content .views-row,
 .view-gemeindenachrichten.view-display-id-page .views-row,
 #block-views-gemeinderat-block-1,
@@ -2543,89 +2551,89 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row,
   margin-bottom: 40px;
 }
 
-/* line 632, ../sass/_gabersdorf.scss */
+/* line 644, ../sass/_gabersdorf.scss */
 .field-name-field-bildergalerie-bilder-laden div div,
 .field-name-field-gemeindenachrichten-bild {
   margin-top: 10px;
   margin-bottom: 6px;
 }
 
-/* line 639, ../sass/_gabersdorf.scss */
+/* line 651, ../sass/_gabersdorf.scss */
 .view-bildergalerie-landing-page .group-right {
   width: 49%;
   margin-left: 1%;
 }
 
-/* line 657, ../sass/_gabersdorf.scss */
+/* line 669, ../sass/_gabersdorf.scss */
 .front .view h2 {
   margin-top: 5px;
   margin-bottom: 0px;
   color: #463830;
 }
-/* line 662, ../sass/_gabersdorf.scss */
+/* line 674, ../sass/_gabersdorf.scss */
 .front .view p {
   margin-top: 0px;
 }
-/* line 666, ../sass/_gabersdorf.scss */
+/* line 678, ../sass/_gabersdorf.scss */
 .front .view .more-link {
   text-align: left;
 }
-/* line 668, ../sass/_gabersdorf.scss */
+/* line 680, ../sass/_gabersdorf.scss */
 .front .view .more-link a:hover {
   color: white !important;
   background: #888820 !important;
   padding: 2px 0;
 }
 
-/* line 677, ../sass/_gabersdorf.scss */
+/* line 689, ../sass/_gabersdorf.scss */
 .front .view .view-grouping-header {
   margin-top: 12px;
 }
 
-/* line 682, ../sass/_gabersdorf.scss */
+/* line 694, ../sass/_gabersdorf.scss */
 .pane-weather-system-1 small {
   display: none;
 }
 
-/* line 692, ../sass/_gabersdorf.scss */
+/* line 704, ../sass/_gabersdorf.scss */
 .weather > div {
   float: left;
   width: 30%;
   text-align: left !important;
 }
 
-/* line 700, ../sass/_gabersdorf.scss */
+/* line 712, ../sass/_gabersdorf.scss */
 .weather ul {
   margin-left: 31%;
   margin-right: 2%;
 }
 
-/* line 709, ../sass/_gabersdorf.scss */
+/* line 721, ../sass/_gabersdorf.scss */
 .view-gemeindenachrichten h3 {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-/* line 718, ../sass/_gabersdorf.scss */
+/* line 730, ../sass/_gabersdorf.scss */
 .gemeindenachrichten .views-column,
 .view-stellenausschreibungen .views-row,
 .view-aktuelles-inhaltstyp-aktuelles- .views-row {
   border-top: 1px solid #c3c38f;
 }
 
-/* line 724, ../sass/_gabersdorf.scss */
+/* line 736, ../sass/_gabersdorf.scss */
 .view-stellenausschreibungen .views-row,
 .view-aktuelles-inhaltstyp-aktuelles- .views-row {
   padding-bottom: 10px;
 }
 
-/* line 730, ../sass/_gabersdorf.scss */
+/* line 742, ../sass/_gabersdorf.scss */
 .view-stellenausschreibungen .views-row-last,
 .view-aktuelles-inhaltstyp-aktuelles- .views-row-last {
   padding-bottom: 0;
 }
 
-/* line 739, ../sass/_gabersdorf.scss */
+/* line 751, ../sass/_gabersdorf.scss */
 .gemeindenachrichten .views-column-first,
 .view-stellenausschreibungen .views-row-first,
 .view-aktuelles-inhaltstyp-aktuelles- .views-row-first,
@@ -2633,62 +2641,62 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row,
   border: none;
 }
 
-/* line 747, ../sass/_gabersdorf.scss */
+/* line 759, ../sass/_gabersdorf.scss */
 .field-name-field-verwaltung .field-collection-view {
   margin-right: 0;
   margin-left: 0;
 }
 
-/* line 758, ../sass/_gabersdorf.scss */
+/* line 770, ../sass/_gabersdorf.scss */
 .view-gemeinderat .views-row,
 .view-gemeindeamt-team .views-row {
   margin: 10px 0;
 }
-/* line 761, ../sass/_gabersdorf.scss */
+/* line 773, ../sass/_gabersdorf.scss */
 .view-gemeinderat .views-row .node-team,
 .view-gemeindeamt-team .views-row .node-team {
   margin-bottom: 3px;
 }
 
-/* line 770, ../sass/_gabersdorf.scss */
+/* line 782, ../sass/_gabersdorf.scss */
 .views-row .group-left img {
   margin-top: 15px;
   margin-bottom: 20px;
 }
 
-/* line 798, ../sass/_gabersdorf.scss */
+/* line 810, ../sass/_gabersdorf.scss */
 .view-gewerbebetriebe .views-row {
   clear: both;
 }
-/* line 801, ../sass/_gabersdorf.scss */
+/* line 813, ../sass/_gabersdorf.scss */
 .view-gewerbebetriebe .group-left {
   float: left;
   width: 50%;
 }
-/* line 805, ../sass/_gabersdorf.scss */
+/* line 817, ../sass/_gabersdorf.scss */
 .view-gewerbebetriebe .group-right {
   float: right;
   width: 50%;
 }
 
-/* line 814, ../sass/_gabersdorf.scss */
+/* line 826, ../sass/_gabersdorf.scss */
 .view-freizeit .views-row h2 {
   margin-bottom: 0;
 }
 
-/* line 820, ../sass/_gabersdorf.scss */
+/* line 832, ../sass/_gabersdorf.scss */
 .view-freizeit .view-header, .view-freizeit .view-footer {
   border-bottom: 1px solid #c3c38f;
   margin-bottom: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 827, ../sass/_gabersdorf.scss */
+/* line 839, ../sass/_gabersdorf.scss */
 .view-freizeit .view-footer {
   border-bottom: none;
 }
 
-/* line 837, ../sass/_gabersdorf.scss */
+/* line 849, ../sass/_gabersdorf.scss */
 .site-map-box-menu h2 {
   display: none;
 }

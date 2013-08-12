@@ -445,10 +445,22 @@ div.photo>img // Amtsführer durch das Gabersdorfer Gemeindeamt
 }
 
 // Excluding images in the region below the header ==> Facebook and other Logos
-.region-header img 
-{
-	box-shadow: none;
+.region-header {
+	img 
+	{
+		box-shadow: none;
+	}
+	a
+	{
+		text-decoration: none;
+		&:hover
+		{
+			background: none;
+		}
+	}
+
 }
+
 
 // left border ==> padding-left only
 // ======================================
