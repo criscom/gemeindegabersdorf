@@ -100,6 +100,19 @@ p a:hover, p li a:hover, p li a:hover, .download-file a:hover {
 	background-repeat: no-repeat;
 }
 
+// Inhaltstyp Aktuelles
+a.more-link
+{
+	display: block!important;
+	text-align: left!important;
+	&:hover {
+		background: none;
+		text-decoration: none;
+		color: $color3!important;
+		padding: 0;
+	}
+}
+
 // ======================================
 // Header section with Gemeinde Logo and Sublogos
 // ======================================
@@ -359,7 +372,8 @@ ul.nice-menu li.active-trail>a {
 .field-name-title h2.page-title, // Name of the photo gallery ==> Name der Veranstaltung
 .block>h2.block-title, // Aktuelles übersichtsseite inhalt/aktuelles
 .view-gemeindenachrichten h3, // Jahreszahl nach denen die Gemeindenachrichten sortiert werden 
-.collection-title // Gemeinde Gabersdorf im Überblick
+.collection-title, // Gemeinde Gabersdorf im Überblick
+h2.pane-title //Homepage Headings FRONTPAGE
 {
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -443,7 +457,8 @@ div.photo>img // Amtsführer durch das Gabersdorfer Gemeindeamt
 .view-buergerservice, //http://gemeindegabersdorf.local/buergerservice
 .block>h2.block-title,
 .view-header p,
-.view-footer p
+.view-footer p,
+h2.pane-title //Homepage Headings FRONTPAGE
 {
 	@extend %left-border;
 }
@@ -455,8 +470,8 @@ div.photo>img // Amtsführer durch das Gabersdorfer Gemeindeamt
 .view-gemeinderat .views-row,
 .view-gemeindeamt-team .views-row,
 .view-vereine .views-row,
-.view-gewerbebetriebe .views-row
-
+.view-gewerbebetriebe .views-row,
+.view-freizeit .views-row
 {
 	border-bottom: 1px solid $color3;
 	margin-bottom: 10px;
@@ -593,8 +608,11 @@ body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-co
 	overflow: hidden;
 }
 
+// BOX SHADOW for views
+// ======================================
+
 body.page-inhalt-fotos-veranstaltungen .view-content .views-row, // box shadow
-.view-gemeindenachrichten .views-row, // Box Shadow for Gemeindenachrichten Years box
+.view-gemeindenachrichten.view-display-id-page .views-row, // Box Shadow for Gemeindenachrichten Years box Overview
 #block-views-gemeinderat-block-1, // Block Gemeindevorstand
 #block-views-gemeinderat-block // Block Die Gemeinderäte
 {
@@ -622,6 +640,68 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row, // box shadow
 	width: 49%;
 	margin-left: 1%;
 }
+
+// ======================================
+// FRONTPAGE styles
+// ======================================
+
+// BOX SHADOW for Frontpage
+// ======================================
+.panel-pane 
+{
+	@extend #block-views-gemeinderat-block;
+}
+
+.front .view { // Aktuelles > Heading News
+	h2
+	{
+	margin-top: 5px;
+	margin-bottom: 0px;
+	color: $color6;
+	}
+	p {
+		margin-top: 0px;
+	}
+	.more-link // More Link Termine Front
+	{
+		text-align: left;
+		a:hover {
+			color: white !important;
+			background: $color1 !important;
+			padding: 2px 0;
+		}
+	}
+}
+
+.front .view .view-grouping-header 
+{
+	margin-top: 12px;
+}
+
+.pane-weather-system-1 small
+{
+	display: none;
+}
+
+.weather p
+{
+	@extend %left-border;
+}
+
+.weather>div
+{
+	float: left;
+	width: 30%;
+	text-align: left !important;
+	@extend %left-border;
+}
+
+.weather ul
+{
+	margin-left: 31%;
+	margin-right: 2%;
+}
+
 
 // View Gemeindenachrichten specific styles
 // ======================================
@@ -711,18 +791,6 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row, // box shadow
 	@extend %two-columns;
 }
 
-a.more-link
-{
-	display: block!important;
-	text-align: left!important;
-	&:hover {
-		background: none;
-		text-decoration: none;
-		color: $color3!important;
-		padding: 0;
-	}
-}
-
 // View Gewerbebetriebe
 // ======================================
 
@@ -738,6 +806,28 @@ a.more-link
 			float: right;
 			width: 50%;
 		}
+}
+
+// View Freizeit
+// ======================================
+
+.view-freizeit .views-row h2 {
+	margin-bottom: 0;
+}
+
+.view-freizeit { 
+	.view-header
+	{
+		border-bottom: 1px solid $color3;
+		margin-bottom: 10px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	 .view-footer
+	 {
+	 	@extend .view-header;
+	 	border-bottom: none;
+	 }
 }
 
 // SITEMAP
