@@ -659,7 +659,11 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row, // box shadow
 
 // BOX SHADOW for Frontpage
 // ======================================
-.panel-pane 
+
+.panels-flexible-row-2-main-row .panel-pane,
+.panels-flexible-row-2-2 .panel-pane,
+.panels-flexible-row-2-3 .panel-pane
+
 {
 	@extend #block-views-gemeinderat-block;
 }
@@ -712,6 +716,57 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row, // box shadow
 {
 	margin-left: 31%;
 	margin-right: 2%;
+}
+
+// Royal Slider Slideshow Homepage
+// ======================================
+
+#HPslideshow {
+	height: 220px;
+	width: 930px;
+
+}
+
+.panels-flexible-region-2-top_col
+{
+	margin-left: -11px;
+}
+
+div.slideshow-title {
+	position: absolute;
+	top: 161px;
+	color: $color6;
+	font-size: 1.5em;
+	padding: 10px;
+	background: rgba(white, 0.8);
+	width: 100%;
+
+}
+
+.royalSlider .royalSlide, .royalSlider .royalWrapper {
+	background: transparent !important; // Navigation bg transparent
+}
+
+.royalSlider.default .royalControlNavOverflow {
+	margin-top: -10px;
+}
+
+.royalSlider.default .royalControlNavCenterer {
+	background: transparent;
+}
+
+.royalSlider .royalControlNavContainer {
+		left: 95%;
+}
+
+.royalSlider.default .royalControlNavOverflow a 
+{
+	background-image: none;
+	background-color: $color1;
+	margin-right: 3px;
+	&.current {
+		background-color: $color5;
+	}
 }
 
 
