@@ -3,10 +3,10 @@
        
     //RoyalSlider Rotator Element Homepage
     $("#HPslideshow").royalSlider({
-		captionShowEffects:["moveleft", "fade"],
+		captionShowEffects:["fade"],
 		directionNavAutoHide: true,
-		slideTransitionType: "move",            // Slide transition type: Can be "fade" or "move".
-		slideTransitionSpeed:800,               // Slide transition speed in ms (1s = 1000ms).
+		slideTransitionType: "fade",            // Slide transition type: Can be "fade" or "move".
+		slideTransitionSpeed:600,               // Slide transition speed in ms (1s = 1000ms).
 		slideTransitionEasing:"easeInOutSine",  // Easing type for slide transition.
 		slideshowEnabled: true
 	}); //Royal Slider Rotator

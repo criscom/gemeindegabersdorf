@@ -660,6 +660,17 @@ body.page-inhalt-fotos-veranstaltungen .view-content .views-row, // box shadow
 // BOX SHADOW for Frontpage
 // ======================================
 
+// setting the width of the columns
+.panels-flexible-region-2-col_one, // 1st column 1st row, Termine
+.panels-flexible-region-2-center, // 2nd column 1st row, Aktuelles
+.panels-flexible-region-2-col_right, // 3rd column 1st row, Gabersdorf aktuell
+.panels-flexible-region-2-col_one_2nd_row, // 1st column 2nd row, Förderprogramme
+.panels-flexible-region-2-bottom_col, // 2nd column 2nd row, Stellenausschreibungen
+.panels-flexible-region-2-2nd_col_right // 3rd column 2nd row, Unsere Gemeinde
+{
+	width: 33.333%;
+}
+
 .panels-flexible-row-2-main-row .panel-pane,
 .panels-flexible-row-2-2 .panel-pane,
 .panels-flexible-row-2-3 .panel-pane
@@ -738,7 +749,7 @@ div.slideshow-title {
 	color: $color6;
 	font-size: 1.5em;
 	padding: 10px;
-	background: rgba(white, 0.8);
+	background: rgba(white, 0.5);
 	width: 100%;
 
 }
