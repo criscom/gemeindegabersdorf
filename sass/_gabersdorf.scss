@@ -607,12 +607,14 @@ body.aktuelles .view-termine>.view-content>.view-grouping
 //  http://gemeindegabersdorf.local/verwaltung/gemeindenachrichten
 
 body.page-inhalt-fotos-veranstaltungen h1.title,
+body.page-node-fotos-veranstaltungen h1.title,
 body.page-verwaltung-gemeindenachrichten h1.title 
 {
 	margin-bottom: 20px;
 }
 
-body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content
+body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content,
+body.page-node-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content
 // code taken from: http://matthamm.com/box-shadow-curl.html
 {
 	position: relative; // using a parent element make use that the parent div has position: relative; z-index: 99;
@@ -624,6 +626,7 @@ body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-co
 // ======================================
 
 body.page-inhalt-fotos-veranstaltungen .view-content .views-row, // box shadow
+body.page-node-fotos-veranstaltungen .view-content .views-row, // Fotos Veranstaltungen Landing Page mit neuer URL
 .view-gemeindenachrichten.view-display-id-page .views-row, // Box Shadow for Gemeindenachrichten Years box Overview
 #block-views-gemeinderat-block-1, // Block Gemeindevorstand
 #block-views-gemeinderat-block // Block Die Gemeinderäte
