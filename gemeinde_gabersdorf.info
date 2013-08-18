@@ -49,11 +49,16 @@ stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
 
 ; Then we add our own stylesheet.
+; ROYALSLIDER 
 stylesheets[all][]   = css/royalslider-skins/royalslider.css
 stylesheets[all][]   = css/royalslider-skins/kf/default.css
 stylesheets[all][]   = css/royalslider-skins/default/default.css
 stylesheets[all][]   = css/royalslider-skins/iskin/iskin.css
 stylesheets[all][]   = css/royalslider-skins/minimal/minimal.css
+
+; TOUCHCAROUSEL
+stylesheets[all][]   = css/touchcarousel-skins/touchcarousel.css
+stylesheets[all][]   = css/touchcarousel-skins/black-and-white-skin.css
 
 stylesheets[all][] = css/styles.css
 

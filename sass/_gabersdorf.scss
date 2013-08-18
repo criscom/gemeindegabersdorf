@@ -18,6 +18,7 @@
 * 
 {
 	@include bs;
+	@include transition(all, .5s);
 }
 
 body 
@@ -215,9 +216,6 @@ a.more-link
 
 // Soft green background for the main menu
 .region-navigation {
-	@extend %menu-border;
-	background-color: $color2;
-	height: 3.9em;
 	// padding-left: .5em; // Aligning the first menu item 'Home' with node headings and FB icon
 	//width: 100%;
 	
@@ -229,6 +227,18 @@ a.more-link
 #navigation {
 	z-index: 100; // because we set z-index: 99; to the gallery container we need to adjust
 				  // a higher z-index to #navigation so that the drop down is visible;
+	text-align: center !important;
+	.region-navigation {
+		@extend %menu-border;
+		background-color: $color2;
+		height: 3.9em;
+		
+		@media screen and (max-width: 903px) {
+			height: 8em !important;
+			// text-align: center !important;
+
+		}
+	}
 }
 
 .menu,
@@ -240,9 +250,7 @@ ul.nice-menu {
 		a
 		{
 		@extend %menu;
-		@extend %single-transition;
-	
-			&:hover, &:focus {
+			&:hover {
 				background-color: lighten($color1, 3%); // on hover the menu item will be given a violet bg color
 				color: white;
 				// height: 2em;
@@ -259,7 +267,11 @@ ul.nice-menu {
 			padding-top: 2em;
 			border:none; // 2nd menu level
 			li { // menu item of 2nd menu level
-				width: 20em; 
+				width: 20em;
+				a:hover {
+					background-color: lighten($color1, 3%); // on hover the menu item will be given a violet bg color
+					color: white;
+				}
 			}
 		}
 	}
@@ -336,13 +348,194 @@ ul.nice-menu li.active-trail>a {
 }
 
 // ======================================
+// FRONTPAGE styles
+// ======================================
+
+// BOX SHADOW for Frontpage
+// ======================================
+
+// setting the width of the columns
+.panels-flexible-region-2-col_one, // 1st column 1st row, Termine
+.panels-flexible-region-2-center, // 2nd column 1st row, Aktuelles
+.panels-flexible-region-2-col_right, // 3rd column 1st row, Gabersdorf aktuell
+.panels-flexible-region-2-col_one_2nd_row, // 1st column 2nd row, Förderprogramme
+.panels-flexible-region-2-bottom_col, // 2nd column 2nd row, Stellenausschreibungen
+.panels-flexible-region-2-2nd_col_right // 3rd column 2nd row, Unsere Gemeinde
+{
+	width: 33.333%;
+}
+
+.panels-flexible-row-2-main-row .panel-pane,
+.panels-flexible-row-2-2 .panel-pane,
+.panels-flexible-row-2-3 .panel-pane
+
+{
+	@extend #block-views-gemeinderat-block;
+}
+
+.front .view { // Aktuelles > Heading News
+	h2
+	{
+	margin-top: 5px;
+	margin-bottom: 0px;
+	color: $color6;
+	}
+	p {
+		margin-top: 0px;
+	}
+	.more-link // More Link Termine Front
+	{
+		text-align: left;
+		a:hover {
+			color: white !important;
+			background: $color1 !important;
+			padding: 2px 0;
+		}
+	}
+}
+
+.front .view .view-grouping-header 
+{
+	margin-top: 12px;
+}
+
+.pane-weather-system-1 small
+{
+	display: none;
+}
+
+.weather p
+{
+	@extend %left-border;
+}
+
+.weather>div
+{
+	float: left;
+	width: 30%;
+	text-align: left !important;
+	@extend %left-border;
+}
+
+.weather ul
+{
+	margin-left: 31%;
+	margin-right: 2%;
+}
+
+// Royal Slider Slideshow Homepage
+// ======================================
+
+#HPslideshow {
+	width: 100%;
+	height: 220px;
+	@media screen and (max-width: 903px) {
+			margin-top: 4.1em !important;
+		}
+	@media screen and (min-width: 960px) {
+	width: 930px; // 930px / 960px;
+	
+	}
+}
+
+.panels-flexible-region-2-top_col {
+	text-align: center;
+	@media screen and (min-width: 960px)
+	{
+	margin-left: -11px;
+	}
+}
+
+div.slideshow-title {
+	color: $color6;
+	font-size: 1.5em;
+	text-align: left;
+	height: 100%;
+	line-height: .1em;
+		@media screen and (min-width: 960px) {
+		position: absolute;
+		padding: 10px;
+		top: 161px;
+		width: 100%;
+		background: rgba(white, 0.5);
+		line-height: 1.6em;
+		}
+	}
+
+.royalSlider .royalSlide, .royalSlider .royalWrapper {
+	background: transparent !important; // Navigation bg transparent
+}
+
+.royalSlider.default .royalControlNavOverflow {
+	margin-top: -10px;
+}
+
+.royalSlider.default .royalControlNavCenterer {
+	background: transparent;
+}
+
+.royalSlider .royalControlNavContainer {
+		left: 95%;
+}
+
+.royalSlider.default .royalControlNavOverflow a 
+{
+	background-image: none;
+	background-color: $color1;
+	margin-right: 3px;
+	&.current {
+		background-color: $color5;
+	}
+}
+
+// ======================================
 // FOOTER
 // ======================================
 
-.region-footer {
-	background: transparent image-url('footer_bg.jpg') 15px 9px no-repeat;
+// FOOTER Frontpage Image Rotator Touchcarousel
+// ======================================
+.region-footer > .first {
+	margin-top: 15px;
+	background:transparent image-url('image-rotator_bg.png') left top no-repeat;
+	border-bottom: 1px solid $color8;
+	h2 {
+		background:none !important;
+		color: white !important;
+	}
+}
+
+.touchcarousel {
+	width: 100%;
+	height: 155px;
+}
+.touchcarousel-container {
+	width: 100%;
+	.views-row {
+		@extend %inline-block;
+		ul {
+			padding-left: 10px;
+		}
+			li {
+				float: left;
+				list-style-image: none;
+				list-style-type: none;
+				padding-right: 10px;
+				&.last {
+					padding-right: 0;
+				}
+			}
+		}
+}
+
+// FOOTER Impressum
+// ======================================
+.region-footer #block-block-1 {
+	background: transparent image-url('footer_bg.jpg') top left no-repeat;
+	height: 40px;
+	margin-top: 25px;
 	p {
 		@extend %left-border; // Aligning the first footer item with node header, first menu item and FB icon
+		padding-top: 6px;
 		color: white;
 		text-transform: uppercase;
 		font-size: .9em;
@@ -437,7 +630,8 @@ p>span>img, // Inline images with caption
 p>a>img, // Colorbox inline images
 div.field-item img, // Image in Field Collection item
 span>img, // Kindergarten Gabersdorf 1. Bild
-div.photo>img // Amtsführer durch das Gabersdorfer Gemeindeamt
+div.photo>img, // Amtsführer durch das Gabersdorfer Gemeindeamt
+li>a>img // Frontpage Image Rotator and of course all images in lists
 {
 	//border: 1px solid $color3;
 	@include box-shadow(0px 10px 8px -8px rgba(0, 0, 0, 0.75));
@@ -466,6 +660,7 @@ div.photo>img // Amtsführer durch das Gabersdorfer Gemeindeamt
 // ======================================
 .left-border,
 .field-name-field-files,
+.field-name-oeffnen-der-bildergalerie,
 .view-buergerservice, //http://gemeindegabersdorf.local/buergerservice
 .block>h2.block-title,
 .view-header p,
@@ -654,133 +849,6 @@ body.page-node-fotos-veranstaltungen .view-content .views-row, // Fotos Veransta
 {
 	width: 49%;
 	margin-left: 1%;
-}
-
-// ======================================
-// FRONTPAGE styles
-// ======================================
-
-// BOX SHADOW for Frontpage
-// ======================================
-
-// setting the width of the columns
-.panels-flexible-region-2-col_one, // 1st column 1st row, Termine
-.panels-flexible-region-2-center, // 2nd column 1st row, Aktuelles
-.panels-flexible-region-2-col_right, // 3rd column 1st row, Gabersdorf aktuell
-.panels-flexible-region-2-col_one_2nd_row, // 1st column 2nd row, Förderprogramme
-.panels-flexible-region-2-bottom_col, // 2nd column 2nd row, Stellenausschreibungen
-.panels-flexible-region-2-2nd_col_right // 3rd column 2nd row, Unsere Gemeinde
-{
-	width: 33.333%;
-}
-
-.panels-flexible-row-2-main-row .panel-pane,
-.panels-flexible-row-2-2 .panel-pane,
-.panels-flexible-row-2-3 .panel-pane
-
-{
-	@extend #block-views-gemeinderat-block;
-}
-
-.front .view { // Aktuelles > Heading News
-	h2
-	{
-	margin-top: 5px;
-	margin-bottom: 0px;
-	color: $color6;
-	}
-	p {
-		margin-top: 0px;
-	}
-	.more-link // More Link Termine Front
-	{
-		text-align: left;
-		a:hover {
-			color: white !important;
-			background: $color1 !important;
-			padding: 2px 0;
-		}
-	}
-}
-
-.front .view .view-grouping-header 
-{
-	margin-top: 12px;
-}
-
-.pane-weather-system-1 small
-{
-	display: none;
-}
-
-.weather p
-{
-	@extend %left-border;
-}
-
-.weather>div
-{
-	float: left;
-	width: 30%;
-	text-align: left !important;
-	@extend %left-border;
-}
-
-.weather ul
-{
-	margin-left: 31%;
-	margin-right: 2%;
-}
-
-// Royal Slider Slideshow Homepage
-// ======================================
-
-#HPslideshow {
-	height: 220px;
-	width: 930px;
-
-}
-
-.panels-flexible-region-2-top_col
-{
-	margin-left: -11px;
-}
-
-div.slideshow-title {
-	position: absolute;
-	top: 161px;
-	color: $color6;
-	font-size: 1.5em;
-	padding: 10px;
-	background: rgba(white, 0.5);
-	width: 100%;
-
-}
-
-.royalSlider .royalSlide, .royalSlider .royalWrapper {
-	background: transparent !important; // Navigation bg transparent
-}
-
-.royalSlider.default .royalControlNavOverflow {
-	margin-top: -10px;
-}
-
-.royalSlider.default .royalControlNavCenterer {
-	background: transparent;
-}
-
-.royalSlider .royalControlNavContainer {
-		left: 95%;
-}
-
-.royalSlider.default .royalControlNavOverflow a 
-{
-	background-image: none;
-	background-color: $color1;
-	margin-right: 3px;
-	&.current {
-		background-color: $color5;
-	}
 }
 
 
