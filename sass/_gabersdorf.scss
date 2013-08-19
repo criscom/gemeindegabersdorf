@@ -272,8 +272,11 @@ ul.nice-menu {
 			padding-top: 2em;
 			border:none; // 2nd menu level
 			li { // menu item of 2nd menu level
+				background-color: transparentize($color2, .1)!important;
 				width: 20em;
-				a:hover {
+				a {
+				}
+				&:hover {
 					background-color: lighten($color1, 3%); // on hover the menu item will be given a violet bg color
 					color: white;
 				}
@@ -770,9 +773,6 @@ body.aktuelles .column > .block-views
 	width: 49%;
 	float: left;
 	@extend %box-shadow-teaser;
-	.lt-ie9 & {
-		//width: 40%; //quickfix for IE8; still needs work;
-	}
 }
 
 
