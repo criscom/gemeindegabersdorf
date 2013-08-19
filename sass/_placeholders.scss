@@ -49,6 +49,9 @@
   vertical-align: top;
   margin-right: 2%;
   width: 31.3333%; 
+  line-height: 1.5em;
+  zoom:1; // For IE7 and below
+  *display: inline; // For IE7 and below
 }
 
 %box-shadow-teaser // box shadow for teaser boxes "home", "bildergalerie"

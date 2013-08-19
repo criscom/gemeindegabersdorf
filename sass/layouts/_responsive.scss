@@ -12,7 +12,7 @@
 // We are going to create a 980px wide, 5 column grid with 20px gutters between
 // columns (applied as 10px of left/right padding on each column).
 $zen-column-count:  5;
-$zen-gutter-width:  20px;
+$zen-gutter-width:  16px; // changed from 20px to 16px because we have a max-width of 960px;
 
 // If you need IE6/7 support for box-sizing: border-box (default), see _base.scss
 //$zen-box-sizing: content-box;

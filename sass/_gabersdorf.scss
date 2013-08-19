@@ -119,7 +119,8 @@ a.more-link
 // ======================================
 
 //.header
-[role="banner"]
+[role="banner"],
+// .lt-ie9 #header // For IE 8
  {
 	//overflow: hidden;
 	height: 205px; // A scaleable vector graphic for the header section
@@ -140,6 +141,7 @@ a.more-link
 	.no-svg & { // For browsers that don't support SVAs we load a png for the header thanks to modernizr
 		// background: transparent image-url('header/header-mit-text-mit-wappen.png') 15px 0px no-repeat;
 	}
+	
 }
 
 .header__logo { // the logo is a blank transparent png in order to make the text section in the header clickable
@@ -160,7 +162,7 @@ a.more-link
 		.block {
 			@extend %inline-block;
 			p {// removing margin on top of the adress text in order to move it further twd the header
-				margin-top: 22px; // Added after Zen update 07.08.2013 before: margin-top: 0px;
+				margin-top: 0;
 			}
 		}
 		.first { // Aligning the address block
@@ -172,19 +174,22 @@ a.more-link
 		}
 }
 
+
+
 // Search form in Header block/region
 // ======================================
 [role="search"] { // positioning of search form
-	float: right;
+	float: right !important;
 	padding-top: 7.3em;
 	@extend %right-border;
 	@media only screen and (max-width: 721px)
 	{
 		padding-top: 4.5em;
-		float: left;
+		//float: left;
 		// @extend %left-border;
 	}
 }
+
 
 .block-search input[type="text"] {
 	// height: 2em;
@@ -311,6 +316,7 @@ ul.nice-menu li.active-trail>a {
 		border-bottom: 1px solid $color8;
 		a {
 			color: $color6;
+			font-size: 1.15em!important;
 			&:hover
 			{color: white}
 		}
@@ -735,11 +741,14 @@ span.field-content {
 	z-index: 99;
 }
 
-body.aktuelles .block-views 
+body.aktuelles .column > .block-views 
 {
 	width: 49%;
 	float: left;
 	@extend %box-shadow-teaser;
+	.lt-ie9 & {
+		width: 40%; //quickfix for IE8; still needs work;
+	}
 }
 
 

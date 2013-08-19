@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
@@ -5,23 +6,24 @@
  * When you turn on CSS aggregation at admin/config/development/performance, all
  * of these @include files will be combined into a single file.
  */
+/* © EINSTERN Internet Serives 2013 www.einstern.at */
 /* Import Sass mixins, variables, Compass modules, etc. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/bg-sprites\/\*\.png}line{font-family:\0000350}}
+/* line 50, bg-sprites/*.png */
 .bg-sprites-sprite, .bg-sprites-bg_body, .bg-sprites-bg_header {
   background: url('../images/bg-sprites-s18f9313191.png') no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cpotzinger\/\.rvm\/gems\/ruby-1\.9\.3-p448\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
+/* line 60, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .bg-sprites-bg_body {
   background-position: 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cpotzinger\/\.rvm\/gems\/ruby-1\.9\.3-p448\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000360}}
+/* line 60, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .bg-sprites-bg_header {
   background-position: 0 -125px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000310}}
+/* line 10, ../sass/_placeholders.scss */
 #content p, a:link {
   -webkit-transition: all 0.3s ease;
   -webkit-transition-delay: 0s;
@@ -30,7 +32,7 @@
   transition: all 0.3s ease 0s;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000319}}
+/* line 19, ../sass/_placeholders.scss */
 .menu > li a,
 ul.nice-menu > li a, .menu > li a.active,
 ul.nice-menu > li a.active, ul.nice-menu li.active-trail > a, .region-sidebar-second .block-views .view-termine .views-summary a {
@@ -46,13 +48,13 @@ ul.nice-menu > li a.active, ul.nice-menu li.active-trail > a, .region-sidebar-se
   background: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000333}}
+/* line 33, ../sass/_placeholders.scss */
 #navigation .region-navigation {
   border-top: 1px solid #a2a4a5;
   border-bottom: 1px solid #a2a4a5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000338}}
+/* line 38, ../sass/_placeholders.scss */
 .header__region, .weather p, .weather > div, .region-footer #block-block-1 p, .field-name-body h1,
 .page__title,
 .page-title, .left-border,
@@ -68,22 +70,25 @@ h2.pane-title, .view-termine, .field-name-field-bildergalerie-bilder-laden div d
   padding-left: 11px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000343}}
+/* line 43, ../sass/_placeholders.scss */
 .header__region .last, [role="search"] {
   padding-right: 11px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000347}}
+/* line 47, ../sass/_placeholders.scss */
 .view-display-id-page_1 > .view-content > .view-grouping,
 .view-display-id-page_2 > .view-content > .view-grouping, body.aktuelles .view-termine > .view-content > .view-grouping, .view-buergerservice .views-row {
   display: inline-block;
   vertical-align: top;
   margin-right: 2%;
   width: 31.3333%;
+  line-height: 1.5em;
+  zoom: 1;
+  *display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000355}}
-body.aktuelles .block-views, body.page-inhalt-fotos-veranstaltungen .view-content .views-row,
+/* line 58, ../sass/_placeholders.scss */
+body.aktuelles .column > .block-views, body.page-inhalt-fotos-veranstaltungen .view-content .views-row,
 body.page-node-fotos-veranstaltungen .view-content .views-row,
 .view-gemeindenachrichten.view-display-id-page .views-row,
 #block-views-gemeinderat-block-1,
@@ -99,15 +104,15 @@ body.page-node-fotos-veranstaltungen .view-content .views-row,
   box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.27), 0 0 40px rgba(136, 136, 32, 0.1) inset;
   behavior: url("/sites/all/themes/gemeinde-gabersdorf/PIE/PIE.php");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000361}}
-body.aktuelles .block-views:before, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:before,
+/* line 64, ../sass/_placeholders.scss */
+body.aktuelles .column > .block-views:before, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:before,
 body.page-node-fotos-veranstaltungen .view-content .views-row:before,
 .view-gemeindenachrichten.view-display-id-page .views-row:before,
 #block-views-gemeinderat-block-1:before,
 #block-views-gemeinderat-block:before,
 .panels-flexible-row-2-main-row .panel-pane:before,
 .panels-flexible-row-2-2 .panel-pane:before,
-.panels-flexible-row-2-3 .panel-pane:before, body.aktuelles .block-views:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after,
+.panels-flexible-row-2-3 .panel-pane:before, body.aktuelles .column > .block-views:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after,
 body.page-node-fotos-veranstaltungen .view-content .views-row:after,
 .view-gemeindenachrichten.view-display-id-page .views-row:after,
 #block-views-gemeinderat-block-1:after,
@@ -133,8 +138,8 @@ body.page-node-fotos-veranstaltungen .view-content .views-row:after,
   -o-transform: skew(-15deg) rotate(-6deg);
   transform: skew(-15deg) rotate(-6deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000374}}
-body.aktuelles .block-views:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after,
+/* line 77, ../sass/_placeholders.scss */
+body.aktuelles .column > .block-views:after, body.page-inhalt-fotos-veranstaltungen .view-content .views-row:after,
 body.page-node-fotos-veranstaltungen .view-content .views-row:after,
 .view-gemeindenachrichten.view-display-id-page .views-row:after,
 #block-views-gemeinderat-block-1:after,
@@ -151,7 +156,7 @@ body.page-node-fotos-veranstaltungen .view-content .views-row:after,
   transform: skew(15deg) rotate(6deg);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000383}}
+/* line 86, ../sass/_placeholders.scss */
 .header__region .block, .touchcarousel-container .views-row, .field-name-field-agenda-bild-laden div div,
 .field-name-field-bildergalerie-bilder-laden div div {
   display: inline-block;
@@ -162,16 +167,16 @@ body.page-node-fotos-veranstaltungen .view-content .views-row:after,
   *display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000395}}
+/* line 98, ../sass/_placeholders.scss */
 .node-vereine.view-mode-full .group-right {
   width: 35%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\0000397}}
+/* line 100, ../sass/_placeholders.scss */
 .node-vereine.view-mode-full .group-right .left-border {
   margin-top: 30px;
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_placeholders\.scss}line{font-family:\00003103}}
+/* line 106, ../sass/_placeholders.scss */
 .node-vereine.view-mode-full .group-left {
   width: 65%;
 }
@@ -272,7 +277,7 @@ body.page-node-fotos-veranstaltungen .view-content .views-row:after,
  * HTML5 display definitions
  */
 /* Correct `block` display not defined in IE 8/9. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\0000333}}
+/* line 33, ../sass/_normalize.scss */
 article,
 aside,
 details,
@@ -288,7 +293,7 @@ summary {
 }
 
 /* Correct `inline-block` display not defined in IE 8/9. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\0000340}}
+/* line 40, ../sass/_normalize.scss */
 audio,
 canvas,
 video {
@@ -299,14 +304,14 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\0000352}}
+/* line 52, ../sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
 /* Address styling not present in IE 8/9. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\0000358}}
+/* line 58, ../sass/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -354,7 +359,7 @@ audio:not([controls]) {
  * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
  *    `em` units.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003106}}
+/* line 106, ../sass/_normalize.scss */
 html {
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
   /* 1 */
@@ -368,7 +373,7 @@ html {
 }
 
 /* Remove default margin. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003126}}
+/* line 126, ../sass/_normalize.scss */
 body {
   margin: 0;
   padding: 0;
@@ -381,13 +386,13 @@ body {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 /* Address `outline` inconsistency between Chrome and other browsers. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003148}}
+/* line 148, ../sass/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
 
 /* Improve readability when focused and also mouse hovered in all browsers. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003154}}
+/* line 154, ../sass/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -403,13 +408,13 @@ a:hover {
  * For more information, see http://24ways.org/2006/compose-to-a-vertical-rhythm
  */
 /* Set 1 unit of vertical rhythm on the top and bottom margin. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003170}}
+/* line 170, ../sass/_normalize.scss */
 p,
 pre {
   margin: 1.5em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003173}}
+/* line 173, ../sass/_normalize.scss */
 blockquote {
   /* Also indent the quote on both sides. */
   margin: 1.5em 30px;
@@ -419,7 +424,7 @@ blockquote {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003182}}
+/* line 182, ../sass/_normalize.scss */
 h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   font-size: 2em;
@@ -429,7 +434,7 @@ h1 {
   margin-bottom: 0.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003190}}
+/* line 190, ../sass/_normalize.scss */
 h2 {
   font-size: 1.5em;
   line-height: 2em;
@@ -437,7 +442,7 @@ h2 {
   margin-bottom: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003195}}
+/* line 195, ../sass/_normalize.scss */
 h3 {
   font-size: 1.17em;
   line-height: 1.28205em;
@@ -445,7 +450,7 @@ h3 {
   margin-bottom: 1.28205em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003200}}
+/* line 200, ../sass/_normalize.scss */
 h4 {
   font-size: 1em;
   line-height: 1.5em;
@@ -453,7 +458,7 @@ h4 {
   margin-bottom: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003205}}
+/* line 205, ../sass/_normalize.scss */
 h5 {
   font-size: 0.83em;
   line-height: 1.80723em;
@@ -461,7 +466,7 @@ h5 {
   margin-bottom: 1.80723em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003210}}
+/* line 210, ../sass/_normalize.scss */
 h6 {
   font-size: 0.67em;
   line-height: 2.23881em;
@@ -470,26 +475,26 @@ h6 {
 }
 
 /* Address styling not present in IE 8/9, Safari 5, and Chrome. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003217}}
+/* line 217, ../sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
 /* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003223}}
+/* line 223, ../sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
 /* Address styling not present in Safari 5 and Chrome. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003228}}
+/* line 228, ../sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
 /* Address differences between Firefox and other browsers. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003233}}
+/* line 233, ../sass/_normalize.scss */
 hr {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -501,14 +506,14 @@ hr {
 }
 
 /* Address styling not present in IE 8/9. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003242}}
+/* line 242, ../sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
 /* Correct font family set oddly in Safari 5 and Chrome. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003253}}
+/* line 253, ../sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -521,25 +526,25 @@ var {
 }
 
 /* Improve readability of pre-formatted text in all browsers. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003262}}
+/* line 262, ../sass/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
 
 /* Set consistent quote types. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003274}}
+/* line 274, ../sass/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 /* Address inconsistent and variable font size in all browsers. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003279}}
+/* line 279, ../sass/_normalize.scss */
 small {
   font-size: 80%;
 }
 
 /* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003285}}
+/* line 285, ../sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -548,12 +553,12 @@ sup {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003291}}
+/* line 291, ../sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003294}}
+/* line 294, ../sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -561,7 +566,7 @@ sub {
 /**
  * Lists
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003304}}
+/* line 304, ../sass/_normalize.scss */
 dl,
 menu,
 ol,
@@ -570,7 +575,7 @@ ul {
   margin: 1.5em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003311}}
+/* line 311, ../sass/_normalize.scss */
 ol ol,
 ol ul,
 ul ol,
@@ -579,13 +584,13 @@ ul ul {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003316}}
+/* line 316, ../sass/_normalize.scss */
 dd {
   margin: 0 0 0 30px;
 }
 
 /* Address paddings set differently in IE 6/7. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003323}}
+/* line 323, ../sass/_normalize.scss */
 menu,
 ol,
 ul {
@@ -597,7 +602,7 @@ ul {
  *
  * @todo Look into adding responsive embedded video.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003341}}
+/* line 341, ../sass/_normalize.scss */
 img {
   /* Remove border when inside `a` element in IE 8/9. */
   border: 0;
@@ -611,13 +616,13 @@ img {
 }
 
 /* Correct overflow displayed oddly in IE 9. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003362}}
+/* line 362, ../sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
 /* Address margin not present in IE 8/9 and Safari 5. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003367}}
+/* line 367, ../sass/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -626,7 +631,7 @@ figure {
  * Forms
  */
 /* Define consistent border, margin, and padding. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003383}}
+/* line 383, ../sass/_normalize.scss */
 fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
@@ -650,7 +655,7 @@ fieldset {
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003398}}
+/* line 398, ../sass/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -665,7 +670,7 @@ legend {
  * 4. Improve appearance and consistency with IE 6/7.
  * 5. Keep form elements constrained in their containers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003416}}
+/* line 416, ../sass/_normalize.scss */
 button,
 input,
 select,
@@ -688,7 +693,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003433}}
+/* line 433, ../sass/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -700,7 +705,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003444}}
+/* line 444, ../sass/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -715,7 +720,7 @@ select {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003460}}
+/* line 460, ../sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -729,7 +734,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003472}}
+/* line 472, ../sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -741,7 +746,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003483}}
+/* line 483, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -757,7 +762,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003497}}
+/* line 497, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -771,14 +776,14 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003507}}
+/* line 507, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /* Remove inner padding and border in Firefox 4+. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003513}}
+/* line 513, ../sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -789,7 +794,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003522}}
+/* line 522, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -798,7 +803,7 @@ textarea {
 }
 
 /* Drupal-style form labels. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003528}}
+/* line 528, ../sass/_normalize.scss */
 label {
   display: block;
   font-weight: bold;
@@ -807,7 +812,7 @@ label {
 /**
  * Tables
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_normalize\.scss}line{font-family:\00003536}}
+/* line 536, ../sass/_normalize.scss */
 table {
   /* Remove most spacing between table cells. */
   border-collapse: collapse;
@@ -836,7 +841,7 @@ table {
  * For screen sizes larger than 1200px, prevent excessively long lines of text
  * by setting a max-width.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\0000335}}
+/* line 35, ../sass/layouts/_responsive.scss */
 #page,
 .region-bottom {
   margin-left: auto;
@@ -845,15 +850,15 @@ table {
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\0000348}}
+/* line 48, ../sass/layouts/_responsive.scss */
 #header,
 #content,
 #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
 #footer {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -862,7 +867,7 @@ table {
 }
 
 /* Containers for grid items and flow items. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000352}}
+/* line 52, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #header:before, #header:after,
 #main:before,
 #main:after,
@@ -871,7 +876,7 @@ table {
   content: "";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000356}}
+/* line 56, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 #header:after,
 #main:after,
 #footer:after {
@@ -880,14 +885,14 @@ table {
 
 /* Navigation bar */
 @media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\0000362}}
+  /* line 62, ../sass/layouts/_responsive.scss */
   #main {
     /* Move all the children of #main down to make room. */
     padding-top: 3em;
     position: relative;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\0000367}}
+  /* line 67, ../sass/layouts/_responsive.scss */
   #navigation {
     /* Move the navbar up inside #main's padding. */
     position: absolute;
@@ -903,19 +908,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\0000388}}
+  /* line 88, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\0000390}}
+  /* line 90, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\0000395}}
+  /* line 95, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -926,19 +931,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003103}}
+  /* line 103, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003105}}
+  /* line 105, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -66.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003110}}
+  /* line 110, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 33.33333%;
@@ -949,27 +954,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003118}}
+  /* line 118, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003120}}
+  /* line 120, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003125}}
+  /* line 125, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003130}}
+  /* line 130, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -983,17 +988,17 @@ table {
     /* Span 1 column, starting in the 2nd column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003136}}
+  /* line 136, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003140}}
+  /* line 140, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
     width: 33.33333%;
@@ -1001,14 +1006,14 @@ table {
     margin-right: -33.33333%;
     clear: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003145}}
+  /* line 145, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
     width: 33.33333%;
     margin-left: 33.33333%;
     margin-right: -66.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003149}}
+  /* line 149, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
     width: 33.33333%;
@@ -1023,19 +1028,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003166}}
+  /* line 166, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003168}}
+  /* line 168, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 80%;
     margin-left: 20%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003173}}
+  /* line 173, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1046,19 +1051,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003181}}
+  /* line 181, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003183}}
+  /* line 183, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 80%;
     margin-left: 0%;
     margin-right: -80%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003188}}
+  /* line 188, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1069,27 +1074,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003196}}
+  /* line 196, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003198}}
+  /* line 198, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 60%;
     margin-left: 20%;
     margin-right: -80%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003203}}
+  /* line 203, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/layouts\/_responsive\.scss}line{font-family:\00003208}}
+  /* line 208, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1110,7 +1115,7 @@ table {
 /**
  * Wireframes.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\0000322}}
+/* line 22, ../sass/components/_misc.scss */
 .with-wireframes #header,
 .with-wireframes #main,
 .with-wireframes #content,
@@ -1126,7 +1131,7 @@ table {
  * Accessibility features.
  */
 /* element-invisible as defined by http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\0000340}}
+/* line 40, ../sass/components/_misc.scss */
 .element-invisible,
 .element-focusable,
 #navigation .block-menu .block__title,
@@ -1139,7 +1144,7 @@ table {
 }
 
 /* Turns off the element-invisible effect. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\0000345}}
+/* line 45, ../sass/components/_misc.scss */
 .element-focusable:active, .element-focusable:focus {
   position: static !important;
   clip: auto;
@@ -1151,11 +1156,11 @@ table {
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\0000362}}
+/* line 62, ../sass/components/_misc.scss */
 #skip-link {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\0000366}}
+/* line 66, ../sass/components/_misc.scss */
 #skip-link a,
 #skip-link a:visited {
   display: block;
@@ -1170,7 +1175,7 @@ table {
  * Branding header.
  */
 /* Wrapping link for logo. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\0000381}}
+/* line 81, ../sass/components/_misc.scss */
 .header__logo {
   float: left;
   /* LTR */
@@ -1179,19 +1184,19 @@ table {
 }
 
 /* Logo image. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\0000388}}
+/* line 88, ../sass/components/_misc.scss */
 .header__logo-image {
   vertical-align: bottom;
 }
 
 /* Wrapper for website name and slogan. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\0000393}}
+/* line 93, ../sass/components/_misc.scss */
 .header__name-and-slogan {
   float: left;
 }
 
 /* The name of the website. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\0000398}}
+/* line 98, ../sass/components/_misc.scss */
 .header__site-name {
   margin: 0;
   font-size: 2em;
@@ -1199,31 +1204,31 @@ table {
 }
 
 /* The link around the name of the website. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003106}}
+/* line 106, ../sass/components/_misc.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #000;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003112}}
+/* line 112, ../sass/components/_misc.scss */
 .header__site-link:hover, .header__site-link:focus {
   text-decoration: underline;
 }
 
 /* The slogan (or tagline) of a website. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003118}}
+/* line 118, ../sass/components/_misc.scss */
 .header__site-slogan {
   margin: 0;
 }
 
 /* The secondary menu (login, etc.) */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003123}}
+/* line 123, ../sass/components/_misc.scss */
 .header__secondary-menu {
   float: right;
   /* LTR */
 }
 
 /* Wrapper for any blocks placed in the header region. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003128}}
+/* line 128, ../sass/components/_misc.scss */
 .header__region {
   /* Clear the logo. */
   clear: both;
@@ -1232,17 +1237,17 @@ table {
 /**
  * Navigation bar.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003136}}
+/* line 136, ../sass/components/_misc.scss */
 #navigation {
   /* Sometimes you want to prevent overlapping with main div. */
   /* overflow: hidden; */
   /* Main menu and secondary menu links and menu block links. */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003140}}
+/* line 140, ../sass/components/_misc.scss */
 #navigation .block {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003151}}
+/* line 151, ../sass/components/_misc.scss */
 #navigation .links,
 #navigation .menu {
   margin: 0;
@@ -1250,7 +1255,7 @@ table {
   text-align: left;
   /* LTR */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003156}}
+/* line 156, ../sass/components/_misc.scss */
 #navigation .links li,
 #navigation .menu li {
   /* A simple method to get navigation links to appear in one line. */
@@ -1265,12 +1270,12 @@ table {
 /**
  * Breadcrumb navigation.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003170}}
+/* line 170, ../sass/components/_misc.scss */
 .breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003174}}
+/* line 174, ../sass/components/_misc.scss */
 .breadcrumb li {
   display: inline;
   list-style-type: none;
@@ -1281,7 +1286,7 @@ table {
 /**
  * Titles.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003190}}
+/* line 190, ../sass/components/_misc.scss */
 .page__title,
 .node__title,
 .block__title,
@@ -1295,7 +1300,7 @@ table {
 /**
  * Messages.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003197}}
+/* line 197, ../sass/components/_misc.scss */
 .messages, .messages--status, .messages--warning, .messages--error {
   margin: 1.5em 0;
   padding: 10px 10px 10px 50px;
@@ -1307,50 +1312,50 @@ table {
   border: 1px solid #be7;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003212}}
+/* line 212, ../sass/components/_misc.scss */
 .messages--warning {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACuElEQVRIx2P4//8/Ay0xSYqntTpnT252zqeJBf0Njhsykrz/pyd6/e9vcNpGVQv6q2wlm0qc/r0+IPD/3UG+/61l9v9mdrjIUc2C7hqHUzc3S///eZwBjO9tF/vfWe1wjioWTKixVm8otPn38wQT3IKfxxn/t5Va/utpsNSg2ILWcttrNzdJgQ3+dpQRjEHs+9tE/zeXWt+gyILOamuTqlxrsOtPLub+7+emBsSq/88v5wL7oqHQ9H9nmbkF2RbUF1rev7lJEuziuU3i/90ddcB4UZsoJC62ifyvK7R4QJYFrcUGrmUZ5v9hYb9hosh/bzcDMN42VRgeF9W5hv8bi/XdSbagKtfs2c1NEvCIPbaQ/7+/pwkYn17Ki0hR24T/l2eZPCfJgsZ83dCiNOP/yCnn7iau/8G+5mD8aBsHSoqqyNL9X5erHUm0BcVpRm9ubhZHMoTh/4eDzP/DA23+RwTZ/P96hAlF7t5Wof8FyfpvibKgNk8noyDZ4D9quofg1Bjr/1kJlhjiIF+Upmn/r83RzCJoQXaC3qcbm8SwGMLwvybP/H8jMGlik7u7VeB/Zqz2J7wWVGdr1uTG62J1PQgfWST1/+hiCaxyIF8UJqv9r8hQrcVpQVqkzrcbG0WwGvB2H/P/lnx5MAaxsam5vYn3f2KY+jesFpSlqfZnxWjidP2OGWL/g/0swBjExu4Lhv958Ur/i5KU+lEsCA1lYI4JUv95bZ0gTo2Pt3P+z0myBmMQG5e6mxu4/kf4Kf8EmQm3oCRNebKrvSawIGPBqRG9sMOp5hjjfwdrlf/58bKT4RaUpWvtcLZV/39iscD/H0AFP46jYwYiMeP/44u4/9tbKQODSXUH3II9G7v18hI0n8YGKv+IDVT6joxj/BVx4mgcOCde/SnITPRUJAHEGlTCEmS1KsjBAN8FC64V21VDAAAAAElFTkSuQmCC');
   border-color: #ed5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003221}}
+/* line 221, ../sass/components/_misc.scss */
 .messages--error {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACpElEQVR42rWWTUgbQRiGQ0Tx4MWDeFM8eBA9iKAoggiCoCiiIiL4L3oQV1CJB0UEf6iRYFpK7UniTw9VSqL2kvQsVDBpSZrtRo35czVNW3oprRf17exSl4yzu1ikAy9h59vvedhkMrMGAGoxknAk2w8MJ/WosXThiZkZt9jdLeglPjn5ATc3mhJNuNjbK0QbG3ExMICL/n6IfX0gcxB7ekDAELu6IHZ2IlJbi1hLS1BLogmPtbUhMTv7oMSamzUlqnByMxLT0/8STQkDj9TV4ZLj5OysrODl8jIu5Gs68dFR7JG6dWkJ0fFx+TpSX89IDMnwcHU1yKec12Yz3rlc4HkeLwjkXJpPip3U3+7vIx6P4ymph4eG5PlwTQ0lMdytlmBxMWKtrXLeT0zA5XTibvj9fjxfXETkb/3N/Dz2dneVuiTZtliU/rPSUsQ5ziuxZYG03IIlJdKKUPJjdRUAKMmzuTnskB/VYbdTtd9HR4g2NCi9Z2VliDY1BSnBaUEBzsrLqXyzWCiQ9HU5HA4afniIUFWV0hOqqMBpURErOM7NxWlhIZOvCwvA7S3Uxq+DA5AnZ3pO8vJYQSArC8c5Oeqx2Rj4udeLQH6+6v2B7GxW8DkjA0JmJpONwUHY7XZGIAgCzCYTeJUewmIFfqMRfEoKlQ2yJbza2oLWcLvdeDI2hk/3+iQWKzAYkJzNjg5srq9TwJ9OJ76YTNScx+ORJT66X1/grKyEbW2NgfPp6XKd/JMZySrHaQsSU1Oe+0/w3WpVgyu5HBlR6lc+H8gioevDwz6JrWwV5+3txyoSFk5DcOX1MnCyJ4Vwfb1zt1UY9SR8aioDpuppaVpwZbPTl+hHF04dOKzk8XBF8DgJC3/woU/W/EciOtELOWi8DDwp//215Q+p7kiKh2lQSAAAAABJRU5ErkJggg==');
   border-color: #ed541d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003231}}
+/* line 231, ../sass/components/_misc.scss */
 .messages__list {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003234}}
+/* line 234, ../sass/components/_misc.scss */
 .messages__item {
   list-style-image: none;
 }
 
 /* Core/module installation error messages. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003239}}
+/* line 239, ../sass/components/_misc.scss */
 .messages--error p.error {
   color: #333;
 }
 
 /* System status report. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003245}}
+/* line 245, ../sass/components/_misc.scss */
 .ok,
 .messages--status {
   background-color: #f8fff0;
   color: #234600;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003250}}
+/* line 250, ../sass/components/_misc.scss */
 .warning,
 .messages--warning {
   background-color: #fffce5;
   color: #840;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003255}}
+/* line 255, ../sass/components/_misc.scss */
 .error,
 .messages--error {
   background-color: #fef5f1;
@@ -1361,7 +1366,7 @@ table {
  * Tabs.
  */
 /* Basic positioning styles shared by primary and secondary tabs. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003265}}
+/* line 265, ../sass/components/_misc.scss */
 .tabs-primary, .tabs-secondary {
   overflow: hidden;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, #bbbbbb), color-stop(100%, transparent));
@@ -1377,7 +1382,7 @@ table {
   white-space: nowrap;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003275}}
+/* line 275, ../sass/components/_misc.scss */
 .tabs-primary__tab, .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   float: left;
@@ -1385,7 +1390,7 @@ table {
   margin: 0 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003279}}
+/* line 279, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link, a.tabs-secondary__tab-link {
   border: 1px solid #e9e9e9;
   border-right: 0;
@@ -1396,7 +1401,7 @@ a.tabs-primary__tab-link, a.tabs-secondary__tab-link {
 }
 
 /* Primary tabs. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003292}}
+/* line 292, ../sass/components/_misc.scss */
 .tabs-primary__tab, .tabs-primary__tab.is-active {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -1411,12 +1416,12 @@ a.tabs-primary__tab-link, a.tabs-secondary__tab-link {
   border-bottom: 0 \0/ie;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003301}}
+/* line 301, ../sass/components/_misc.scss */
 .is-active.tabs-primary__tab {
   border-bottom-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003307}}
+/* line 307, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -1435,13 +1440,13 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003317}}
+/* line 317, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link:hover, a.tabs-primary__tab-link:focus {
   background-color: #e9e9e9;
   border-color: #f2f2f2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003321}}
+/* line 321, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   background-color: transparent;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#00E9E9E9');
@@ -1454,20 +1459,20 @@ a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
 }
 
 /* Secondary tabs. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003345}}
+/* line 345, ../sass/components/_misc.scss */
 .tabs-secondary {
   font-size: .9em;
   /* Collapse bottom margin of ul.primary. */
   margin-top: -1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003352}}
+/* line 352, ../sass/components/_misc.scss */
 .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   margin: 0.75em 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003358}}
+/* line 358, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   -webkit-border-radius: 0.75em;
   -moz-border-radius: 0.75em;
@@ -1484,14 +1489,14 @@ a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   padding: 0 .5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003367}}
+/* line 367, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
   background-color: #dedede;
   border-color: #999;
   color: #333;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003372}}
+/* line 372, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   text-shadow: 1px 1px 0 #333333;
   background-color: #666;
@@ -1503,12 +1508,12 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
  * Inline styles.
  */
 /* List of links generated by theme_links(). */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003400}}
+/* line 400, ../sass/components/_misc.scss */
 .inline {
   display: inline;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003404}}
+/* line 404, ../sass/components/_misc.scss */
 .inline li {
   display: inline;
   list-style-type: none;
@@ -1517,7 +1522,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 }
 
 /* The inline field label used by the Fences module. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003412}}
+/* line 412, ../sass/components/_misc.scss */
 span.field-label {
   padding: 0 1em 0 0;
   /* LTR */
@@ -1526,19 +1531,19 @@ span.field-label {
 /**
  * "More" links.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003419}}
+/* line 419, ../sass/components/_misc.scss */
 .more-link {
   text-align: right;
   /* LTR */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003422}}
+/* line 422, ../sass/components/_misc.scss */
 .more-help-link {
   text-align: right;
   /* LTR */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003425}}
+/* line 425, ../sass/components/_misc.scss */
 .more-help-link a {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA7UlEQVR42qWTPQqDQBCFcwSPkCNITpAj5AjeIm1uYpkyR7Cy2Mot7OwsBAsRwUKwmOwLGRle3EIy8PyBfZ/z3J2TiPylz8VWWZZpUB40BonRKyizaxkA88MYYiqCEgv4MTvnZJom0VqWRbz3FlJZgLYtqmEY1Lg9r+sKsIXcLSC3AC019H0vqLquLeC5AfiHYSGkcdAJimKIBQiJ4+CO92OAtm0FNc8zOjkMwE5Q63FAtbeg6zpAYvG8BWR7i5qmQYwY4MIHqYhE2DOPQWcGJBQF2XU72ZzyUeZ5GCNt5/hybJgYdAXsq5sOEE/jG6dC5IOqCXTmAAAAAElFTkSuQmCC');
   background-position: 0 50%;
@@ -1552,14 +1557,14 @@ span.field-label {
  * Pager.
  */
 /* A list of page numbers when more than 1 page of content is available. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003440}}
+/* line 440, ../sass/components/_misc.scss */
 .pager {
   clear: both;
   padding: 0;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003445}}
+/* line 445, ../sass/components/_misc.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1572,7 +1577,7 @@ span.field-label {
   background-image: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003457}}
+/* line 457, ../sass/components/_misc.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1583,7 +1588,7 @@ span.field-label {
 }
 
 /* The current page's list item. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003462}}
+/* line 462, ../sass/components/_misc.scss */
 .pager-current {
   font-weight: bold;
 }
@@ -1592,7 +1597,7 @@ span.field-label {
  * Blocks.
  */
 /* Block wrapper. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003472}}
+/* line 472, ../sass/components/_misc.scss */
 .block {
   margin-bottom: 1.5em;
 }
@@ -1600,19 +1605,19 @@ span.field-label {
 /**
  * Menus.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003479}}
+/* line 479, ../sass/components/_misc.scss */
 .menu__item.is-leaf {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCNdjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa8sPJWGAAAAAElFTkSuQmCC');
   list-style-type: square;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003486}}
+/* line 486, ../sass/components/_misc.scss */
 .menu__item.is-expanded {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUCNdj+MdQw2DBIMAABgAUsAHD/GkkAQAAAABJRU5ErkJggg==');
   list-style-type: circle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003493}}
+/* line 493, ../sass/components/_misc.scss */
 .menu__item.is-collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   /* LTR */
@@ -1620,7 +1625,7 @@ span.field-label {
 }
 
 /* The active item in a Drupal menu. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003502}}
+/* line 502, ../sass/components/_misc.scss */
 .menu a.active {
   color: #000;
 }
@@ -1629,7 +1634,7 @@ span.field-label {
  * Marker.
  */
 /* The "new" or "updated" marker. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003512}}
+/* line 512, ../sass/components/_misc.scss */
 .new,
 .update {
   color: #c00;
@@ -1641,7 +1646,7 @@ span.field-label {
  * Unpublished note.
  */
 /* The word "Unpublished" displayed underneath the content. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003523}}
+/* line 523, ../sass/components/_misc.scss */
 .unpublished {
   height: 0;
   overflow: visible;
@@ -1662,31 +1667,31 @@ span.field-label {
  * Comments.
  */
 /* Wrapper for the list of comments and its title. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003551}}
+/* line 551, ../sass/components/_misc.scss */
 .comments {
   margin: 1.5em 0;
 }
 
 /* Preview of the comment before submitting new or updated comment. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003556}}
+/* line 556, ../sass/components/_misc.scss */
 .comment-preview {
   /* Drupal core will use a #ffffea background. See #1110842. */
   background-color: #ffffea;
 }
 
 /* Wrapper for a single comment. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003562}}
+/* line 562, ../sass/components/_misc.scss */
 .comment {
   /* Comment's permalink wrapper. */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003565}}
+/* line 565, ../sass/components/_misc.scss */
 .comment .permalink {
   text-transform: uppercase;
   font-size: 75%;
 }
 
 /* Nested comments are indented. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003572}}
+/* line 572, ../sass/components/_misc.scss */
 .indented {
   /* Drupal core uses a 25px left margin. */
   margin-left: 30px;
@@ -1696,7 +1701,7 @@ span.field-label {
  * Forms.
  */
 /* Wrapper for a form element (or group of form elements) and its label. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003582}}
+/* line 582, ../sass/components/_misc.scss */
 .form-item {
   margin: 1.5em 0;
   /* Pack groups of checkboxes and radio buttons closer together. */
@@ -1704,47 +1709,47 @@ span.field-label {
   /* Highlight the form elements that caused a form submission error. */
   /* The descriptive help text (separate from the label). */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003587}}
+/* line 587, ../sass/components/_misc.scss */
 .form-checkboxes .form-item, .form-radios .form-item {
   /* Drupal core uses "0.4em 0". */
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003594}}
+/* line 594, ../sass/components/_misc.scss */
 tr.odd .form-item, tr.even .form-item {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003601}}
+/* line 601, ../sass/components/_misc.scss */
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #c00;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003606}}
+/* line 606, ../sass/components/_misc.scss */
 .form-item .description {
   font-size: 0.85em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003613}}
+/* line 613, ../sass/components/_misc.scss */
 .form-type-radio .description,
 .form-type-checkbox .description {
   margin-left: 2.4em;
 }
 
 /* The part of the label that indicates a required field. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003619}}
+/* line 619, ../sass/components/_misc.scss */
 .form-required {
   color: #c00;
 }
 
 /* Labels for radios and checkboxes. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003624}}
+/* line 624, ../sass/components/_misc.scss */
 label.option {
   display: inline;
   font-weight: normal;
 }
 
 /* Buttons used by contrib modules like Media. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003630}}
+/* line 630, ../sass/components/_misc.scss */
 a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -1752,14 +1757,14 @@ a.button {
 }
 
 /* Password confirmation. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003636}}
+/* line 636, ../sass/components/_misc.scss */
 .password-parent,
 .confirm-parent {
   margin: 0;
 }
 
 /* Drupal's default login form block. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003641}}
+/* line 641, ../sass/components/_misc.scss */
 #user-login-form {
   text-align: left;
   /* LTR */
@@ -1772,20 +1777,20 @@ a.button {
  * styling of list items.
  */
 /* OpenID creates a new ul above the login form's links. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003653}}
+/* line 653, ../sass/components/_misc.scss */
 .openid-links {
   /* Position OpenID's ul next to the rest of the links. */
   margin-bottom: 0;
 }
 
 /* The "Log in using OpenID" and "Cancel OpenID login" links. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003660}}
+/* line 660, ../sass/components/_misc.scss */
 .openid-link,
 .user-link {
   margin-top: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003664}}
+/* line 664, ../sass/components/_misc.scss */
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* Un-do some of the padding on the ul list. */
@@ -1793,7 +1798,7 @@ html.js #user-login-form li.openid-link,
   /* LTR */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003668}}
+/* line 668, ../sass/components/_misc.scss */
 #user-login ul {
   margin: 1.5em 0;
 }
@@ -1801,7 +1806,7 @@ html.js #user-login-form li.openid-link,
 /**
  * Drupal admin tables.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003676}}
+/* line 676, ../sass/components/_misc.scss */
 form th {
   text-align: left;
   /* LTR */
@@ -1809,16 +1814,16 @@ form th {
   /* LTR */
   border-bottom: 3px solid #ccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003681}}
+/* line 681, ../sass/components/_misc.scss */
 form tbody {
   border-top: 1px solid #ccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003684}}
+/* line 684, ../sass/components/_misc.scss */
 form table ul {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003689}}
+/* line 689, ../sass/components/_misc.scss */
 tr.even,
 tr.odd {
   background-color: #eee;
@@ -1826,26 +1831,26 @@ tr.odd {
   padding: 0.1em 0.6em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003694}}
+/* line 694, ../sass/components/_misc.scss */
 tr.even {
   background-color: #fff;
 }
 
 /* Markup generated by theme_tablesort_indicator(). */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003709}}
+/* line 709, ../sass/components/_misc.scss */
 td.active {
   background-color: #ddd;
 }
 
 /* Center checkboxes inside table cell. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003715}}
+/* line 715, ../sass/components/_misc.scss */
 td.checkbox,
 th.checkbox {
   text-align: center;
 }
 
 /* Drupal core wrongly puts this in system.menus.css. Since we override that, add it back. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003720}}
+/* line 720, ../sass/components/_misc.scss */
 td.menu-disabled {
   background: #ccc;
 }
@@ -1856,7 +1861,7 @@ td.menu-disabled {
  * @see autocomplete.js
  */
 /* Suggestion list. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003731}}
+/* line 731, ../sass/components/_misc.scss */
 #autocomplete .selected {
   background: #0072b9;
   color: #fff;
@@ -1867,7 +1872,7 @@ td.menu-disabled {
  *
  * @see collapse.js
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003742}}
+/* line 742, ../sass/components/_misc.scss */
 html.js .collapsible .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUCNdj+MdQw2DBIMAABgAUsAHD/GkkAQAAAABJRU5ErkJggg==');
   background-position: 5px 65%;
@@ -1876,14 +1881,14 @@ html.js .collapsible .fieldset-legend {
   padding-left: 15px;
   /* LTR */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003751}}
+/* line 751, ../sass/components/_misc.scss */
 html.js .collapsed .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   /* LTR */
   background-position: 5px 50%;
   /* LTR */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003758}}
+/* line 758, ../sass/components/_misc.scss */
 .fieldset-legend .summary {
   color: #999;
   font-size: 0.9em;
@@ -1895,17 +1900,17 @@ html.js .collapsed .fieldset-legend {
  *
  * @see tabledrag.js
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003770}}
+/* line 770, ../sass/components/_misc.scss */
 tr.drag {
   background-color: #fffff0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003773}}
+/* line 773, ../sass/components/_misc.scss */
 tr.drag-previous {
   background-color: #ffd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003776}}
+/* line 776, ../sass/components/_misc.scss */
 .tabledrag-toggle-weight {
   font-size: 0.9em;
 }
@@ -1915,7 +1920,7 @@ tr.drag-previous {
  *
  * @see tableselect.js
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003785}}
+/* line 785, ../sass/components/_misc.scss */
 tr.selected td {
   background: #ffc;
 }
@@ -1925,11 +1930,11 @@ tr.selected td {
  *
  * @see progress.js
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003794}}
+/* line 794, ../sass/components/_misc.scss */
 .progress {
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003797}}
+/* line 797, ../sass/components/_misc.scss */
 .progress .bar {
   background: #ccc;
   border-color: #666;
@@ -1940,7 +1945,7 @@ tr.selected td {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/components\/_misc\.scss}line{font-family:\00003803}}
+/* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
   background-image: url('../images/progress.gif?1374483013');
@@ -1958,42 +1963,42 @@ tr.selected td {
  */
 @media print {
   /* Underline all links. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_print\.scss}line{font-family:\0000316}}
+  /* line 16, ../sass/_print.scss */
   a:link,
   a:visited {
     text-decoration: underline !important;
     /* Don't underline header. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_print\.scss}line{font-family:\0000320}}
+  /* line 20, ../sass/_print.scss */
   a:link.header--site-link,
   a:visited.header--site-link {
     text-decoration: none !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_print\.scss}line{font-family:\0000325}}
+  /* line 25, ../sass/_print.scss */
   #content {
     /* Add visible URL after links. */
     /* Only display useful links. */
     /* Add visible title after abbreviations. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_print\.scss}line{font-family:\0000327}}
+  /* line 27, ../sass/_print.scss */
   #content a[href]:after {
     content: " (" attr(href) ")";
     font-weight: normal;
     font-size: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_print\.scss}line{font-family:\0000335}}
+  /* line 35, ../sass/_print.scss */
   #content a[href^="javascript:"]:after,
   #content a[href^="#"]:after {
     content: "";
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_print\.scss}line{font-family:\0000340}}
+  /* line 40, ../sass/_print.scss */
   #content abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
   /* Un-float the content. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_print\.scss}line{font-family:\0000346}}
+  /* line 46, ../sass/_print.scss */
   #content {
     float: none !important;
     width: 100% !important;
@@ -2002,7 +2007,7 @@ tr.selected td {
   }
 
   /* Turn off any background colors or images. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_print\.scss}line{font-family:\0000357}}
+  /* line 57, ../sass/_print.scss */
   body,
   #page,
   #main,
@@ -2013,7 +2018,7 @@ tr.selected td {
   }
 
   /* Hide sidebars and nav elements. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_print\.scss}line{font-family:\0000377}}
+  /* line 77, ../sass/_print.scss */
   #skip-link,
   #toolbar,
   #navigation,
@@ -2045,7 +2050,7 @@ tr.selected td {
  * date: 20130722 / 22. Juli 2013
  *
 **/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000319}}
+/* line 19, ../sass/_gabersdorf.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2056,7 +2061,7 @@ tr.selected td {
   transition: all, 0.5s;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000325}}
+/* line 25, ../sass/_gabersdorf.scss */
 body {
   font-size: 0.75em;
   line-height: 2em;
@@ -2068,66 +2073,66 @@ body {
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
   background-position: 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cpotzinger\/\.rvm\/gems\/ruby-1\.9\.3-p448\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\0000361}}
+/* line 61, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 body * html {
   font-size: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/cpotzinger\/\.rvm\/gems\/ruby-1\.9\.3-p448\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\0000364}}
+/* line 64, ../../../../../../../../../Users/cpotzinger/.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 body html {
   font-size: 16px;
   line-height: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000338}}
+/* line 38, ../sass/_gabersdorf.scss */
 ::-moz-selection {
   background-color: #d2c5ac;
   text-shadow: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000343}}
+/* line 43, ../sass/_gabersdorf.scss */
 ::selection {
   background-color: #d2c5ac;
   text-shadow: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000348}}
+/* line 48, ../sass/_gabersdorf.scss */
 #page {
   background-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000352}}
+/* line 52, ../sass/_gabersdorf.scss */
 #main {
   padding-top: 4em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000357}}
+/* line 57, ../sass/_gabersdorf.scss */
 #header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer {
   padding-right: 15px;
   padding-left: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000366}}
+/* line 66, ../sass/_gabersdorf.scss */
 input, select, img {
   max-width: 100%;
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000371}}
+/* line 71, ../sass/_gabersdorf.scss */
 iframe {
   max-width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000382}}
+/* line 82, ../sass/_gabersdorf.scss */
 .column a:link, .column a:visited, .column a:active {
   color: #888820;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000384}}
+/* line 84, ../sass/_gabersdorf.scss */
 .column a:link:hover, .column a:visited:hover, .column a:active:hover {
   color: #c3c38f;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\0000390}}
+/* line 90, ../sass/_gabersdorf.scss */
 p a:hover, p li a:hover, p li a:hover, .download-file a:hover {
   color: white !important;
   background: #888820;
@@ -2135,7 +2140,7 @@ p a:hover, p li a:hover, p li a:hover, .download-file a:hover {
   padding: 2px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003100}}
+/* line 100, ../sass/_gabersdorf.scss */
 .messages, .messages--status, .messages--warning, .messages--error,
 .messages-error,
 .messages-warning,
@@ -2143,12 +2148,12 @@ p a:hover, p li a:hover, p li a:hover, .download-file a:hover {
   background-repeat: no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003106}}
+/* line 106, ../sass/_gabersdorf.scss */
 a.more-link {
   display: block !important;
   text-align: left !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003109}}
+/* line 109, ../sass/_gabersdorf.scss */
 a.more-link:hover {
   background: none;
   text-decoration: none;
@@ -2156,18 +2161,18 @@ a.more-link:hover {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003123}}
+/* line 124, ../sass/_gabersdorf.scss */
 [role="banner"] {
   height: 205px;
   background: transparent url('../images/header/header-ohne_bg.jpg?1374655969') 15px 0px no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003145}}
+/* line 147, ../sass/_gabersdorf.scss */
 .header__logo {
   margin: 1em 0 0 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003150}}
+/* line 152, ../sass/_gabersdorf.scss */
 .header__site-name {
   border: 0;
   font: 0/0 a;
@@ -2176,37 +2181,36 @@ a.more-link:hover {
   background-color: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003157}}
+/* line 159, ../sass/_gabersdorf.scss */
 .header__region {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003162}}
+/* line 164, ../sass/_gabersdorf.scss */
 .header__region .block p {
-  margin-top: 22px;
+  margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003166}}
+/* line 168, ../sass/_gabersdorf.scss */
 .header__region .first {
   margin-right: 2.6em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003169}}
+/* line 171, ../sass/_gabersdorf.scss */
 .header__region .last {
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003177}}
+/* line 181, ../sass/_gabersdorf.scss */
 [role="search"] {
-  float: right;
+  float: right !important;
   padding-top: 7.3em;
 }
 @media only screen and (max-width: 721px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003177}}
+  /* line 181, ../sass/_gabersdorf.scss */
   [role="search"] {
     padding-top: 4.5em;
-    float: left;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003189}}
+/* line 194, ../sass/_gabersdorf.scss */
 .block-search input[type="text"] {
   padding: 5px 5px !important;
   border: 1px solid #a2a4a5;
@@ -2216,90 +2220,90 @@ a.more-link:hover {
   color: #4d4d4d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003199}}
+/* line 204, ../sass/_gabersdorf.scss */
 .form-actions input[type="image"] {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003212}}
+/* line 217, ../sass/_gabersdorf.scss */
 .lt-ie8 .sidebar-second #navigation {
   margin-left: -40px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003227}}
+/* line 232, ../sass/_gabersdorf.scss */
 #navigation {
   z-index: 100;
   text-align: center !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003231}}
+/* line 236, ../sass/_gabersdorf.scss */
 #navigation .region-navigation {
   background-color: #e7e7d2;
   height: 3.9em;
 }
 @media screen and (max-width: 903px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003231}}
+  /* line 236, ../sass/_gabersdorf.scss */
   #navigation .region-navigation {
     height: 8em !important;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003245}}
+/* line 250, ../sass/_gabersdorf.scss */
 .menu,
 ul.nice-menu {
   background: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003247}}
+/* line 252, ../sass/_gabersdorf.scss */
 .menu > li,
 ul.nice-menu > li {
   border: none;
   background: none !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003253}}
+/* line 258, ../sass/_gabersdorf.scss */
 .menu > li a:hover,
 ul.nice-menu > li a:hover {
   background-color: #949423;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003259}}
+/* line 264, ../sass/_gabersdorf.scss */
 .menu > li a.active,
 ul.nice-menu > li a.active {
   background-color: #888820;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003266}}
+/* line 271, ../sass/_gabersdorf.scss */
 .menu > li ul,
 ul.nice-menu > li ul {
   padding-top: 2em;
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003269}}
+/* line 274, ../sass/_gabersdorf.scss */
 .menu > li ul li,
 ul.nice-menu > li ul li {
   width: 20em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003271}}
+/* line 276, ../sass/_gabersdorf.scss */
 .menu > li ul li a:hover,
 ul.nice-menu > li ul li a:hover {
   background-color: #949423;
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003280}}
+/* line 285, ../sass/_gabersdorf.scss */
 ul.nice-menu li.active-trail > a {
   background: #888820 !important;
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003289}}
+/* line 294, ../sass/_gabersdorf.scss */
 .region-sidebar-second {
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003293}}
+/* line 298, ../sass/_gabersdorf.scss */
 .region-sidebar-second .block-menu-block,
 .region-sidebar-second .block-views {
   background-color: #e7e7d2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003295}}
+/* line 300, ../sass/_gabersdorf.scss */
 .region-sidebar-second .block-menu-block h2,
 .region-sidebar-second .block-views h2 {
   padding-left: 8px;
@@ -2307,57 +2311,58 @@ ul.nice-menu li.active-trail > a {
   color: #463830;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003303}}
+/* line 308, ../sass/_gabersdorf.scss */
 .region-sidebar-second .block-menu-block ul {
   padding-left: 0;
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003307}}
+/* line 312, ../sass/_gabersdorf.scss */
 .region-sidebar-second .block-menu-block ul li {
   list-style: none;
   list-style-type: none;
   list-style-image: none;
   border-bottom: 1px solid #a2a4a5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003312}}
+/* line 317, ../sass/_gabersdorf.scss */
 .region-sidebar-second .block-menu-block ul li a {
   color: #463830;
+  font-size: 1.15em !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003315}}
+/* line 321, ../sass/_gabersdorf.scss */
 .region-sidebar-second .block-menu-block ul li a:hover {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003321}}
+/* line 327, ../sass/_gabersdorf.scss */
 .region-sidebar-second .block-menu-block ul li a.active {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003328}}
+/* line 334, ../sass/_gabersdorf.scss */
 .region-sidebar-second .block-views .view-termine {
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003331}}
+/* line 337, ../sass/_gabersdorf.scss */
 .region-sidebar-second .block-views .view-termine .views-summary {
   border-bottom: 1px solid #a2a4a5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003333}}
+/* line 339, ../sass/_gabersdorf.scss */
 .region-sidebar-second .block-views .view-termine .views-summary a {
   color: #463830;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003337}}
+/* line 343, ../sass/_gabersdorf.scss */
 .region-sidebar-second .block-views .view-termine .views-summary a:hover {
   background: #888820;
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003345}}
+/* line 351, ../sass/_gabersdorf.scss */
 .views-summary a.active {
   background: #888820 !important;
   color: white !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003364}}
+/* line 370, ../sass/_gabersdorf.scss */
 .panels-flexible-region-2-col_one,
 .panels-flexible-region-2-center,
 .panels-flexible-region-2-col_right,
@@ -2367,80 +2372,80 @@ ul.nice-menu li.active-trail > a {
   width: 33.333%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003378}}
+/* line 384, ../sass/_gabersdorf.scss */
 .front .view h2 {
   margin-top: 5px;
   margin-bottom: 0px;
   color: #463830;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003383}}
+/* line 389, ../sass/_gabersdorf.scss */
 .front .view p {
   margin-top: 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003387}}
+/* line 393, ../sass/_gabersdorf.scss */
 .front .view .more-link {
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003389}}
+/* line 395, ../sass/_gabersdorf.scss */
 .front .view .more-link a:hover {
   color: white !important;
   background: #888820 !important;
   padding: 2px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003398}}
+/* line 404, ../sass/_gabersdorf.scss */
 .front .view .view-grouping-header {
   margin-top: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003403}}
+/* line 409, ../sass/_gabersdorf.scss */
 .pane-weather-system-1 small {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003413}}
+/* line 419, ../sass/_gabersdorf.scss */
 .weather > div {
   float: left;
   width: 30%;
   text-align: left !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003421}}
+/* line 427, ../sass/_gabersdorf.scss */
 .weather ul {
   margin-left: 31%;
   margin-right: 2%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003429}}
+/* line 435, ../sass/_gabersdorf.scss */
 #HPslideshow {
   width: 100%;
   height: 220px;
 }
 @media screen and (max-width: 903px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003429}}
+  /* line 435, ../sass/_gabersdorf.scss */
   #HPslideshow {
     margin-top: 4.1em !important;
   }
 }
 @media screen and (min-width: 960px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003429}}
+  /* line 435, ../sass/_gabersdorf.scss */
   #HPslideshow {
     width: 930px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003441}}
+/* line 447, ../sass/_gabersdorf.scss */
 .panels-flexible-region-2-top_col {
   text-align: center;
 }
 @media screen and (min-width: 960px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003441}}
+  /* line 447, ../sass/_gabersdorf.scss */
   .panels-flexible-region-2-top_col {
     margin-left: -11px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003449}}
+/* line 455, ../sass/_gabersdorf.scss */
 div.slideshow-title {
   color: #463830;
   font-size: 1.5em;
@@ -2449,7 +2454,7 @@ div.slideshow-title {
   line-height: .1em;
 }
 @media screen and (min-width: 960px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003449}}
+  /* line 455, ../sass/_gabersdorf.scss */
   div.slideshow-title {
     position: absolute;
     padding: 10px;
@@ -2460,94 +2465,94 @@ div.slideshow-title {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003465}}
+/* line 471, ../sass/_gabersdorf.scss */
 .royalSlider .royalSlide, .royalSlider .royalWrapper {
   background: transparent !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003469}}
+/* line 475, ../sass/_gabersdorf.scss */
 .royalSlider.default .royalControlNavOverflow {
   margin-top: -10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003473}}
+/* line 479, ../sass/_gabersdorf.scss */
 .royalSlider.default .royalControlNavCenterer {
   background: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003477}}
+/* line 483, ../sass/_gabersdorf.scss */
 .royalSlider .royalControlNavContainer {
   left: 95%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003482}}
+/* line 488, ../sass/_gabersdorf.scss */
 .royalSlider.default .royalControlNavOverflow a {
   background-image: none;
   background-color: #888820;
   margin-right: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003486}}
+/* line 492, ../sass/_gabersdorf.scss */
 .royalSlider.default .royalControlNavOverflow a.current {
   background-color: #c4c487;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003497}}
+/* line 503, ../sass/_gabersdorf.scss */
 .region-footer > .first {
   margin-top: 15px;
   background: transparent url('../images/image-rotator_bg.png?1376819945') left top no-repeat;
   border-bottom: 1px solid #a2a4a5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003501}}
+/* line 507, ../sass/_gabersdorf.scss */
 .region-footer > .first h2 {
   background: none !important;
   color: white !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003507}}
+/* line 513, ../sass/_gabersdorf.scss */
 .touchcarousel {
   width: 100%;
   height: 155px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003511}}
+/* line 517, ../sass/_gabersdorf.scss */
 .touchcarousel-container {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003515}}
+/* line 521, ../sass/_gabersdorf.scss */
 .touchcarousel-container .views-row ul {
   padding-left: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003518}}
+/* line 524, ../sass/_gabersdorf.scss */
 .touchcarousel-container .views-row li {
   float: left;
   list-style-image: none;
   list-style-type: none;
   padding-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003523}}
+/* line 529, ../sass/_gabersdorf.scss */
 .touchcarousel-container .views-row li.last {
   padding-right: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003532}}
+/* line 538, ../sass/_gabersdorf.scss */
 .region-footer #block-block-1 {
   background: transparent url('../images/footer_bg.jpg?1374733957') top left no-repeat;
   height: 40px;
   margin-top: 25px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003536}}
+/* line 542, ../sass/_gabersdorf.scss */
 .region-footer #block-block-1 p {
   padding-top: 6px;
   color: white;
   text-transform: uppercase;
   font-size: .9em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003542}}
+/* line 548, ../sass/_gabersdorf.scss */
 .region-footer #block-block-1 p a {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003553}}
+/* line 559, ../sass/_gabersdorf.scss */
 .field-name-body h1,
 .page__title,
 .page-title {
@@ -2560,7 +2565,7 @@ div.slideshow-title {
   padding-bottom: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003570}}
+/* line 576, ../sass/_gabersdorf.scss */
 .field-name-title h2.page-title,
 .block > h2.block-title,
 .view-gemeindenachrichten h3,
@@ -2575,7 +2580,7 @@ h2.pane-title {
   font-size: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003585}}
+/* line 591, ../sass/_gabersdorf.scss */
 .view-grouping-header,
 h2.view-title,
 .gemeindenachrichten h2,
@@ -2584,38 +2589,38 @@ h2.view-title,
   font-size: 1.3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003593}}
+/* line 599, ../sass/_gabersdorf.scss */
 .field-name-field-protokolle-titel,
 .field-name-field-titel-der-veranstaltung {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003602}}
+/* line 608, ../sass/_gabersdorf.scss */
 .column li {
   list-style-type: bullet;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003607}}
+/* line 613, ../sass/_gabersdorf.scss */
 .egovernment.left {
   float: left;
   width: 49%;
   padding-right: 2%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003613}}
+/* line 619, ../sass/_gabersdorf.scss */
 .egovernment.right {
   margin-top: 5px;
   width: 49%;
   float: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003620}}
+/* line 626, ../sass/_gabersdorf.scss */
 .image-caption {
   line-height: 1.4em;
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003635}}
+/* line 641, ../sass/_gabersdorf.scss */
 p > img,
 p > span > img,
 p > a > img,
@@ -2629,20 +2634,20 @@ li > a > img {
   behavior: url("/sites/all/themes/gemeinde-gabersdorf/PIE/PIE.php");
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003644}}
+/* line 650, ../sass/_gabersdorf.scss */
 .region-header img {
   box-shadow: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003648}}
+/* line 654, ../sass/_gabersdorf.scss */
 .region-header a {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003651}}
+/* line 657, ../sass/_gabersdorf.scss */
 .region-header a:hover {
   background: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003682}}
+/* line 688, ../sass/_gabersdorf.scss */
 .border-bottom,
 .field-collection-container,
 .view-gemeinderat .views-row,
@@ -2654,92 +2659,96 @@ li > a > img {
   margin-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003688}}
+/* line 694, ../sass/_gabersdorf.scss */
 .link-border-bottom {
   margin-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003693}}
+/* line 699, ../sass/_gabersdorf.scss */
 .view {
   margin-bottom: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003713}}
+/* line 719, ../sass/_gabersdorf.scss */
 .view-grouping .view-grouping-content h3 {
   font-weight: normal;
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003719}}
+/* line 725, ../sass/_gabersdorf.scss */
 .views-responsive-grid {
   padding-bottom: 5px;
   border-bottom: 1px solid #c3c38f;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003724}}
+/* line 730, ../sass/_gabersdorf.scss */
 span.field-content {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003733}}
+/* line 739, ../sass/_gabersdorf.scss */
 .column {
   position: relative;
   z-index: 99;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003739}}
-body.aktuelles .block-views {
+/* line 745, ../sass/_gabersdorf.scss */
+body.aktuelles .column > .block-views {
   width: 49%;
   float: left;
 }
+/* line 749, ../sass/_gabersdorf.scss */
+.lt-ie9 body.aktuelles .column > .block-views {
+  width: 40%;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003747}}
+/* line 756, ../sass/_gabersdorf.scss */
 #block-views-termine-block-2 {
   margin-right: 1%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003752}}
+/* line 761, ../sass/_gabersdorf.scss */
 body.aktuelles .view-termine > .view-content > .view-grouping {
   width: 48%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003758}}
+/* line 767, ../sass/_gabersdorf.scss */
 .view-grouping-header {
   margin-top: 1.15em;
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003768}}
+/* line 777, ../sass/_gabersdorf.scss */
 .view-buergerservice .views-row {
   margin-right: 1.9% !important;
   width: 25%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003781}}
+/* line 790, ../sass/_gabersdorf.scss */
 .field-name-field-agenda-bild-laden div div,
 .field-name-field-bildergalerie-bilder-laden div div {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003788}}
+/* line 797, ../sass/_gabersdorf.scss */
 .field-name-field-agenda-bild-laden div .field-item,
 .field-name-field-bildergalerie-bilder-laden div .field-item {
   padding-right: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003794}}
+/* line 803, ../sass/_gabersdorf.scss */
 .agenda-gallery .field-collection-view {
   margin-left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003807}}
+/* line 816, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen h1.title,
 body.page-node-fotos-veranstaltungen h1.title,
 body.page-verwaltung-gemeindenachrichten h1.title {
   margin-bottom: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003814}}
+/* line 823, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content,
 body.page-node-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content {
   position: relative;
@@ -2747,7 +2756,7 @@ body.page-node-fotos-veranstaltungen .view-bildergalerie-landing-page .view-cont
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003828}}
+/* line 837, ../sass/_gabersdorf.scss */
 body.page-inhalt-fotos-veranstaltungen .view-content .views-row,
 body.page-node-fotos-veranstaltungen .view-content .views-row,
 .view-gemeindenachrichten.view-display-id-page .views-row,
@@ -2759,45 +2768,45 @@ body.page-node-fotos-veranstaltungen .view-content .views-row,
   margin-bottom: 40px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003842}}
+/* line 851, ../sass/_gabersdorf.scss */
 .field-name-field-bildergalerie-bilder-laden div div,
 .field-name-field-gemeindenachrichten-bild {
   margin-top: 10px;
   margin-bottom: 6px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003849}}
+/* line 858, ../sass/_gabersdorf.scss */
 .view-bildergalerie-landing-page .group-right {
   width: 49%;
   margin-left: 1%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003858}}
+/* line 867, ../sass/_gabersdorf.scss */
 .view-gemeindenachrichten h3 {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003867}}
+/* line 876, ../sass/_gabersdorf.scss */
 .gemeindenachrichten .views-column,
 .view-stellenausschreibungen .views-row,
 .view-aktuelles-inhaltstyp-aktuelles- .views-row {
   border-top: 1px solid #c3c38f;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003873}}
+/* line 882, ../sass/_gabersdorf.scss */
 .view-stellenausschreibungen .views-row,
 .view-aktuelles-inhaltstyp-aktuelles- .views-row {
   padding-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003879}}
+/* line 888, ../sass/_gabersdorf.scss */
 .view-stellenausschreibungen .views-row-last,
 .view-aktuelles-inhaltstyp-aktuelles- .views-row-last {
   padding-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003888}}
+/* line 897, ../sass/_gabersdorf.scss */
 .gemeindenachrichten .views-column-first,
 .view-stellenausschreibungen .views-row-first,
 .view-aktuelles-inhaltstyp-aktuelles- .views-row-first,
@@ -2805,62 +2814,62 @@ body.page-node-fotos-veranstaltungen .view-content .views-row,
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003896}}
+/* line 905, ../sass/_gabersdorf.scss */
 .field-name-field-verwaltung .field-collection-view {
   margin-right: 0;
   margin-left: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003907}}
+/* line 916, ../sass/_gabersdorf.scss */
 .view-gemeinderat .views-row,
 .view-gemeindeamt-team .views-row {
   margin: 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003910}}
+/* line 919, ../sass/_gabersdorf.scss */
 .view-gemeinderat .views-row .node-team,
 .view-gemeindeamt-team .views-row .node-team {
   margin-bottom: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003919}}
+/* line 928, ../sass/_gabersdorf.scss */
 .views-row .group-left img {
   margin-top: 15px;
   margin-bottom: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003947}}
+/* line 956, ../sass/_gabersdorf.scss */
 .view-gewerbebetriebe .views-row {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003950}}
+/* line 959, ../sass/_gabersdorf.scss */
 .view-gewerbebetriebe .group-left {
   float: left;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003954}}
+/* line 963, ../sass/_gabersdorf.scss */
 .view-gewerbebetriebe .group-right {
   float: right;
   width: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003963}}
+/* line 972, ../sass/_gabersdorf.scss */
 .view-freizeit .views-row h2 {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003969}}
+/* line 978, ../sass/_gabersdorf.scss */
 .view-freizeit .view-header, .view-freizeit .view-footer {
   border-bottom: 1px solid #c3c38f;
   margin-bottom: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003976}}
+/* line 985, ../sass/_gabersdorf.scss */
 .view-freizeit .view-footer {
   border-bottom: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal7zen5master\/sites\/all\/themes\/gemeinde-gabersdorf\/sass\/_gabersdorf\.scss}line{font-family:\00003986}}
+/* line 995, ../sass/_gabersdorf.scss */
 .site-map-box-menu h2 {
   display: none;
 }
