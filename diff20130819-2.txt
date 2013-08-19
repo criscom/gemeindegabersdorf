@@ -1,0 +1,383 @@
+diff --git a/css/styles.css b/css/styles.css
+index 1b111db..cf7427b 100644
+--- a/css/styles.css
++++ b/css/styles.css
+@@ -888,7 +888,7 @@ table {
+   /* line 62, ../sass/layouts/_responsive.scss */
+   #main {
+     /* Move all the children of #main down to make room. */
+-    padding-top: 3em;
++    padding-top: 3.9em;
+     position: relative;
+   }
+ 
+@@ -897,7 +897,7 @@ table {
+     /* Move the navbar up inside #main's padding. */
+     position: absolute;
+     top: 0;
+-    height: 3em;
++    height: 3.9em;
+     width: 100%;
+   }
+ }
+@@ -2620,7 +2620,28 @@ h2.view-title,
+   font-style: italic;
+ }
+ 
+-/* line 641, ../sass/_gabersdorf.scss */
++/* line 639, ../sass/_gabersdorf.scss */
++.lt-ie9 .sidebar-second #content {
++  /* Span 3 columns, starting in 1st column from left. */
++  float: left;
++  width: 60%;
++  margin-left: 0%;
++  margin-right: -60%;
++  margin-right: -70%;
++  width: 70%;
++}
++/* line 646, ../sass/_gabersdorf.scss */
++.lt-ie9 .sidebar-second .region-sidebar-second {
++  /* Span 2 columns, starting in 4th column from left. */
++  float: left;
++  width: 40%;
++  margin-left: 60%;
++  margin-right: -100%;
++  margin-left: 70%;
++  width: 30%;
++}
++
++/* line 665, ../sass/_gabersdorf.scss */
+ p > img,
+ p > span > img,
+ p > a > img,
+@@ -2634,20 +2655,20 @@ li > a > img {
+   behavior: url("/sites/all/themes/gemeinde-gabersdorf/PIE/PIE.php");
+ }
+ 
+-/* line 650, ../sass/_gabersdorf.scss */
++/* line 674, ../sass/_gabersdorf.scss */
+ .region-header img {
+   box-shadow: none;
+ }
+-/* line 654, ../sass/_gabersdorf.scss */
++/* line 678, ../sass/_gabersdorf.scss */
+ .region-header a {
+   text-decoration: none;
+ }
+-/* line 657, ../sass/_gabersdorf.scss */
++/* line 681, ../sass/_gabersdorf.scss */
+ .region-header a:hover {
+   background: none;
+ }
+ 
+-/* line 688, ../sass/_gabersdorf.scss */
++/* line 712, ../sass/_gabersdorf.scss */
+ .border-bottom,
+ .field-collection-container,
+ .view-gemeinderat .views-row,
+@@ -2659,96 +2680,92 @@ li > a > img {
+   margin-bottom: 10px;
+ }
+ 
+-/* line 694, ../sass/_gabersdorf.scss */
++/* line 718, ../sass/_gabersdorf.scss */
+ .link-border-bottom {
+   margin-bottom: 10px;
+ }
+ 
+-/* line 699, ../sass/_gabersdorf.scss */
++/* line 723, ../sass/_gabersdorf.scss */
+ .view {
+   margin-bottom: 1.5em;
+ }
+ 
+-/* line 719, ../sass/_gabersdorf.scss */
++/* line 743, ../sass/_gabersdorf.scss */
+ .view-grouping .view-grouping-content h3 {
+   font-weight: normal;
+   margin-bottom: 0;
+ }
+ 
+-/* line 725, ../sass/_gabersdorf.scss */
++/* line 749, ../sass/_gabersdorf.scss */
+ .views-responsive-grid {
+   padding-bottom: 5px;
+   border-bottom: 1px solid #c3c38f;
+ }
+ 
+-/* line 730, ../sass/_gabersdorf.scss */
++/* line 754, ../sass/_gabersdorf.scss */
+ span.field-content {
+   font-weight: bold;
+ }
+ 
+-/* line 739, ../sass/_gabersdorf.scss */
++/* line 763, ../sass/_gabersdorf.scss */
+ .column {
+   position: relative;
+   z-index: 99;
+ }
+ 
+-/* line 745, ../sass/_gabersdorf.scss */
++/* line 769, ../sass/_gabersdorf.scss */
+ body.aktuelles .column > .block-views {
+   width: 49%;
+   float: left;
+ }
+-/* line 749, ../sass/_gabersdorf.scss */
+-.lt-ie9 body.aktuelles .column > .block-views {
+-  width: 40%;
+-}
+ 
+-/* line 756, ../sass/_gabersdorf.scss */
++/* line 780, ../sass/_gabersdorf.scss */
+ #block-views-termine-block-2 {
+   margin-right: 1%;
+ }
+ 
+-/* line 761, ../sass/_gabersdorf.scss */
++/* line 785, ../sass/_gabersdorf.scss */
+ body.aktuelles .view-termine > .view-content > .view-grouping {
+   width: 48%;
+ }
+ 
+-/* line 767, ../sass/_gabersdorf.scss */
++/* line 791, ../sass/_gabersdorf.scss */
+ .view-grouping-header {
+   margin-top: 1.15em;
+   font-weight: bold;
+ }
+ 
+-/* line 777, ../sass/_gabersdorf.scss */
++/* line 801, ../sass/_gabersdorf.scss */
+ .view-buergerservice .views-row {
+   margin-right: 1.9% !important;
+   width: 25%;
+ }
+ 
+-/* line 790, ../sass/_gabersdorf.scss */
++/* line 814, ../sass/_gabersdorf.scss */
+ .field-name-field-agenda-bild-laden div div,
+ .field-name-field-bildergalerie-bilder-laden div div {
+   vertical-align: middle;
+ }
+ 
+-/* line 797, ../sass/_gabersdorf.scss */
++/* line 821, ../sass/_gabersdorf.scss */
+ .field-name-field-agenda-bild-laden div .field-item,
+ .field-name-field-bildergalerie-bilder-laden div .field-item {
+   padding-right: 5px;
+ }
+ 
+-/* line 803, ../sass/_gabersdorf.scss */
++/* line 827, ../sass/_gabersdorf.scss */
+ .agenda-gallery .field-collection-view {
+   margin-left: 0;
+ }
+ 
+-/* line 816, ../sass/_gabersdorf.scss */
++/* line 840, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen h1.title,
+ body.page-node-fotos-veranstaltungen h1.title,
+ body.page-verwaltung-gemeindenachrichten h1.title {
+   margin-bottom: 20px;
+ }
+ 
+-/* line 823, ../sass/_gabersdorf.scss */
++/* line 847, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content,
+ body.page-node-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content {
+   position: relative;
+@@ -2756,7 +2773,7 @@ body.page-node-fotos-veranstaltungen .view-bildergalerie-landing-page .view-cont
+   overflow: hidden;
+ }
+ 
+-/* line 837, ../sass/_gabersdorf.scss */
++/* line 861, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen .view-content .views-row,
+ body.page-node-fotos-veranstaltungen .view-content .views-row,
+ .view-gemeindenachrichten.view-display-id-page .views-row,
+@@ -2768,45 +2785,45 @@ body.page-node-fotos-veranstaltungen .view-content .views-row,
+   margin-bottom: 40px;
+ }
+ 
+-/* line 851, ../sass/_gabersdorf.scss */
++/* line 875, ../sass/_gabersdorf.scss */
+ .field-name-field-bildergalerie-bilder-laden div div,
+ .field-name-field-gemeindenachrichten-bild {
+   margin-top: 10px;
+   margin-bottom: 6px;
+ }
+ 
+-/* line 858, ../sass/_gabersdorf.scss */
++/* line 882, ../sass/_gabersdorf.scss */
+ .view-bildergalerie-landing-page .group-right {
+   width: 49%;
+   margin-left: 1%;
+ }
+ 
+-/* line 867, ../sass/_gabersdorf.scss */
++/* line 891, ../sass/_gabersdorf.scss */
+ .view-gemeindenachrichten h3 {
+   padding-top: 8px;
+   padding-bottom: 8px;
+ }
+ 
+-/* line 876, ../sass/_gabersdorf.scss */
++/* line 900, ../sass/_gabersdorf.scss */
+ .gemeindenachrichten .views-column,
+ .view-stellenausschreibungen .views-row,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row {
+   border-top: 1px solid #c3c38f;
+ }
+ 
+-/* line 882, ../sass/_gabersdorf.scss */
++/* line 906, ../sass/_gabersdorf.scss */
+ .view-stellenausschreibungen .views-row,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row {
+   padding-bottom: 10px;
+ }
+ 
+-/* line 888, ../sass/_gabersdorf.scss */
++/* line 912, ../sass/_gabersdorf.scss */
+ .view-stellenausschreibungen .views-row-last,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row-last {
+   padding-bottom: 0;
+ }
+ 
+-/* line 897, ../sass/_gabersdorf.scss */
++/* line 921, ../sass/_gabersdorf.scss */
+ .gemeindenachrichten .views-column-first,
+ .view-stellenausschreibungen .views-row-first,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row-first,
+@@ -2814,62 +2831,62 @@ body.page-node-fotos-veranstaltungen .view-content .views-row,
+   border: none;
+ }
+ 
+-/* line 905, ../sass/_gabersdorf.scss */
++/* line 929, ../sass/_gabersdorf.scss */
+ .field-name-field-verwaltung .field-collection-view {
+   margin-right: 0;
+   margin-left: 0;
+ }
+ 
+-/* line 916, ../sass/_gabersdorf.scss */
++/* line 940, ../sass/_gabersdorf.scss */
+ .view-gemeinderat .views-row,
+ .view-gemeindeamt-team .views-row {
+   margin: 10px 0;
+ }
+-/* line 919, ../sass/_gabersdorf.scss */
++/* line 943, ../sass/_gabersdorf.scss */
+ .view-gemeinderat .views-row .node-team,
+ .view-gemeindeamt-team .views-row .node-team {
+   margin-bottom: 3px;
+ }
+ 
+-/* line 928, ../sass/_gabersdorf.scss */
++/* line 952, ../sass/_gabersdorf.scss */
+ .views-row .group-left img {
+   margin-top: 15px;
+   margin-bottom: 20px;
+ }
+ 
+-/* line 956, ../sass/_gabersdorf.scss */
++/* line 980, ../sass/_gabersdorf.scss */
+ .view-gewerbebetriebe .views-row {
+   clear: both;
+ }
+-/* line 959, ../sass/_gabersdorf.scss */
++/* line 983, ../sass/_gabersdorf.scss */
+ .view-gewerbebetriebe .group-left {
+   float: left;
+   width: 50%;
+ }
+-/* line 963, ../sass/_gabersdorf.scss */
++/* line 987, ../sass/_gabersdorf.scss */
+ .view-gewerbebetriebe .group-right {
+   float: right;
+   width: 50%;
+ }
+ 
+-/* line 972, ../sass/_gabersdorf.scss */
++/* line 996, ../sass/_gabersdorf.scss */
+ .view-freizeit .views-row h2 {
+   margin-bottom: 0;
+ }
+ 
+-/* line 978, ../sass/_gabersdorf.scss */
++/* line 1002, ../sass/_gabersdorf.scss */
+ .view-freizeit .view-header, .view-freizeit .view-footer {
+   border-bottom: 1px solid #c3c38f;
+   margin-bottom: 10px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+ }
+-/* line 985, ../sass/_gabersdorf.scss */
++/* line 1009, ../sass/_gabersdorf.scss */
+ .view-freizeit .view-footer {
+   border-bottom: none;
+ }
+ 
+-/* line 995, ../sass/_gabersdorf.scss */
++/* line 1019, ../sass/_gabersdorf.scss */
+ .site-map-box-menu h2 {
+   display: none;
+ }
+diff --git a/sass/_gabersdorf.scss b/sass/_gabersdorf.scss
+index fec03ed..cbf777d 100644
+--- a/sass/_gabersdorf.scss
++++ b/sass/_gabersdorf.scss
+@@ -628,6 +628,30 @@ h2.view-title,
+ 	font-style: italic;
+ }
+ 
++// ======================================
++// IE8 FIX
++// ======================================
++
++// The layout when there is only one sidebar, the right one.
++// ======================================
++
++ .lt-ie9 .sidebar-second {
++    #content { /* Span 3 columns, starting in 1st column from left. */
++      @include zen-grid-item(3, 1);
++      margin-right: -70%;
++      width: 70%;
++
++    }
++
++ 	.region-sidebar-second { /* Span 2 columns, starting in 4th column from left. */
++      @include zen-grid-item(2, 4);
++      margin-left: 70%;
++      width: 30%;
++
++   
++    }
++  }
++
+ // Box Shadow Images / Bilder / Fotos
+ // ======================================
+ 
+@@ -747,7 +771,7 @@ body.aktuelles .column > .block-views
+ 	float: left;
+ 	@extend %box-shadow-teaser;
+ 	.lt-ie9 & {
+-		width: 40%; //quickfix for IE8; still needs work;
++		//width: 40%; //quickfix for IE8; still needs work;
+ 	}
+ }
+ 
+diff --git a/sass/_init.scss b/sass/_init.scss
+index eb19584..b8d14f4 100644
+--- a/sass/_init.scss
++++ b/sass/_init.scss
+@@ -139,7 +139,7 @@ $path-to-pie: url('/sites/all/themes/gemeinde-gabersdorf/PIE/PIE.php');
+ $indent-amount: 30px;
+ 
+ // The height of the navigation container.
+-$nav-height: 3em;
++$nav-height: 3.9em;
+ 
+ // Tab styling.
+ $tabs-container-bg: #fff;

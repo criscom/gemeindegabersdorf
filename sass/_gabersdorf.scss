@@ -628,6 +628,30 @@ h2.view-title,
 	font-style: italic;
 }
 
+// ======================================
+// IE8 FIX
+// ======================================
+
+// The layout when there is only one sidebar, the right one.
+// ======================================
+
+ .lt-ie9 .sidebar-second {
+    #content { /* Span 3 columns, starting in 1st column from left. */
+      @include zen-grid-item(3, 1);
+      margin-right: -70%;
+      width: 70%;
+
+    }
+
+ 	.region-sidebar-second { /* Span 2 columns, starting in 4th column from left. */
+      @include zen-grid-item(2, 4);
+      margin-left: 70%;
+      width: 30%;
+
+   
+    }
+  }
+
 // Box Shadow Images / Bilder / Fotos
 // ======================================
 
@@ -747,7 +771,7 @@ body.aktuelles .column > .block-views
 	float: left;
 	@extend %box-shadow-teaser;
 	.lt-ie9 & {
-		width: 40%; //quickfix for IE8; still needs work;
+		//width: 40%; //quickfix for IE8; still needs work;
 	}
 }
 
