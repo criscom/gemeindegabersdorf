@@ -52,6 +52,9 @@ body
 #main {
 	padding-top: 4em; // Positions the content area under the main menu
 						// Node header should be positioned 1px below the main menu
+	.lt-ie9 & {
+		position: relative;
+	}
 }
 
 #header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer {
@@ -214,8 +217,10 @@ a.more-link
 #navigation // No padding for the main navigation so that the background can bleed
 {
 
-	.lt-ie8 .sidebar-second & { // in IE7 the navigation needs to be aligned to the left
-		margin-left: -40px;
+	.lt-ie9 & { // in IE7 the navigation needs to be aligned to the left
+		position: absolute;
+		top: 0;
+		width: 100%;
 	}
 }
 
