@@ -1,0 +1,2955 @@
+diff --git a/css/styles.css b/css/styles.css
+index aa9fc90..14ef792 100644
+--- a/css/styles.css
++++ b/css/styles.css
+@@ -2375,7 +2375,7 @@ ul.nice-menu li.active-trail > a {
+   color: white !important;
+ }
+ 
+-/* line 382, ../sass/_gabersdorf.scss */
++/* line 399, ../sass/_gabersdorf.scss */
+ .panels-flexible-region-2-col_one,
+ .panels-flexible-region-2-center,
+ .panels-flexible-region-2-col_right,
+@@ -2385,80 +2385,85 @@ ul.nice-menu li.active-trail > a {
+   width: 33.333%;
+ }
+ 
+-/* line 396, ../sass/_gabersdorf.scss */
++/* line 413, ../sass/_gabersdorf.scss */
+ .front .view h2 {
+   margin-top: 5px;
+   margin-bottom: 0px;
+   color: #463830;
+ }
+-/* line 401, ../sass/_gabersdorf.scss */
++/* line 418, ../sass/_gabersdorf.scss */
+ .front .view p {
+   margin-top: 0px;
+ }
+-/* line 405, ../sass/_gabersdorf.scss */
++/* line 422, ../sass/_gabersdorf.scss */
+ .front .view .more-link {
+   text-align: left;
+ }
+-/* line 407, ../sass/_gabersdorf.scss */
++/* line 424, ../sass/_gabersdorf.scss */
+ .front .view .more-link a:hover {
+   color: white !important;
+   background: #888820 !important;
+   padding: 2px 0;
+ }
+ 
+-/* line 416, ../sass/_gabersdorf.scss */
++/* line 433, ../sass/_gabersdorf.scss */
+ .front .view .view-grouping-header {
+   margin-top: 12px;
+ }
+ 
+-/* line 421, ../sass/_gabersdorf.scss */
++/* line 438, ../sass/_gabersdorf.scss */
+ .pane-weather-system-1 small {
+   display: none;
+ }
+ 
+-/* line 431, ../sass/_gabersdorf.scss */
++/* line 448, ../sass/_gabersdorf.scss */
+ .weather > div {
+   float: left;
+   width: 30%;
+   text-align: left !important;
+ }
+ 
+-/* line 439, ../sass/_gabersdorf.scss */
++/* line 456, ../sass/_gabersdorf.scss */
+ .weather ul {
+   margin-left: 31%;
+   margin-right: 2%;
+ }
+ 
+-/* line 447, ../sass/_gabersdorf.scss */
++/* line 461, ../sass/_gabersdorf.scss */
++.view-empty div {
++  padding-top: 18px;
++}
++
++/* line 468, ../sass/_gabersdorf.scss */
+ #HPslideshow {
+   width: 100%;
+   height: 220px;
+ }
+ @media screen and (max-width: 903px) {
+-  /* line 447, ../sass/_gabersdorf.scss */
++  /* line 468, ../sass/_gabersdorf.scss */
+   #HPslideshow {
+     margin-top: 4.1em !important;
+   }
+ }
+ @media screen and (min-width: 960px) {
+-  /* line 447, ../sass/_gabersdorf.scss */
++  /* line 468, ../sass/_gabersdorf.scss */
+   #HPslideshow {
+     width: 930px;
+   }
+ }
+ 
+-/* line 459, ../sass/_gabersdorf.scss */
++/* line 480, ../sass/_gabersdorf.scss */
+ .panels-flexible-region-2-top_col {
+   text-align: center;
+ }
+ @media screen and (min-width: 960px) {
+-  /* line 459, ../sass/_gabersdorf.scss */
++  /* line 480, ../sass/_gabersdorf.scss */
+   .panels-flexible-region-2-top_col {
+     margin-left: -11px;
+   }
+ }
+ 
+-/* line 467, ../sass/_gabersdorf.scss */
++/* line 488, ../sass/_gabersdorf.scss */
+ div.slideshow-title {
+   color: #463830;
+   font-size: 1.5em;
+@@ -2467,7 +2472,7 @@ div.slideshow-title {
+   line-height: .1em;
+ }
+ @media screen and (min-width: 960px) {
+-  /* line 467, ../sass/_gabersdorf.scss */
++  /* line 488, ../sass/_gabersdorf.scss */
+   div.slideshow-title {
+     position: absolute;
+     padding: 10px;
+@@ -2478,94 +2483,94 @@ div.slideshow-title {
+   }
+ }
+ 
+-/* line 483, ../sass/_gabersdorf.scss */
++/* line 504, ../sass/_gabersdorf.scss */
+ .royalSlider .royalSlide, .royalSlider .royalWrapper {
+   background: transparent !important;
+ }
+ 
+-/* line 487, ../sass/_gabersdorf.scss */
++/* line 508, ../sass/_gabersdorf.scss */
+ .royalSlider.default .royalControlNavOverflow {
+   margin-top: -10px;
+ }
+ 
+-/* line 491, ../sass/_gabersdorf.scss */
++/* line 512, ../sass/_gabersdorf.scss */
+ .royalSlider.default .royalControlNavCenterer {
+   background: transparent;
+ }
+ 
+-/* line 495, ../sass/_gabersdorf.scss */
++/* line 516, ../sass/_gabersdorf.scss */
+ .royalSlider .royalControlNavContainer {
+   left: 95%;
+ }
+ 
+-/* line 500, ../sass/_gabersdorf.scss */
++/* line 521, ../sass/_gabersdorf.scss */
+ .royalSlider.default .royalControlNavOverflow a {
+   background-image: none;
+   background-color: #888820;
+   margin-right: 3px;
+ }
+-/* line 504, ../sass/_gabersdorf.scss */
++/* line 525, ../sass/_gabersdorf.scss */
+ .royalSlider.default .royalControlNavOverflow a.current {
+   background-color: #c4c487;
+ }
+ 
+-/* line 515, ../sass/_gabersdorf.scss */
++/* line 536, ../sass/_gabersdorf.scss */
+ .region-footer > .first {
+   margin-top: 15px;
+   background: transparent url('../images/image-rotator_bg.png?1376819945') left top no-repeat;
+   border-bottom: 1px solid #a2a4a5;
+ }
+-/* line 519, ../sass/_gabersdorf.scss */
++/* line 540, ../sass/_gabersdorf.scss */
+ .region-footer > .first h2 {
+   background: none !important;
+   color: white !important;
+ }
+ 
+-/* line 525, ../sass/_gabersdorf.scss */
++/* line 546, ../sass/_gabersdorf.scss */
+ .touchcarousel {
+   width: 100%;
+   height: 155px;
+ }
+ 
+-/* line 529, ../sass/_gabersdorf.scss */
++/* line 550, ../sass/_gabersdorf.scss */
+ .touchcarousel-container {
+   width: 100%;
+ }
+-/* line 533, ../sass/_gabersdorf.scss */
++/* line 554, ../sass/_gabersdorf.scss */
+ .touchcarousel-container .views-row ul {
+   padding-left: 10px;
+ }
+-/* line 536, ../sass/_gabersdorf.scss */
++/* line 557, ../sass/_gabersdorf.scss */
+ .touchcarousel-container .views-row li {
+   float: left;
+   list-style-image: none;
+   list-style-type: none;
+   padding-right: 10px;
+ }
+-/* line 541, ../sass/_gabersdorf.scss */
++/* line 562, ../sass/_gabersdorf.scss */
+ .touchcarousel-container .views-row li.last {
+   padding-right: 0;
+ }
+ 
+-/* line 550, ../sass/_gabersdorf.scss */
++/* line 571, ../sass/_gabersdorf.scss */
+ .region-footer #block-block-1 {
+   background: transparent url('../images/footer_bg.jpg?1374733957') top left no-repeat;
+   height: 40px;
+   margin-top: 25px;
+ }
+-/* line 554, ../sass/_gabersdorf.scss */
++/* line 575, ../sass/_gabersdorf.scss */
+ .region-footer #block-block-1 p {
+   padding-top: 6px;
+   color: white;
+   text-transform: uppercase;
+   font-size: .9em;
+ }
+-/* line 560, ../sass/_gabersdorf.scss */
++/* line 581, ../sass/_gabersdorf.scss */
+ .region-footer #block-block-1 p a {
+   color: white;
+ }
+ 
+-/* line 571, ../sass/_gabersdorf.scss */
++/* line 592, ../sass/_gabersdorf.scss */
+ .field-name-body h1,
+ .page__title,
+ .page-title {
+@@ -2578,7 +2583,7 @@ div.slideshow-title {
+   padding-bottom: 1px;
+ }
+ 
+-/* line 588, ../sass/_gabersdorf.scss */
++/* line 609, ../sass/_gabersdorf.scss */
+ .field-name-title h2.page-title,
+ .block > h2.block-title,
+ .view-gemeindenachrichten h3,
+@@ -2593,7 +2598,7 @@ h2.pane-title {
+   font-size: 1.5em;
+ }
+ 
+-/* line 603, ../sass/_gabersdorf.scss */
++/* line 624, ../sass/_gabersdorf.scss */
+ .view-grouping-header,
+ h2.view-title,
+ .gemeindenachrichten h2,
+@@ -2602,38 +2607,38 @@ h2.view-title,
+   font-size: 1.3em;
+ }
+ 
+-/* line 611, ../sass/_gabersdorf.scss */
++/* line 632, ../sass/_gabersdorf.scss */
+ .field-name-field-protokolle-titel,
+ .field-name-field-titel-der-veranstaltung {
+   font-weight: bold;
+ }
+ 
+-/* line 620, ../sass/_gabersdorf.scss */
++/* line 641, ../sass/_gabersdorf.scss */
+ .column li {
+   list-style-type: bullet;
+ }
+ 
+-/* line 625, ../sass/_gabersdorf.scss */
++/* line 646, ../sass/_gabersdorf.scss */
+ .egovernment.left {
+   float: left;
+   width: 49%;
+   padding-right: 2%;
+ }
+ 
+-/* line 631, ../sass/_gabersdorf.scss */
++/* line 652, ../sass/_gabersdorf.scss */
+ .egovernment.right {
+   margin-top: 5px;
+   width: 49%;
+   float: right;
+ }
+ 
+-/* line 638, ../sass/_gabersdorf.scss */
++/* line 659, ../sass/_gabersdorf.scss */
+ .image-caption {
+   line-height: 1.4em;
+   font-style: italic;
+ }
+ 
+-/* line 651, ../sass/_gabersdorf.scss */
++/* line 672, ../sass/_gabersdorf.scss */
+ .lt-ie9 .sidebar-second #content {
+   /* Span 3 columns, starting in 1st column from left. */
+   float: left;
+@@ -2643,7 +2648,7 @@ h2.view-title,
+   margin-right: -70%;
+   width: 70%;
+ }
+-/* line 658, ../sass/_gabersdorf.scss */
++/* line 679, ../sass/_gabersdorf.scss */
+ .lt-ie9 .sidebar-second .region-sidebar-second {
+   /* Span 2 columns, starting in 4th column from left. */
+   float: left;
+@@ -2654,7 +2659,7 @@ h2.view-title,
+   width: 30%;
+ }
+ 
+-/* line 677, ../sass/_gabersdorf.scss */
++/* line 698, ../sass/_gabersdorf.scss */
+ p > img,
+ p > span > img,
+ p > a > img,
+@@ -2668,20 +2673,20 @@ li > a > img {
+   behavior: url("/sites/all/themes/gemeinde-gabersdorf/PIE/PIE.php");
+ }
+ 
+-/* line 686, ../sass/_gabersdorf.scss */
++/* line 707, ../sass/_gabersdorf.scss */
+ .region-header img {
+   box-shadow: none;
+ }
+-/* line 690, ../sass/_gabersdorf.scss */
++/* line 711, ../sass/_gabersdorf.scss */
+ .region-header a {
+   text-decoration: none;
+ }
+-/* line 693, ../sass/_gabersdorf.scss */
++/* line 714, ../sass/_gabersdorf.scss */
+ .region-header a:hover {
+   background: none;
+ }
+ 
+-/* line 724, ../sass/_gabersdorf.scss */
++/* line 745, ../sass/_gabersdorf.scss */
+ .border-bottom,
+ .field-collection-container,
+ .view-gemeinderat .views-row,
+@@ -2693,92 +2698,92 @@ li > a > img {
+   margin-bottom: 10px;
+ }
+ 
+-/* line 730, ../sass/_gabersdorf.scss */
++/* line 751, ../sass/_gabersdorf.scss */
+ .link-border-bottom {
+   margin-bottom: 10px;
+ }
+ 
+-/* line 735, ../sass/_gabersdorf.scss */
++/* line 756, ../sass/_gabersdorf.scss */
+ .view {
+   margin-bottom: 1.5em;
+ }
+ 
+-/* line 755, ../sass/_gabersdorf.scss */
++/* line 776, ../sass/_gabersdorf.scss */
+ .view-grouping .view-grouping-content h3 {
+   font-weight: normal;
+   margin-bottom: 0;
+ }
+ 
+-/* line 761, ../sass/_gabersdorf.scss */
++/* line 782, ../sass/_gabersdorf.scss */
+ .views-responsive-grid {
+   padding-bottom: 5px;
+   border-bottom: 1px solid #c3c38f;
+ }
+ 
+-/* line 766, ../sass/_gabersdorf.scss */
++/* line 787, ../sass/_gabersdorf.scss */
+ span.field-content {
+   font-weight: bold;
+ }
+ 
+-/* line 775, ../sass/_gabersdorf.scss */
++/* line 796, ../sass/_gabersdorf.scss */
+ .column {
+   position: relative;
+   z-index: 99;
+ }
+ 
+-/* line 781, ../sass/_gabersdorf.scss */
++/* line 802, ../sass/_gabersdorf.scss */
+ body.aktuelles .column > .block-views {
+   width: 49%;
+   float: left;
+ }
+ 
+-/* line 789, ../sass/_gabersdorf.scss */
++/* line 810, ../sass/_gabersdorf.scss */
+ #block-views-termine-block-2 {
+   margin-right: 1%;
+ }
+ 
+-/* line 794, ../sass/_gabersdorf.scss */
++/* line 815, ../sass/_gabersdorf.scss */
+ body.aktuelles .view-termine > .view-content > .view-grouping {
+   width: 48%;
+ }
+ 
+-/* line 800, ../sass/_gabersdorf.scss */
++/* line 821, ../sass/_gabersdorf.scss */
+ .view-grouping-header {
+   margin-top: 1.15em;
+   font-weight: bold;
+ }
+ 
+-/* line 810, ../sass/_gabersdorf.scss */
++/* line 831, ../sass/_gabersdorf.scss */
+ .view-buergerservice .views-row {
+   margin-right: 1.9% !important;
+   width: 25%;
+ }
+ 
+-/* line 823, ../sass/_gabersdorf.scss */
++/* line 844, ../sass/_gabersdorf.scss */
+ .field-name-field-agenda-bild-laden div div,
+ .field-name-field-bildergalerie-bilder-laden div div {
+   vertical-align: middle;
+ }
+ 
+-/* line 830, ../sass/_gabersdorf.scss */
++/* line 851, ../sass/_gabersdorf.scss */
+ .field-name-field-agenda-bild-laden div .field-item,
+ .field-name-field-bildergalerie-bilder-laden div .field-item {
+   padding-right: 5px;
+ }
+ 
+-/* line 836, ../sass/_gabersdorf.scss */
++/* line 857, ../sass/_gabersdorf.scss */
+ .agenda-gallery .field-collection-view {
+   margin-left: 0;
+ }
+ 
+-/* line 849, ../sass/_gabersdorf.scss */
++/* line 870, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen h1.title,
+ body.page-node-fotos-veranstaltungen h1.title,
+ body.page-verwaltung-gemeindenachrichten h1.title {
+   margin-bottom: 20px;
+ }
+ 
+-/* line 856, ../sass/_gabersdorf.scss */
++/* line 877, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content,
+ body.page-node-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content {
+   position: relative;
+@@ -2786,7 +2791,7 @@ body.page-node-fotos-veranstaltungen .view-bildergalerie-landing-page .view-cont
+   overflow: hidden;
+ }
+ 
+-/* line 870, ../sass/_gabersdorf.scss */
++/* line 891, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen .view-content .views-row,
+ body.page-node-fotos-veranstaltungen .view-content .views-row,
+ .view-gemeindenachrichten.view-display-id-page .views-row,
+@@ -2798,45 +2803,45 @@ body.page-node-fotos-veranstaltungen .view-content .views-row,
+   margin-bottom: 40px;
+ }
+ 
+-/* line 884, ../sass/_gabersdorf.scss */
++/* line 905, ../sass/_gabersdorf.scss */
+ .field-name-field-bildergalerie-bilder-laden div div,
+ .field-name-field-gemeindenachrichten-bild {
+   margin-top: 10px;
+   margin-bottom: 6px;
+ }
+ 
+-/* line 891, ../sass/_gabersdorf.scss */
++/* line 912, ../sass/_gabersdorf.scss */
+ .view-bildergalerie-landing-page .group-right {
+   width: 49%;
+   margin-left: 1%;
+ }
+ 
+-/* line 900, ../sass/_gabersdorf.scss */
++/* line 921, ../sass/_gabersdorf.scss */
+ .view-gemeindenachrichten h3 {
+   padding-top: 8px;
+   padding-bottom: 8px;
+ }
+ 
+-/* line 909, ../sass/_gabersdorf.scss */
++/* line 930, ../sass/_gabersdorf.scss */
+ .gemeindenachrichten .views-column,
+ .view-stellenausschreibungen .views-row,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row {
+   border-top: 1px solid #c3c38f;
+ }
+ 
+-/* line 915, ../sass/_gabersdorf.scss */
++/* line 936, ../sass/_gabersdorf.scss */
+ .view-stellenausschreibungen .views-row,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row {
+   padding-bottom: 10px;
+ }
+ 
+-/* line 921, ../sass/_gabersdorf.scss */
++/* line 942, ../sass/_gabersdorf.scss */
+ .view-stellenausschreibungen .views-row-last,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row-last {
+   padding-bottom: 0;
+ }
+ 
+-/* line 930, ../sass/_gabersdorf.scss */
++/* line 951, ../sass/_gabersdorf.scss */
+ .gemeindenachrichten .views-column-first,
+ .view-stellenausschreibungen .views-row-first,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row-first,
+@@ -2844,62 +2849,62 @@ body.page-node-fotos-veranstaltungen .view-content .views-row,
+   border: none;
+ }
+ 
+-/* line 938, ../sass/_gabersdorf.scss */
++/* line 959, ../sass/_gabersdorf.scss */
+ .field-name-field-verwaltung .field-collection-view {
+   margin-right: 0;
+   margin-left: 0;
+ }
+ 
+-/* line 949, ../sass/_gabersdorf.scss */
++/* line 970, ../sass/_gabersdorf.scss */
+ .view-gemeinderat .views-row,
+ .view-gemeindeamt-team .views-row {
+   margin: 10px 0;
+ }
+-/* line 952, ../sass/_gabersdorf.scss */
++/* line 973, ../sass/_gabersdorf.scss */
+ .view-gemeinderat .views-row .node-team,
+ .view-gemeindeamt-team .views-row .node-team {
+   margin-bottom: 3px;
+ }
+ 
+-/* line 961, ../sass/_gabersdorf.scss */
++/* line 982, ../sass/_gabersdorf.scss */
+ .views-row .group-left img {
+   margin-top: 15px;
+   margin-bottom: 20px;
+ }
+ 
+-/* line 989, ../sass/_gabersdorf.scss */
++/* line 1010, ../sass/_gabersdorf.scss */
+ .view-gewerbebetriebe .views-row {
+   clear: both;
+ }
+-/* line 992, ../sass/_gabersdorf.scss */
++/* line 1013, ../sass/_gabersdorf.scss */
+ .view-gewerbebetriebe .group-left {
+   float: left;
+   width: 50%;
+ }
+-/* line 996, ../sass/_gabersdorf.scss */
++/* line 1017, ../sass/_gabersdorf.scss */
+ .view-gewerbebetriebe .group-right {
+   float: right;
+   width: 50%;
+ }
+ 
+-/* line 1005, ../sass/_gabersdorf.scss */
++/* line 1026, ../sass/_gabersdorf.scss */
+ .view-freizeit .views-row h2 {
+   margin-bottom: 0;
+ }
+ 
+-/* line 1011, ../sass/_gabersdorf.scss */
++/* line 1032, ../sass/_gabersdorf.scss */
+ .view-freizeit .view-header, .view-freizeit .view-footer {
+   border-bottom: 1px solid #c3c38f;
+   margin-bottom: 10px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+ }
+-/* line 1018, ../sass/_gabersdorf.scss */
++/* line 1039, ../sass/_gabersdorf.scss */
+ .view-freizeit .view-footer {
+   border-bottom: none;
+ }
+ 
+-/* line 1028, ../sass/_gabersdorf.scss */
++/* line 1049, ../sass/_gabersdorf.scss */
+ .site-map-box-menu h2 {
+   display: none;
+ }
+diff --git a/gemeinde_gabersdorf.info b/gemeinde_gabersdorf.info
+index 063d2b3..6740f7e 100644
+--- a/gemeinde_gabersdorf.info
++++ b/gemeinde_gabersdorf.info
+@@ -82,9 +82,9 @@ scripts[] = js/royal-slider/jquery.easing.1.3.min.js
+ scripts[] = js/royal-slider/royal-slider-8.1.js
+ scripts[] = js/jquery-ui.min.js
+ scripts[] = js/touchcarousel.js
+-scripts[] = js/touchcarousel/jquery.touchcarousel-1.0.min.js
++scripts[] = js/touchcarousel/jquery.touchcarousel-1.2.js
+ ;scripts[] = js/in-field-lables-for-forms/jquery.infieldlabel.min.js
+-;scripts[] = js/script.js
++scripts[] = js/script.js
+ 
+ ; This section lists the regions defined in Zen's default page.tpl.php and
+ ; maintenance-page.tpl.php files. The name in brackets is the machine name of
+diff --git a/js/script.js b/js/script.js
+index 509ea18..ba81b5f 100644
+--- a/js/script.js
++++ b/js/script.js
+@@ -10,10 +10,78 @@
+ // wrapping it with an "anonymous closure". See:
+ // - http://drupal.org/node/1446420
+ // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
+-(function ($, Drupal, window, document, undefined) {
++(function ($) {
+ 
+ 
+-// Place your code here.
++	$(document).ready(function() {
++//============================================
++//Give the boxes on the frontpage equal height
++//============================================
+ 
++//First row Termine / Aktuelles / Gemeindenachrichten
++//============================================
+ 
+-})(jQuery, Drupal, this, this.document);
++		var heightleft = $('.panels-flexible-row-2-main-row .pane-termine').height();
++		var heightmiddle = $('.panels-flexible-row-2-main-row .pane-aktuelles').height();
++		var heightright = $('.panels-flexible-row-2-main-row .pane-gemeindenachrichten').height();
++		if ((heightleft >= heightmiddle) && (heightleft >= heightright)) {
++			$('.panels-flexible-row-2-main-row .pane-aktuelles').height(heightleft);
++			$('.panels-flexible-row-2-main-row .pane-gemeindenachrichten').height(heightleft);
++			} 
++		else if ((heightmiddle >= heightleft) && (heightmiddle >= heightright)) {
++			$('.panels-flexible-row-2-main-row .pane-termine').height(heightmiddle);
++			$('.panels-flexible-row-2-main-row .pane-gemeindenachrichten').height(heightmiddle);
++			} 
++		else if ((heightright >= heightmiddle) && (heightright >= heightleft)) {
++			$('.panels-flexible-row-2-main-row .pane-aktuelles').height(heightright);
++			$('.panels-flexible-row-2-main-row .pane-termine').height(heightright);
++		}
++
++//Second row Förderprogramme / Vereine / Unsere Gemeinde
++//============================================
++
++		var heightleft = $('.panels-flexible-row-2-2 .pane-foerderprogramme').height();
++		var heightmiddle = $('.panels-flexible-row-2-2 .pane-vereine').height();
++		var heightright = $('.panels-flexible-row-2-2 .pane-unseregemeinde').height();
++		if ((heightleft >= heightmiddle) && (heightleft >= heightright)) {
++			$('.panels-flexible-row-2-2 .pane-vereine').height(heightleft);
++			$('.panels-flexible-row-2-2 .pane-unseregemeinde').height(heightleft);
++			} 
++		else if ((heightmiddle >= heightleft) && (heightmiddle >= heightright)) {
++			$('.panels-flexible-row-2-2 .pane-foerderprogramme').height(heightmiddle);
++			$('.panels-flexible-row-2-2 .pane-unseregemeinde').height(heightmiddle);
++			} 
++		else if ((heightright >= heightmiddle) && (heightright >= heightleft)) {
++			$('.panels-flexible-row-2-2 .pane-vereine').height(heightright);
++			$('.panels-flexible-row-2-2 .pane-foerderprogramme').height(heightright);
++		}
++
++//Third row Stellenausschreibungen / Wetter
++//============================================
++
++		var heightleft = $('.panels-flexible-row-2-3 .pane-stellenausschreibungen').height();
++		// var heightmiddle = $('.panels-flexible-row-2-3 .pane-vereine').height();
++		var heightright = $('.panels-flexible-row-2-3 .pane-wetter').height();
++		if ((heightleft >= heightright)) {
++			$('.panels-flexible-row-2-3 .pane-wetter').height(heightleft);
++		}
++		else if ((heightright >= heightleft)) {
++			$('.panels-flexible-row-2-3 .pane-stellenausschreibungen').height(heightright);
++		}
++		// if ((heightleft >= heightmiddle) && (heightleft >= heightright)) {
++		// 	$('.panels-flexible-row-2-3 .pane-vereine').height(heightleft);
++		// 	$('.panels-flexible-row-2-3 .pane-wetter').height(heightleft);
++		// 	} 
++		// // else if ((heightmiddle >= heightleft) && (heightmiddle >= heightright)) {
++		// // 	$('.panels-flexible-row-2-3 .pane-stellenausschreibungen').height(heightmiddle);
++		// // 	$('.panels-flexible-row-2-3 .pane-wetter').height(heightmiddle);
++		// // 	} 
++		// else if ((heightright >= heightmiddle) && (heightright >= heightleft)) {
++		// 	$('.panels-flexible-row-2-3 .pane-vereine').height(heightright);
++		// 	$('.panels-flexible-row-2-3 .pane-stellenausschreibungen').height(heightright);
++		// }
++			
++	});
++
++
++})(jQuery);
+diff --git a/js/touchcarousel/black-and-white-skin/black-and-white-skin.css b/js/touchcarousel/black-and-white-skin/black-and-white-skin.css
+index 4d66152..9025228 100644
+--- a/js/touchcarousel/black-and-white-skin/black-and-white-skin.css
++++ b/js/touchcarousel/black-and-white-skin/black-and-white-skin.css
+@@ -1,109 +1,109 @@
+-/******************************************************\
+-*
+-*  Minimal Light Skin
+-*
+-*    1. Arrows(direction) navigation
+-*    2. Paging navigation
+-*
+-\******************************************************/
+-
+-
+-
+-/******************************************************\
+-*
+-*  1. Arrows (direction) navigation
+-*
+-\******************************************************/
+-.touchcarousel.black-and-white .arrow-icon {
+-	width: 30px;
+-	height: 30px;
+-	margin-top: -15px;	
+-	
+-	background-image: url('sprite.png');
+-	background-repeat: no-repeat;
+-	
+-	background-color: rgb(50, 50, 50);	
+-	background-color: rgba(0, 0, 0, 0.7);	
+-	
+-	-moz-border-radius: 4px; 
+-  	-webkit-border-radius: 4px; 
+- 	border-radius: 4px;
+- 	
+- 	-moz-opacity: 0.8;	
+-	-webkit-opacity: 0.8;	
+-	opacity: 0.8;
+-
+-}
+-.touchcarousel.black-and-white .arrow-holder {
+-	width: 35px;	
+-}
+-.touchcarousel.black-and-white .arrow-holder:active .arrow-icon {	
+-	-moz-opacity: 0.7 !important;	
+-	-webkit-opacity: 0.7 !important;	
+-	opacity: 0.7 !important;	
+-}
+-.touchcarousel.black-and-white .arrow-icon.left {
+-	left: 10px;
+-	background-position: -2px -6px;		
+-}
+-.touchcarousel.black-and-white .arrow-icon.right {
+-	right: 10px;
+-	background-position: -175px -6px;	
+-}
+-.touchcarousel.black-and-white .arrow-holder:hover .arrow-icon {
+-	background-color: rgb(30, 30, 30);	
+-	background-color: rgba(0, 0, 0, 0.7);	
+-	
+-	-moz-opacity: 1;	
+-	-webkit-opacity: 1;	
+-	opacity: 1;
+-}
+-.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.left {
+-	background-position: -39px -6px;
+-}
+-.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.right {
+-	background-position: -138px -6px;	
+-}
+-.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.left,
+-.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.right {	
+-	background-color: rgb(200, 200, 200);
+-	background-color: rgba(0, 0, 0, 0.3);
+-}
+-
+-/******************************************************\
+-*
+-*  2. Paging navigation
+-*
+-\******************************************************/
+-.touchcarousel.black-and-white .tc-paging-container {	
+-	margin-top: -22px;
+-}
+-.touchcarousel.black-and-white .tc-paging-item {
+-	background-image: url('sprite.png');
+-	background-repeat: no-repeat;
+-	background-position:  -95px -4px;
+-		
+-	
+-	width: 16px;
+-	height: 16px;		
+-}
+-.touchcarousel.black-and-white .tc-paging-item.current {	
+-	background-position:  -95px -22px;
+-}
+-.touchcarousel.black-and-white .tc-paging-container {
+-	margin-top: -25px;
+-}
+-.touchcarousel.black-and-white .tc-paging-centerer-inside {
+-	-moz-border-radius: 4px; 
+-  	-webkit-border-radius: 4px; 
+- 	border-radius: 4px;
+- 	
+- 	background-color: rgb(50, 50, 50);	
+-	background-color: rgba(0, 0, 0, 0.6);	
+-	
+-	padding: 2px 4px;
+-}
+-
+-
+-
+-
++/******************************************************\
++*
++*  Minimal Light Skin
++*
++*    1. Arrows(direction) navigation
++*    2. Paging navigation
++*
++\******************************************************/
++
++
++
++/******************************************************\
++*
++*  1. Arrows (direction) navigation
++*
++\******************************************************/
++.touchcarousel.black-and-white .arrow-icon {
++	width: 30px;
++	height: 30px;
++	margin-top: -15px;	
++	
++	background-image: url('sprite.png');
++	background-repeat: no-repeat;
++	
++	background-color: rgb(50, 50, 50);	
++	background-color: rgba(0, 0, 0, 0.7);	
++	
++	-moz-border-radius: 4px; 
++  	-webkit-border-radius: 4px; 
++ 	border-radius: 4px;
++ 	
++ 	-moz-opacity: 0.8;	
++	-webkit-opacity: 0.8;	
++	opacity: 0.8;
++
++}
++.touchcarousel.black-and-white .arrow-holder {
++	width: 35px;	
++}
++.touchcarousel.black-and-white .arrow-holder:active .arrow-icon {	
++	-moz-opacity: 0.7 !important;	
++	-webkit-opacity: 0.7 !important;	
++	opacity: 0.7 !important;	
++}
++.touchcarousel.black-and-white .arrow-icon.left {
++	left: 10px;
++	background-position: -2px -6px;		
++}
++.touchcarousel.black-and-white .arrow-icon.right {
++	right: 10px;
++	background-position: -175px -6px;	
++}
++.touchcarousel.black-and-white .arrow-holder:hover .arrow-icon {
++	background-color: rgb(30, 30, 30);	
++	background-color: rgba(0, 0, 0, 0.7);	
++	
++	-moz-opacity: 1;	
++	-webkit-opacity: 1;	
++	opacity: 1;
++}
++.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.left {
++	background-position: -39px -6px;
++}
++.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.right {
++	background-position: -138px -6px;	
++}
++.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.left,
++.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.right {	
++	background-color: rgb(200, 200, 200);
++	background-color: rgba(0, 0, 0, 0.3);
++}
++
++/******************************************************\
++*
++*  2. Paging navigation
++*
++\******************************************************/
++.touchcarousel.black-and-white .tc-paging-container {	
++	margin-top: -22px;
++}
++.touchcarousel.black-and-white .tc-paging-item {
++	background-image: url('sprite.png');
++	background-repeat: no-repeat;
++	background-position:  -95px -4px;
++		
++	
++	width: 16px;
++	height: 16px;		
++}
++.touchcarousel.black-and-white .tc-paging-item.current {	
++	background-position:  -95px -22px;
++}
++.touchcarousel.black-and-white .tc-paging-container {
++	margin-top: -25px;
++}
++.touchcarousel.black-and-white .tc-paging-centerer-inside {
++	-moz-border-radius: 4px; 
++  	-webkit-border-radius: 4px; 
++ 	border-radius: 4px;
++ 	
++ 	background-color: rgb(50, 50, 50);	
++	background-color: rgba(0, 0, 0, 0.6);	
++	
++	padding: 2px 4px;
++}
++
++
++
++
+diff --git a/js/touchcarousel/grey-blue-skin/grey-blue-skin.css b/js/touchcarousel/grey-blue-skin/grey-blue-skin.css
+deleted file mode 100644
+index 96237ad..0000000
+--- a/js/touchcarousel/grey-blue-skin/grey-blue-skin.css
++++ /dev/null
+@@ -1,100 +0,0 @@
+-/******************************************************\
+-*
+-*  Grey-Blue skin
+-*
+-*    1. Arrows(direction) navigation
+-*    2. Paging navigation
+-*
+-\******************************************************/
+-
+-
+-
+-/******************************************************\
+-*
+-*  1. Arrows (direction) navigation
+-*
+-\******************************************************/
+-.touchcarousel.grey-blue .arrow-icon {	
+-	background-image: url('sprite.png');
+-	background-repeat: no-repeat;
+-	width: 11px;
+-	height: 19px;	
+-	margin-top: -9px;
+-}
+-.touchcarousel.grey-blue .arrow-holder {
+-	width: 19px;
+-	height: 100%;
+-	-moz-opacity: 1;	
+-	-webkit-opacity: 1;	
+-	opacity: 1;	
+-}
+-.touchcarousel.grey-blue .arrow-holder.left {
+-	left: -20px;
+-}
+-.touchcarousel.grey-blue .arrow-holder.right {	
+-	right: -20px;
+-}
+-
+-.touchcarousel.grey-blue .arrow-icon.left {
+-	left: 0;
+-	background-position: -6px -15px;
+-}
+-.touchcarousel.grey-blue .arrow-icon.right {
+-	right: 0;
+-	background-position: -186px -15px;
+-}
+-.touchcarousel.grey-blue .arrow-holder:hover .arrow-icon.left {
+-	background-position: -36px -15px;
+-}
+-.touchcarousel.grey-blue .arrow-holder:hover .arrow-icon.right {
+-	background-position: -156px -15px;
+-}
+-.touchcarousel.grey-blue .arrow-holder.disabled .arrow-icon.left {
+-	background-position: -66px -15px;
+-}
+-.touchcarousel.grey-blue .arrow-holder.disabled .arrow-icon.right {
+-	background-position: -126px -15px;
+-}
+-.touchcarousel.grey-blue .arrow-holder:hover {
+-	-moz-opacity: 1;	
+-	-webkit-opacity: 1;	
+-	opacity: 1;	
+-}
+-.touchcarousel.grey-blue .arrow-holder:active .arrow-icon {
+-	margin-top: -8px;
+-}
+-.touchcarousel.grey-blue .arrow-holder.disabled {
+-	-moz-opacity: 1;	
+-	-webkit-opacity: 1;	
+-	opacity: 1;	
+-}
+-
+-/******************************************************\
+-*
+-*  2. Paging navigation
+-*
+-\******************************************************/
+-
+-.touchcarousel.grey-blue .tc-paging-item {
+-	background: url('sprite.png') no-repeat -95px -4px;
+-	
+-	width: 16px;
+-	height: 16px;	
+-	
+-	-moz-opacity: 0.8;	
+-	-webkit-opacity: 0.8;	
+-	opacity: 0.8;	
+-}
+-.touchcarousel.grey-blue .tc-paging-item.current {	
+-	background: url('sprite.png') no-repeat -95px -22px;
+-}
+-.touchcarousel.grey-blue .tc-paging-item:hover {		
+-	-moz-opacity: 1;	
+-	-webkit-opacity: 1;	
+-	opacity: 1;		
+-}
+-
+-
+-
+-
+-
+diff --git a/js/touchcarousel/grey-blue-skin/sprite.png b/js/touchcarousel/grey-blue-skin/sprite.png
+deleted file mode 100644
+index 6ae118c..0000000
+Binary files a/js/touchcarousel/grey-blue-skin/sprite.png and /dev/null differ
+diff --git a/js/touchcarousel/jquery.touchcarousel-1.0.js b/js/touchcarousel/jquery.touchcarousel-1.0.js
+deleted file mode 100644
+index 80cbde1..0000000
+--- a/js/touchcarousel/jquery.touchcarousel-1.0.js
++++ /dev/null
+@@ -1,1240 +0,0 @@
+-/*
+- * TouchCarousel  v1.0
+- *
+- * Copyright 2011, Dmitry Semenov, http://dimsemenov.com
+- * 
+- */
+-(function($) {
+-	function TouchCarousel(element, options) {	
+-		this.carouselRoot = $(element);
+-		
+-		var self = this;			
+-		this._lockYAxis = false;
+-		this._isAnimating = false;		
+-		
+-		this._downEvent = "";
+-		this._moveEvent = "";
+-		this._upEvent = "";
+-		
+-		this._totalItemsWidth;
+-		this._itemWidths;
+-		
+-		this._startAccelerationX;
+-		this._accelerationX;
+-		this._latestDragX;
+-		
+-		this._startTime = 0;
+-		
+-		this.settings = $.extend({}, $.fn.touchCarousel.defaults, options);		
+-		
+-		this._dragContainer = this.carouselRoot.find(".touchcarousel-container");	
+-		
+-		// animate directly style for better performance
+-		this._dragContainerStyle = this._dragContainer[0].style;
+-		
+-		this._itemsWrapper = this._dragContainer.wrap($('<div class="touchcarousel-wrapper" />')).parent();		
+-		var itemsJQ = this._dragContainer.find(".touchcarousel-item");
+-		
+-		/* Array item structure: 
+-		 * {
+-		 * 		item: jQuery item object
+-		 * 		index: item index
+-		 * 		posX: item X position
+-		 *      width: item width
+-		 * }
+-		 * 
+-		 * */
+-		this.items = [];
+-		this.numItems = itemsJQ.length;
+-		
+-		
+-		
+-		this._decelerationAnim;
+-		this._successfullyDragged = false;
+-		this._startMouseX = 0;
+-		this._prevMouseX = 0;
+-		this._moveDist = 0;
+-		this._blockClickEvents = false;
+-		this._wasBlocked = false;
+-		
+-		this._useWebkitTransition = false;
+-		
+-		
+-		if('ontouchstart' in window) {
+-			this.hasTouch = true;
+-			this._downEvent = 'touchstart.rs';
+-			this._moveEvent = 'touchmove.rs';
+-			this._upEvent = 'touchend.rs';
+-			this._baseFriction = this.settings.baseTouchFriction;
+-		} else {
+-			this.hasTouch = false;
+-			this._baseFriction = this.settings.baseMouseFriction;
+-			if(this.settings.dragUsingMouse) {
+-				this._downEvent = 'mousedown.rs';
+-				this._moveEvent = 'mousemove.rs';
+-				this._upEvent = 'mouseup.rs';
+-				
+-				//setup cursor
+-				this._grabCursor;
+-				this._grabbingCursor;
+-				var ua = $.browser;
+-				if (ua.msie || ua.opera) {
+-					this._grabCursor = this._grabbingCursor = "move";
+-				} else if(ua.mozilla) {
+-					this._grabCursor = "-moz-grab";
+-					this._grabbingCursor = "-moz-grabbing";
+-				} 
+-				this._setGrabCursor();
+-			} else {
+-				// set cursor to auto if drag navigation is disabled
+-				this._itemsWrapper.addClass('auto-cursor');
+-			}
+-			
+-		}	
+-		if(this.hasTouch || this.settings.useWebkit3d) {
+-			// check if browser supports translate3d()
+-			if(('WebKitCSSMatrix' in window && 'm11' in new WebKitCSSMatrix())) {	
+-				this._dragContainer.css({'-webkit-transform-origin':'0 0', '-webkit-transform': 'translateZ(0)'});			
+-				this._useWebkitTransition = true;
+-			}
+-		}
+-		
+-		
+-		if(this._useWebkitTransition) {
+-			this._xProp = '-webkit-transform';
+-			this._xPref = 'translate3d(';
+-			this._xSuf = 'px, 0, 0)';
+-		} else {
+-			this._xProp = 'left';
+-			this._xPref = '';
+-			this._xSuf = 'px';
+-		}
+-		
+-		if(this.hasTouch) {
+-			this.settings.directionNavAutoHide = false;			
+-		}		
+-		
+-		if(!this.settings.directionNav) {
+-			if(this.settings.loopItems) {
+-				this._arrowLeftBlocked = true;
+-				this._arrowRightBlocked = true;
+-			} else {
+-				this._arrowLeftBlocked = false;
+-				this._arrowRightBlocked = false;
+-			}
+-			this.settings.loopItems = true;
+-		}
+-		
+-		var	itemObj,
+-			jqItem,
+-			dataSRC,
+-			slideImg,
+-			currPosX = 0;
+-		
+-		
+-		
+-		itemsJQ.eq(this.numItems - 1).addClass('last');
+-		
+-		// parse items
+-		itemsJQ.each(function(index) {
+-			jqItem = $(this);			
+-			itemObj = {};
+-			itemObj.item = jqItem;
+-			itemObj.index = index;
+-			itemObj.posX = currPosX;
+-			itemObj.width = (jqItem.outerWidth(true) || self.settings.itemFallbackWidth);			
+-			currPosX += itemObj.width;
+-			
+-			// block all links inside slides when dragging
+-			if(!this.hasTouch) {
+-				jqItem.find('a').bind('click.touchcarousel', function(e) {					
+-					if(self._successfullyDragged) {						
+-						e.preventDefault();						
+-						return false;
+-					}						
+-				});
+-			} else {
+-				// Fix preventing link bug on some touch devices
+-				var jqLinks = jqItem.find('a');
+-				var jqLink;
+-				jqLinks.each(function() {
+-					jqLink = $(this);
+-					jqLink.data('tc-href', jqLink.attr('href'));
+-					jqLink.data('tc-target', jqLink.attr('target'));
+-					jqLink.attr('href', '#');
+-					jqLink.bind('click', function(e) {							
+-						e.preventDefault();	
+-						if(self._successfullyDragged) {							
+-							return false;
+-						} else {
+-							var linkData = $(this).data('tc-href');							
+-							var linkTarget = $(this).data('tc-target');								
+-							if(!linkTarget || linkTarget.toLowerCase() === '_self') {
+-								window.location.href = linkData;
+-							} else {
+-								window.open(linkData);
+-							}							
+-						}					
+-					});
+-				});		
+-			}				
+-			
+-			// prevent dragging on all elements that have 'non-draggable' class			
+-			jqItem.find('.non-draggable').bind(self._downEvent, function(e) {					
+-				self._successfullyDragged = false;	
+-				e.stopImmediatePropagation();
+-			});
+-			
+-			self.items.push(itemObj);
+-		});
+-		
+-		
+-		this._maxXPos = this._totalItemsWidth = currPosX;		
+-		
+-		
+-		if(this.settings.itemsPerMove > 0) {
+-			this._itemsPerMove = this.settings.itemsPerMove;
+-		} else {
+-			this._itemsPerMove = 1;			
+-		}
+-		
+-		// Setup paging
+-		if(this.settings.pagingNav) {
+-			this.settings.snapToItems = true;
+-			this._pagingEnabled = true;
+-			this._numPages = Math.ceil(this.numItems / this._itemsPerMove);
+-			this._currPageId = 0;
+-			
+-			if(this.settings.pagingNavControls) {
+-				this._pagingNavContainer = $('<div class="tc-paging-container"><div class="tc-paging-centerer"><div class="tc-paging-centerer-inside"></div></div></div>');
+-				var pagingInside = this._pagingNavContainer.find('.tc-paging-centerer-inside');
+-				var pagingItem;
+-				
+-				for(var i = 1; i <= this._numPages; i++ ) {					
+-					pagingItem = $('<a class="tc-paging-item" href="#">' + i + '</a>').data('tc-id',i);					
+-					if(i === this._currPageId + 1) {
+-						pagingItem.addClass('current');
+-					}
+-					pagingInside.append(pagingItem);	
+-				}
+-			
+-				this._pagingItems = pagingInside.find(".tc-paging-item").click(function(e) {		
+-					e.preventDefault();						
+-					self.goTo(($(e.currentTarget).data('tc-id') - 1) * self._itemsPerMove);
+-				});
+-				
+-				this._itemsWrapper.after(this._pagingNavContainer);
+-			}
+-			
+-		} else {
+-			this._pagingEnabled = false;
+-		}
+-
+-		
+-		this._dragContainer.css({
+-			width:currPosX
+-		});
+-		
+-		
+-
+-
+-		
+-		
+-	
+-
+-
+-		//Direction navigation (arrows)
+-		if(this.settings.directionNav) {	
+-			this._itemsWrapper.after("<a href='#' class='arrow-holder left'><span class='arrow-icon left'></span></a> <a href='#' class='arrow-holder right'><span class='arrow-icon right'></span></a>");
+-			this.arrowLeft = this.carouselRoot.find(".arrow-holder.left");
+-			this.arrowRight = this.carouselRoot.find(".arrow-holder.right");
+-
+-			
+-			/*if(this.settings.loopItems) {
+-				this._arrowLeftBlocked = false;
+-				this._disableLeftArrow();
+-			}*/
+-			
+-			if(this.arrowLeft.length < 1 || this.arrowRight.length < 1) {
+-				this.settings.directionNav = false;
+-			} else if(this.settings.directionNavAutoHide) {
+-				this.arrowLeft.hide();
+-				this.arrowRight.hide();
+-
+-				this.carouselRoot.one("mousemove.arrowshover",function() {
+-					self.arrowLeft.fadeIn("fast");
+-					self.arrowRight.fadeIn("fast");					
+-				});
+-
+-
+-				this.carouselRoot.hover(
+-						function() {
+-							self.arrowLeft.fadeIn("fast");
+-							self.arrowRight.fadeIn("fast");
+-						},
+-						function() {
+-							self.arrowLeft.fadeOut("fast");
+-							self.arrowRight.fadeOut("fast");				
+-						}
+-				);	
+-			}	
+-			
+-			
+-			this._updateDirectionNav(0);
+-			
+-			if(this.settings.directionNav) {
+-				this.arrowRight.click(function(e) {					
+-					e.preventDefault();	
+-					if(self.settings.loopItems && !self._blockClickEvents || !self._arrowRightBlocked )
+-						self.next();
+-				});
+-
+-				this.arrowLeft.click(function(e) {
+-					e.preventDefault();
+-					if(self.settings.loopItems && !self._blockClickEvents || !self._arrowLeftBlocked )
+-						self.prev();
+-				});	
+-			}
+-		}
+-
+-		
+-		
+-
+-		// Manage window resize event with 100ms delay
+-		this.carouselWidth;
+-		this._resizeEvent = 'onorientationchange' in window ? 'orientationchange.touchcarousel' : 'resize.touchcarousel';
+-		var resizeTimer;
+-		$(window).bind(this._resizeEvent, function() {		
+-			if(resizeTimer) 
+-				clearTimeout(resizeTimer);			
+-			resizeTimer = setTimeout(function() { self.updateCarouselSize(false); }, 100);			
+-		});		
+-		
+-		
+-		// Setup scrollbar
+-		if(this.settings.scrollbar) {
+-			this._scrollbarHolder = $("<div class='scrollbar-holder'><div class='scrollbar"+ (this.settings.scrollbarTheme.toLowerCase() === "light" ? " light" : " dark")  +"'></div></div>");
+-			this._scrollbarHolder.appendTo(this.carouselRoot);
+-			this.scrollbarJQ = this._scrollbarHolder.find('.scrollbar');
+-			this._scrollbarHideTimeout = "";
+-			this._scrollbarStyle = this.scrollbarJQ[0].style;			
+-			this._scrollbarDist = 0;
+-			if(this.settings.scrollbarAutoHide) {
+-				this._scrollbarVisible = false;
+-				this.scrollbarJQ.css("opacity", 0);
+-			} else {
+-				this._scrollbarVisible = true;
+-			}
+-			
+-		} else {
+-			this.settings.scrollbarAutoHide = false;
+-		}
+-		
+-		
+-		this.updateCarouselSize(true);
+-		
+-		
+-		
+-		
+-		
+-		this._itemsWrapper.bind(this._downEvent, function(e) {  self._onDragStart(e); });	
+-		
+-		
+-		
+-		// Setup autoplay			
+-		if(this.settings.autoplay && this.settings.autoplayDelay > 0) {		
+-			this._isHovering = false;
+-			this.autoplayTimer = '';
+-			this.wasAutoplayRunning = true;
+-			
+-			if(!this.hasTouch) {						
+-				this.carouselRoot.hover(
+-						function() {						
+-							self._isHovering = true;							
+-							self._stopAutoplay();
+-						},
+-						function() {							
+-							self._isHovering = false;							
+-							self._resumeAutoplay();
+-						}
+-				);				
+-			}
+-			this.autoplay = true;	
+-			
+-			this._releaseAutoplay();
+-		} else {
+-			this.autoplay = false;
+-		}
+-		
+-		
+-		// Keyboard navigation
+-		if(this.settings.keyboardNav) {
+-			$(document).bind("keydown.touchcarousel", function(e) {
+-				if(!self._blockClickEvents) {
+-					if (e.keyCode === 37) {						
+-						self.prev();
+-					}
+-					else if (e.keyCode === 39) {						
+-						self.next();
+-					}
+-				}
+-			});
+-		}
+-		
+-		// release carousel main container overflow
+-		this.carouselRoot.css("overflow","visible");
+-		
+-	} /* TouchCarousel Constructor End */
+-	/* -------------------------------------TouchCarousel Prototype------------------------------------------------------*/
+-	
+-	
+-	
+-	TouchCarousel.prototype = {
+-			/* Public methods: */
+-			goTo:function(id, fromAutoplay) {
+-						
+-				
+-				var newItem = this.items[id];
+-				
+-				
+-				if(newItem) {					
+-					if(!fromAutoplay && this.autoplay && this.settings.autoplayStopAtAction) {						
+-						this.stopAutoplay();
+-					}
+-					
+-					this._updatePagingNav(id);
+-					
+-					
+-					this.endPos = this._getXPos();
+-					var newX = -newItem.posX;
+-					if(newX > 0) {
+-						newX = 0;
+-					} else if(newX < this.carouselWidth - this._maxXPos) {
+-						newX = this.carouselWidth - this._maxXPos;
+-					}
+-					this.animateTo(newX, this.settings.transitionSpeed, "easeInOutSine");					
+-				}			
+-				
+-			},
+-			next:function(fromAutoplay) {				
+-				var currXPos = this._getXPos();				
+-				var newItemId = this._getItemAtPos(currXPos).index;	
+-				
+-				
+-				if(!this._pagingEnabled) {
+-					newItemId = newItemId + this._itemsPerMove;						
+-					if(this.settings.loopItems) {
+-						if(currXPos <= this.carouselWidth - this._maxXPos) {
+-							newItemId = 0;
+-						}
+-					}
+-					if(newItemId > this.numItems - 1) {
+-						newItemId = this.numItems - 1;
+-					}
+-				} else {
+-					var newPageId = this._currPageId +  1;
+-					if(newPageId >  this._numPages - 1) {						
+-						if(this.settings.loopItems) {
+-							newItemId = 0;
+-						} else {
+-							newItemId = (this._numPages - 1) * this._itemsPerMove;	
+-						}
+-					} else {
+-						newItemId = newPageId * this._itemsPerMove;	
+-					}
+-				}
+-				
+-				
+-				
+-				this.goTo(newItemId, fromAutoplay);
+-			},
+-			prev:function(fromAutoplay) {	
+-				var currXPos = this._getXPos();				
+-				var newItemId = this._getItemAtPos(currXPos).index;	
+-				
+-				if(!this._pagingEnabled) {
+-					newItemId = newItemId - this._itemsPerMove;						
+-					if(newItemId < 0) {
+-						if(this.settings.loopItems) {
+-							if(currXPos < 0) {
+-								newItemId = 0;							
+-							} else {
+-								newItemId = this.numItems - 1;							
+-							}
+-							
+-						} else {
+-							newItemId = 0;
+-						}
+-					}	
+-				} else {
+-					var newPageId = this._currPageId -  1;
+-					if(newPageId <  0) {						
+-						if(this.settings.loopItems) {
+-							newItemId = (this._numPages - 1) * this._itemsPerMove;	
+-						} else {
+-							newItemId = 0;
+-						}
+-					} else {
+-						newItemId = newPageId * this._itemsPerMove;	
+-					}			
+-				}				
+-				this.goTo(newItemId, fromAutoplay);
+-			},
+-			getCurrentId:function() {
+-				var currId = this._getItemAtPos(this._getXPos()).index;
+-				return currId;
+-			},
+-			setXPos:function(pos, isScrollbar) {	
+-				if(!isScrollbar) {
+-					this._dragContainerStyle[this._xProp] = (this._xPref + pos + this._xSuf);					
+-				} else {					
+-					this._scrollbarStyle[this._xProp] = (this._xPref + pos + this._xSuf);
+-				}				
+-			},
+-			stopAutoplay: function() {				
+-				this._stopAutoplay();
+-				this.autoplay = false;
+-				this.wasAutoplayRunning = false;				
+-			},
+-			resumeAutoplay: function() {
+-				this.autoplay = true;
+-				if(!this.wasAutoplayRunning) {
+-					this._resumeAutoplay();
+-				}				
+-			},
+-			updateCarouselSize:function(leavePos) {
+-				var self = this;
+-				
+-				this.carouselWidth = this.carouselRoot.width();
+-				if(this.settings.scrollToLast) {
+-					var lastItemsWidth = 0;
+-					if(this._pagingEnabled) {					
+-						var freeItems = (this.numItems % this._itemsPerMove);
+-						if(freeItems > 0) {
+-							for(var i = this.numItems - freeItems; i < this.numItems; i++) {								
+-								lastItemsWidth += this.items[i].width;
+-							}
+-						} else {
+-							lastItemsWidth = this.carouselWidth;
+-						}
+-						
+-					} else {
+-						lastItemsWidth = this.items[this.numItems - 1].width;
+-					}
+-					this._maxXPos = this._totalItemsWidth + this.carouselWidth - lastItemsWidth;
+-				} else {
+-					
+-					this._maxXPos = this._totalItemsWidth;
+-				}
+-				
+-				
+-				if(this.settings.scrollbar) {
+-					var scrlWidth = Math.round(this._scrollbarHolder.width() / (this._maxXPos / this.carouselWidth));
+-					this.scrollbarJQ.css('width', scrlWidth);					
+-					this._scrollbarDist = this._scrollbarHolder.width() - scrlWidth;
+-				}		
+-				if(!this.settings.scrollToLast) {
+-					if(this.carouselWidth >= this._totalItemsWidth) {
+-						this._wasBlocked = true;						
+-						if(!this.settings.loopItems) {
+-							this._arrowRightBlocked = true;							
+-							this.arrowRight.addClass("disabled");	
+-							this._arrowLeftBlocked = true;
+-							this.arrowLeft.addClass("disabled");	
+-						}
+-						this.setXPos(0);						
+-						return;
+-					} else if(this._wasBlocked) {
+-						this._wasBlocked = false;
+-						this._arrowRightBlocked = false;	
+-						this._arrowLeftBlocked = false;
+-						this.arrowRight.removeClass("disabled");	
+-						this.arrowLeft.removeClass("disabled");	
+-					}					
+-				}
+-				
+-				if(!leavePos) {
+-					var newX = this.endPos = this._getXPos();		
+-					
+-					if(newX > 0) {
+-						newX = 0;
+-					} else if(newX < this.carouselWidth - this._maxXPos) {
+-						newX = this.carouselWidth - this._maxXPos;
+-					}
+-					this.animateTo(newX, 300, "easeInOutSine");		
+-				}
+-				
+-				
+-			},
+-			animateTo:function(pos, speed, easing, bounceAnim, endPos, bounceSpeed, bounceEasing) {		
+-				
+-				if(this.settings.onAnimStart !== null) {
+-					this.settings.onAnimStart.call(this);
+-				}
+-				
+-				
+-				if(this.autoplay && this.autoplayTimer) {		
+-					this.wasAutoplayRunning = true;
+-					this._stopAutoplay();
+-				}
+-				this._stopAnimation();
+-				
+-				var self = this;
+-				
+-				var scrollbarEnabled = this.settings.scrollbar,
+-					prop = self._xProp,
+-					pref = self._xPref,
+-					suf = self._xSuf,				
+-					from = {containerPos: this.endPos},
+-					to = {containerPos: pos},
+-					to2 = {containerPos: endPos},
+-					endPos = bounceAnim ? endPos : pos,
+-					dContainer = self._dragContainerStyle;
+-				
+-				self._isAnimating = true;
+-				
+-				if(scrollbarEnabled) {
+-					var sbStyle = this._scrollbarStyle;
+-					var sbAnimateDist = self._maxXPos - self.carouselWidth;
+-					if(this.settings.scrollbarAutoHide)  { 
+-						if(!this._scrollbarVisible) {
+-							this._showScrollbar();
+-						}
+-					}
+-				}
+-				
+-				
+-				
+-				this._updateDirectionNav(endPos);
+-				
+-				function animationComplete() {
+-					self._isAnimating = false;
+-			    	self._releaseAutoplay();
+-			    	if(self.settings.scrollbarAutoHide)  {					
+-			    		self._hideScrollbar();
+-					}
+-			    	
+-			    	if(self.settings.onAnimComplete !== null) {
+-						self.settings.onAnimComplete.call(self);
+-					}
+-				}
+-				
+-				
+-				
+-				
+-				this._decelerationAnim = $(from).animate(to, {
+-				    duration: speed,
+-				    easing: easing,
+-				    step: function() {
+-				    	if(scrollbarEnabled) {		
+-				    		sbStyle[prop] = (pref + Math.round((self._scrollbarDist) * (-this.containerPos / sbAnimateDist)) + suf );	  
+-				    	}
+-				    	dContainer[prop] = (pref + Math.round(this.containerPos) + suf);					       
+-				    }, 
+-				    complete: function() {
+-				    	if(bounceAnim) {
+-				    		self._decelerationAnim = $(to).animate(to2, {
+-							    duration: bounceSpeed,
+-							    easing: bounceEasing,
+-							    step: function() {			
+-							    	if(scrollbarEnabled) {
+-							    		sbStyle[prop] = (pref + Math.round((self._scrollbarDist) * (-this.containerPos / sbAnimateDist)) + suf );	  
+-							    	}
+-							    	dContainer[prop] = (pref + Math.round(this.containerPos) + suf);							        				       
+-							    },
+-							    complete: function() {							    	
+-							    	if(scrollbarEnabled) {
+-							    		sbStyle[prop] = (pref + Math.round((self._scrollbarDist) * (-to2.containerPos / sbAnimateDist)) + suf );	  
+-							    	}
+-							    	dContainer[prop] = (pref + Math.round(to2.containerPos) + suf);								    	
+-							    	animationComplete();
+-							    }
+-				    		});					    		
+-				    	} else {					    		
+-				    		if(scrollbarEnabled) {
+-					    		sbStyle[prop] = (pref + Math.round((self._scrollbarDist) * (-to.containerPos / sbAnimateDist)) + suf );	  					    	
+-				    		}
+-				    		dContainer[prop] = (pref + Math.round(to.containerPos) + suf);			    		
+-				    		animationComplete();				    		
+-				    	}
+-				    }
+-				});	
+-				
+-							
+-			},
+-			/* Destroy carousel and remove it's element */
+-			destroy: function() {
+-				this.stopAutoplay();
+-				this._itemsWrapper.unbind(this._downEvent);					
+-				$(document).unbind(this._moveEvent).unbind(this._upEvent);	
+-				$(window).unbind(this._resizeEvent);
+-				if(this.settings.keyboardNav) {
+-					$(document).unbind("keydown.touchcarousel");
+-				}	
+-				this.carouselRoot.remove();
+-			},
+-			
+-			
+-			/* Private methods: */
+-			_updatePagingNav:function(id) {
+-				if(this._pagingEnabled) {	
+-					var newPageId = this._getPageIdFromItemId(id);					
+-					this._currPageId = newPageId;	
+-					if(this.settings.pagingNavControls) {
+-						this._pagingItems.removeClass('current');
+-						this._pagingItems.eq(newPageId).addClass('current');
+-					}
+-					
+-				}
+-			},
+-			_getPageIdFromItemId:function(id) {
+-				var itemsPerPage = this._itemsPerMove;				
+-				for(var i = 0; i < this._numPages; i++) {	
+-					if(id >= i * itemsPerPage  && id < i * itemsPerPage + itemsPerPage) {								
+-						return i;						
+-					}					
+-				}
+-				if(id < 0) {
+-					return 0;
+-				} else if(id >= this._numPages) {
+-					return this._numPages - 1;
+-				}
+-				return false;
+-			},			
+-			_enableArrows:function() {
+-				if(!this.settings.loopItems) {
+-					if(this._arrowLeftBlocked) {								
+-						this._arrowLeftBlocked = false;
+-						this.arrowLeft.removeClass("disabled");				
+-					} else if(this._arrowRightBlocked) {								
+-						this._arrowRightBlocked = false;
+-						this.arrowRight.removeClass("disabled");		
+-					}
+-				}
+-			},
+-			
+-			
+-			_disableLeftArrow:function() {			
+-				if(!this._arrowLeftBlocked && !this.settings.loopItems) {		
+-			
+-					this._arrowLeftBlocked = true;
+-					this.arrowLeft.addClass("disabled");	
+-					if(this._arrowRightBlocked) {
+-						this._arrowRightBlocked = false;
+-						this.arrowRight.removeClass("disabled");
+-					}					
+-				}	
+-			},
+-			_disableRightArrow:function() {				
+-				if(!this._arrowRightBlocked && !this.settings.loopItems) {					
+-					this._arrowRightBlocked = true;							
+-					this.arrowRight.addClass("disabled");	
+-					if(this._arrowLeftBlocked) {
+-						this._arrowLeftBlocked = false;
+-						this.arrowLeft.removeClass("disabled");		
+-					}					
+-				}	
+-			},
+-			_getItemAtPos:function(pos) {
+-				var self = this;
+-				pos = -pos;
+-				
+-				
+-				var currItem;				
+-				for(var i = 0; i < self.numItems; i++) {					
+-					currItem = self.items[i];
+-					if(pos >= currItem.posX && pos < currItem.posX + currItem.width) {	
+-					
+-						return currItem;					
+-					}
+-				}
+-				return -1;
+-			},
+-			
+-
+-			
+-			_releaseAutoplay:function() {
+-				if(this.autoplay) {
+-					if(this.wasAutoplayRunning) {		
+-						if(!this._isHovering) {
+-							this._resumeAutoplay();
+-						}						
+-						this.wasAutoplayRunning = false;						
+-					}
+-				}
+-			},
+-			_hideScrollbar:function() {
+-				var self = this;
+-				this._scrollbarVisible = false;
+-				if(this._scrollbarHideTimeout) {
+-					clearTimeout(this._scrollbarHideTimeout);
+-				}				
+-				this._scrollbarHideTimeout = setTimeout(function(){
+-					self.scrollbarJQ.animate({opacity:0}, 150, "linear");
+-				}, 450);
+-			},
+-			_showScrollbar:function() {
+-				this._scrollbarVisible = true;		
+-				if(this._scrollbarHideTimeout) {
+-					clearTimeout(this._scrollbarHideTimeout);
+-				}	
+-				this.scrollbarJQ.stop().animate({opacity:1}, 150, "linear");
+-			},
+-			_stopAnimation:function() {
+-				if(this._decelerationAnim) {
+-					this._decelerationAnim.stop();
+-				}				
+-			},			
+-			_resumeAutoplay: function() {
+- 				if(this.autoplay) {
+- 					var self = this;
+- 	 				if(!this.autoplayTimer) {
+- 	 					this.autoplayTimer = setInterval(function() { 
+- 	 						if(!self._isDragging && !self._isAnimating) {
+- 	 							self.next(true);
+- 	 						}						
+- 	 					}, this.settings.autoplayDelay);
+- 	 				}
+- 				}	
+-			},	
+-			_stopAutoplay: function() {
+-				if(this.autoplayTimer) {					
+-					clearInterval(this.autoplayTimer);
+-					this.autoplayTimer = '';
+-				}								
+-			},
+-			_getXPos:function(isScrollbar) {
+-				var obj = !isScrollbar ? this._dragContainer : this.scrollbarJQ;			
+-				
+-				if(!this._useWebkitTransition) {
+-					return Math.round(obj.position().left);	
+-				} else {						
+-					var transform = obj.css("-webkit-transform");
+-					var explodedMatrix = transform.replace(/^matrix\(/i, '').split(/, |\)$/g);
+-					return parseInt(explodedMatrix[4], 10);				
+-				}
+-			},		
+-			
+-			_onDragStart:function(e) {			
+-				if(!this._isDragging) {		
+-					
+-					if(this.autoplay && this.settings.autoplayStopAtAction) {
+-						this.stopAutoplay();
+-					}
+-					
+-					this._stopAnimation();
+-					if(this.settings.scrollbarAutoHide) {
+-						this._showScrollbar();
+-					}
+-					
+-					
+-					var point;
+-					if(this.hasTouch) {
+-						this._lockYAxis = false;
+-						//parsing touch event
+-						var currTouches = e.originalEvent.touches;
+-						if(currTouches && currTouches.length > 0) {
+-							point = currTouches[0];
+-						}					
+-						else {	
+-							return false;						
+-						}
+-					} else {
+-						point = e;						
+-						e.preventDefault();						
+-					}
+-					
+-					
+-					this._setGrabbingCursor();			
+-					this._isDragging = true;
+-					var self = this;
+-					if(this._useWebkitTransition) {
+-						self._dragContainer.css({'-webkit-transition-duration':'0', '-webkit-transition-property': 'none'});
+-					}
+-					$(document).bind(this._moveEvent, function(e) { self._onDragMove(e); });
+-					$(document).bind(this._upEvent, function(e) { self._onDragRelease(e); });		
+-
+-				
+-					this._startPos = this._getXPos();
+-					
+-								
+-					
+-					this._accelerationX = point.clientX;
+-					
+-					
+-					this._successfullyDragged = false;
+-					
+-					this._startTime = e.timeStamp || Date.now();
+-					
+-					this._moveDist = 0;
+-					this._prevMouseX = this._startMouseX = point.clientX;
+-					this._startMouseY = point.clientY;
+-				}
+-			},
+-			_onDragMove:function(e) {
+-				var timeStamp = (e.timeStamp || Date.now());
+-				var point;
+-				if(this.hasTouch) {
+-					if(this._lockYAxis) {
+-						return false;
+-					}				
+-					
+-					var touches = e.originalEvent.touches;
+-					// If touches more then one, so stop sliding and allow browser do default action
+-					
+-					if(touches.length > 1) {
+-						return false;
+-					}
+-					
+-					point = touches[0];	
+-					// If drag direction on mobile is vertical, so stop sliding and allow browser to scroll				
+-					if(Math.abs(point.clientY - this._startMouseY) > Math.abs(point.clientX - this._startMouseX) + 3) {
+-						if(this.settings.lockAxis) {
+-							this._lockYAxis = true;
+-						}						
+-						return false;
+-					}
+-				
+-					e.preventDefault();			
+-				} else {
+-					point = e;
+-					e.preventDefault();		
+-				}
+-				
+-				this._latestDragX = point.clientX;
+-
+-				// Helps find last direction of drag move
+-				this._lastDragPosition = this._currentDragPosition;
+-				var distance = point.clientX - this._prevMouseX;
+-				if(this._lastDragPosition != distance) {
+-					this._currentDragPosition = distance;
+-				}
+-				
+-				if(distance != 0)
+-				{
+-					
+-					var dist = this._startPos + this._moveDist;
+-					
+-					
+-					
+-					if(dist >= 0) {						
+-						distance = distance / 4;						
+-						this._disableLeftArrow();
+-						
+-					} else if(dist <= this.carouselWidth - this._maxXPos) {	
+-						this._disableRightArrow();
+-						distance = distance / 4;
+-					} else {						
+-						this._enableArrows();
+-					}
+-					
+-					this._moveDist += distance;
+-					this.setXPos(dist);				
+-					
+-					if(this.settings.scrollbar) {					
+-						this.setXPos((this._scrollbarDist) * (-dist / (this._maxXPos - this.carouselWidth)), true);
+-					}
+-				}		
+-				
+-				
+-				
+-				
+-				
+-				
+-				this._prevMouseX = point.clientX;
+-			
+-				if (timeStamp - this._startTime > 350) {
+-					this._startTime = timeStamp;
+-					this._accelerationX = point.clientX;						
+-				}
+-				
+-				if(this.settings.onDragStart !== null) {
+-					this.settings.onDragStart.call(this);
+-				}
+-				
+-				return false;		
+-			},
+-			
+-			_onDragRelease:function(e) {
+-				
+-			
+-				
+-				if(this._isDragging) {		
+-					
+-					var self = this;
+-					this._isDragging = false;			
+-					this._setGrabCursor();
+-					
+-				
+-					
+-					
+-					
+-					this.endPos = this._getXPos();
+-					
+-					
+-					this.isdrag = false;
+-
+-					$(document).unbind(this._moveEvent).unbind(this._upEvent);					
+-
+-					if(this.endPos == this._startPos) {						
+-						this._successfullyDragged = false;
+-						if(this.settings.scrollbarAutoHide) {
+-							this._hideScrollbar();
+-						}
+-						return;	
+-					} else {
+-						this._successfullyDragged = true;
+-					}
+-					
+-					//function animate
+-					var dist = (this._latestDragX - this._accelerationX);		
+-					var duration =  Math.max(40, (e.timeStamp || Date.now()) - this._startTime);
+-					
+-					
+-					
+-					// For nav speed calculation F=ma :)
+-					var friction = 0.5,
+-					    mass = 2,					
+-						v0 = Math.abs(dist) / duration;	
+-					
+-					function getCorrectXPos(pos) {
+-						
+-						if(pos > 0) {
+-							pos = 0;
+-						} else if(pos < self.carouselWidth - self._maxXPos) {
+-							pos = self.carouselWidth - self._maxXPos;
+-						}	
+-						return pos;
+-					}
+-					
+-					if(!this.settings.snapToItems) {
+-						// Physics continue
+-						var timeOffset = 0;
+-						if(v0 <= 2) {
+-							friction = this._baseFriction * 3.5;
+-							timeOffset = 0;
+-						} else if(v0 > 2 && v0 <= 3) {
+-							friction = this._baseFriction * 4;
+-							timeOffset = 200;
+-						} else if(v0 > 3){
+-							timeOffset = 300;
+-							if(v0 > 4) {
+-								v0 = 4;
+-								timeOffset = 400;
+-								friction = this._baseFriction * 6;
+-							}
+-							friction = this._baseFriction * 5;
+-						}							
+-						
+-						var S = (v0 * v0 * mass) / (2 * friction);
+-						S = S * (dist < 0 ? -1 : 1);					
+-						var t = v0 * mass / friction + timeOffset;	
+-							
+-						
+-						if(this.endPos + S > 0) {	
+-							if(this.endPos > 0) {
+-								this.animateTo(0, 800, "easeOutCubic");							
+-							} else {
+-								this.animateTo(
+-										(this.carouselWidth / 10) * ((timeOffset + 200) / 1000), 
+-										(Math.abs(this.endPos) * 1.1) / v0, 
+-										"easeOutSine", 
+-										true, 
+-										0, 
+-										400, 
+-										"easeOutCubic");					
+-							}
+-						} else if(this.endPos + S < this.carouselWidth - this._maxXPos) {	
+-							if(this.endPos < this.carouselWidth - this._maxXPos) {						
+-								this.animateTo(this.carouselWidth - this._maxXPos, 800, "easeOutCubic");							
+-							} else {							
+-								this.animateTo(
+-										this.carouselWidth - this._maxXPos - (this.carouselWidth / 10) * ((timeOffset + 200) / 1000), 
+-										(Math.abs(this.carouselWidth - this._maxXPos - this.endPos) * 1.1) / v0, 
+-										"easeOutSine", 
+-										true, 
+-										this.carouselWidth - this._maxXPos, 
+-										400, 
+-										"easeOutCubic");	
+-							}	
+-						} else {				
+-							this.animateTo(this.endPos + S, t, "easeOutCubic");
+-						}		
+-					} else {						
+-						if(this.autoplay && this.settings.autoplayStopAtAction) {
+-							this.stopAutoplay();
+-						}
+-						var isNext = Boolean(this._startMouseX - this._prevMouseX > 0);
+-										
+-						
+-						var newX = getCorrectXPos(this._getXPos());
+-						
+-											
+-						var newItemId = this._getItemAtPos(newX).index;						
+-						
+-						if(!this._pagingEnabled) {
+-							newItemId = newItemId + (isNext ?  this._itemsPerMove : ( - this._itemsPerMove + 1));									
+-						} else {	
+-							if(isNext) {			
+-								newX = Math.max(newX - this.carouselWidth - 1, 1 - self._maxXPos);	
+-								newItemId = this._getItemAtPos(newX).index;
+-								if(newItemId === undefined) {
+-									newItemId = this.numItems - 1;
+-								}
+-							}							
+-							
+-							var newPageId = this._getPageIdFromItemId(newItemId);
+-														
+-							newItemId = newPageId * this._itemsPerMove;								
+-						}
+-						
+-						if(isNext) {							
+-							newItemId = Math.min(newItemId, this.numItems - 1);
+-						} else {							
+-							newItemId = Math.max(newItemId, 0);
+-						}
+-						
+-											
+-						
+-						var newItem = this.items[newItemId];
+-					
+-						this._updatePagingNav(newItemId);
+-						
+-						if(newItem) {
+-							
+-							newX = getCorrectXPos(-newItem.posX);
+-							
+-							var newDist = Math.abs(this.endPos  - newX);
+-							var newDuration = Math.max((newDist * 1.08) / v0, 150);
+-							var isFast = Boolean(newDuration < 180);
+-							var addDist = newDist * 0.08;
+-							if(isNext) {
+-								addDist = addDist * -1;
+-							}
+-							
+-							
+-							this.animateTo(isFast ? (newX + addDist ) : newX,
+-									Math.min(newDuration, 400),
+-									"easeOutSine",
+-									isFast,
+-									newX,
+-									300,
+-									"easeOutCubic");	
+-							
+-							
+-						}
+-					
+-					}
+-					
+-					if(this.settings.onDragRelease !== null) {
+-						this.settings.onDragRelease.call(this);
+-					}
+-					
+-				}
+-
+-				return false;
+-			},
+-			_updateDirectionNav:function(pos) {				
+-				if(pos === undefined) {					
+-					pos = this._getXPos();
+-				}				
+-				if(!this.settings.loopItems) {
+-					if(pos >= 0) {						
+-						this._disableLeftArrow();
+-					} else if(pos <= this.carouselWidth - this._maxXPos) {
+-						this._disableRightArrow();						
+-					} else {
+-						this._enableArrows();
+-					}
+-				}
+-			},
+-			_setGrabCursor:function() {			
+-				if(this._grabCursor) {
+-					this._itemsWrapper.css('cursor', this._grabCursor);
+-				} else {
+-					this._itemsWrapper.removeClass('grabbing-cursor');
+-					this._itemsWrapper.addClass('grab-cursor');	
+-				}
+-							
+-			},
+-			_setGrabbingCursor:function() {		
+-				if(this._grabbingCursor) {
+-					this._itemsWrapper.css('cursor', this._grabbingCursor);
+-				} else {
+-					this._itemsWrapper.removeClass('grab-cursor');
+-					this._itemsWrapper.addClass('grabbing-cursor');	
+-				}				
+-			}
+-	}; /* TouchCarousel.prototype end */
+-
+-	$.fn.touchCarousel = function(options) {    	
+-		return this.each(function(){
+-			var touchCarousel = new TouchCarousel($(this), options);
+-			$(this).data("touchCarousel", touchCarousel);
+-		});
+-	};
+-
+-	$.fn.touchCarousel.defaults = {  
+-			itemsPerMove: 1,              // The number of items to move per arrow click.
+-			
+-			snapToItems: false,           // Snaps to items, based on itemsPerMove
+-			pagingNav: false,             // Enable paging nav (snaps to first item of every group, based on itemsPerMove). Overrides snapToItems
+-			pagingNavControls: true,      // Paging controls (bullets)
+-			
+-			
+-			
+-			autoplay:false,               // Autoplay enabled          
+-			autoplayDelay:3000,	          // Delay between transitions	
+-			autoplayStopAtAction:true,    // Stop autoplay forever when user clicks arrow or does any other action
+-			
+-			scrollbar: true,              // Scrollbar enabled
+-			scrollbarAutoHide: false,     // Scrollbar autohide
+-			scrollbarTheme: "dark",	      // Scrollbar color. Can be "light" or "dark"	
+-			
+-			transitionSpeed: 600,         // Carousel transition speed (next/prev arrows, autoplay)		
+-			
+-			directionNav:true,            // Direction (arrow) navigation (true or false)
+-			directionNavAutoHide:false,   // Direction (arrow) navigation auto hide on hover. (On touch devices arrows are always shown)
+-			
+-			loopItems: false,             // Loop items (don't disable arrows on last slide and allow autoplay to loop)
+-			
+-			keyboardNav: false,			  // Keyboard arrows navigation
+-			dragUsingMouse:true,          // Enable drag using mouse	
+-			
+-			
+-			scrollToLast: false,          // Last item ends at start of carousel wrapper	
+-			
+-
+-			itemFallbackWidth: 500,       // Default width of the item in pixels. (used if impossible to get item width).
+-			
+-			baseMouseFriction: 0.0012,    // Container friction on desktop (higher friction - slower speed)
+-			baseTouchFriction: 0.0008,    // Container friction on mobile
+-			lockAxis: true,               // Allow dragging only on one direction
+-			useWebkit3d: false,           // Enable WebKit 3d transform on desktop devices 
+-                                          // (on touch devices this option is turned on)
+-										  // Use it if you have only images, 3d transform makes text blurry
+-			                                       
+-			
+-			onAnimStart: null,            // Callback, triggers before deceleration or transition animation
+-			onAnimComplete: null,         // Callback, triggers after deceleration or transition animation
+-
+-			onDragStart:null,             // Callback, triggers on drag start
+-			onDragRelease: null           // Callback, triggers on drag complete
+-	};
+-	
+-	$.fn.touchCarousel.settings = {};
+-	
+-	/* easing types */
+-	$.extend(jQuery.easing, {
+-		easeInOutSine: function (x, t, b, c, d) {
+-			return -c/2 * (Math.cos(Math.PI*t/d) - 1) + b;
+-		},
+-		easeOutSine: function (x, t, b, c, d) {
+-			return c * Math.sin(t/d * (Math.PI/2)) + b;
+-		},
+-		easeOutCubic: function (x, t, b, c, d) {
+-			return c*((t=t/d-1)*t*t + 1) + b;
+-		}
+-	});
+-	
+-})(jQuery);
+diff --git a/js/touchcarousel/jquery.touchcarousel-1.0.min.js b/js/touchcarousel/jquery.touchcarousel-1.0.min.js
+deleted file mode 100644
+index 65a6a27..0000000
+--- a/js/touchcarousel/jquery.touchcarousel-1.0.min.js
++++ /dev/null
+@@ -1,7 +0,0 @@
+-/*
+- * TouchCarousel  v1.0
+- *
+- * Copyright 2011, Dmitry Semenov, http://dimsemenov.com
+- * 
+- */
+-(function($){function TouchCarousel(g,h){this.carouselRoot=$(g);var j=this;this._az=false;this._by=false;this._cx="";this._dw="";this._ev="";this._fu;this._gt;this._hs;this._ir;this._jq;this._kp=0;this.settings=$.extend({},$.fn.touchCarousel.defaults,h);this._lo=this.carouselRoot.find(".touchcarousel-container");this._loStyle=this._lo[0].style;this._az1=this._lo.wrap($('<div class="touchcarousel-wrapper" />')).parent();var k=this._lo.find(".touchcarousel-item");this.items=[];this.numItems=k.length;this._by1;this._cx1=false;this._dw1=0;this._ev1=0;this._fu1=0;this._gt1=false;this._hs1=false;this._ir1=false;if('ontouchstart'in window){this.hasTouch=true;this._cx='touchstart.rs';this._dw='touchmove.rs';this._ev='touchend.rs';this._jq1=this.settings.baseTouchFriction}else{this.hasTouch=false;this._jq1=this.settings.baseMouseFriction;if(this.settings.dragUsingMouse){this._cx='mousedown.rs';this._dw='mousemove.rs';this._ev='mouseup.rs';this._kp1;this._lo1;var l=$.browser;if(l.msie||l.opera){this._kp1=this._lo1="move"}else if(l.mozilla){this._kp1="-moz-grab";this._lo1="-moz-grabbing"}this._mn1()}else{this._az1.addClass('auto-cursor')}}if(this.hasTouch||this.settings.useWebkit3d){if(('WebKitCSSMatrix'in window&&'m11'in new WebKitCSSMatrix())){this._lo.css({'-webkit-transform-origin':'0 0','-webkit-transform':'translateZ(0)'});this._ir1=true}}if(this._ir1){this._az2='-webkit-transform';this._by2='translate3d(';this._cx2='px, 0, 0)'}else{this._az2='left';this._by2='';this._cx2='px'}if(this.hasTouch){this.settings.directionNavAutoHide=false}if(!this.settings.directionNav){if(this.settings.loopItems){this._dw2=true;this._ev2=true}else{this._dw2=false;this._ev2=false}this.settings.loopItems=true}var m,jqItem,dataSRC,slideImg,currPosX=0;k.eq(this.numItems-1).addClass('last');k.each(function(c){jqItem=$(this);m={};m.item=jqItem;m.index=c;m.posX=currPosX;m.width=(jqItem.outerWidth(true)||j.settings.itemFallbackWidth);currPosX+=m.width;if(!this.hasTouch){jqItem.find('a').bind('click.touchcarousel',function(e){if(j._cx1){e.preventDefault();return false}})}else{var d=jqItem.find('a');var f;d.each(function(){f=$(this);f.data('tc-href',f.attr('href'));f.data('tc-target',f.attr('target'));f.attr('href','#');f.bind('click',function(e){e.preventDefault();if(j._cx1){return false}else{var a=$(this).data('tc-href');var b=$(this).data('tc-target');if(!b||b.toLowerCase()==='_fu2'){window.location.href=a}else{window.open(a)}}})})}jqItem.find('.non-draggable').bind(j._cx,function(e){j._cx1=false;e.stopImmediatePropagation()});j.items.push(m)});this._gt2=this._fu=currPosX;if(this.settings.itemsPerMove>0){this._hs2=this.settings.itemsPerMove}else{this._hs2=1}if(this.settings.pagingNav){this.settings.snapToItems=true;this._ir2=true;this._jq2=Math.ceil(this.numItems/this._hs2);this._kp2=0;if(this.settings.pagingNavControls){this._lo2=$('<div class="tc-paging-container"><div class="tc-paging-centerer"><div class="tc-paging-centerer-inside"></div></div></div>');var n=this._lo2.find('.tc-paging-centerer-inside');var o;for(var i=1;i<=this._jq2;i++){o=$('<a class="tc-paging-item" href="#">'+i+'</a>').data('tc-id',i);if(i===this._kp2+1){o.addClass('current')}n.append(o)}this._mn2=n.find(".tc-paging-item").click(function(e){e.preventDefault();j.goTo(($(e.currentTarget).data('tc-id')-1)*j._hs2)});this._az1.after(this._lo2)}}else{this._ir2=false}this._lo.css({width:currPosX});if(this.settings.directionNav){this._az1.after("<a href='#' class='arrow-holder left'><span class='arrow-icon left'></span></a> <a href='#' class='arrow-holder right'><span class='arrow-icon right'></span></a>");this.arrowLeft=this.carouselRoot.find(".arrow-holder.left");this.arrowRight=this.carouselRoot.find(".arrow-holder.right");if(this.arrowLeft.length<1||this.arrowRight.length<1){this.settings.directionNav=false}else if(this.settings.directionNavAutoHide){this.arrowLeft.hide();this.arrowRight.hide();this.carouselRoot.one("mousemove.arrowshover",function(){j.arrowLeft.fadeIn("fast");j.arrowRight.fadeIn("fast")});this.carouselRoot.hover(function(){j.arrowLeft.fadeIn("fast");j.arrowRight.fadeIn("fast")},function(){j.arrowLeft.fadeOut("fast");j.arrowRight.fadeOut("fast")})}this._by3(0);if(this.settings.directionNav){this.arrowRight.click(function(e){e.preventDefault();if(j.settings.loopItems&&!j._gt1||!j._ev2)j.next()});this.arrowLeft.click(function(e){e.preventDefault();if(j.settings.loopItems&&!j._gt1||!j._dw2)j.prev()})}}this.carouselWidth;this._cx3='onorientationchange'in window?'orientationchange.touchcarousel':'resize.touchcarousel';var p;$(window).bind(this._cx3,function(){if(p)clearTimeout(p);p=setTimeout(function(){j.updateCarouselSize(false)},100)});if(this.settings.scrollbar){this._dw3=$("<div class='scrollbar-holder'><div class='scrollbar"+(this.settings.scrollbarTheme.toLowerCase()==="light"?" light":" dark")+"'></div></div>");this._dw3.appendTo(this.carouselRoot);this.scrollbarJQ=this._dw3.find('.scrollbar');this._ev3="";this._fu3=this.scrollbarJQ[0].style;this._gt3=0;if(this.settings.scrollbarAutoHide){this._hs3=false;this.scrollbarJQ.css("opacity",0)}else{this._hs3=true}}else{this.settings.scrollbarAutoHide=false}this.updateCarouselSize(true);this._az1.bind(this._cx,function(e){j._ir3(e)});if(this.settings.autoplay&&this.settings.autoplayDelay>0){this._jq3=false;this.autoplayTimer='';this.wasAutoplayRunning=true;if(!this.hasTouch){this.carouselRoot.hover(function(){j._jq3=true;j._kp3()},function(){j._jq3=false;j._lo3()})}this.autoplay=true;this._mn3()}else{this.autoplay=false}if(this.settings.keyboardNav){$(document).bind("keydown.touchcarousel",function(e){if(!j._gt1){if(e.keyCode===37){j.prev()}else if(e.keyCode===39){j.next()}}})}this.carouselRoot.css("overflow","visible")}TouchCarousel.prototype={goTo:function(a,b){var c=this.items[a];if(c){if(!b&&this.autoplay&&this.settings.autoplayStopAtAction){this.stopAutoplay()}this._az4(a);this.endPos=this._by4();var d=-c.posX;if(d>0){d=0}else if(d<this.carouselWidth-this._gt2){d=this.carouselWidth-this._gt2}this.animateTo(d,this.settings.transitionSpeed,"easeInOutSine")}},next:function(a){var b=this._by4();var c=this._cx4(b).index;if(!this._ir2){c=c+this._hs2;if(this.settings.loopItems){if(b<=this.carouselWidth-this._gt2){c=0}}if(c>this.numItems-1){c=this.numItems-1}}else{var d=this._kp2+1;if(d>this._jq2-1){if(this.settings.loopItems){c=0}else{c=(this._jq2-1)*this._hs2}}else{c=d*this._hs2}}this.goTo(c,a)},prev:function(a){var b=this._by4();var c=this._cx4(b).index;if(!this._ir2){c=c-this._hs2;if(c<0){if(this.settings.loopItems){if(b<0){c=0}else{c=this.numItems-1}}else{c=0}}}else{var d=this._kp2-1;if(d<0){if(this.settings.loopItems){c=(this._jq2-1)*this._hs2}else{c=0}}else{c=d*this._hs2}}this.goTo(c,a)},getCurrentId:function(){var a=this._cx4(this._by4()).index;return a},setXPos:function(a,b){if(!b){this._loStyle[this._az2]=(this._by2+a+this._cx2)}else{this._fu3[this._az2]=(this._by2+a+this._cx2)}},stopAutoplay:function(){this._kp3();this.autoplay=false;this.wasAutoplayRunning=false},resumeAutoplay:function(){this.autoplay=true;if(!this.wasAutoplayRunning){this._lo3()}},updateCarouselSize:function(a){var b=this;this.carouselWidth=this.carouselRoot.width();if(this.settings.scrollToLast){var c=0;if(this._ir2){var d=(this.numItems%this._hs2);if(d>0){for(var i=this.numItems-d;i<this.numItems;i++){c+=this.items[i].width}}else{c=this.carouselWidth}}else{c=this.items[this.numItems-1].width}this._gt2=this._fu+this.carouselWidth-c}else{this._gt2=this._fu}if(this.settings.scrollbar){var e=Math.round(this._dw3.width()/(this._gt2/this.carouselWidth));this.scrollbarJQ.css('width',e);this._gt3=this._dw3.width()-e}if(!this.settings.scrollToLast){if(this.carouselWidth>=this._fu){this._hs1=true;if(!this.settings.loopItems){this._ev2=true;this.arrowRight.addClass("disabled");this._dw2=true;this.arrowLeft.addClass("disabled")}this.setXPos(0);return}else if(this._hs1){this._hs1=false;this._ev2=false;this._dw2=false;this.arrowRight.removeClass("disabled");this.arrowLeft.removeClass("disabled")}}if(!a){var f=this.endPos=this._by4();if(f>0){f=0}else if(f<this.carouselWidth-this._gt2){f=this.carouselWidth-this._gt2}this.animateTo(f,300,"easeInOutSine")}},animateTo:function(a,b,c,d,e,f,g){if(this.settings.onAnimStart!==null){this.settings.onAnimStart.call(this)}if(this.autoplay&&this.autoplayTimer){this.wasAutoplayRunning=true;this._kp3()}this._dw4();var h=this;var i=this.settings.scrollbar,prop=h._az2,pref=h._by2,suf=h._cx2,from={containerPos:this.endPos},to={containerPos:a},to2={containerPos:e},e=d?e:a,dContainer=h._loStyle;h._by=true;if(i){var j=this._fu3;var k=h._gt2-h.carouselWidth;if(this.settings.scrollbarAutoHide){if(!this._hs3){this._ev4()}}}this._by3(e);function animationComplete(){h._by=false;h._mn3();if(h.settings.scrollbarAutoHide){h._fu4()}if(h.settings.onAnimComplete!==null){h.settings.onAnimComplete.call(h)}}this._by1=$(from).animate(to,{duration:b,easing:c,step:function(){if(i){j[prop]=(pref+Math.round((h._gt3)*(-this.containerPos/k))+suf)}dContainer[prop]=(pref+Math.round(this.containerPos)+suf)},complete:function(){if(d){h._by1=$(to).animate(to2,{duration:f,easing:g,step:function(){if(i){j[prop]=(pref+Math.round((h._gt3)*(-this.containerPos/k))+suf)}dContainer[prop]=(pref+Math.round(this.containerPos)+suf)},complete:function(){if(i){j[prop]=(pref+Math.round((h._gt3)*(-to2.containerPos/k))+suf)}dContainer[prop]=(pref+Math.round(to2.containerPos)+suf);animationComplete()}})}else{if(i){j[prop]=(pref+Math.round((h._gt3)*(-to.containerPos/k))+suf)}dContainer[prop]=(pref+Math.round(to.containerPos)+suf);animationComplete()}}})},destroy:function(){this.stopAutoplay();this._az1.unbind(this._cx);$(document).unbind(this._dw).unbind(this._ev);$(window).unbind(this._cx3);if(this.settings.keyboardNav){$(document).unbind("keydown.touchcarousel")}this.carouselRoot.remove()},_az4:function(a){if(this._ir2){var b=this._gt4(a);this._kp2=b;if(this.settings.pagingNavControls){this._mn2.removeClass('current');this._mn2.eq(b).addClass('current')}}},_gt4:function(a){var b=this._hs2;for(var i=0;i<this._jq2;i++){if(a>=i*b&&a<i*b+b){return i}}if(a<0){return 0}else if(a>=this._jq2){return this._jq2-1}return false},_hs4:function(){if(!this.settings.loopItems){if(this._dw2){this._dw2=false;this.arrowLeft.removeClass("disabled")}else if(this._ev2){this._ev2=false;this.arrowRight.removeClass("disabled")}}},_az3:function(){if(!this._dw2&&!this.settings.loopItems){this._dw2=true;this.arrowLeft.addClass("disabled");if(this._ev2){this._ev2=false;this.arrowRight.removeClass("disabled")}}},_ir4:function(){if(!this._ev2&&!this.settings.loopItems){this._ev2=true;this.arrowRight.addClass("disabled");if(this._dw2){this._dw2=false;this.arrowLeft.removeClass("disabled")}}},_cx4:function(a){var b=this;a=-a;var c;for(var i=0;i<b.numItems;i++){c=b.items[i];if(a>=c.posX&&a<c.posX+c.width){return c}}return-1},_mn3:function(){if(this.autoplay){if(this.wasAutoplayRunning){if(!this._jq3){this._lo3()}this.wasAutoplayRunning=false}}},_fu4:function(){var a=this;this._hs3=false;if(this._ev3){clearTimeout(this._ev3)}this._ev3=setTimeout(function(){a.scrollbarJQ.animate({opacity:0},150,"linear")},450)},_ev4:function(){this._hs3=true;if(this._ev3){clearTimeout(this._ev3)}this.scrollbarJQ.stop().animate({opacity:1},150,"linear")},_dw4:function(){if(this._by1){this._by1.stop()}},_lo3:function(){if(this.autoplay){var a=this;if(!this.autoplayTimer){this.autoplayTimer=setInterval(function(){if(!a._jq4&&!a._by){a.next(true)}},this.settings.autoplayDelay)}}},_kp3:function(){if(this.autoplayTimer){clearInterval(this.autoplayTimer);this.autoplayTimer=''}},_by4:function(a){var b=!a?this._lo:this.scrollbarJQ;if(!this._ir1){return Math.round(b.position().left)}else{var c=b.css("-webkit-transform");var d=c.replace(/^matrix\(/i,'').split(/, |\)$/g);return parseInt(d[4],10)}},_ir3:function(e){if(!this._jq4){if(this.autoplay&&this.settings.autoplayStopAtAction){this.stopAutoplay()}this._dw4();if(this.settings.scrollbarAutoHide){this._ev4()}var a;if(this.hasTouch){this._az=false;var b=e.originalEvent.touches;if(b&&b.length>0){a=b[0]}else{return false}}else{a=e;e.preventDefault()}this._kp4();this._jq4=true;var c=this;if(this._ir1){c._lo.css({'-webkit-transition-duration':'0','-webkit-transition-property':'none'})}$(document).bind(this._dw,function(e){c._lo4(e)});$(document).bind(this._ev,function(e){c._mn4(e)});this._az5=this._by4();this._ir=a.clientX;this._cx1=false;this._kp=e.timeStamp||Date.now();this._fu1=0;this._ev1=this._dw1=a.clientX;this._by5=a.clientY}},_lo4:function(e){var a=(e.timeStamp||Date.now());var b;if(this.hasTouch){if(this._az){return false}var c=e.originalEvent.touches;if(c.length>1){return false}b=c[0];if(Math.abs(b.clientY-this._by5)>Math.abs(b.clientX-this._dw1)+3){if(this.settings.lockAxis){this._az=true}return false}e.preventDefault()}else{b=e;e.preventDefault()}this._jq=b.clientX;this._cx5=this._dw5;var d=b.clientX-this._ev1;if(this._cx5!=d){this._dw5=d}if(d!=0){var f=this._az5+this._fu1;if(f>=0){d=d/4;this._az3()}else if(f<=this.carouselWidth-this._gt2){this._ir4();d=d/4}else{this._hs4()}this._fu1+=d;this.setXPos(f);if(this.settings.scrollbar){this.setXPos((this._gt3)*(-f/(this._gt2-this.carouselWidth)),true)}}this._ev1=b.clientX;if(a-this._kp>350){this._kp=a;this._ir=b.clientX}if(this.settings.onDragStart!==null){this.settings.onDragStart.call(this)}return false},_mn4:function(e){if(this._jq4){var b=this;this._jq4=false;this._mn1();this.endPos=this._by4();this.isdrag=false;$(document).unbind(this._dw).unbind(this._ev);if(this.endPos==this._az5){this._cx1=false;if(this.settings.scrollbarAutoHide){this._fu4()}return}else{this._cx1=true}var c=(this._jq-this._ir);var d=Math.max(40,(e.timeStamp||Date.now())-this._kp);var f=0.5,mass=2,v0=Math.abs(c)/d;function getCorrectXPos(a){if(a>0){a=0}else if(a<b.carouselWidth-b._gt2){a=b.carouselWidth-b._gt2}return a}if(!this.settings.snapToItems){var g=0;if(v0<=2){f=this._jq1*3.5;g=0}else if(v0>2&&v0<=3){f=this._jq1*4;g=200}else if(v0>3){g=300;if(v0>4){v0=4;g=400;f=this._jq1*6}f=this._jq1*5}var S=(v0*v0*mass)/(2*f);S=S*(c<0?-1:1);var t=v0*mass/f+g;if(this.endPos+S>0){if(this.endPos>0){this.animateTo(0,800,"easeOutCubic")}else{this.animateTo((this.carouselWidth/10)*((g+200)/1000),(Math.abs(this.endPos)*1.1)/v0,"easeOutSine",true,0,400,"easeOutCubic")}}else if(this.endPos+S<this.carouselWidth-this._gt2){if(this.endPos<this.carouselWidth-this._gt2){this.animateTo(this.carouselWidth-this._gt2,800,"easeOutCubic")}else{this.animateTo(this.carouselWidth-this._gt2-(this.carouselWidth/10)*((g+200)/1000),(Math.abs(this.carouselWidth-this._gt2-this.endPos)*1.1)/v0,"easeOutSine",true,this.carouselWidth-this._gt2,400,"easeOutCubic")}}else{this.animateTo(this.endPos+S,t,"easeOutCubic")}}else{if(this.autoplay&&this.settings.autoplayStopAtAction){this.stopAutoplay()}var h=Boolean(this._dw1-this._ev1>0);var i=getCorrectXPos(this._by4());var j=this._cx4(i).index;if(!this._ir2){j=j+(h?this._hs2:(-this._hs2+1))}else{if(h){i=Math.max(i-this.carouselWidth-1,1-b._gt2);j=this._cx4(i).index;if(j===undefined){j=this.numItems-1}}var k=this._gt4(j);j=k*this._hs2}if(h){j=Math.min(j,this.numItems-1)}else{j=Math.max(j,0)}var l=this.items[j];this._az4(j);if(l){i=getCorrectXPos(-l.posX);var m=Math.abs(this.endPos-i);var n=Math.max((m*1.08)/v0,150);var o=Boolean(n<180);var p=m*0.08;if(h){p=p*-1}this.animateTo(o?(i+p):i,Math.min(n,400),"easeOutSine",o,i,300,"easeOutCubic")}}if(this.settings.onDragRelease!==null){this.settings.onDragRelease.call(this)}}return false},_by3:function(a){if(a===undefined){a=this._by4()}if(!this.settings.loopItems){if(a>=0){this._az3()}else if(a<=this.carouselWidth-this._gt2){this._ir4()}else{this._hs4()}}},_mn1:function(){if(this._kp1){this._az1.css('cursor',this._kp1)}else{this._az1.removeClass('grabbing-cursor');this._az1.addClass('grab-cursor')}},_kp4:function(){if(this._lo1){this._az1.css('cursor',this._lo1)}else{this._az1.removeClass('grab-cursor');this._az1.addClass('grabbing-cursor')}}};$.fn.touchCarousel=function(b){return this.each(function(){var a=new TouchCarousel($(this),b);$(this).data("touchCarousel",a)})};$.fn.touchCarousel.defaults={itemsPerMove:1,snapToItems:false,pagingNav:false,pagingNavControls:true,autoplay:false,autoplayDelay:3000,autoplayStopAtAction:true,scrollbar:true,scrollbarAutoHide:false,scrollbarTheme:"dark",transitionSpeed:600,directionNav:true,directionNavAutoHide:false,loopItems:false,keyboardNav:false,dragUsingMouse:true,scrollToLast:false,itemFallbackWidth:500,baseMouseFriction:0.0012,baseTouchFriction:0.0008,lockAxis:true,useWebkit3d:false,onAnimStart:null,onAnimComplete:null,onDragStart:null,onDragRelease:null};$.fn.touchCarousel.settings={};$.extend(jQuery.easing,{easeInOutSine:function(x,t,b,c,d){return-c/2*(Math.cos(Math.PI*t/d)-1)+b},easeOutSine:function(x,t,b,c,d){return c*Math.sin(t/d*(Math.PI/2))+b},easeOutCubic:function(x,t,b,c,d){return c*((t=t/d-1)*t*t+1)+b}})})(jQuery);
+\ No newline at end of file
+diff --git a/js/touchcarousel/minimal-light-skin/minimal-light-skin.css b/js/touchcarousel/minimal-light-skin/minimal-light-skin.css
+deleted file mode 100644
+index de0830d..0000000
+--- a/js/touchcarousel/minimal-light-skin/minimal-light-skin.css
++++ /dev/null
+@@ -1,83 +0,0 @@
+-/******************************************************\
+-*
+-*  Minimal Light Skin
+-*
+-*    1. Arrows(direction) navigation
+-*    2. Paging navigation
+-*
+-\******************************************************/
+-
+-
+-
+-/******************************************************\
+-*
+-*  1. Arrows (direction) navigation
+-*
+-\******************************************************/
+-.touchcarousel.minimal-light .arrow-icon {
+-	width: 23px;
+-	height: 28px;	
+-	margin-top: -14px;
+-}
+-.touchcarousel.minimal-light .arrow-icon.left{
+-	left: 5px;
+-	background: url('sprite.png') no-repeat -6px -7px;
+-}
+-.touchcarousel.minimal-light .arrow-icon.right{
+-	right: 5px;
+-	background: url('sprite.png') no-repeat -173px -7px;
+-}
+-.touchcarousel.minimal-light .arrow-holder.disabled {
+-	-moz-opacity: 1;	
+-	-webkit-opacity: 1;	
+-	opacity: 1;
+-}
+-.touchcarousel.minimal-light .arrow-holder.disabled .arrow-icon.left{
+-	background: url('sprite.png') no-repeat -40px -7px;
+-}
+-.touchcarousel.minimal-light .arrow-holder.disabled .arrow-icon.right{
+-	background: url('sprite.png') no-repeat -139px -7px;
+-}
+-.touchcarousel.minimal-light .arrow-holder {
+-	width: 35px;
+-	-moz-opacity: 0.8;	
+-	-webkit-opacity: 0.8;	
+-	opacity: 0.8;	
+-}
+-.touchcarousel.minimal-light .arrow-holder:hover {
+-	-moz-opacity: 1;	
+-	-webkit-opacity: 1;	
+-	opacity: 1;	
+-}
+-
+-/******************************************************\
+-*
+-*  2. Paging navigation
+-*
+-\******************************************************/
+-.touchcarousel.minimal-light .tc-paging-container {	
+-	margin-top: -22px;
+-}
+-.touchcarousel.minimal-light .tc-paging-item {
+-	background: url('sprite.png') no-repeat -95px -4px;
+-	
+-	width: 16px;
+-	height: 16px;	
+-	
+-	-moz-opacity: 0.8;	
+-	-webkit-opacity: 0.8;	
+-	opacity: 0.8;	
+-}
+-.touchcarousel.minimal-light .tc-paging-item.current {	
+-	background: url('sprite.png') no-repeat -95px -22px;
+-}
+-.touchcarousel.minimal-light .tc-paging-item:hover {		
+-	-moz-opacity: 1;	
+-	-webkit-opacity: 1;	
+-	opacity: 1;		
+-}
+-
+-
+-
+-
+-
+diff --git a/js/touchcarousel/minimal-light-skin/sprite.png b/js/touchcarousel/minimal-light-skin/sprite.png
+deleted file mode 100644
+index c0b80d2..0000000
+Binary files a/js/touchcarousel/minimal-light-skin/sprite.png and /dev/null differ
+diff --git a/js/touchcarousel/three-d-skin/sprite.png b/js/touchcarousel/three-d-skin/sprite.png
+deleted file mode 100644
+index 031ed78..0000000
+Binary files a/js/touchcarousel/three-d-skin/sprite.png and /dev/null differ
+diff --git a/js/touchcarousel/three-d-skin/three-d-skin.css b/js/touchcarousel/three-d-skin/three-d-skin.css
+deleted file mode 100644
+index 2263d0d..0000000
+--- a/js/touchcarousel/three-d-skin/three-d-skin.css
++++ /dev/null
+@@ -1,120 +0,0 @@
+-/******************************************************\
+-*
+-*  3D skin
+-*
+-*    1. Arrows(direction) navigation
+-*    2. Paging navigation
+-*
+-\******************************************************/
+-
+-
+-
+-/******************************************************\
+-*
+-*  1. Arrows (direction) navigation
+-*
+-\******************************************************/
+-.touchcarousel.three-d .arrow-icon {
+-	top: 0;
+-	background-image: url('sprite.png');
+-	background-repeat: no-repeat;
+-	width: 19px;
+-	height: 20px;	
+-	margin-top: 0;
+-}
+-.touchcarousel.three-d .arrow-holder {
+-	top: -23px;
+-	width: 19px;
+-	height: 20px;	
+-	
+-	-moz-opacity: 0.8;	
+-	-webkit-opacity: 0.8;	
+-	opacity: 0.8;	
+-}
+-.touchcarousel.three-d .arrow-holder.left {
+-	left: auto;
+-	right: 26px;
+-}
+-.touchcarousel.three-d .arrow-holder.right {	
+-	right: 3px;
+-}
+-
+-.touchcarousel.three-d .arrow-icon.left {
+-	left: 0;
+-	background-position: -8px -14px;
+-}
+-.touchcarousel.three-d .arrow-icon.right {
+-	right: 0;
+-	background-position: -173px -14px;
+-}
+-
+-.touchcarousel.three-d .arrow-holder.disabled .arrow-icon.left {
+-	background-position: -43px -14px;
+-}
+-.touchcarousel.three-d .arrow-holder.disabled .arrow-icon.right {
+-	background-position: -138px -14px;
+-}
+-.touchcarousel.three-d .arrow-holder:hover {
+-	-moz-opacity: 1;	
+-	-webkit-opacity: 1;	
+-	opacity: 1;	
+-}
+-.touchcarousel.three-d .arrow-holder:active {
+-	-moz-opacity: 0.7;	
+-	-webkit-opacity: 0.7;	
+-	opacity: 0.7;	
+-}
+-.touchcarousel.three-d .arrow-holder.disabled {
+-	-moz-opacity: 1;	
+-	-webkit-opacity: 1;	
+-	opacity: 1;	
+-}
+-
+-/******************************************************\
+-*
+-*  2. Paging navigation
+-*
+-\******************************************************/
+-
+-.touchcarousel.three-d .tc-paging-container {		
+-	width: auto;
+-	float: none;
+-	
+-	right: 53px;
+-	
+-	margin-top: 0;	
+-	top: -21px;
+-}
+-.touchcarousel.three-d .tc-paging-centerer {
+-	float: none;
+-	position: relative;
+-	left: 0;
+-}
+-.touchcarousel.three-d .tc-paging-centerer-inside {	
+-	position: relative;
+-	left: 0;
+-	float: none;	
+-}
+-.touchcarousel.three-d .tc-paging-item {
+-	background: url('sprite.png') no-repeat -95px -4px;
+-	
+-	width: 16px;
+-	height: 16px;	
+-	
+-	-moz-opacity: 0.8;	
+-	-webkit-opacity: 0.8;	
+-	opacity: 0.8;	
+-}
+-.touchcarousel.three-d .tc-paging-item.current {	
+-	background: url('sprite.png') no-repeat -95px -22px;
+-}
+-.touchcarousel.three-d .tc-paging-item:hover {		
+-	-moz-opacity: 1;	
+-	-webkit-opacity: 1;	
+-	opacity: 1;		
+-}
+-
+-
+-
+-
+-
+diff --git a/js/touchcarousel/touchcarousel.css b/js/touchcarousel/touchcarousel.css
+index 62f1f01..64fcfaa 100644
+--- a/js/touchcarousel/touchcarousel.css
++++ b/js/touchcarousel/touchcarousel.css
+@@ -1,204 +1,204 @@
+-/******************************************************\
+-*
+-*  Base TouchCarousel stylesheet
+-*   
+-*  Contents:
+-*
+-*   1. Main containers
+-*   2. Carousel items
+-*   3. Arrows(direction) navigation
+-*   4. Paging navigation
+-*   5. Scrollbar
+-*   6. Cursors
+-*
+-\******************************************************/
+-
+-
+-
+-
+-
+-/******************************************************\
+-*
+-*  1. Main containers (carousel size, background)
+-*
+-\******************************************************/
+-
+-.touchcarousel {
+-	position: relative;
+-	width: 600px;
+-	height: 400px;		
+-	
+-	/* style is removed after carousel is inited, use !important if you want to keep it*/
+-	overflow: hidden; 
+-}
+-.touchcarousel .touchcarousel-container {
+-	position: relative;    
+-    margin: 0;
+-    padding: 0;
+-    list-style: none;    
+-	left: 0;
+-}
+-.touchcarousel .touchcarousel-wrapper {
+-	position: relative;
+-	overflow:hidden;
+-	width: 100%;
+-	height: 100%;
+-}
+-
+-
+-
+-
+-
+-/******************************************************\
+-*
+-*  2. Carousel items (item styling, spacing between items)
+-*
+-\******************************************************/
+-
+-.touchcarousel .touchcarousel-item {
+-	/* use margin-right for spacing between items */
+-	margin: 0 0 0 0;
+-	padding: 0;	
+-	float: left;		
+-}
+-
+-/* Last carousel item  */
+-.touchcarousel .touchcarousel-item.last {
+-	margin-right: 0 !important;		
+-}
+-
+-
+-
+-
+-
+-/******************************************************\
+-*
+-*  3. Arrows(direction) navigation
+-*
+-\******************************************************/
+-
+-/* arrow hitstate and icon holder */
+-.touchcarousel .arrow-holder {
+-	height: 100%;
+-	width: 45px;
+-	position: absolute;
+-	top: 0;
+-	display: block;
+-	cursor: pointer;	
+-	z-index: 25;	
+-}
+-.touchcarousel .arrow-holder.left {	
+-	left: 0;	
+-}
+-.touchcarousel .arrow-holder.right {	
+-	right: 0;
+-}
+-
+-/* arrow icons */
+-.touchcarousel .arrow-icon{		
+-	width: 45px;
+-	height: 90px;
+-	top:50%;
+-	margin-top:-45px;	
+-	position: absolute;	
+-	cursor: pointer;	
+-}
+-.touchcarousel .arrow-icon.left { }
+-.touchcarousel .arrow-icon.right { }
+-.touchcarousel .arrow-holder:hover .arrow-icon { }
+-.touchcarousel .arrow-holder.disabled { cursor: default; }
+-.touchcarousel .arrow-holder.disabled .arrow-icon { cursor: default; }
+-
+-
+-
+-
+-
+-/******************************************************\
+-*
+-*  4. Paging navigation
+-*
+-\******************************************************/
+-
+-.touchcarousel .tc-paging-container {
+-	width:100%;
+-	overflow:hidden;
+-	position:absolute;
+-	margin-top:-20px;
+-	z-index:25;
+-}
+-.touchcarousel .tc-paging-centerer {	
+-	float: left;
+-	position: relative;
+-	left: 50%;		
+-}
+-.touchcarousel .tc-paging-centerer-inside {
+-	float: left;
+-	position: relative;
+-	left: -50%;
+-}
+-
+-/* Paging items */
+-.touchcarousel .tc-paging-item {			
+-	float:left;	
+-	cursor:pointer;		
+-	position:relative;
+-	display:block;	
+-	text-indent: -9999px;	
+-}
+-.touchcarousel .tc-paging-item.current { }
+-.touchcarousel .tc-paging-item:hover { }
+-
+-
+-
+-
+-
+-/******************************************************\
+-*
+-*  5. Scrollbar
+-*
+-\******************************************************/
+-.touchcarousel .scrollbar-holder {
+-	position: absolute;
+-	z-index: 30;
+-	left: 6px;
+-	right: 6px;	
+-	bottom: 5px;
+-	height:4px;
+-	overflow: hidden;
+-}
+-.touchcarousel .scrollbar {
+-	position: absolute;
+-	left:0;	
+-	height:4px;
+-	bottom: 0px;
+-}
+-.touchcarousel .scrollbar.dark {
+-	background-color: rgb(130, 130, 130);	
+-	background-color: rgba(0, 0, 0, 0.5);
+-}
+-.touchcarousel .scrollbar.light {
+-	background-color: rgb(210, 210, 210);	
+-	background-color: rgba(255, 255, 255, 0.5);	
+-}
+-
+-
+-
+-
+-
+-/******************************************************\
+-*
+-*  6. Cursors
+-*
+-\******************************************************/
+-
+-/* IE and Opera use "move", FF uses -moz-grab */
+-.touchcarousel .grab-cursor{ cursor:url(grab.png) 8 8, move; }
+-.touchcarousel .grabbing-cursor{ cursor:url(grabbing.png) 8 8, move; }
+-
+-/* Cursor that used when mouse drag is disabled */
+-.touchcarousel .auto-cursor{ cursor:auto; }
+-
+-
+-
+-
++/******************************************************\
++*
++*  Base TouchCarousel stylesheet
++*   
++*  Contents:
++*
++*   1. Main containers
++*   2. Carousel items
++*   3. Arrows(direction) navigation
++*   4. Paging navigation
++*   5. Scrollbar
++*   6. Cursors
++*
++\******************************************************/
++
++
++
++
++
++/******************************************************\
++*
++*  1. Main containers (carousel size, background)
++*
++\******************************************************/
++
++.touchcarousel {
++	position: relative;
++	width: 600px;
++	height: 400px;		
++	
++	/* style is removed after carousel is inited, use !important if you want to keep it*/
++	overflow: hidden; 
++}
++.touchcarousel .touchcarousel-container {
++	position: relative;    
++    margin: 0;
++    padding: 0;
++    list-style: none;    
++	left: 0;
++}
++.touchcarousel .touchcarousel-wrapper {
++	position: relative;
++	overflow:hidden;
++	width: 100%;
++	height: 100%;
++}
++
++
++
++
++
++/******************************************************\
++*
++*  2. Carousel items (item styling, spacing between items)
++*
++\******************************************************/
++
++.touchcarousel .touchcarousel-item {
++	/* use margin-right for spacing between items */
++	margin: 0 0 0 0;
++	padding: 0;	
++	float: left;		
++}
++
++/* Last carousel item  */
++.touchcarousel .touchcarousel-item.last {
++	margin-right: 0 !important;		
++}
++
++
++
++
++
++/******************************************************\
++*
++*  3. Arrows(direction) navigation
++*
++\******************************************************/
++
++/* arrow hitstate and icon holder */
++.touchcarousel .arrow-holder {
++	height: 100%;
++	width: 45px;
++	position: absolute;
++	top: 0;
++	display: block;
++	cursor: pointer;	
++	z-index: 25;	
++}
++.touchcarousel .arrow-holder.left {	
++	left: 0;	
++}
++.touchcarousel .arrow-holder.right {	
++	right: 0;
++}
++
++/* arrow icons */
++.touchcarousel .arrow-icon{		
++	width: 45px;
++	height: 90px;
++	top:50%;
++	margin-top:-45px;	
++	position: absolute;	
++	cursor: pointer;	
++}
++.touchcarousel .arrow-icon.left { }
++.touchcarousel .arrow-icon.right { }
++.touchcarousel .arrow-holder:hover .arrow-icon { }
++.touchcarousel .arrow-holder.disabled { cursor: default; }
++.touchcarousel .arrow-holder.disabled .arrow-icon { cursor: default; }
++
++
++
++
++
++/******************************************************\
++*
++*  4. Paging navigation
++*
++\******************************************************/
++
++.touchcarousel .tc-paging-container {
++	width:100%;
++	overflow:hidden;
++	position:absolute;
++	margin-top:-20px;
++	z-index:25;
++}
++.touchcarousel .tc-paging-centerer {	
++	float: left;
++	position: relative;
++	left: 50%;		
++}
++.touchcarousel .tc-paging-centerer-inside {
++	float: left;
++	position: relative;
++	left: -50%;
++}
++
++/* Paging items */
++.touchcarousel .tc-paging-item {			
++	float:left;	
++	cursor:pointer;		
++	position:relative;
++	display:block;	
++	text-indent: -9999px;	
++}
++.touchcarousel .tc-paging-item.current { }
++.touchcarousel .tc-paging-item:hover { }
++
++
++
++
++
++/******************************************************\
++*
++*  5. Scrollbar
++*
++\******************************************************/
++.touchcarousel .scrollbar-holder {
++	position: absolute;
++	z-index: 30;
++	left: 6px;
++	right: 6px;	
++	bottom: 5px;
++	height:4px;
++	overflow: hidden;
++}
++.touchcarousel .scrollbar {
++	position: absolute;
++	left:0;	
++	height:4px;
++	bottom: 0px;
++}
++.touchcarousel .scrollbar.dark {
++	background-color: rgb(130, 130, 130);	
++	background-color: rgba(0, 0, 0, 0.5);
++}
++.touchcarousel .scrollbar.light {
++	background-color: rgb(210, 210, 210);	
++	background-color: rgba(255, 255, 255, 0.5);	
++}
++
++
++
++
++
++/******************************************************\
++*
++*  6. Cursors
++*
++\******************************************************/
++
++/* IE and Opera use "move", FF uses -moz-grab */
++.touchcarousel .grab-cursor{ cursor:url(grab.png) 8 8, move; }
++.touchcarousel .grabbing-cursor{ cursor:url(grabbing.png) 8 8, move; }
++
++/* Cursor that used when mouse drag is disabled */
++.touchcarousel .auto-cursor{ cursor:auto; }
++
++
++
++
+ /* Copyright 2011, Dmitry Semenov, http://dimsemenov.com */
+\ No newline at end of file
+diff --git a/sass/_gabersdorf.scss b/sass/_gabersdorf.scss
+index aae2937..a01737e 100644
+--- a/sass/_gabersdorf.scss
++++ b/sass/_gabersdorf.scss
+@@ -372,6 +372,23 @@ ul.nice-menu li.active-trail>a {
+ // BOX SHADOW for Frontpage
+ // ======================================
+ 
++// Giving columns equal height
++
++// .panels-flexible-row-2-main-row {
++// 	display: table;
++// 	width: 100%;
++// 	table-layout: fixed;
++// 	.panels-flexible-region {
++// 		.pane-views {
++// 			display: table-cell;
++// 			width: 33.333%;
++// 			height: 500px;
++// 		}
++// 	}
++// }
++
++
++
+ // setting the width of the columns
+ .panels-flexible-region-2-col_one, // 1st column 1st row, Termine
+ .panels-flexible-region-2-center, // 2nd column 1st row, Aktuelles
+@@ -441,6 +458,10 @@ ul.nice-menu li.active-trail>a {
+ 	margin-right: 2%;
+ }
+ 
++.view-empty div {
++	padding-top: 18px;
++}
++
+ // Royal Slider Slideshow Homepage
+ // ======================================
+ 

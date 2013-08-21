@@ -372,6 +372,23 @@ ul.nice-menu li.active-trail>a {
 // BOX SHADOW for Frontpage
 // ======================================
 
+// Giving columns equal height
+
+// .panels-flexible-row-2-main-row {
+// 	display: table;
+// 	width: 100%;
+// 	table-layout: fixed;
+// 	.panels-flexible-region {
+// 		.pane-views {
+// 			display: table-cell;
+// 			width: 33.333%;
+// 			height: 500px;
+// 		}
+// 	}
+// }
+
+
+
 // setting the width of the columns
 .panels-flexible-region-2-col_one, // 1st column 1st row, Termine
 .panels-flexible-region-2-center, // 2nd column 1st row, Aktuelles
@@ -390,6 +407,14 @@ ul.nice-menu li.active-trail>a {
 {
 	@extend #block-views-gemeinderat-block;
 }
+
+.panels-flexible-row-2-3 {
+	.panels-flexible-region-2-left, .panels-flexible-region-2-right {
+		width: 50%;
+	}
+}
+
+
 
 .front .view { // Aktuelles > Heading News
 	h2
@@ -439,6 +464,10 @@ ul.nice-menu li.active-trail>a {
 {
 	margin-left: 31%;
 	margin-right: 2%;
+}
+
+.view-empty div {
+	padding-top: 18px;
 }
 
 // Royal Slider Slideshow Homepage
