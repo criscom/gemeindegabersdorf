@@ -92,6 +92,15 @@
       *display: inline; // For IE7 and below
 }
 
+%slideshow-title {
+    position: absolute;
+    padding: 10px;
+    top: 161px;
+    width: 100%;
+    background: rgba(white, 0.5);
+    line-height: 1.6em;
+}
+
 %two-columns
  {
   .group-right

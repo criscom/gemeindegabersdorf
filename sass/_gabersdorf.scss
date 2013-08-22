@@ -499,13 +499,22 @@ div.slideshow-title {
 	text-align: left;
 	height: 100%;
 	line-height: .1em;
-		@media screen and (min-width: 960px) {
+	.lt-ie9 & {
 		position: absolute;
-		padding: 10px;
-		top: 161px;
-		width: 100%;
-		background: rgba(white, 0.5);
-		line-height: 1.6em;
+    	padding: 10px;
+    	top: 161px;
+    	width: 100%;
+    	background: transparent;
+    	color: white;
+    	line-height: 1.6em;
+		}
+	@media screen and (min-width: 960px) {
+	position: absolute;
+    padding: 10px;
+    top: 161px;
+    width: 100%;
+    background: rgba(white, 0.5);
+    line-height: 1.6em;
 		}
 	}
 
@@ -667,6 +676,9 @@ h2.view-title,
 .image-caption { // Image Caption, Bilduntertitel
 	line-height: 1.4em;
 	font-style: italic;
+	.lt-ie9 & {
+		display: none;
+	}
 }
 
 // ======================================
@@ -920,6 +932,10 @@ body.page-node-fotos-veranstaltungen .view-content .views-row, // Fotos Veransta
 {
 	width: 49%;
 	margin-left: 1%;
+	padding-top: 15px;
+	.lt-ie9 & {
+		width: 40%;
+	}
 }
 
 
@@ -1048,6 +1064,13 @@ body.page-node-fotos-veranstaltungen .view-content .views-row, // Fotos Veransta
 	 	@extend .view-header;
 	 	border-bottom: none;
 	 }
+}
+
+// Gemeinde Gabersdorf im Überblick page-node-210
+// ======================================
+
+.lt-i9.page-node-210 .photo {
+	margin-top: 20px;
 }
 
 // SITEMAP

@@ -80,7 +80,6 @@
 		// 	$('.panels-flexible-row-2-3 .pane-vereine').height(heightright);
 		// 	$('.panels-flexible-row-2-3 .pane-stellenausschreibungen').height(heightright);
 		// }
-			
 	});
 
 
