@@ -56,8 +56,11 @@ body
 		position: relative;
 	}
 
-	@media screen and (max-width: 903px) {
+	@include MQ(G900neg) { // aligns node heading under navigation. see aktuelles page
+		.not-front & {
 		padding-top: 8em;
+		}
+
 	}
 }
 
@@ -132,6 +135,9 @@ a.more-link
 	//overflow: hidden;
 	height: 205px; // A scaleable vector graphic for the header section
 	background: transparent image-url('header/header-ohne_bg.jpg') 15px 0px no-repeat;
+	@include MQ(XLneg) { // removes white padding for wooden green header background on mobile devices
+		background: transparent image-url('header/header-ohne_bg.jpg') 0px 0px no-repeat;
+	}
 	// 24.07.2013
 	// SVGs do not work in Safari and Chrome browsers at the momente (on localhost); various
 	// workarounds have misfired and I am continuing with a jpg version.
@@ -679,6 +685,9 @@ h2.view-title,
 	.lt-ie9 & {
 		display: none;
 	}
+	@include MQ(G900neg) { // excludes caption on mobile devices
+		display: none !important;
+	}
 }
 
 // ======================================
@@ -823,6 +832,10 @@ body.aktuelles .column > .block-views
 	width: 49%;
 	float: left;
 	@extend %box-shadow-teaser;
+	@include MQ(G900neg) {
+		width: 100%;
+		float: none;
+	}
 }
 
 

@@ -4,9 +4,68 @@
 // Define the custom mixins for your project here.
 // http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#defining_a_mixin
 
+
+
 // =============================================================================
 // Criscom's sass mixins - started: 20130703
 // =============================================================================
+
+
+// Media queries mixin - taken from SACFD p 152
+// =============================================================================
+
+@mixin MQ($canvas) {
+  @if $canvas == XS {
+    @media only screen and (max-width: $XS) and (max-width: $S - 1) { // 288 - 479
+      @content;
+    }
+  }
+  @else if $canvas == S {
+    @media only screen and (min-width: $S) and (max-width: $M - 1) { // 480 - 687
+      @content;
+    }
+  }
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) and (max-width: $L - 1) { // 688 - 911
+      @content;
+    }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) and (max-width: $XL - 1) { // 912 - 959
+      @content;
+    }
+  }
+  @else if $canvas == XSplus {
+    @media only screen and (min-width: $XS) { @content; } // >= 288
+  }
+  @else if $canvas == Splus {
+    @media only screen and (min-width: $S) { @content; } // >= 480
+  }
+  @else if $canvas == Mplus {
+    @media only screen and (min-width: $M) { @content; } // >= 688
+  }
+  @else if $canvas == Lplus {
+    @media only screen and (min-width: $L) { @content; } // >= 912
+  }
+    @else if $canvas == XSneg {
+    @media only screen and (max-width: $XS) { @content; } // <= 288
+  }
+  @else if $canvas == Sneg {
+    @media only screen and (max-width: $S) { @content; } // <= 480
+  }
+  @else if $canvas == Mneg {
+    @media only screen and (max-width: $M) { @content; } // <= 688
+  }
+  @else if $canvas == Lneg {
+    @media only screen and (max-width: $L) { @content; } // <= 912
+  }
+  @else if $canvas == G900neg {
+    @media only screen and (max-width: $G900) { @content; }
+  }
+  @else if $canvas == XLneg {
+    @media only screen and (max-width: $XL - 1) { @content; }
+  }
+}
 
 @mixin hide-text { // as of 04.03.2013 recommended approach to hide text and display an image. taken from: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757c9e03dda4e463fb0d4db5a5f82d7
   border: 0; 
