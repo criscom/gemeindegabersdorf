@@ -615,6 +615,13 @@ div.slideshow-title {
 	background: transparent;
 }
 
+.royalSlider .royalControlNavContainer {
+		left: 95%;
+		@include MQ(XLneg) {
+			left: 90%;
+		}
+}
+
 .royalSlider .royalControlNavCenterer {
 	@include MQ(Sneg) {
 		display: none !important;
