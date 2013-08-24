@@ -62,8 +62,8 @@ body
 		}
 
 	}
-	@include MQ(XS) { // iphone 288 - 479 px
-		padding-top: 0em;
+	@include MQ(Sneg) { // <= 479 px
+		padding-top: 0 !important;
 	}
 }
 
@@ -288,6 +288,10 @@ a.more-link
 		height: $nav-height-small-mobile !important;
 		}
 	}
+}
+
+ul.nice-menu {
+	z-index: 100;
 }
 
 .menu,
