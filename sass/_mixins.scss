@@ -16,7 +16,7 @@
 
 @mixin MQ($canvas) {
   @if $canvas == XS {
-    @media only screen and (max-width: $XS) and (max-width: $S - 1) { // 288 - 479
+    @media only screen and (min-width: $XS) and (max-width: $S - .01) { // 288 - 479
       @content;
     }
   }
@@ -26,12 +26,12 @@
     }
   }
   @else if $canvas == M {
-    @media only screen and (min-width: $M) and (max-width: $L - 1) { // 688 - 911
+    @media only screen and (min-width: $M) and (max-width: $L) { // 748 - 768
       @content;
     }
   }
   @else if $canvas == L {
-    @media only screen and (min-width: $L) and (max-width: $XL - 1) { // 912 - 959
+    @media only screen and (min-width: $L + .01) and (max-width: $XL - 1) { // 769 - 899
       @content;
     }
   }
@@ -54,16 +54,16 @@
     @media only screen and (max-width: $S) { @content; } // <= 480
   }
   @else if $canvas == Mneg {
-    @media only screen and (max-width: $M) { @content; } // <= 688
+    @media only screen and (max-width: $M) { @content; } // <= 748
   }
   @else if $canvas == Lneg {
-    @media only screen and (max-width: $L) { @content; } // <= 912
+    @media only screen and (max-width: $L - .01) { @content; } // <= 768, iPad
   }
   @else if $canvas == G900neg {
     @media only screen and (max-width: $G900) { @content; }
   }
   @else if $canvas == XLneg {
-    @media only screen and (max-width: $XL - 1) { @content; }
+    @media only screen and (max-width: $XL - .01) { @content; } // <= 899 IN USE
   }
 }
 

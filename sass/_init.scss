@@ -136,9 +136,10 @@ $color8: #a2a4a5; // color: grey; border for Main navbar
 
 $XS: 18em; // 288px wide with 16px body font
 $S: 30em; // 480px wide with 16px body font
-$M: 43em; // 688px wide with 16px body font
-$L: 57em; // 912 px wide with 16px body font
-$XL: 60em; // 960px wide with 16px body font
+$M: 46.75em; // 748px wide with 16px body font // when icon region starts to break
+$L: 48em; // 768px wide with 16px body font // iPad
+$XL: 56.25em; // 900 px wide with 16px body font // 899 px is where the navigation becomes two lines
+$XXL: 60em; // 960px wide with 16px body font
 $G900: 900px;
 
 // PATH TO CSS3 PIE
@@ -151,6 +152,8 @@ $indent-amount: 30px;
 
 // The height of the navigation container.
 $nav-height: 3.9em;
+$nav-height-mobile: 8em;
+$nav-height-small-mobile: 12em;
 
 // Tab styling.
 $tabs-container-bg: #fff;

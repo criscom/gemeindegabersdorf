@@ -56,17 +56,24 @@ body
 		position: relative;
 	}
 
-	@include MQ(G900neg) { // aligns node heading under navigation. see aktuelles page
+	@include MQ(XLneg) { // aligns node heading under navigation. see aktuelles page
 		.not-front & {
 		padding-top: 8em;
 		}
 
 	}
+	@include MQ(XS) { // iphone 288 - 479 px
+		.not-front & {
+		padding-top: 0em;
+		}
+	}
 }
 
 #header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer {
+	@include MQ(Mplus) {
 	padding-right: 15px;
 	padding-left: 15px;
+	}
 }
 
 #content p {
@@ -133,10 +140,16 @@ a.more-link
 // .lt-ie9 #header // For IE 8
  {
 	//overflow: hidden;
-	height: 205px; // A scaleable vector graphic for the header section
 	background: transparent image-url('header/header-ohne_bg.jpg') 15px 0px no-repeat;
+	@include MQ(Splus) {
+		height: 205px;
+	}
 	@include MQ(XLneg) { // removes white padding for wooden green header background on mobile devices
 		background: transparent image-url('header/header-ohne_bg.jpg') 0px 0px no-repeat;
+	}
+	@include MQ(Sneg) {
+		@include background-size(cover);
+		margin-bottom: 5px;
 	}
 	// 24.07.2013
 	// SVGs do not work in Safari and Chrome browsers at the momente (on localhost); various
@@ -159,7 +172,9 @@ a.more-link
 
 .header__logo { // the logo is a blank transparent png in order to make the text section in the header clickable
 	margin: 1em 0 0 2em;
-	//display: none;
+	@include MQ(Mneg) {
+		margin: 0.5em 0 1em;
+	}
 }
 
 .header__site-name { // hiding the website name and slogan
@@ -171,6 +186,9 @@ a.more-link
 
 .header__region { // Block under header with FB icon, address and partner logos
 	clear: both;
+	@include MQ(Mneg) { // hiding block on smaller screensitzes <= 748px
+		display: none;
+	}
 	@extend %left-border; // Aligning the FB icon with first main menu item 'Home' and node heading
 		.block {
 			@extend %inline-block;
@@ -195,9 +213,12 @@ a.more-link
 	float: right !important;
 	padding-top: 7.3em;
 	@extend %right-border;
-	@media only screen and (max-width: 721px)
-	{
-		padding-top: 4.5em;
+	@include MQ(Mneg) {
+		padding-top: 3.6em;
+	}
+	@include MQ(Sneg) {
+		float: none !important;
+		text-align: center;
 		//float: left;
 		// @extend %left-border;
 	}
@@ -247,16 +268,26 @@ a.more-link
 #navigation {
 	z-index: 100; // because we set z-index: 99; to the gallery container we need to adjust
 				  // a higher z-index to #navigation so that the drop down is visible;
-	text-align: center !important;
+		@include MQ(XLneg) {
+			height: $nav-height-mobile !important; // 8 em
+			// text-align: center !important;
+		}
+		@include MQ(Sneg) {
+			padding: 0;
+			height: $nav-height-small-mobile !important;
+		}
 	.region-navigation {
 		@extend %menu-border;
 		background-color: $color2;
-		height: 3.9em;
+		height: $nav-height; // 3.9 em
 		
-		@media screen and (max-width: 903px) {
-			height: 8em !important;
+		@include MQ(XLneg) {
+			height: $nav-height-mobile !important;
 			// text-align: center !important;
-
+		}
+		@include MQ(Sneg) {
+		padding: 0;
+		height: $nav-height-small-mobile !important;
 		}
 	}
 }
@@ -311,6 +342,9 @@ ul.nice-menu li.active-trail>a {
 
 .region-sidebar-second {
 	padding-left: 0;
+	@include MQ(Sneg) {
+		padding-right: 0;
+	}
 	.block-menu-block,
 	.block-views // Submenu Termine Archiv
 		{
@@ -482,7 +516,7 @@ ul.nice-menu li.active-trail>a {
 #HPslideshow {
 	width: 100%;
 	height: 220px;
-	@media screen and (max-width: 903px) {
+	@include MQ(XLne) {
 			margin-top: 4.1em !important;
 		}
 	@media screen and (min-width: 960px) {
@@ -556,6 +590,13 @@ div.slideshow-title {
 
 // FOOTER Frontpage Image Rotator Touchcarousel
 // ======================================
+
+@include MQ(Sneg) {
+	#footer {
+		padding: 0;
+	}
+}
+
 .region-footer > .first {
 	margin-top: 15px;
 	background:transparent image-url('image-rotator_bg.png') left top no-repeat;
@@ -593,8 +634,13 @@ div.slideshow-title {
 // ======================================
 .region-footer #block-block-1 {
 	background: transparent image-url('footer_bg.jpg') top left no-repeat;
+	@include MQ(Sneg) {
+	@include background-size(cover);
+	}
+	@include MQ(Splus) {
 	height: 40px;
 	margin-top: 25px;
+	}
 	p {
 		@extend %left-border; // Aligning the first footer item with node header, first menu item and FB icon
 		padding-top: 6px;
@@ -685,7 +731,7 @@ h2.view-title,
 	.lt-ie9 & {
 		display: none;
 	}
-	@include MQ(G900neg) { // excludes caption on mobile devices
+	@include MQ(XLneg) { // excludes caption on mobile devices
 		display: none !important;
 	}
 }
@@ -832,7 +878,7 @@ body.aktuelles .column > .block-views
 	width: 49%;
 	float: left;
 	@extend %box-shadow-teaser;
-	@include MQ(G900neg) {
+	@include MQ(XLneg) {
 		width: 100%;
 		float: none;
 	}
