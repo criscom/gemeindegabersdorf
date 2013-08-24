@@ -63,9 +63,7 @@ body
 
 	}
 	@include MQ(XS) { // iphone 288 - 479 px
-		.not-front & {
 		padding-top: 0em;
-		}
 	}
 }
 
@@ -427,7 +425,13 @@ ul.nice-menu li.active-trail>a {
 // 	}
 // }
 
-
+.panels-flexible-region-inside 
+{
+	@include MQ(Lneg) {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
 
 // setting the width of the columns
 .panels-flexible-region-2-col_one, // 1st column 1st row, Termine
@@ -438,6 +442,10 @@ ul.nice-menu li.active-trail>a {
 .panels-flexible-region-2-2nd_col_right // 3rd column 2nd row, Unsere Gemeinde
 {
 	width: 33.333%;
+	@include MQ(Lneg) {
+		width: 100%;
+		float: none;
+	}
 }
 
 .panels-flexible-row-2-main-row .panel-pane,
@@ -449,11 +457,22 @@ ul.nice-menu li.active-trail>a {
 }
 
 .panels-flexible-row-2-3 {
-	.panels-flexible-region-2-left, .panels-flexible-region-2-right {
+	.panels-flexible-region-2-left, .panels-flexible-region-2-right 
+	{ // Stellenbeschreibung, Wetter
 		width: 50%;
+	@include MQ(Lneg) {
+		width: 100% !important;
+		float: none;
+	}
 	}
 }
 
+.panels-flexible-region-2-right {
+	@include MQ(Lneg) {
+		width: 100% !important;
+		float: none;
+	}
+}
 
 
 .front .view { // Aktuelles > Heading News
@@ -495,15 +514,16 @@ ul.nice-menu li.active-trail>a {
 .weather>div
 {
 	float: left;
-	width: 30%;
+	width: 25%;
 	text-align: left !important;
 	@extend %left-border;
 }
 
 .weather ul
 {
-	margin-left: 31%;
-	margin-right: 2%;
+	margin-left: 26%;
+	margin-right: 4%;
+	width: 74%;
 }
 
 .view-empty div {
@@ -516,12 +536,16 @@ ul.nice-menu li.active-trail>a {
 #HPslideshow {
 	width: 100%;
 	height: 220px;
-	@include MQ(XLne) {
-			margin-top: 4.1em !important;
-		}
-	@media screen and (min-width: 960px) {
+	@include MQ(XXLplus) {
 	width: 930px; // 930px / 960px;
-	
+	}
+	@include MQ(XLneg) {
+		margin-top: 4.1em !important;
+		height: 200px;
+		}
+	@include MQ(Sneg) {
+		margin-top: 0 !important;
+		height: 70px;
 	}
 }
 
@@ -548,15 +572,32 @@ div.slideshow-title {
     	color: white;
     	line-height: 1.6em;
 		}
-	@media screen and (min-width: 960px) {
+	@include MQ(XXLplus) { // >= 960
 	position: absolute;
     padding: 10px;
-    top: 161px;
+    top: 9em;
     width: 100%;
     background: rgba(white, 0.5);
     line-height: 1.6em;
 		}
+	@include MQ(XL) { // >= 900 - 959
+	position: absolute;
+    padding: 10px;
+    top: 8.6em;
+    width: 100%;
+    background: rgba(white, 0.5);
+    line-height: 1.2em;
+		}
+	@include MQ(Sneg) {
+	font-size: 1em;
 	}
+}
+
+.royalWrapper li.views-row {
+	@include MQ(Sneg) {
+		height: 140px !important;
+	}
+}
 
 .royalSlider .royalSlide, .royalSlider .royalWrapper {
 	background: transparent !important; // Navigation bg transparent
@@ -570,8 +611,10 @@ div.slideshow-title {
 	background: transparent;
 }
 
-.royalSlider .royalControlNavContainer {
-		left: 95%;
+.royalSlider .royalControlNavCenterer {
+	@include MQ(Sneg) {
+		display: none !important;
+	}
 }
 
 .royalSlider.default .royalControlNavOverflow a 

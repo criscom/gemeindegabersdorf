@@ -1,0 +1,1336 @@
+diff --git a/css/styles.css b/css/styles.css
+index faedc7d..479e65a 100644
+--- a/css/styles.css
++++ b/css/styles.css
+@@ -2115,42 +2115,42 @@ body html {
+   }
+ }
+ @media only screen and (min-width: 18em) and (max-width: 29.99em) {
+-  /* line 66, ../sass/_gabersdorf.scss */
+-  .not-front #main {
++  /* line 52, ../sass/_gabersdorf.scss */
++  #main {
+     padding-top: 0em;
+   }
+ }
+ 
+ @media only screen and (min-width: 46.75em) {
+-  /* line 72, ../sass/_gabersdorf.scss */
++  /* line 70, ../sass/_gabersdorf.scss */
+   #header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer {
+     padding-right: 15px;
+     padding-left: 15px;
+   }
+ }
+ 
+-/* line 83, ../sass/_gabersdorf.scss */
++/* line 81, ../sass/_gabersdorf.scss */
+ input, select, img {
+   max-width: 100%;
+   height: auto;
+ }
+ 
+-/* line 88, ../sass/_gabersdorf.scss */
++/* line 86, ../sass/_gabersdorf.scss */
+ iframe {
+   max-width: 100%;
+ }
+ 
+-/* line 99, ../sass/_gabersdorf.scss */
++/* line 97, ../sass/_gabersdorf.scss */
+ .column a:link, .column a:visited, .column a:active {
+   color: #888820;
+ }
+-/* line 101, ../sass/_gabersdorf.scss */
++/* line 99, ../sass/_gabersdorf.scss */
+ .column a:link:hover, .column a:visited:hover, .column a:active:hover {
+   color: #c3c38f;
+   text-decoration: none;
+ }
+ 
+-/* line 107, ../sass/_gabersdorf.scss */
++/* line 105, ../sass/_gabersdorf.scss */
+ p a:hover, p li a:hover, p li a:hover, .download-file a:hover {
+   color: white !important;
+   background: #888820;
+@@ -2158,7 +2158,7 @@ p a:hover, p li a:hover, p li a:hover, .download-file a:hover {
+   padding: 2px 0;
+ }
+ 
+-/* line 117, ../sass/_gabersdorf.scss */
++/* line 115, ../sass/_gabersdorf.scss */
+ .messages, .messages--status, .messages--warning, .messages--error,
+ .messages-error,
+ .messages-warning,
+@@ -2166,12 +2166,12 @@ p a:hover, p li a:hover, p li a:hover, .download-file a:hover {
+   background-repeat: no-repeat;
+ }
+ 
+-/* line 123, ../sass/_gabersdorf.scss */
++/* line 121, ../sass/_gabersdorf.scss */
+ a.more-link {
+   display: block !important;
+   text-align: left !important;
+ }
+-/* line 126, ../sass/_gabersdorf.scss */
++/* line 124, ../sass/_gabersdorf.scss */
+ a.more-link:hover {
+   background: none;
+   text-decoration: none;
+@@ -2179,24 +2179,24 @@ a.more-link:hover {
+   padding: 0;
+ }
+ 
+-/* line 141, ../sass/_gabersdorf.scss */
++/* line 139, ../sass/_gabersdorf.scss */
+ [role="banner"] {
+   background: transparent url('../images/header/header-ohne_bg.jpg?1374655969') 15px 0px no-repeat;
+ }
+ @media only screen and (min-width: 30em) {
+-  /* line 141, ../sass/_gabersdorf.scss */
++  /* line 139, ../sass/_gabersdorf.scss */
+   [role="banner"] {
+     height: 205px;
+   }
+ }
+ @media only screen and (max-width: 56.24em) {
+-  /* line 141, ../sass/_gabersdorf.scss */
++  /* line 139, ../sass/_gabersdorf.scss */
+   [role="banner"] {
+     background: transparent url('../images/header/header-ohne_bg.jpg?1374655969') 0px 0px no-repeat;
+   }
+ }
+-@media only screen and (max-width: 30em) {
+-  /* line 141, ../sass/_gabersdorf.scss */
++@media only screen and (max-width: 29.99em) {
++  /* line 139, ../sass/_gabersdorf.scss */
+   [role="banner"] {
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+@@ -2206,18 +2206,18 @@ a.more-link:hover {
+   }
+ }
+ 
+-/* line 173, ../sass/_gabersdorf.scss */
++/* line 171, ../sass/_gabersdorf.scss */
+ .header__logo {
+   margin: 1em 0 0 2em;
+ }
+ @media only screen and (max-width: 46.75em) {
+-  /* line 173, ../sass/_gabersdorf.scss */
++  /* line 171, ../sass/_gabersdorf.scss */
+   .header__logo {
+     margin: 0.5em 0 1em;
+   }
+ }
+ 
+-/* line 180, ../sass/_gabersdorf.scss */
++/* line 178, ../sass/_gabersdorf.scss */
+ .header__site-name {
+   border: 0;
+   font: 0/0 a;
+@@ -2226,49 +2226,49 @@ a.more-link:hover {
+   background-color: transparent;
+ }
+ 
+-/* line 187, ../sass/_gabersdorf.scss */
++/* line 185, ../sass/_gabersdorf.scss */
+ .header__region {
+   clear: both;
+ }
+ @media only screen and (max-width: 46.75em) {
+-  /* line 187, ../sass/_gabersdorf.scss */
++  /* line 185, ../sass/_gabersdorf.scss */
+   .header__region {
+     display: none;
+   }
+ }
+-/* line 195, ../sass/_gabersdorf.scss */
++/* line 193, ../sass/_gabersdorf.scss */
+ .header__region .block p {
+   margin-top: 0;
+ }
+-/* line 199, ../sass/_gabersdorf.scss */
++/* line 197, ../sass/_gabersdorf.scss */
+ .header__region .first {
+   margin-right: 2.6em;
+ }
+-/* line 202, ../sass/_gabersdorf.scss */
++/* line 200, ../sass/_gabersdorf.scss */
+ .header__region .last {
+   float: right;
+ }
+ 
+-/* line 212, ../sass/_gabersdorf.scss */
++/* line 210, ../sass/_gabersdorf.scss */
+ [role="search"] {
+   float: right !important;
+   padding-top: 7.3em;
+ }
+ @media only screen and (max-width: 46.75em) {
+-  /* line 212, ../sass/_gabersdorf.scss */
++  /* line 210, ../sass/_gabersdorf.scss */
+   [role="search"] {
+     padding-top: 3.6em;
+   }
+ }
+-@media only screen and (max-width: 30em) {
+-  /* line 212, ../sass/_gabersdorf.scss */
++@media only screen and (max-width: 29.99em) {
++  /* line 210, ../sass/_gabersdorf.scss */
+   [role="search"] {
+     float: none !important;
+     text-align: center;
+   }
+ }
+ 
+-/* line 228, ../sass/_gabersdorf.scss */
++/* line 226, ../sass/_gabersdorf.scss */
+ .block-search input[type="text"] {
+   padding: 5px 5px !important;
+   border: 1px solid #a2a4a5;
+@@ -2278,118 +2278,118 @@ a.more-link:hover {
+   color: #4d4d4d;
+ }
+ 
+-/* line 238, ../sass/_gabersdorf.scss */
++/* line 236, ../sass/_gabersdorf.scss */
+ .form-actions input[type="image"] {
+   vertical-align: middle;
+ }
+ 
+-/* line 251, ../sass/_gabersdorf.scss */
++/* line 249, ../sass/_gabersdorf.scss */
+ .lt-ie9 #navigation {
+   position: absolute;
+   top: 0;
+   width: 100%;
+ }
+ 
+-/* line 268, ../sass/_gabersdorf.scss */
++/* line 266, ../sass/_gabersdorf.scss */
+ #navigation {
+   z-index: 100;
+ }
+ @media only screen and (max-width: 56.24em) {
+-  /* line 268, ../sass/_gabersdorf.scss */
++  /* line 266, ../sass/_gabersdorf.scss */
+   #navigation {
+     height: 8em !important;
+   }
+ }
+-@media only screen and (max-width: 30em) {
+-  /* line 268, ../sass/_gabersdorf.scss */
++@media only screen and (max-width: 29.99em) {
++  /* line 266, ../sass/_gabersdorf.scss */
+   #navigation {
+     padding: 0;
+     height: 12em !important;
+   }
+ }
+-/* line 279, ../sass/_gabersdorf.scss */
++/* line 277, ../sass/_gabersdorf.scss */
+ #navigation .region-navigation {
+   background-color: #e7e7d2;
+   height: 3.9em;
+ }
+ @media only screen and (max-width: 56.24em) {
+-  /* line 279, ../sass/_gabersdorf.scss */
++  /* line 277, ../sass/_gabersdorf.scss */
+   #navigation .region-navigation {
+     height: 8em !important;
+   }
+ }
+-@media only screen and (max-width: 30em) {
+-  /* line 279, ../sass/_gabersdorf.scss */
++@media only screen and (max-width: 29.99em) {
++  /* line 277, ../sass/_gabersdorf.scss */
+   #navigation .region-navigation {
+     padding: 0;
+     height: 12em !important;
+   }
+ }
+ 
+-/* line 296, ../sass/_gabersdorf.scss */
++/* line 294, ../sass/_gabersdorf.scss */
+ .menu,
+ ul.nice-menu {
+   background: none;
+ }
+-/* line 298, ../sass/_gabersdorf.scss */
++/* line 296, ../sass/_gabersdorf.scss */
+ .menu > li,
+ ul.nice-menu > li {
+   border: none;
+   background: none !important;
+ }
+-/* line 304, ../sass/_gabersdorf.scss */
++/* line 302, ../sass/_gabersdorf.scss */
+ .menu > li a:hover,
+ ul.nice-menu > li a:hover {
+   background-color: #949423;
+   color: white;
+ }
+-/* line 310, ../sass/_gabersdorf.scss */
++/* line 308, ../sass/_gabersdorf.scss */
+ .menu > li a.active,
+ ul.nice-menu > li a.active {
+   background-color: #888820;
+   color: white;
+ }
+-/* line 317, ../sass/_gabersdorf.scss */
++/* line 315, ../sass/_gabersdorf.scss */
+ .menu > li ul,
+ ul.nice-menu > li ul {
+   padding-top: 2em;
+   border: none;
+ }
+-/* line 320, ../sass/_gabersdorf.scss */
++/* line 318, ../sass/_gabersdorf.scss */
+ .menu > li ul li,
+ ul.nice-menu > li ul li {
+   background-color: rgba(231, 231, 210, 0.9) !important;
+   width: 20em;
+ }
+-/* line 325, ../sass/_gabersdorf.scss */
++/* line 323, ../sass/_gabersdorf.scss */
+ .menu > li ul li:hover,
+ ul.nice-menu > li ul li:hover {
+   background-color: #949423;
+   color: white;
+ }
+ 
+-/* line 334, ../sass/_gabersdorf.scss */
++/* line 332, ../sass/_gabersdorf.scss */
+ ul.nice-menu li.active-trail > a {
+   background: #888820 !important;
+   color: white;
+ }
+ 
+-/* line 343, ../sass/_gabersdorf.scss */
++/* line 341, ../sass/_gabersdorf.scss */
+ .region-sidebar-second {
+   padding-left: 0;
+ }
+-@media only screen and (max-width: 30em) {
+-  /* line 343, ../sass/_gabersdorf.scss */
++@media only screen and (max-width: 29.99em) {
++  /* line 341, ../sass/_gabersdorf.scss */
+   .region-sidebar-second {
+     padding-right: 0;
+   }
+ }
+-/* line 350, ../sass/_gabersdorf.scss */
++/* line 348, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block,
+ .region-sidebar-second .block-views {
+   background-color: #e7e7d2;
+ }
+-/* line 352, ../sass/_gabersdorf.scss */
++/* line 350, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block h2,
+ .region-sidebar-second .block-views h2 {
+   padding-left: 8px;
+@@ -2397,58 +2397,66 @@ ul.nice-menu li.active-trail > a {
+   color: #463830;
+ }
+ 
+-/* line 360, ../sass/_gabersdorf.scss */
++/* line 358, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block ul {
+   padding-left: 0;
+   margin-top: 0;
+ }
+-/* line 364, ../sass/_gabersdorf.scss */
++/* line 362, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block ul li {
+   list-style: none;
+   list-style-type: none;
+   list-style-image: none;
+   border-bottom: 1px solid #a2a4a5;
+ }
+-/* line 369, ../sass/_gabersdorf.scss */
++/* line 367, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block ul li a {
+   color: #463830;
+   font-size: 1.15em !important;
+ }
+-/* line 373, ../sass/_gabersdorf.scss */
++/* line 371, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block ul li a:hover {
+   color: white;
+ }
+ 
+-/* line 379, ../sass/_gabersdorf.scss */
++/* line 377, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-menu-block ul li a.active {
+   color: white;
+ }
+ 
+-/* line 386, ../sass/_gabersdorf.scss */
++/* line 384, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-views .view-termine {
+   padding-left: 0;
+ }
+-/* line 389, ../sass/_gabersdorf.scss */
++/* line 387, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-views .view-termine .views-summary {
+   border-bottom: 1px solid #a2a4a5;
+ }
+-/* line 391, ../sass/_gabersdorf.scss */
++/* line 389, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-views .view-termine .views-summary a {
+   color: #463830;
+ }
+-/* line 395, ../sass/_gabersdorf.scss */
++/* line 393, ../sass/_gabersdorf.scss */
+ .region-sidebar-second .block-views .view-termine .views-summary a:hover {
+   background: #888820;
+   color: white;
+ }
+ 
+-/* line 403, ../sass/_gabersdorf.scss */
++/* line 401, ../sass/_gabersdorf.scss */
+ .views-summary a.active {
+   background: #888820 !important;
+   color: white !important;
+ }
+ 
+-/* line 439, ../sass/_gabersdorf.scss */
++@media only screen and (max-width: 47.99em) {
++  /* line 429, ../sass/_gabersdorf.scss */
++  .panels-flexible-region-inside {
++    padding-right: 0;
++    padding-left: 0;
++  }
++}
++
++/* line 443, ../sass/_gabersdorf.scss */
+ .panels-flexible-region-2-col_one,
+ .panels-flexible-region-2-center,
+ .panels-flexible-region-2-col_right,
+@@ -2457,85 +2465,127 @@ ul.nice-menu li.active-trail > a {
+ .panels-flexible-region-2-2nd_col_right {
+   width: 33.333%;
+ }
++@media only screen and (max-width: 47.99em) {
++  /* line 443, ../sass/_gabersdorf.scss */
++  .panels-flexible-region-2-col_one,
++  .panels-flexible-region-2-center,
++  .panels-flexible-region-2-col_right,
++  .panels-flexible-region-2-col_one_2nd_row,
++  .panels-flexible-region-2-bottom_col,
++  .panels-flexible-region-2-2nd_col_right {
++    width: 100%;
++    float: none;
++  }
++}
+ 
+-/* line 452, ../sass/_gabersdorf.scss */
++/* line 461, ../sass/_gabersdorf.scss */
+ .panels-flexible-row-2-3 .panels-flexible-region-2-left, .panels-flexible-row-2-3 .panels-flexible-region-2-right {
+   width: 50%;
+ }
++@media only screen and (max-width: 47.99em) {
++  /* line 461, ../sass/_gabersdorf.scss */
++  .panels-flexible-row-2-3 .panels-flexible-region-2-left, .panels-flexible-row-2-3 .panels-flexible-region-2-right {
++    width: 100% !important;
++    float: none;
++  }
++}
+ 
+-/* line 461, ../sass/_gabersdorf.scss */
++@media only screen and (max-width: 47.99em) {
++  /* line 470, ../sass/_gabersdorf.scss */
++  .panels-flexible-region-2-right {
++    width: 100% !important;
++    float: none;
++  }
++}
++
++/* line 480, ../sass/_gabersdorf.scss */
+ .front .view h2 {
+   margin-top: 5px;
+   margin-bottom: 0px;
+   color: #463830;
+ }
+-/* line 466, ../sass/_gabersdorf.scss */
++/* line 485, ../sass/_gabersdorf.scss */
+ .front .view p {
+   margin-top: 0px;
+ }
+-/* line 470, ../sass/_gabersdorf.scss */
++/* line 489, ../sass/_gabersdorf.scss */
+ .front .view .more-link {
+   text-align: left;
+ }
+-/* line 472, ../sass/_gabersdorf.scss */
++/* line 491, ../sass/_gabersdorf.scss */
+ .front .view .more-link a:hover {
+   color: white !important;
+   background: #888820 !important;
+   padding: 2px 0;
+ }
+ 
+-/* line 481, ../sass/_gabersdorf.scss */
++/* line 500, ../sass/_gabersdorf.scss */
+ .front .view .view-grouping-header {
+   margin-top: 12px;
+ }
+ 
+-/* line 486, ../sass/_gabersdorf.scss */
++/* line 505, ../sass/_gabersdorf.scss */
+ .pane-weather-system-1 small {
+   display: none;
+ }
+ 
+-/* line 496, ../sass/_gabersdorf.scss */
++/* line 515, ../sass/_gabersdorf.scss */
+ .weather > div {
+   float: left;
+-  width: 30%;
++  width: 25%;
+   text-align: left !important;
+ }
+ 
+-/* line 504, ../sass/_gabersdorf.scss */
++/* line 523, ../sass/_gabersdorf.scss */
+ .weather ul {
+-  margin-left: 31%;
+-  margin-right: 2%;
++  margin-left: 26%;
++  margin-right: 4%;
++  width: 74%;
+ }
+ 
+-/* line 509, ../sass/_gabersdorf.scss */
++/* line 529, ../sass/_gabersdorf.scss */
+ .view-empty div {
+   padding-top: 18px;
+ }
+ 
+-/* line 516, ../sass/_gabersdorf.scss */
++/* line 536, ../sass/_gabersdorf.scss */
+ #HPslideshow {
+   width: 100%;
+   height: 220px;
+ }
+-@media screen and (min-width: 960px) {
+-  /* line 516, ../sass/_gabersdorf.scss */
++@media only screen and (min-width: 60em) {
++  /* line 536, ../sass/_gabersdorf.scss */
+   #HPslideshow {
+     width: 930px;
+   }
+ }
++@media only screen and (max-width: 56.24em) {
++  /* line 536, ../sass/_gabersdorf.scss */
++  #HPslideshow {
++    margin-top: 4.1em !important;
++    height: 200px;
++  }
++}
++@media only screen and (max-width: 29.99em) {
++  /* line 536, ../sass/_gabersdorf.scss */
++  #HPslideshow {
++    margin-top: 0 !important;
++    height: 70px;
++  }
++}
+ 
+-/* line 528, ../sass/_gabersdorf.scss */
++/* line 552, ../sass/_gabersdorf.scss */
+ .panels-flexible-region-2-top_col {
+   text-align: center;
+ }
+ @media screen and (min-width: 960px) {
+-  /* line 528, ../sass/_gabersdorf.scss */
++  /* line 552, ../sass/_gabersdorf.scss */
+   .panels-flexible-region-2-top_col {
+     margin-left: -11px;
+   }
+ }
+ 
+-/* line 536, ../sass/_gabersdorf.scss */
++/* line 560, ../sass/_gabersdorf.scss */
+ div.slideshow-title {
+   color: #463830;
+   font-size: 1.5em;
+@@ -2543,7 +2593,7 @@ div.slideshow-title {
+   height: 100%;
+   line-height: .1em;
+ }
+-/* line 542, ../sass/_gabersdorf.scss */
++/* line 566, ../sass/_gabersdorf.scss */
+ .lt-ie9 div.slideshow-title {
+   position: absolute;
+   padding: 10px;
+@@ -2553,99 +2603,125 @@ div.slideshow-title {
+   color: white;
+   line-height: 1.6em;
+ }
+-@media screen and (min-width: 960px) {
+-  /* line 536, ../sass/_gabersdorf.scss */
++@media only screen and (min-width: 60em) {
++  /* line 560, ../sass/_gabersdorf.scss */
+   div.slideshow-title {
+     position: absolute;
+     padding: 10px;
+-    top: 161px;
++    top: 9em;
+     width: 100%;
+     background: rgba(255, 255, 255, 0.5);
+     line-height: 1.6em;
+   }
+ }
++@media only screen and (min-width: 56.25em) and (max-width: 59.99em) {
++  /* line 560, ../sass/_gabersdorf.scss */
++  div.slideshow-title {
++    position: absolute;
++    padding: 10px;
++    top: 8.6em;
++    width: 100%;
++    background: rgba(255, 255, 255, 0.5);
++    line-height: 1.2em;
++  }
++}
++@media only screen and (max-width: 29.99em) {
++  /* line 560, ../sass/_gabersdorf.scss */
++  div.slideshow-title {
++    font-size: 1em;
++  }
++}
++
++@media only screen and (max-width: 29.99em) {
++  /* line 596, ../sass/_gabersdorf.scss */
++  .royalWrapper li.views-row {
++    height: 140px !important;
++  }
++}
+ 
+-/* line 561, ../sass/_gabersdorf.scss */
++/* line 602, ../sass/_gabersdorf.scss */
+ .royalSlider .royalSlide, .royalSlider .royalWrapper {
+   background: transparent !important;
+ }
+ 
+-/* line 565, ../sass/_gabersdorf.scss */
++/* line 606, ../sass/_gabersdorf.scss */
+ .royalSlider.default .royalControlNavOverflow {
+   margin-top: -10px;
+ }
+ 
+-/* line 569, ../sass/_gabersdorf.scss */
++/* line 610, ../sass/_gabersdorf.scss */
+ .royalSlider.default .royalControlNavCenterer {
+   background: transparent;
+ }
+ 
+-/* line 573, ../sass/_gabersdorf.scss */
+-.royalSlider .royalControlNavContainer {
+-  left: 95%;
++@media only screen and (max-width: 29.99em) {
++  /* line 614, ../sass/_gabersdorf.scss */
++  .royalSlider .royalControlNavCenterer {
++    display: none !important;
++  }
+ }
+ 
+-/* line 578, ../sass/_gabersdorf.scss */
++/* line 621, ../sass/_gabersdorf.scss */
+ .royalSlider.default .royalControlNavOverflow a {
+   background-image: none;
+   background-color: #888820;
+   margin-right: 3px;
+ }
+-/* line 582, ../sass/_gabersdorf.scss */
++/* line 625, ../sass/_gabersdorf.scss */
+ .royalSlider.default .royalControlNavOverflow a.current {
+   background-color: #c4c487;
+ }
+ 
+-@media only screen and (max-width: 30em) {
+-  /* line 595, ../sass/_gabersdorf.scss */
++@media only screen and (max-width: 29.99em) {
++  /* line 638, ../sass/_gabersdorf.scss */
+   #footer {
+     padding: 0;
+   }
+ }
+-/* line 600, ../sass/_gabersdorf.scss */
++/* line 643, ../sass/_gabersdorf.scss */
+ .region-footer > .first {
+   margin-top: 15px;
+   background: transparent url('../images/image-rotator_bg.png?1377239195') left top no-repeat;
+   border-bottom: 1px solid #a2a4a5;
+ }
+-/* line 604, ../sass/_gabersdorf.scss */
++/* line 647, ../sass/_gabersdorf.scss */
+ .region-footer > .first h2 {
+   background: none !important;
+   color: white !important;
+ }
+ 
+-/* line 610, ../sass/_gabersdorf.scss */
++/* line 653, ../sass/_gabersdorf.scss */
+ .touchcarousel {
+   width: 100%;
+   height: 155px;
+ }
+ 
+-/* line 614, ../sass/_gabersdorf.scss */
++/* line 657, ../sass/_gabersdorf.scss */
+ .touchcarousel-container {
+   width: 100%;
+ }
+-/* line 618, ../sass/_gabersdorf.scss */
++/* line 661, ../sass/_gabersdorf.scss */
+ .touchcarousel-container .views-row ul {
+   padding-left: 10px;
+ }
+-/* line 621, ../sass/_gabersdorf.scss */
++/* line 664, ../sass/_gabersdorf.scss */
+ .touchcarousel-container .views-row li {
+   float: left;
+   list-style-image: none;
+   list-style-type: none;
+   padding-right: 10px;
+ }
+-/* line 626, ../sass/_gabersdorf.scss */
++/* line 669, ../sass/_gabersdorf.scss */
+ .touchcarousel-container .views-row li.last {
+   padding-right: 0;
+ }
+ 
+-/* line 635, ../sass/_gabersdorf.scss */
++/* line 678, ../sass/_gabersdorf.scss */
+ .region-footer #block-block-1 {
+   background: transparent url('../images/footer_bg.jpg?1377239194') top left no-repeat;
+ }
+-@media only screen and (max-width: 30em) {
+-  /* line 635, ../sass/_gabersdorf.scss */
++@media only screen and (max-width: 29.99em) {
++  /* line 678, ../sass/_gabersdorf.scss */
+   .region-footer #block-block-1 {
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+@@ -2654,25 +2730,25 @@ div.slideshow-title {
+   }
+ }
+ @media only screen and (min-width: 30em) {
+-  /* line 635, ../sass/_gabersdorf.scss */
++  /* line 678, ../sass/_gabersdorf.scss */
+   .region-footer #block-block-1 {
+     height: 40px;
+     margin-top: 25px;
+   }
+ }
+-/* line 644, ../sass/_gabersdorf.scss */
++/* line 687, ../sass/_gabersdorf.scss */
+ .region-footer #block-block-1 p {
+   padding-top: 6px;
+   color: white;
+   text-transform: uppercase;
+   font-size: .9em;
+ }
+-/* line 650, ../sass/_gabersdorf.scss */
++/* line 693, ../sass/_gabersdorf.scss */
+ .region-footer #block-block-1 p a {
+   color: white;
+ }
+ 
+-/* line 661, ../sass/_gabersdorf.scss */
++/* line 704, ../sass/_gabersdorf.scss */
+ .field-name-body h1,
+ .page__title,
+ .page-title {
+@@ -2685,7 +2761,7 @@ div.slideshow-title {
+   padding-bottom: 1px;
+ }
+ 
+-/* line 678, ../sass/_gabersdorf.scss */
++/* line 721, ../sass/_gabersdorf.scss */
+ .field-name-title h2.page-title,
+ .block > h2.block-title,
+ .view-gemeindenachrichten h3,
+@@ -2700,7 +2776,7 @@ h2.pane-title {
+   font-size: 1.5em;
+ }
+ 
+-/* line 693, ../sass/_gabersdorf.scss */
++/* line 736, ../sass/_gabersdorf.scss */
+ .view-grouping-header,
+ h2.view-title,
+ .gemeindenachrichten h2,
+@@ -2709,48 +2785,48 @@ h2.view-title,
+   font-size: 1.3em;
+ }
+ 
+-/* line 701, ../sass/_gabersdorf.scss */
++/* line 744, ../sass/_gabersdorf.scss */
+ .field-name-field-protokolle-titel,
+ .field-name-field-titel-der-veranstaltung {
+   font-weight: bold;
+ }
+ 
+-/* line 710, ../sass/_gabersdorf.scss */
++/* line 753, ../sass/_gabersdorf.scss */
+ .column li {
+   list-style-type: bullet;
+ }
+ 
+-/* line 715, ../sass/_gabersdorf.scss */
++/* line 758, ../sass/_gabersdorf.scss */
+ .egovernment.left {
+   float: left;
+   width: 49%;
+   padding-right: 2%;
+ }
+ 
+-/* line 721, ../sass/_gabersdorf.scss */
++/* line 764, ../sass/_gabersdorf.scss */
+ .egovernment.right {
+   margin-top: 5px;
+   width: 49%;
+   float: right;
+ }
+ 
+-/* line 728, ../sass/_gabersdorf.scss */
++/* line 771, ../sass/_gabersdorf.scss */
+ .image-caption {
+   line-height: 1.4em;
+   font-style: italic;
+ }
+-/* line 731, ../sass/_gabersdorf.scss */
++/* line 774, ../sass/_gabersdorf.scss */
+ .lt-ie9 .image-caption {
+   display: none;
+ }
+ @media only screen and (max-width: 56.24em) {
+-  /* line 728, ../sass/_gabersdorf.scss */
++  /* line 771, ../sass/_gabersdorf.scss */
+   .image-caption {
+     display: none !important;
+   }
+ }
+ 
+-/* line 747, ../sass/_gabersdorf.scss */
++/* line 790, ../sass/_gabersdorf.scss */
+ .lt-ie9 .sidebar-second #content {
+   /* Span 3 columns, starting in 1st column from left. */
+   float: left;
+@@ -2760,7 +2836,7 @@ h2.view-title,
+   margin-right: -70%;
+   width: 70%;
+ }
+-/* line 754, ../sass/_gabersdorf.scss */
++/* line 797, ../sass/_gabersdorf.scss */
+ .lt-ie9 .sidebar-second .region-sidebar-second {
+   /* Span 2 columns, starting in 4th column from left. */
+   float: left;
+@@ -2771,7 +2847,7 @@ h2.view-title,
+   width: 30%;
+ }
+ 
+-/* line 773, ../sass/_gabersdorf.scss */
++/* line 816, ../sass/_gabersdorf.scss */
+ p > img,
+ p > span > img,
+ p > a > img,
+@@ -2785,20 +2861,20 @@ li > a > img {
+   behavior: url("/sites/all/themes/gemeinde-gabersdorf/PIE/PIE.php");
+ }
+ 
+-/* line 782, ../sass/_gabersdorf.scss */
++/* line 825, ../sass/_gabersdorf.scss */
+ .region-header img {
+   box-shadow: none;
+ }
+-/* line 786, ../sass/_gabersdorf.scss */
++/* line 829, ../sass/_gabersdorf.scss */
+ .region-header a {
+   text-decoration: none;
+ }
+-/* line 789, ../sass/_gabersdorf.scss */
++/* line 832, ../sass/_gabersdorf.scss */
+ .region-header a:hover {
+   background: none;
+ }
+ 
+-/* line 820, ../sass/_gabersdorf.scss */
++/* line 863, ../sass/_gabersdorf.scss */
+ .border-bottom,
+ .field-collection-container,
+ .view-gemeinderat .views-row,
+@@ -2810,99 +2886,99 @@ li > a > img {
+   margin-bottom: 10px;
+ }
+ 
+-/* line 826, ../sass/_gabersdorf.scss */
++/* line 869, ../sass/_gabersdorf.scss */
+ .link-border-bottom {
+   margin-bottom: 10px;
+ }
+ 
+-/* line 831, ../sass/_gabersdorf.scss */
++/* line 874, ../sass/_gabersdorf.scss */
+ .view {
+   margin-bottom: 1.5em;
+ }
+ 
+-/* line 851, ../sass/_gabersdorf.scss */
++/* line 894, ../sass/_gabersdorf.scss */
+ .view-grouping .view-grouping-content h3 {
+   font-weight: normal;
+   margin-bottom: 0;
+ }
+ 
+-/* line 857, ../sass/_gabersdorf.scss */
++/* line 900, ../sass/_gabersdorf.scss */
+ .views-responsive-grid {
+   padding-bottom: 5px;
+   border-bottom: 1px solid #c3c38f;
+ }
+ 
+-/* line 862, ../sass/_gabersdorf.scss */
++/* line 905, ../sass/_gabersdorf.scss */
+ span.field-content {
+   font-weight: bold;
+ }
+ 
+-/* line 871, ../sass/_gabersdorf.scss */
++/* line 914, ../sass/_gabersdorf.scss */
+ .column {
+   position: relative;
+   z-index: 99;
+ }
+ 
+-/* line 877, ../sass/_gabersdorf.scss */
++/* line 920, ../sass/_gabersdorf.scss */
+ body.aktuelles .column > .block-views {
+   width: 49%;
+   float: left;
+ }
+ @media only screen and (max-width: 56.24em) {
+-  /* line 877, ../sass/_gabersdorf.scss */
++  /* line 920, ../sass/_gabersdorf.scss */
+   body.aktuelles .column > .block-views {
+     width: 100%;
+     float: none;
+   }
+ }
+ 
+-/* line 889, ../sass/_gabersdorf.scss */
++/* line 932, ../sass/_gabersdorf.scss */
+ #block-views-termine-block-2 {
+   margin-right: 1%;
+ }
+ 
+-/* line 894, ../sass/_gabersdorf.scss */
++/* line 937, ../sass/_gabersdorf.scss */
+ body.aktuelles .view-termine > .view-content > .view-grouping {
+   width: 48%;
+ }
+ 
+-/* line 900, ../sass/_gabersdorf.scss */
++/* line 943, ../sass/_gabersdorf.scss */
+ .view-grouping-header {
+   margin-top: 1.15em;
+   font-weight: bold;
+ }
+ 
+-/* line 910, ../sass/_gabersdorf.scss */
++/* line 953, ../sass/_gabersdorf.scss */
+ .view-buergerservice .views-row {
+   margin-right: 1.9% !important;
+   width: 25%;
+ }
+ 
+-/* line 923, ../sass/_gabersdorf.scss */
++/* line 966, ../sass/_gabersdorf.scss */
+ .field-name-field-agenda-bild-laden div div,
+ .field-name-field-bildergalerie-bilder-laden div div {
+   vertical-align: middle;
+ }
+ 
+-/* line 930, ../sass/_gabersdorf.scss */
++/* line 973, ../sass/_gabersdorf.scss */
+ .field-name-field-agenda-bild-laden div .field-item,
+ .field-name-field-bildergalerie-bilder-laden div .field-item {
+   padding-right: 5px;
+ }
+ 
+-/* line 936, ../sass/_gabersdorf.scss */
++/* line 979, ../sass/_gabersdorf.scss */
+ .agenda-gallery .field-collection-view {
+   margin-left: 0;
+ }
+ 
+-/* line 949, ../sass/_gabersdorf.scss */
++/* line 992, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen h1.title,
+ body.page-node-fotos-veranstaltungen h1.title,
+ body.page-verwaltung-gemeindenachrichten h1.title {
+   margin-bottom: 20px;
+ }
+ 
+-/* line 956, ../sass/_gabersdorf.scss */
++/* line 999, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content,
+ body.page-node-fotos-veranstaltungen .view-bildergalerie-landing-page .view-content {
+   position: relative;
+@@ -2910,7 +2986,7 @@ body.page-node-fotos-veranstaltungen .view-bildergalerie-landing-page .view-cont
+   overflow: hidden;
+ }
+ 
+-/* line 970, ../sass/_gabersdorf.scss */
++/* line 1013, ../sass/_gabersdorf.scss */
+ body.page-inhalt-fotos-veranstaltungen .view-content .views-row,
+ body.page-node-fotos-veranstaltungen .view-content .views-row,
+ .view-gemeindenachrichten.view-display-id-page .views-row,
+@@ -2922,50 +2998,50 @@ body.page-node-fotos-veranstaltungen .view-content .views-row,
+   margin-bottom: 40px;
+ }
+ 
+-/* line 984, ../sass/_gabersdorf.scss */
++/* line 1027, ../sass/_gabersdorf.scss */
+ .field-name-field-bildergalerie-bilder-laden div div,
+ .field-name-field-gemeindenachrichten-bild {
+   margin-top: 10px;
+   margin-bottom: 6px;
+ }
+ 
+-/* line 991, ../sass/_gabersdorf.scss */
++/* line 1034, ../sass/_gabersdorf.scss */
+ .view-bildergalerie-landing-page .group-right {
+   width: 49%;
+   margin-left: 1%;
+   padding-top: 15px;
+ }
+-/* line 995, ../sass/_gabersdorf.scss */
++/* line 1038, ../sass/_gabersdorf.scss */
+ .lt-ie9 .view-bildergalerie-landing-page .group-right {
+   width: 40%;
+ }
+ 
+-/* line 1004, ../sass/_gabersdorf.scss */
++/* line 1047, ../sass/_gabersdorf.scss */
+ .view-gemeindenachrichten h3 {
+   padding-top: 8px;
+   padding-bottom: 8px;
+ }
+ 
+-/* line 1013, ../sass/_gabersdorf.scss */
++/* line 1056, ../sass/_gabersdorf.scss */
+ .gemeindenachrichten .views-column,
+ .view-stellenausschreibungen .views-row,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row {
+   border-top: 1px solid #c3c38f;
+ }
+ 
+-/* line 1019, ../sass/_gabersdorf.scss */
++/* line 1062, ../sass/_gabersdorf.scss */
+ .view-stellenausschreibungen .views-row,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row {
+   padding-bottom: 10px;
+ }
+ 
+-/* line 1025, ../sass/_gabersdorf.scss */
++/* line 1068, ../sass/_gabersdorf.scss */
+ .view-stellenausschreibungen .views-row-last,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row-last {
+   padding-bottom: 0;
+ }
+ 
+-/* line 1034, ../sass/_gabersdorf.scss */
++/* line 1077, ../sass/_gabersdorf.scss */
+ .gemeindenachrichten .views-column-first,
+ .view-stellenausschreibungen .views-row-first,
+ .view-aktuelles-inhaltstyp-aktuelles- .views-row-first,
+@@ -2973,67 +3049,67 @@ body.page-node-fotos-veranstaltungen .view-content .views-row,
+   border: none;
+ }
+ 
+-/* line 1042, ../sass/_gabersdorf.scss */
++/* line 1085, ../sass/_gabersdorf.scss */
+ .field-name-field-verwaltung .field-collection-view {
+   margin-right: 0;
+   margin-left: 0;
+ }
+ 
+-/* line 1053, ../sass/_gabersdorf.scss */
++/* line 1096, ../sass/_gabersdorf.scss */
+ .view-gemeinderat .views-row,
+ .view-gemeindeamt-team .views-row {
+   margin: 10px 0;
+ }
+-/* line 1056, ../sass/_gabersdorf.scss */
++/* line 1099, ../sass/_gabersdorf.scss */
+ .view-gemeinderat .views-row .node-team,
+ .view-gemeindeamt-team .views-row .node-team {
+   margin-bottom: 3px;
+ }
+ 
+-/* line 1065, ../sass/_gabersdorf.scss */
++/* line 1108, ../sass/_gabersdorf.scss */
+ .views-row .group-left img {
+   margin-top: 15px;
+   margin-bottom: 20px;
+ }
+ 
+-/* line 1093, ../sass/_gabersdorf.scss */
++/* line 1136, ../sass/_gabersdorf.scss */
+ .view-gewerbebetriebe .views-row {
+   clear: both;
+ }
+-/* line 1096, ../sass/_gabersdorf.scss */
++/* line 1139, ../sass/_gabersdorf.scss */
+ .view-gewerbebetriebe .group-left {
+   float: left;
+   width: 50%;
+ }
+-/* line 1100, ../sass/_gabersdorf.scss */
++/* line 1143, ../sass/_gabersdorf.scss */
+ .view-gewerbebetriebe .group-right {
+   float: right;
+   width: 50%;
+ }
+ 
+-/* line 1109, ../sass/_gabersdorf.scss */
++/* line 1152, ../sass/_gabersdorf.scss */
+ .view-freizeit .views-row h2 {
+   margin-bottom: 0;
+ }
+ 
+-/* line 1115, ../sass/_gabersdorf.scss */
++/* line 1158, ../sass/_gabersdorf.scss */
+ .view-freizeit .view-header, .view-freizeit .view-footer {
+   border-bottom: 1px solid #c3c38f;
+   margin-bottom: 10px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+ }
+-/* line 1122, ../sass/_gabersdorf.scss */
++/* line 1165, ../sass/_gabersdorf.scss */
+ .view-freizeit .view-footer {
+   border-bottom: none;
+ }
+ 
+-/* line 1131, ../sass/_gabersdorf.scss */
++/* line 1174, ../sass/_gabersdorf.scss */
+ .lt-i9.page-node-210 .photo {
+   margin-top: 20px;
+ }
+ 
+-/* line 1139, ../sass/_gabersdorf.scss */
++/* line 1182, ../sass/_gabersdorf.scss */
+ .site-map-box-menu h2 {
+   display: none;
+ }
+diff --git a/sass/_gabersdorf.scss b/sass/_gabersdorf.scss
+index de369bb..11d27a5 100644
+--- a/sass/_gabersdorf.scss
++++ b/sass/_gabersdorf.scss
+@@ -63,9 +63,7 @@ body
+ 
+ 	}
+ 	@include MQ(XS) { // iphone 288 - 479 px
+-		.not-front & {
+ 		padding-top: 0em;
+-		}
+ 	}
+ }
+ 
+@@ -427,7 +425,13 @@ ul.nice-menu li.active-trail>a {
+ // 	}
+ // }
+ 
+-
++.panels-flexible-region-inside 
++{
++	@include MQ(Lneg) {
++		padding-right: 0;
++		padding-left: 0;
++	}
++}
+ 
+ // setting the width of the columns
+ .panels-flexible-region-2-col_one, // 1st column 1st row, Termine
+@@ -438,6 +442,10 @@ ul.nice-menu li.active-trail>a {
+ .panels-flexible-region-2-2nd_col_right // 3rd column 2nd row, Unsere Gemeinde
+ {
+ 	width: 33.333%;
++	@include MQ(Lneg) {
++		width: 100%;
++		float: none;
++	}
+ }
+ 
+ .panels-flexible-row-2-main-row .panel-pane,
+@@ -449,11 +457,22 @@ ul.nice-menu li.active-trail>a {
+ }
+ 
+ .panels-flexible-row-2-3 {
+-	.panels-flexible-region-2-left, .panels-flexible-region-2-right {
++	.panels-flexible-region-2-left, .panels-flexible-region-2-right 
++	{ // Stellenbeschreibung, Wetter
+ 		width: 50%;
++	@include MQ(Lneg) {
++		width: 100% !important;
++		float: none;
++	}
+ 	}
+ }
+ 
++.panels-flexible-region-2-right {
++	@include MQ(Lneg) {
++		width: 100% !important;
++		float: none;
++	}
++}
+ 
+ 
+ .front .view { // Aktuelles > Heading News
+@@ -495,15 +514,16 @@ ul.nice-menu li.active-trail>a {
+ .weather>div
+ {
+ 	float: left;
+-	width: 30%;
++	width: 25%;
+ 	text-align: left !important;
+ 	@extend %left-border;
+ }
+ 
+ .weather ul
+ {
+-	margin-left: 31%;
+-	margin-right: 2%;
++	margin-left: 26%;
++	margin-right: 4%;
++	width: 74%;
+ }
+ 
+ .view-empty div {
+@@ -516,12 +536,16 @@ ul.nice-menu li.active-trail>a {
+ #HPslideshow {
+ 	width: 100%;
+ 	height: 220px;
+-	@include MQ(XLne) {
+-			margin-top: 4.1em !important;
+-		}
+-	@media screen and (min-width: 960px) {
++	@include MQ(XXLplus) {
+ 	width: 930px; // 930px / 960px;
+-	
++	}
++	@include MQ(XLneg) {
++		margin-top: 4.1em !important;
++		height: 200px;
++		}
++	@include MQ(Sneg) {
++		margin-top: 0 !important;
++		height: 70px;
+ 	}
+ }
+ 
+@@ -548,15 +572,32 @@ div.slideshow-title {
+     	color: white;
+     	line-height: 1.6em;
+ 		}
+-	@media screen and (min-width: 960px) {
++	@include MQ(XXLplus) { // >= 960
+ 	position: absolute;
+     padding: 10px;
+-    top: 161px;
++    top: 9em;
+     width: 100%;
+     background: rgba(white, 0.5);
+     line-height: 1.6em;
+ 		}
++	@include MQ(XL) { // >= 900 - 959
++	position: absolute;
++    padding: 10px;
++    top: 8.6em;
++    width: 100%;
++    background: rgba(white, 0.5);
++    line-height: 1.2em;
++		}
++	@include MQ(Sneg) {
++	font-size: 1em;
+ 	}
++}
++
++.royalWrapper li.views-row {
++	@include MQ(Sneg) {
++		height: 140px !important;
++	}
++}
+ 
+ .royalSlider .royalSlide, .royalSlider .royalWrapper {
+ 	background: transparent !important; // Navigation bg transparent
+@@ -570,8 +611,10 @@ div.slideshow-title {
+ 	background: transparent;
+ }
+ 
+-.royalSlider .royalControlNavContainer {
+-		left: 95%;
++.royalSlider .royalControlNavCenterer {
++	@include MQ(Sneg) {
++		display: none !important;
++	}
+ }
+ 
+ .royalSlider.default .royalControlNavOverflow a 
+diff --git a/sass/_mixins.scss b/sass/_mixins.scss
+index 03c0ba8..beff096 100644
+--- a/sass/_mixins.scss
++++ b/sass/_mixins.scss
+@@ -31,10 +31,16 @@
+     }
+   }
+   @else if $canvas == L {
+-    @media only screen and (min-width: $L + .01) and (max-width: $XL - 1) { // 769 - 899
++    @media only screen and (min-width: $L + .01) and (max-width: $XL - .01) { // 769 - 899
+       @content;
+     }
+   }
++    @else if $canvas == XL {
++    @media only screen and (min-width: $XL) and (max-width: $XXL - .01) { // 900 - 959
++      @content;
++    }
++  }
++
+   @else if $canvas == XSplus {
+     @media only screen and (min-width: $XS) { @content; } // >= 288
+   }
+@@ -45,13 +51,19 @@
+     @media only screen and (min-width: $M) { @content; } // >= 688
+   }
+   @else if $canvas == Lplus {
+-    @media only screen and (min-width: $L) { @content; } // >= 912
++    @media only screen and (min-width: $L) { @content; } // >= 768
+   }
++    @else if $canvas == XLplus {
++    @media only screen and (min-width: $XL) { @content; } // >= 900 IN USE
++  }
++    @else if $canvas == XXLplus {
++      @media only screen and (min-width: $XXL) { @content; } // >= 960 IN USE
++    }
+     @else if $canvas == XSneg {
+     @media only screen and (max-width: $XS) { @content; } // <= 288
+   }
+   @else if $canvas == Sneg {
+-    @media only screen and (max-width: $S) { @content; } // <= 480
++    @media only screen and (max-width: $S - .01) { @content; } // <= 480
+   }
+   @else if $canvas == Mneg {
+     @media only screen and (max-width: $M) { @content; } // <= 748
+@@ -64,7 +76,7 @@
+   }
+   @else if $canvas == XLneg {
+     @media only screen and (max-width: $XL - .01) { @content; } // <= 899 IN USE
+-  }
++    }
+ }
+ 
+ @mixin hide-text { // as of 04.03.2013 recommended approach to hide text and display an image. taken from: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757c9e03dda4e463fb0d4db5a5f82d7

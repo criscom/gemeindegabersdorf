@@ -31,10 +31,16 @@
     }
   }
   @else if $canvas == L {
-    @media only screen and (min-width: $L + .01) and (max-width: $XL - 1) { // 769 - 899
+    @media only screen and (min-width: $L + .01) and (max-width: $XL - .01) { // 769 - 899
       @content;
     }
   }
+    @else if $canvas == XL {
+    @media only screen and (min-width: $XL) and (max-width: $XXL - .01) { // 900 - 959
+      @content;
+    }
+  }
+
   @else if $canvas == XSplus {
     @media only screen and (min-width: $XS) { @content; } // >= 288
   }
@@ -45,13 +51,19 @@
     @media only screen and (min-width: $M) { @content; } // >= 688
   }
   @else if $canvas == Lplus {
-    @media only screen and (min-width: $L) { @content; } // >= 912
+    @media only screen and (min-width: $L) { @content; } // >= 768
   }
+    @else if $canvas == XLplus {
+    @media only screen and (min-width: $XL) { @content; } // >= 900 IN USE
+  }
+    @else if $canvas == XXLplus {
+      @media only screen and (min-width: $XXL) { @content; } // >= 960 IN USE
+    }
     @else if $canvas == XSneg {
     @media only screen and (max-width: $XS) { @content; } // <= 288
   }
   @else if $canvas == Sneg {
-    @media only screen and (max-width: $S) { @content; } // <= 480
+    @media only screen and (max-width: $S - .01) { @content; } // <= 480
   }
   @else if $canvas == Mneg {
     @media only screen and (max-width: $M) { @content; } // <= 748
@@ -64,7 +76,7 @@
   }
   @else if $canvas == XLneg {
     @media only screen and (max-width: $XL - .01) { @content; } // <= 899 IN USE
-  }
+    }
 }
 
 @mixin hide-text { // as of 04.03.2013 recommended approach to hide text and display an image. taken from: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757c9e03dda4e463fb0d4db5a5f82d7
