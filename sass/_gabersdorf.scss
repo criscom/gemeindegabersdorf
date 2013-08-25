@@ -1013,6 +1013,15 @@ body.page-node-fotos-veranstaltungen .view-bildergalerie-landing-page .view-cont
 	overflow: hidden;
 }
 
+// Gemeindenachrichten Landing page / Gewerbebetriebe Landing page
+// ======================================
+
+.gemeindenachrichten .node-gemeindenachrichten .group-right,
+.view-gewerbebetriebe .group-right {
+	width: 47%;
+	padding-left: 3%;
+}
+
 // BOX SHADOW for views
 // ======================================
 
@@ -1144,6 +1153,7 @@ body.page-node-fotos-veranstaltungen .view-content .views-row, // Fotos Veransta
 // ======================================
 
 .view-gewerbebetriebe {
+	@extend %clearfix;
 	.views-row {
 		clear: both;
 	}
