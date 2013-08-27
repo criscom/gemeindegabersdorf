@@ -21,7 +21,7 @@
     }
   }
   @else if $canvas == S {
-    @media only screen and (min-width: $S) and (max-width: $M - 1) { // 480 - 687
+    @media only screen and (min-width: $S) and (max-width: $M - .01) { // 480 - 687
       @content;
     }
   }
@@ -69,7 +69,7 @@
     @media only screen and (max-width: $M) { @content; } // <= 748
   }
   @else if $canvas == Lneg {
-    @media only screen and (max-width: $L - .01) { @content; } // <= 768, iPad
+    @media only screen and (max-width: $L - .01) { @content; } // <= 767, iPad // nochmals checken!!!
   }
   @else if $canvas == G900neg {
     @media only screen and (max-width: $G900) { @content; }

@@ -200,10 +200,16 @@ a.more-link
 		.last { // pushing the partner logos to the right
 			float: right;
 			@extend %right-border;
+			.lt-ie9 & { // Logos for IE8
+				text-align: right;
+				width: 360px;
+			}
 		}
 }
 
-
+.lt-ie9 #block-block-3 { // FACEBOOK ICON FOR IE8
+	width: 30px;
+}
 
 // Search form in Header block/region
 // ======================================
@@ -222,6 +228,10 @@ a.more-link
 	}
 }
 
+.lt-ie9 .block-search { // Styling search form for IE8
+	float: right;
+	width: 200px;
+}
 
 .block-search input[type="text"] {
 	// height: 2em;
@@ -1101,10 +1111,15 @@ body.page-node-fotos-veranstaltungen .view-content .views-row, // Fotos Veransta
 // View Verwaltung Landing page
 // ======================================
 
-.field-name-field-verwaltung .field-collection-view
-{
-	margin-right: 0;
-	margin-left: 0;
+.field-name-field-verwaltung {
+	 .field-collection-view
+	{
+		margin-right: 0;
+		margin-left: 0;
+		.photo {
+			padding-top: 12px;
+		}
+	}
 }
 
 // View Der Gemeinderat Landing page
