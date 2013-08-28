@@ -278,7 +278,8 @@ a.more-link
 				  // a higher z-index to #navigation so that the drop down is visible;
 		@include MQ(XLneg) {
 			height: $nav-height-mobile !important; // 8 em
-			// text-align: center !important;
+			text-align: center !important; // centering the menu items on screens smaller than 900 px
+			// see line 307 below
 		}
 		@include MQ(Sneg) {
 			padding: 0;
@@ -302,6 +303,15 @@ a.more-link
 
 ul.nice-menu {
 	z-index: 100;
+	li {
+		@include MQ(XLneg) { // centering the menu items on screens smaller than 900 px
+			display: inline-block;
+			float: none;
+		}
+		@include MQ(Sneg) { // but for phones we revert the centering
+			float: left;
+		}
+	}
 }
 
 .menu,
@@ -559,12 +569,17 @@ ul.nice-menu li.active-trail>a {
 		}
 	@include MQ(Sneg) {
 		margin-top: 0 !important;
-		height: 90px;
+		height: 85px;
 	}
 }
 
 .panels-flexible-region-2-top_col {
 	text-align: center;
+	width: 100%;
+	@include MQ(XLneg) { //for iPad and lower
+	padding-right: 0;
+	padding-left: 0;
+	}
 	@media screen and (min-width: 960px)
 	{
 	margin-left: -11px;
@@ -664,6 +679,9 @@ div.slideshow-title {
 .region-footer > .first {
 	margin-top: 15px;
 	background:transparent image-url('image-rotator_bg.png') left top no-repeat;
+	.lt-ie9 & {
+		width: 930px;
+	}
 	border-bottom: 1px solid $color8;
 	h2 {
 		background:none !important;
@@ -674,6 +692,8 @@ div.slideshow-title {
 .touchcarousel {
 	width: 100%;
 	height: 155px;
+
+
 }
 .touchcarousel-container {
 	width: 100%;

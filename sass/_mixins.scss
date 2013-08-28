@@ -69,13 +69,13 @@
     @media only screen and (max-width: $M) { @content; } // <= 748
   }
   @else if $canvas == Lneg {
-    @media only screen and (max-width: $L - .01) { @content; } // <= 767, iPad // nochmals checken!!!
+    @media only screen and (max-width: $L) { @content; } // <= 768, iPad // nochmals checken!!!
   }
   @else if $canvas == G900neg {
     @media only screen and (max-width: $G900) { @content; }
   }
   @else if $canvas == XLneg {
-    @media only screen and (max-width: $XL - .01) { @content; } // <= 899 IN USE
+    @media only screen and (max-width: $XL - .01) { @content; } // <= 912 IN USE
     }
 }
 
