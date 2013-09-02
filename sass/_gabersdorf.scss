@@ -233,7 +233,9 @@ a.more-link
 	width: 200px;
 }
 
-.block-search input[type="text"] {
+.block-search input[type="text"], // Search form header
+#edit-keys // Search form Search results
+{
 	// height: 2em;
 	padding: 5px 5px !important;
 	border: 1px solid $color8;
@@ -246,6 +248,30 @@ a.more-link
 	input[type="image"] {
 		vertical-align: middle;
 	}
+}
+
+#search-form // Search form Search results
+{
+	margin-top: 20px;
+	.form-wrapper {
+		@extend %left-border;
+	}
+	input[type="submit"] {
+	@include hide-text;
+	background: image-url("search-button.png") no-repeat top left;
+	height: 26px;
+	width: 26px;
+	vertical-align: middle;
+  }
+}
+
+.page-search .column h2 {
+	@extend %left-border;
+	color: $color1;
+}
+
+.form-type-textfield label {
+	@extend %right-border;
 }
 
 // ======================================
@@ -1179,6 +1205,11 @@ body.page-node-fotos-veranstaltungen .view-content .views-row, // Fotos Veransta
 // 		width: 65%;
 // 	}
 // }
+
+.view-vereine .views-row .group-right
+{
+	float: right;
+}
 
 .node-vereine.view-mode-full {
 	@extend %two-columns;
