@@ -18,10 +18,10 @@
 @import "normalize";
 
 /* Layout rules */
-@import "layouts/responsive";
+@import "responsive";
 
 /* Component (SMACSS module) rules */
-@import "components/misc";
+@import "misc";
 
 // Optionally, add your own components here.
 @import "print";

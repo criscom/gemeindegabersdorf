@@ -274,6 +274,12 @@ a.more-link
 	@extend %right-border;
 }
 
+// Date left-border für Stellenausschreibung
+
+.date-display-single {
+	@extend %left-border;
+}
+
 // ======================================
 // Main menu
 // ======================================
