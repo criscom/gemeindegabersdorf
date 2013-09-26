@@ -1,0 +1,17 @@
+diff --git a/sass/styles.scss b/sass/styles.scss
+index 52b943f..ade62bd 100644
+--- a/sass/styles.scss
++++ b/sass/styles.scss
+@@ -18,10 +18,10 @@
+ @import "normalize";
+ 
+ /* Layout rules */
+-@import "responsive";
++@import "layouts/responsive";
+ 
+ /* Component (SMACSS module) rules */
+-@import "misc";
++@import "components/misc";
+ 
+ // Optionally, add your own components here.
+ @import "print";
