@@ -18,7 +18,7 @@
 * 
 {
 	@include bs;
-	@include transition(all, .5s);
+	//@include transition(all, .5s);
 }
 
 body 
@@ -390,6 +390,9 @@ ul.nice-menu li.active-trail>a {
 	background: $color1 !important;
 	color: white;
 }
+
+
+
 // ======================================
 // Submenu Sidebar
 // ======================================
@@ -554,7 +557,7 @@ ul.nice-menu li.active-trail>a {
 
 .front .view .view-grouping-header 
 {
-	margin-top: 12px;
+	margin-top: 8px;
 }
 
 .pane-weather-system-1 small
@@ -594,6 +597,7 @@ ul.nice-menu li.active-trail>a {
 	height: 220px;
 	@include MQ(XXLplus) {
 	width: 930px; // 930px / 960px;
+	margin-left: 10px;
 	}
 	@include MQ(XLneg) {
 		margin-top: 4.1em !important;
@@ -800,6 +804,20 @@ h2.pane-title //Homepage Headings FRONTPAGE
 	color: $color6;
 	font-size: 1.5em;
 	//text-shadow: 0 1px 0 #CFCFCF;
+}
+
+.view-aktuelles-inhaltstyp-aktuelles- .group-right h2 { // Aktuelles BEITRAG inhalt/aktuelles
+	-ms-word-break: break-all;
+
+     /* Be VERY careful with this, breaks normal words wh_erever */
+     // word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
 }
 
 .view-grouping-header, // All views with responsive grid layout: Termine
