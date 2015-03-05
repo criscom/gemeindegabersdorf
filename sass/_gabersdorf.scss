@@ -276,8 +276,21 @@ a.more-link
 
 // Date left-border für Stellenausschreibung
 
-.date-display-single {
+.field-name-field-stellenaus-datum,
+.field-name-field-bildergalerie-datum-va {
+	.date-display-single {
 	@extend %left-border;
+	}
+}
+
+// Adjust "Fotos von Veranstaltungen" views more link 
+
+.view-bildergalerie-landing-page {
+	.field-name-field-bildergalerie-datum-va {
+		.date-display-single {
+			padding-left: 0;
+		}
+	}
 }
 
 // ======================================
@@ -369,7 +382,8 @@ ul.nice-menu {
 			}
 		// Styling of 2nd menu level
 		ul {
-			padding-top: 2em;
+			// padding-top: 2em;
+			margin-top: 2em;
 			border:none; // 2nd menu level
 			li { // menu item of 2nd menu level
 				background-color: transparentize($color2, .1)!important;
