@@ -192,6 +192,9 @@ a.more-link
 			@extend %inline-block;
 			p {// removing margin on top of the adress text in order to move it further twd the header
 				margin-top: 0;
+				a:hover {
+					color: black;
+				}
 			}
 		}
 		.first { // Aligning the address block
@@ -205,6 +208,12 @@ a.more-link
 				width: 360px;
 			}
 		}
+}
+
+.header__region {
+	a:hover {
+		color: black !important;
+	}
 }
 
 .lt-ie9 #block-block-3 { // FACEBOOK ICON FOR IE8
