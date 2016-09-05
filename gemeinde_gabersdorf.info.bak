@@ -51,14 +51,10 @@ stylesheets[all][] = system.theme.css
 ; Then we add our own stylesheet.
 ; ROYALSLIDER 
 stylesheets[all][]   = css/royalslider-skins/royalslider.css
-;stylesheets[all][]   = css/royalslider-skins/kf/default.css
-;stylesheets[all][]   = css/royalslider-skins/default/default.css
-;stylesheets[all][]   = css/royalslider-skins/iskin/iskin.css
-;stylesheets[all][]   = css/royalslider-skins/minimal/minimal.css
-stylesheets[all][]   = css/royalslider-skins/universal/rs-universal.css
-stylesheets[all][]   = css/royalslider-skins/minimal-white/rs-minimal-white.css
-stylesheets[all][]   = css/royalslider-skins/default-inverted/rs-default-inverted.css
-stylesheets[all][]   = css/royalslider-skins/default/rs-default.css
+stylesheets[all][]   = css/royalslider-skins/kf/default.css
+stylesheets[all][]   = css/royalslider-skins/default/default.css
+stylesheets[all][]   = css/royalslider-skins/iskin/iskin.css
+stylesheets[all][]   = css/royalslider-skins/minimal/minimal.css
 
 ; TOUCHCAROUSEL
 stylesheets[all][]   = css/touchcarousel-skins/touchcarousel.css
@@ -82,10 +78,8 @@ stylesheets[all][] = css/styles.css
 
 scripts[] = js/css_browser_selector.js
 scripts[] = js/royalslider.js
-;scripts[] = js/royal-slider/jquery.easing.1.3.min.js
-;scripts[] = js/royal-slider/royal-slider-8.1.js
-scripts[] = js/royal-slider/jquery.easing-1.3.js
-scripts[] = js/royal-slider/jquery.royalslider.min.js
+scripts[] = js/royal-slider/jquery.easing.1.3.min.js
+scripts[] = js/royal-slider/royal-slider-8.1.js
 scripts[] = js/jquery-ui.min.js
 scripts[] = js/touchcarousel.js
 scripts[] = js/touchcarousel/jquery.touchcarousel-1.2.js
