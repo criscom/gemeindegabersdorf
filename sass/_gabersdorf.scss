@@ -556,6 +556,9 @@ ul.nice-menu li.active-trail>a {
 	}
 }
 
+.panels-flexible-2 .panels-flexible-region-inside {
+	padding-right: 0 !important;
+}
 
 .front .view { // Aktuelles > Heading News
 	h2
@@ -628,7 +631,7 @@ ul.nice-menu li.active-trail>a {
 		}
 	@include MQ(Sneg) {
 		margin-top: 0 !important;
-		height: 85px;
+		height: 185px;
 	}
 }
 
