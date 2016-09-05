@@ -3,12 +3,23 @@
        
     //RoyalSlider Rotator Element Homepage
     $("#HPslideshow").royalSlider({
-		captionShowEffects:["fade"],
-		directionNavAutoHide: true,
-		slideTransitionType: "fade",            // Slide transition type: Can be "fade" or "move".
-		slideTransitionSpeed:600,               // Slide transition speed in ms (1s = 1000ms).
-		slideTransitionEasing:"easeInOutSine",  // Easing type for slide transition.
-		slideshowEnabled: true
+		autoScaleSlider: {
+			enabled: true
+		},
+		autoScaleSliderWidth: 930,
+		autoScaleSliderHeight: 205,
+		autoPlay: {
+			enabled: true,
+			delay: 5500
+		},
+		imageScalePadding: 0,
+		arrowsNavAutoHide: true,
+		TransitionType: "fade",            // Slide transition type: Can be "fade" or "move".
+		TransitionSpeed:600,               // Slide transition speed in ms (1s = 1000ms).
+		easeInOut: "easeInOutSine",  // Easing type for slide transition.
+		slideshowEnabled: true,
+		loop: true,
+		navigateByClick: false,
 	}); //Royal Slider Rotator
 	
 	// Royal Slider Add Numbers to Rotator div.royalControlNavCenterer
