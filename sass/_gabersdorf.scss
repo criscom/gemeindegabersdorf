@@ -109,6 +109,10 @@ p a:hover, p li a:hover, p li a:hover, .download-file a:hover {
 		padding: 2px 0;
 }
 
+span.file > img {
+	display: none;
+}
+
 .messages,
 .messages-error,
 .messages-warning,
