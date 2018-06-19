@@ -1313,3 +1313,17 @@ body.page-node-fotos-veranstaltungen .view-content .views-row, // Fotos Veransta
 .site-map-box-menu h2 {
 	display: none;
 }
+
+// DSGVO Cookie Banner
+// ======================================
+
+/** Normalize Cookie Banner **/
+
+#sliding-popup .popup-content #popup-buttons button {
+	box-shadow: none;
+	background-color: white;
+	background-image: none;
+	border: none;
+	border-radius: 0;
+	text-shadow: none;
+}
